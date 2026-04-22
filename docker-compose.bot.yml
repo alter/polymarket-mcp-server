@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  polymarket-ws-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile.bot
+    container_name: polymarket-ws-bot
+    image: polymarket-ws-bot:latest
+    
+    # Load configuration from our bot-specific env file
+    env_file:
+      - .env.bot
+      
+    # Mount local data directory AND source code so changes survive rebuilds
+    volumes:
+      - ./bot-data:/app/data
+      - ./multi_strategy.py:/app/multi_strategy.py
+      - ./oil_iran_trader.py:/app/oil_iran_trader.py
+      - ./run_all_bots.sh:/app/run_all_bots.sh
+
+    # Override CMD to run both bots in parallel
+    command: ["bash", "/app/run_all_bots.sh"]
+      
+    # Auto-restart if script crashes or system reboots
+    restart: unless-stopped
+    
+    # Optional resource constraints 
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          memory: 128M
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

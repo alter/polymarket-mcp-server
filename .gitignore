@@ -84,3 +84,18 @@ benchmark*.json
 .idea/
 *.swp
 *.swo
+
+# Bot runtime data (portfolios, ticks, logs — huge, not code)
+bot-data/
+data/
+*.jsonl
+logs/
+
+# Bot credentials (MUST NOT be committed)
+.env.bot
+.env.*.bot
+
+# Portfolio / result dumps at repo root
+/paper_portfolio.json
+/ws_portfolio.json
+/results.json

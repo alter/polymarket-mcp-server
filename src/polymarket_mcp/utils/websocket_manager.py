@@ -293,15 +293,19 @@ class WebSocketManager:
         logger.info("Disconnecting WebSocket connections...")
 
         # Close CLOB connection
-        if self.clob_ws and not self.clob_ws.closed:
-            await self.clob_ws.close()
+        if self.clob_ws:
+            try:
+                await self.clob_ws.close()
+            except: pass
             logger.info("CLOB WebSocket disconnected")
         self.clob_connected = False
         self.authenticated = False
 
         # Close real-time connection
-        if self.realtime_ws and not self.realtime_ws.closed:
-            await self.realtime_ws.close()
+        if self.realtime_ws:
+            try:
+                await self.realtime_ws.close()
+            except: pass
             logger.info("Real-time WebSocket disconnected")
         self.realtime_connected = False
 
@@ -487,7 +491,7 @@ class WebSocketManager:
         elif subscription.channel in [ChannelType.ACTIVITY, ChannelType.CRYPTO_PRICES]:
             ws = self.realtime_ws
 
-        if not ws or ws.closed:
+        if not ws:
             return
 
         message = {
@@ -802,11 +806,11 @@ class WebSocketManager:
                 # Process messages from both WebSockets
                 tasks = []
 
-                if self.clob_ws and not self.clob_ws.closed:
-                    tasks.append(self._receive_clob_messages())
+                if self.clob_ws:
+                    tasks.append(asyncio.create_task(self._receive_clob_messages()))
 
-                if self.realtime_ws and not self.realtime_ws.closed:
-                    tasks.append(self._receive_realtime_messages())
+                if self.realtime_ws:
+                    tasks.append(asyncio.create_task(self._receive_realtime_messages()))
 
                 if tasks:
                     # Wait for any message or timeout
@@ -833,7 +837,7 @@ class WebSocketManager:
 
     async def _receive_clob_messages(self) -> None:
         """Receive messages from CLOB WebSocket"""
-        if not self.clob_ws or self.clob_ws.closed:
+        if not self.clob_ws:
             return
 
         try:
@@ -848,7 +852,7 @@ class WebSocketManager:
 
     async def _receive_realtime_messages(self) -> None:
         """Receive messages from real-time WebSocket"""
-        if not self.realtime_ws or self.realtime_ws.closed:
+        if not self.realtime_ws:
             return
 
         try:
