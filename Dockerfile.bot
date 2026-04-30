@@ -15,6 +15,9 @@ RUN pip install --no-cache-dir build && \
     pip install --no-cache-dir dist/*.whl && \
     rm -rf dist/
 
+# Numpy required for phase3_obi_backtest, mass_backtest tools
+RUN pip install --no-cache-dir numpy
+
 # Copy bot scripts
 COPY smart_trader.py multi_strategy.py ./
 

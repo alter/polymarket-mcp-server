@@ -1,0 +1,64 @@
+{
+ "checked_at": "2026-04-30T18:57:07.098224+00:00",
+ "stalled": false,
+ "alerts": [],
+ "files": {
+  "live_validator.log": {
+   "age_sec": 1,
+   "size_kb": 0
+  },
+  "orderbook_collector.log": {
+   "age_sec": 1,
+   "size_kb": 0
+  },
+  "oil_iran.log": {
+   "age_sec": 1,
+   "size_kb": 0
+  },
+  "always_no.log": {
+   "age_sec": 1,
+   "size_kb": 0
+  },
+  "whale_fade.log": {
+   "age_sec": 1,
+   "size_kb": 0
+  },
+  "arena_ticks.jsonl": {
+   "age_sec": 26,
+   "size_kb": 60747
+  },
+  "orderbook_snapshots.jsonl": {
+   "age_sec": 23,
+   "size_kb": 94899
+  },
+  "live_validator.json": {
+   "age_sec": 228,
+   "size_kb": 999
+  },
+  "arena_results.json": {
+   "age_sec": 521,
+   "size_kb": 545
+  },
+  "political_skeptic.json": {
+   "age_sec": 515,
+   "size_kb": 5
+  }
+ },
+ "live": {
+  "live_validator": {
+   "n_variants": 200,
+   "n_total_bets": 7355,
+   "n_open": 2048,
+   "n_closed": 5307,
+   "realized_pnl": -1.1366
+  },
+  "arena": {
+   "n_strategies": 1023,
+   "n_profitable": 374,
+   "n_active": 884,
+   "top_equity": 1308.0,
+   "top_name": "S311|mean_re|p5|e0.01|sl-25%|tp10%|free|b"
+  }
+ },
+ "phase3": "phase3 result fresh"
+}

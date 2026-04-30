@@ -18,6 +18,22 @@ services:
       - ./multi_strategy.py:/app/multi_strategy.py
       - ./oil_iran_trader.py:/app/oil_iran_trader.py
       - ./run_all_bots.sh:/app/run_all_bots.sh
+      - ./meta_predict.py:/app/meta_predict.py
+      - ./always_no_bot.py:/app/always_no_bot.py
+      - ./whale_fade_bot.py:/app/whale_fade_bot.py
+      - ./live_validator.py:/app/live_validator.py
+      - ./orderbook_collector.py:/app/orderbook_collector.py
+      - ./watchdog.py:/app/watchdog.py
+      - ./phase3_obi_backtest.py:/app/phase3_obi_backtest.py
+      - ./theta_decay_bot.py:/app/theta_decay_bot.py
+      - ./political_skeptic_bot.py:/app/political_skeptic_bot.py
+      - ./news_monitor.py:/app/news_monitor.py
+      - ./news_trader_bot.py:/app/news_trader_bot.py
+      - ./daily_report.py:/app/daily_report.py
+      - ./whale_follower_bot.py:/app/whale_follower_bot.py
+      - ./subpenny_lottery_bot.py:/app/subpenny_lottery_bot.py
+      - ./tail_drift_bot.py:/app/tail_drift_bot.py
+      - ./council_bot.py:/app/council_bot.py
 
     # Override CMD to run both bots in parallel
     command: ["bash", "/app/run_all_bots.sh"]
@@ -29,10 +45,10 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 256M
+          cpus: '2.0'
+          memory: 1G
         reservations:
-          memory: 128M
+          memory: 256M
 
     logging:
       driver: "json-file"

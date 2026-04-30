@@ -1,0 +1,389 @@
+{
+ "open_positions": {
+  "0x6bd56627aa21311850825edb27e53434a0e17a4f782be0086bc07f71eee00d0d": {
+   "cid": "0x6bd56627aa21311850825edb27e53434a0e17a4f782be0086bc07f71eee00d0d",
+   "side": "NO",
+   "entry": 0.89,
+   "shares": 0.0225,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 2,
+   "consensus_family_count": 2,
+   "families": [
+    "Skeptic",
+    "Whale"
+   ],
+   "bots": [
+    "Skeptic",
+    "Whale"
+   ],
+   "question": "Putin out as President of Russia by December 31, 2026?",
+   "opened_ts": 1777513333.4134812
+  },
+  "0xbc32282afb28052f3a7a16cd9514c3a64cc133b04f8c00ac78ec7bda0f130a5d": {
+   "cid": "0xbc32282afb28052f3a7a16cd9514c3a64cc133b04f8c00ac78ec7bda0f130a5d",
+   "side": "NO",
+   "entry": 0.88,
+   "shares": 0.0227,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 10,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p7_t65_follow|pany|sany|fan",
+    "LV:RS_p7_t75_follow|plt70|sany|fa",
+    "LV:RS_p14_t65_follow|pany|sany|fa",
+    "LV:RS_p14_t65_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777553642.5833812
+  },
+  "0x08a79152c2e9444a887f722f0b741e22a90a8736806320e6bcbfb5a451b33f6f": {
+   "cid": "0x08a79152c2e9444a887f722f0b741e22a90a8736806320e6bcbfb5a451b33f6f",
+   "side": "YES",
+   "entry": 0.5,
+   "shares": 0.04,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 15,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t80_follow|pgt30|sany|fa",
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p7_t70_follow|plt70|sany|fa",
+    "LV:RS_p7_t80_follow|plt70|sany|fa",
+    "LV:RS_p7_t65_follow|pany|sany|fan"
+   ],
+   "question": "",
+   "opened_ts": 1777557861.4177897
+  },
+  "0xfaaabbdc0e13d5aba60183c46b8b62b9a81caf8f509f68be651fda2c9f955bc3": {
+   "cid": "0xfaaabbdc0e13d5aba60183c46b8b62b9a81caf8f509f68be651fda2c9f955bc3",
+   "side": "NO",
+   "entry": 0.688,
+   "shares": 0.0436,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 21,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p21_t65_follow|plt70|sany|f",
+    "LV:RS_p21_t65_follow|pany|sany|fa",
+    "LV:RS_p7_t80_follow|plt70|sany|fa",
+    "LV:BO_p100_follow|pany|swide|fany",
+    "LV:RS_p7_t75_follow|pany|sany|fan"
+   ],
+   "question": "",
+   "opened_ts": 1777563287.8959775
+  },
+  "0x8011f145385eb8685142f6ec37f076ca28f97e2642e5a42c0847095ae5165b42": {
+   "cid": "0x8011f145385eb8685142f6ec37f076ca28f97e2642e5a42c0847095ae5165b42",
+   "side": "NO",
+   "entry": 0.83,
+   "shares": 0.0361,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 22,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_BB",
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BB_p30_sd25_fade|plt30|sany|fa",
+    "LV:BO_p100_follow|pany|swide|fany",
+    "LV:RS_p7_t75_follow|pany|sany|fan",
+    "LV:BO_p100_follow|plt30|swide|fan",
+    "LV:RS_p14_t75_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777566305.5748532
+  },
+  "0xb75c07f4252992808d7ca7d9828169c524b0fef44bf5adf78c327ef88469c986": {
+   "cid": "0xb75c07f4252992808d7ca7d9828169c524b0fef44bf5adf78c327ef88469c986",
+   "side": "NO",
+   "entry": 0.933,
+   "shares": 0.0322,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 62,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p21_t65_follow|plt70|sany|f",
+    "LV:RS_p21_t65_follow|pany|sany|fa",
+    "LV:RS_p7_t80_follow|plt70|sany|fa",
+    "LV:BB_p30_sd25_fade|plt30|sany|fa",
+    "LV:BB_p50_sd25_fade|plt30|swide|f"
+   ],
+   "question": "",
+   "opened_ts": 1777571135.5231903
+  },
+  "0x227b33c652eb60e1b8b37b3d35ff288846388e4b59de3d8701eb910d93da5bb6": {
+   "cid": "0x227b33c652eb60e1b8b37b3d35ff288846388e4b59de3d8701eb910d93da5bb6",
+   "side": "NO",
+   "entry": 0.77,
+   "shares": 0.026,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 3,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t65_follow|plt70|sany|fa",
+    "LV:BO_p10_fade|plt70|sany|fany",
+    "LV:BO_p10_fade|pany|sany|fany"
+   ],
+   "question": "",
+   "opened_ts": 1777571136.8270442
+  },
+  "0x602ff7cc675b58623009b79534bd69ebbd7a87682fa19386e0468941c752e129": {
+   "cid": "0x602ff7cc675b58623009b79534bd69ebbd7a87682fa19386e0468941c752e129",
+   "side": "YES",
+   "entry": 0.82,
+   "shares": 0.0366,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 47,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p21_t65_follow|pany|sany|fa",
+    "LV:RS_p7_t65_follow|pgt30|stight|",
+    "LV:RS_p21_t65_follow|pgt30|sany|f",
+    "LV:RS_p21_t75_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|pany|sany|fan"
+   ],
+   "question": "",
+   "opened_ts": 1777571738.8049557
+  },
+  "0x18e80797014a897f62d97506ef17c2bf111b9adc980bed9fb1eb1ce354d9500b": {
+   "cid": "0x18e80797014a897f62d97506ef17c2bf111b9adc980bed9fb1eb1ce354d9500b",
+   "side": "YES",
+   "entry": 0.91,
+   "shares": 0.022,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 22,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t65_follow|pgt30|stight|",
+    "LV:RS_p7_t65_follow|pgt50|stight|",
+    "LV:RS_p7_t70_follow|pany|stight|f",
+    "LV:BO_p10_fade|pgt50|sany|fany",
+    "LV:RS_p7_t70_follow|pgt50|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1777573549.1110244
+  }
+ },
+ "wins": 2,
+ "losses": 2,
+ "total_bets": 13,
+ "realized_pnl": -0.025799999999999993,
+ "by_side": {
+  "YES": 7,
+  "NO": 6
+ },
+ "consensus_observed": [
+  {
+   "cid": "0x08a79152c2",
+   "side": "YES",
+   "count": 53,
+   "bots": [
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:BB_p50_sd25_follow|pgt30|sany|",
+    "LV:RS_p14_t70_follow|pgt30|sany|f",
+    "LV:RS_p7_t80_follow|pgt30|stight|",
+    "LV:RS_p21_t70_follow|pgt30|sany|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x602ff7cc67",
+   "side": "YES",
+   "count": 41,
+   "bots": [
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p7_t80_follow|pgt30|stight|",
+    "LV:RS_p21_t70_follow|pgt30|sany|f",
+    "LV:RS_p7_t65_follow|pgt50|sany|fa",
+    "LV:RS_p7_t70_follow|pany|stight|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x18e8079701",
+   "side": "YES",
+   "count": 21,
+   "bots": [
+    "LV:RS_p7_t70_follow|pany|stight|f",
+    "LV:RS_p7_t65_follow|pgt50|sany|fa",
+    "LV:BO_p10_fade|pgt30|sany|fany",
+    "LV:RS_p7_t75_follow|pany|stight|f",
+    "LV:RS_p7_t65_follow|pany|stight|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x227b33c652",
+   "side": "YES",
+   "count": 28,
+   "bots": [
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p14_t70_follow|pgt30|sany|f",
+    "LV:RS_p21_t70_follow|pgt30|sany|f",
+    "LV:RS_p7_t65_follow|pgt50|sany|fa",
+    "LV:RS_p7_t70_follow|pany|stight|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x13c0edf4f2",
+   "side": "NO",
+   "count": 58,
+   "bots": [
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:BB_p20_sd20_fade|plt30|sany|fa",
+    "LV:RS_p21_t65_follow|plt70|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:BB_p20_sd25_fade|plt30|sany|fa"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x3e0dc6c075",
+   "side": "NO",
+   "count": 26,
+   "bots": [
+    "LV:BB_p20_sd20_fade|plt30|sany|fa",
+    "LV:BB_p50_sd25_fade|plt30|swide|f",
+    "LV:BB_p50_sd25_fade|plt50|swide|f",
+    "LV:BB_p30_sd20_fade|plt30|sany|fa",
+    "LV:BB_p30_sd25_fade|plt30|sany|fa"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x8011f14538",
+   "side": "NO",
+   "count": 11,
+   "bots": [
+    "LV:RS_p7_t75_follow|plt70|sany|fa",
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:RS_p14_t65_follow|plt70|sany|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt30|swide|fany"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x561e400fc7",
+   "side": "NO",
+   "count": 53,
+   "bots": [
+    "LV:BB_p20_sd20_fade|plt30|sany|fa",
+    "LV:BB_p50_sd25_fade|plt30|swide|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:BB_p20_sd25_fade|plt30|sany|fa",
+    "LV:BB_p50_sd25_fade|plt50|swide|f"
+   ],
+   "question": "Over $10M committed to the Printr public sale?"
+  },
+  {
+   "cid": "0xf03529a209",
+   "side": "NO",
+   "count": 23,
+   "bots": [
+    "LV:BB_p20_sd20_fade|plt30|sany|fa",
+    "LV:BB_p50_sd25_fade|plt30|swide|f",
+    "LV:BB_p50_sd25_fade|plt50|swide|f",
+    "LV:BB_p30_sd20_fade|plt30|sany|fa",
+    "LV:BB_p30_sd25_fade|plt30|sany|fa"
+   ],
+   "question": "Over $8M committed to the Printr public sale?"
+  },
+  {
+   "cid": "0xd9c3cba998",
+   "side": "NO",
+   "count": 16,
+   "bots": [
+    "LV:BB_p50_sd25_fade|plt30|sany|fa",
+    "LV:BB_p50_sd20_fade|plt30|sany|fa",
+    "LV:BB_p50_sd25_fade|plt30|swide|f",
+    "LV:RS_p21_t80_fade|plt50|swide|fa",
+    "LV:RS_p21_t80_fade|plt30|swide|fa"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0xcacdc005e7",
+   "side": "NO",
+   "count": 8,
+   "bots": [
+    "LV:BB_p50_sd25_fade|plt30|sany|fa",
+    "LV:BB_p50_sd20_fade|plt30|sany|fa",
+    "LV:BB_p20_sd20_fade|plt30|sany|fa",
+    "LV:BB_p30_sd20_fade|plt30|sany|fa",
+    "LV:BO_p20_fade|plt70|sany|fany"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0xa1bb6c583e",
+   "side": "NO",
+   "count": 28,
+   "bots": [
+    "LV:BB_p20_sd20_fade|plt30|sany|fa",
+    "LV:BB_p50_sd25_fade|plt30|swide|f",
+    "LV:BB_p50_sd25_fade|plt50|swide|f",
+    "LV:BB_p30_sd20_fade|plt30|sany|fa",
+    "LV:BB_p30_sd25_fade|plt30|sany|fa"
+   ],
+   "question": "Over $6M committed to the Printr public sale?"
+  },
+  {
+   "cid": "0x6bd56627aa",
+   "side": "NO",
+   "count": 2,
+   "bots": [
+    "Whale",
+    "Skeptic"
+   ],
+   "question": "Putin out as President of Russia by December 31, 2026?"
+  }
+ ],
+ "conflicts_observed": 30,
+ "equity_arena_scale": 871.0,
+ "updated_at": "2026-04-30T18:57:11.656907+00:00"
+}

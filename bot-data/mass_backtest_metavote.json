@@ -1,0 +1,660 @@
+{
+ "ran_at": "2026-04-29T22:53:30.903940+00:00",
+ "n_voters": 8,
+ "K_values": [
+  2,
+  3,
+  4,
+  5
+ ],
+ "results": [
+  {
+   "config": "K3|pgt30|sany|fany",
+   "n_bets": 15889,
+   "wins": 9632,
+   "losses": 6257,
+   "wr": 60.62,
+   "pnl": 22.6952,
+   "roi_pct": 14.28
+  },
+  {
+   "config": "K2|pgt30|sany|fany",
+   "n_bets": 18289,
+   "wins": 10846,
+   "losses": 7443,
+   "wr": 59.3,
+   "pnl": 22.0321,
+   "roi_pct": 12.05
+  },
+  {
+   "config": "K4|pgt30|sany|fany",
+   "n_bets": 9612,
+   "wins": 5897,
+   "losses": 3715,
+   "wr": 61.35,
+   "pnl": 15.1603,
+   "roi_pct": 15.77
+  },
+  {
+   "config": "K5|pgt30|sany|fany",
+   "n_bets": 7017,
+   "wins": 4461,
+   "losses": 2556,
+   "wr": 63.57,
+   "pnl": 14.4733,
+   "roi_pct": 20.63
+  },
+  {
+   "config": "K4|plt70|sany|fany",
+   "n_bets": 16636,
+   "wins": 10250,
+   "losses": 6386,
+   "wr": 61.61,
+   "pnl": 14.0084,
+   "roi_pct": 8.42
+  },
+  {
+   "config": "K3|plt70|stight|fany",
+   "n_bets": 7844,
+   "wins": 4181,
+   "losses": 3663,
+   "wr": 53.3,
+   "pnl": 13.6969,
+   "roi_pct": 17.46
+  },
+  {
+   "config": "K2|plt70|stight|fany",
+   "n_bets": 9176,
+   "wins": 4738,
+   "losses": 4438,
+   "wr": 51.63,
+   "pnl": 13.0376,
+   "roi_pct": 14.21
+  },
+  {
+   "config": "K5|plt70|sany|fany",
+   "n_bets": 11793,
+   "wins": 7664,
+   "losses": 4129,
+   "wr": 64.99,
+   "pnl": 12.5708,
+   "roi_pct": 10.66
+  },
+  {
+   "config": "K4|pany|sany|fany",
+   "n_bets": 17787,
+   "wins": 10962,
+   "losses": 6825,
+   "wr": 61.63,
+   "pnl": 12.4804,
+   "roi_pct": 7.02
+  },
+  {
+   "config": "K3|plt70|sany|fany",
+   "n_bets": 25110,
+   "wins": 15545,
+   "losses": 9565,
+   "wr": 61.91,
+   "pnl": 11.9506,
+   "roi_pct": 4.76
+  },
+  {
+   "config": "K4|plt70|stight|fany",
+   "n_bets": 4394,
+   "wins": 2532,
+   "losses": 1862,
+   "wr": 57.62,
+   "pnl": 11.2698,
+   "roi_pct": 25.65
+  },
+  {
+   "config": "K5|pany|sany|fany",
+   "n_bets": 12589,
+   "wins": 8132,
+   "losses": 4457,
+   "wr": 64.6,
+   "pnl": 10.9749,
+   "roi_pct": 8.72
+  },
+  {
+   "config": "K3|pgt30|stight|fany",
+   "n_bets": 9164,
+   "wins": 4956,
+   "losses": 4208,
+   "wr": 54.08,
+   "pnl": 10.7816,
+   "roi_pct": 11.77
+  },
+  {
+   "config": "K3|pany|stight|fany",
+   "n_bets": 9256,
+   "wins": 5002,
+   "losses": 4254,
+   "wr": 54.04,
+   "pnl": 10.3971,
+   "roi_pct": 11.23
+  },
+  {
+   "config": "K4|pgt30|stight|fany",
+   "n_bets": 5304,
+   "wins": 3113,
+   "losses": 2191,
+   "wr": 58.69,
+   "pnl": 9.9475,
+   "roi_pct": 18.75
+  },
+  {
+   "config": "K4|pany|stight|fany",
+   "n_bets": 5369,
+   "wins": 3144,
+   "losses": 2225,
+   "wr": 58.56,
+   "pnl": 9.658,
+   "roi_pct": 17.99
+  },
+  {
+   "config": "K5|plt70|stight|fany",
+   "n_bets": 3105,
+   "wins": 1795,
+   "losses": 1310,
+   "wr": 57.81,
+   "pnl": 9.6232,
+   "roi_pct": 30.99
+  },
+  {
+   "config": "K3|pany|sany|fany",
+   "n_bets": 26749,
+   "wins": 16493,
+   "losses": 10256,
+   "wr": 61.66,
+   "pnl": 8.6542,
+   "roi_pct": 3.24
+  },
+  {
+   "config": "K5|pgt30|stight|fany",
+   "n_bets": 3733,
+   "wins": 2171,
+   "losses": 1562,
+   "wr": 58.16,
+   "pnl": 8.1784,
+   "roi_pct": 21.91
+  },
+  {
+   "config": "K2|plt70|sany|fany",
+   "n_bets": 28337,
+   "wins": 17661,
+   "losses": 10676,
+   "wr": 62.32,
+   "pnl": 8.1677,
+   "roi_pct": 2.88
+  },
+  {
+   "config": "K5|pany|stight|fany",
+   "n_bets": 3768,
+   "wins": 2184,
+   "losses": 1584,
+   "wr": 57.96,
+   "pnl": 7.9854,
+   "roi_pct": 21.19
+  },
+  {
+   "config": "K2|pgt30|stight|fany",
+   "n_bets": 10920,
+   "wins": 5617,
+   "losses": 5303,
+   "wr": 51.44,
+   "pnl": 7.5923,
+   "roi_pct": 6.95
+  },
+  {
+   "config": "K2|pany|stight|fany",
+   "n_bets": 11036,
+   "wins": 5677,
+   "losses": 5359,
+   "wr": 51.44,
+   "pnl": 7.1253,
+   "roi_pct": 6.46
+  },
+  {
+   "config": "K2|pany|sany|fany",
+   "n_bets": 30491,
+   "wins": 18756,
+   "losses": 11735,
+   "wr": 61.51,
+   "pnl": 2.1576,
+   "roi_pct": 0.71
+  },
+  {
+   "config": "K2|pgt30|swide|ffree_only",
+   "n_bets": 212,
+   "wins": 153,
+   "losses": 59,
+   "wr": 72.17,
+   "pnl": 0.3497,
+   "roi_pct": 16.5
+  },
+  {
+   "config": "K2|plt70|stight|ffree_only",
+   "n_bets": 125,
+   "wins": 80,
+   "losses": 45,
+   "wr": 64.0,
+   "pnl": 0.3049,
+   "roi_pct": 24.39
+  },
+  {
+   "config": "K4|pgt30|stight|ffree_only",
+   "n_bets": 303,
+   "wins": 203,
+   "losses": 100,
+   "wr": 67.0,
+   "pnl": 0.3019,
+   "roi_pct": 9.96
+  },
+  {
+   "config": "K4|pany|stight|ffree_only",
+   "n_bets": 315,
+   "wins": 214,
+   "losses": 101,
+   "wr": 67.94,
+   "pnl": 0.2979,
+   "roi_pct": 9.46
+  },
+  {
+   "config": "K3|pgt30|swide|ffree_only",
+   "n_bets": 176,
+   "wins": 127,
+   "losses": 49,
+   "wr": 72.16,
+   "pnl": 0.2635,
+   "roi_pct": 14.97
+  },
+  {
+   "config": "K4|pgt30|swide|ffree_only",
+   "n_bets": 140,
+   "wins": 103,
+   "losses": 37,
+   "wr": 73.57,
+   "pnl": 0.2591,
+   "roi_pct": 18.5
+  },
+  {
+   "config": "K3|plt70|stight|ffree_only",
+   "n_bets": 105,
+   "wins": 66,
+   "losses": 39,
+   "wr": 62.86,
+   "pnl": 0.2232,
+   "roi_pct": 21.25
+  },
+  {
+   "config": "K5|plt70|stight|ffree_only",
+   "n_bets": 30,
+   "wins": 20,
+   "losses": 10,
+   "wr": 66.67,
+   "pnl": 0.1468,
+   "roi_pct": 48.93
+  },
+  {
+   "config": "K4|pgt30|swide|fany",
+   "n_bets": 222,
+   "wins": 144,
+   "losses": 78,
+   "wr": 64.86,
+   "pnl": 0.1447,
+   "roi_pct": 6.52
+  },
+  {
+   "config": "K5|pgt30|swide|ffree_only",
+   "n_bets": 90,
+   "wins": 64,
+   "losses": 26,
+   "wr": 71.11,
+   "pnl": 0.1352,
+   "roi_pct": 15.02
+  },
+  {
+   "config": "K5|pgt30|stight|ffree_only",
+   "n_bets": 206,
+   "wins": 144,
+   "losses": 62,
+   "wr": 69.9,
+   "pnl": 0.1117,
+   "roi_pct": 5.42
+  },
+  {
+   "config": "K5|pgt30|swide|fany",
+   "n_bets": 148,
+   "wins": 94,
+   "losses": 54,
+   "wr": 63.51,
+   "pnl": 0.1084,
+   "roi_pct": 7.32
+  },
+  {
+   "config": "K5|pany|stight|ffree_only",
+   "n_bets": 208,
+   "wins": 145,
+   "losses": 63,
+   "wr": 69.71,
+   "pnl": 0.1022,
+   "roi_pct": 4.92
+  },
+  {
+   "config": "K2|pgt30|swide|fany",
+   "n_bets": 374,
+   "wins": 238,
+   "losses": 136,
+   "wr": 63.64,
+   "pnl": 0.0963,
+   "roi_pct": 2.57
+  },
+  {
+   "config": "K3|pgt30|swide|fany",
+   "n_bets": 291,
+   "wins": 187,
+   "losses": 104,
+   "wr": 64.26,
+   "pnl": 0.0959,
+   "roi_pct": 3.3
+  },
+  {
+   "config": "K4|plt70|stight|ffree_only",
+   "n_bets": 70,
+   "wins": 38,
+   "losses": 32,
+   "wr": 54.29,
+   "pnl": 0.0404,
+   "roi_pct": 5.78
+  },
+  {
+   "config": "K3|pany|stight|ffree_only",
+   "n_bets": 475,
+   "wins": 285,
+   "losses": 190,
+   "wr": 60.0,
+   "pnl": -0.1886,
+   "roi_pct": -3.97
+  },
+  {
+   "config": "K3|pgt30|stight|ffree_only",
+   "n_bets": 455,
+   "wins": 266,
+   "losses": 189,
+   "wr": 58.46,
+   "pnl": -0.1889,
+   "roi_pct": -4.15
+  },
+  {
+   "config": "K3|pgt30|sany|ffree_only",
+   "n_bets": 1544,
+   "wins": 908,
+   "losses": 636,
+   "wr": 58.81,
+   "pnl": -0.5794,
+   "roi_pct": -3.75
+  },
+  {
+   "config": "K5|pgt30|sany|ffree_only",
+   "n_bets": 726,
+   "wins": 411,
+   "losses": 315,
+   "wr": 56.61,
+   "pnl": -0.595,
+   "roi_pct": -8.2
+  },
+  {
+   "config": "K4|pgt30|sany|ffree_only",
+   "n_bets": 1092,
+   "wins": 599,
+   "losses": 493,
+   "wr": 54.85,
+   "pnl": -0.8275,
+   "roi_pct": -7.58
+  },
+  {
+   "config": "K2|pgt30|sany|ffree_only",
+   "n_bets": 1970,
+   "wins": 1114,
+   "losses": 856,
+   "wr": 56.55,
+   "pnl": -0.9857,
+   "roi_pct": -5.0
+  },
+  {
+   "config": "K2|pany|stight|ffree_only",
+   "n_bets": 689,
+   "wins": 335,
+   "losses": 354,
+   "wr": 48.62,
+   "pnl": -1.1752,
+   "roi_pct": -17.06
+  },
+  {
+   "config": "K2|pgt30|stight|ffree_only",
+   "n_bets": 664,
+   "wins": 311,
+   "losses": 353,
+   "wr": 46.84,
+   "pnl": -1.1781,
+   "roi_pct": -17.74
+  },
+  {
+   "config": "K5|plt70|swide|ffree_only",
+   "n_bets": 1828,
+   "wins": 1220,
+   "losses": 608,
+   "wr": 66.74,
+   "pnl": -4.0995,
+   "roi_pct": -22.43
+  },
+  {
+   "config": "K5|pany|swide|ffree_only",
+   "n_bets": 1829,
+   "wins": 1220,
+   "losses": 609,
+   "wr": 66.7,
+   "pnl": -4.1095,
+   "roi_pct": -22.47
+  },
+  {
+   "config": "K5|pany|sany|ffree_only",
+   "n_bets": 3103,
+   "wins": 2028,
+   "losses": 1075,
+   "wr": 65.36,
+   "pnl": -5.1722,
+   "roi_pct": -16.67
+  },
+  {
+   "config": "K5|plt70|sany|ffree_only",
+   "n_bets": 2835,
+   "wins": 1848,
+   "losses": 987,
+   "wr": 65.19,
+   "pnl": -5.3184,
+   "roi_pct": -18.76
+  },
+  {
+   "config": "K4|pany|swide|ffree_only",
+   "n_bets": 2919,
+   "wins": 1896,
+   "losses": 1023,
+   "wr": 64.95,
+   "pnl": -7.0356,
+   "roi_pct": -24.1
+  },
+  {
+   "config": "K4|plt70|swide|ffree_only",
+   "n_bets": 2919,
+   "wins": 1896,
+   "losses": 1023,
+   "wr": 64.95,
+   "pnl": -7.0356,
+   "roi_pct": -24.1
+  },
+  {
+   "config": "K5|plt70|swide|fany",
+   "n_bets": 3422,
+   "wins": 2234,
+   "losses": 1188,
+   "wr": 65.28,
+   "pnl": -7.2562,
+   "roi_pct": -21.2
+  },
+  {
+   "config": "K5|pany|swide|fany",
+   "n_bets": 3424,
+   "wins": 2235,
+   "losses": 1189,
+   "wr": 65.27,
+   "pnl": -7.264,
+   "roi_pct": -21.21
+  },
+  {
+   "config": "K4|pany|sany|ffree_only",
+   "n_bets": 4726,
+   "wins": 3010,
+   "losses": 1716,
+   "wr": 63.69,
+   "pnl": -8.5736,
+   "roi_pct": -18.14
+  },
+  {
+   "config": "K4|plt70|sany|ffree_only",
+   "n_bets": 4364,
+   "wins": 2771,
+   "losses": 1593,
+   "wr": 63.5,
+   "pnl": -9.072,
+   "roi_pct": -20.79
+  },
+  {
+   "config": "K3|plt70|swide|ffree_only",
+   "n_bets": 3624,
+   "wins": 2308,
+   "losses": 1316,
+   "wr": 63.69,
+   "pnl": -9.2253,
+   "roi_pct": -25.46
+  },
+  {
+   "config": "K3|pany|swide|ffree_only",
+   "n_bets": 3625,
+   "wins": 2308,
+   "losses": 1317,
+   "wr": 63.67,
+   "pnl": -9.2353,
+   "roi_pct": -25.48
+  },
+  {
+   "config": "K2|pany|swide|ffree_only",
+   "n_bets": 4262,
+   "wins": 2849,
+   "losses": 1413,
+   "wr": 66.85,
+   "pnl": -9.2356,
+   "roi_pct": -21.67
+  },
+  {
+   "config": "K2|plt70|swide|ffree_only",
+   "n_bets": 4260,
+   "wins": 2848,
+   "losses": 1412,
+   "wr": 66.85,
+   "pnl": -9.2512,
+   "roi_pct": -21.72
+  },
+  {
+   "config": "K2|plt70|sany|ffree_only",
+   "n_bets": 6443,
+   "wins": 4319,
+   "losses": 2124,
+   "wr": 67.03,
+   "pnl": -9.8349,
+   "roi_pct": -15.26
+  },
+  {
+   "config": "K3|plt70|sany|ffree_only",
+   "n_bets": 5450,
+   "wins": 3473,
+   "losses": 1977,
+   "wr": 63.72,
+   "pnl": -10.7326,
+   "roi_pct": -19.69
+  },
+  {
+   "config": "K4|plt70|swide|fany",
+   "n_bets": 5255,
+   "wins": 3190,
+   "losses": 2065,
+   "wr": 60.7,
+   "pnl": -10.7902,
+   "roi_pct": -20.53
+  },
+  {
+   "config": "K4|pany|swide|fany",
+   "n_bets": 5267,
+   "wins": 3198,
+   "losses": 2069,
+   "wr": 60.72,
+   "pnl": -10.8167,
+   "roi_pct": -20.54
+  },
+  {
+   "config": "K3|pany|sany|ffree_only",
+   "n_bets": 5961,
+   "wins": 3766,
+   "losses": 2195,
+   "wr": 63.18,
+   "pnl": -10.898,
+   "roi_pct": -18.28
+  },
+  {
+   "config": "K2|pany|sany|ffree_only",
+   "n_bets": 7180,
+   "wins": 4657,
+   "losses": 2523,
+   "wr": 64.86,
+   "pnl": -11.052,
+   "roi_pct": -15.39
+  },
+  {
+   "config": "K3|plt70|swide|fany",
+   "n_bets": 7179,
+   "wins": 4613,
+   "losses": 2566,
+   "wr": 64.26,
+   "pnl": -15.3975,
+   "roi_pct": -21.45
+  },
+  {
+   "config": "K3|pany|swide|fany",
+   "n_bets": 7203,
+   "wins": 4630,
+   "losses": 2573,
+   "wr": 64.28,
+   "pnl": -15.4319,
+   "roi_pct": -21.42
+  },
+  {
+   "config": "K2|plt70|swide|fany",
+   "n_bets": 8163,
+   "wins": 5480,
+   "losses": 2683,
+   "wr": 67.13,
+   "pnl": -15.9585,
+   "roi_pct": -19.55
+  },
+  {
+   "config": "K2|pany|swide|fany",
+   "n_bets": 8204,
+   "wins": 5508,
+   "losses": 2696,
+   "wr": 67.14,
+   "pnl": -16.0106,
+   "roi_pct": -19.52
+  }
+ ]
+}

@@ -86,10 +86,24 @@ benchmark*.json
 *.swo
 
 # Bot runtime data (portfolios, ticks, logs — huge, not code)
-bot-data/
+bot-data/*
+bot-data/**/
 data/
 *.jsonl
 logs/
+
+# Tracked snapshots — current state of paper-trading experiment.
+# These get noisy in git status (bot rewrites every save cycle), but the
+# user wants them committed so progress is visible and analysis is reproducible.
+!bot-data/arena_results.json
+!bot-data/live_validator.json
+!bot-data/council.json
+!bot-data/watchdog.json
+!bot-data/strategy_blacklist.json
+!bot-data/walkforward_results.json
+!bot-data/mass_backtest_metavote.json
+!bot-data/phase3_obi_results.json
+!bot-data/daily_report_*.md
 
 # Bot credentials (MUST NOT be committed)
 .env.bot

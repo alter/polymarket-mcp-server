@@ -1,0 +1,933 @@
+{
+ "updated_at": "2026-04-30T18:56:46.604117+00:00",
+ "banned": [
+  {
+   "sig": "momentum|p20|e0.0300|sl-0.100|tp0.080|fee0|both",
+   "reason": "equity $487 after 1305 trades (initial backfill)",
+   "name": "S155|momentu|p20|e0.03|sl-10%|tp8%|all|b",
+   "trades_at_ban": 1305,
+   "equity_at_ban": 486.97,
+   "banned_at": "2026-04-30T18:56:46.603440+00:00"
+  },
+  {
+   "sig": "momentum|p10|e0.0200|sl-0.100|tp0.080|fee0|both",
+   "reason": "equity $486 after 1769 trades (initial backfill)",
+   "name": "S149|momentu|p10|e0.02|sl-10%|tp8%|all|b",
+   "trades_at_ban": 1769,
+   "equity_at_ban": 485.76,
+   "banned_at": "2026-04-30T18:56:46.603690+00:00"
+  },
+  {
+   "sig": "forest_25|p25|e0.5500|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $482 after 395 trades (initial backfill)",
+   "name": "S703|forest_|p25|e0.55|sl-25%|tp10%|all|b",
+   "trades_at_ban": 395,
+   "equity_at_ban": 482.08,
+   "banned_at": "2026-04-30T18:56:46.603695+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0100|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $481 after 1053 trades (initial backfill)",
+   "name": "S061|mean_re|p20|e0.01|sloff|tp5%|all|b",
+   "trades_at_ban": 1053,
+   "equity_at_ban": 480.53,
+   "banned_at": "2026-04-30T18:56:46.603699+00:00"
+  },
+  {
+   "sig": "momentum|p5|e0.0150|sl-0.200|tp0.150|fee0|both",
+   "reason": "equity $480 after 1874 trades (initial backfill)",
+   "name": "S169|momentu|p5|e0.01|sl-20%|tp15%|all|b",
+   "trades_at_ban": 1874,
+   "equity_at_ban": 480.26,
+   "banned_at": "2026-04-30T18:56:46.603703+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0400|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $464 after 547 trades (initial backfill)",
+   "name": "S080|mean_re|p20|e0.04|sloff|tp10%|all|b",
+   "trades_at_ban": 547,
+   "equity_at_ban": 463.84,
+   "banned_at": "2026-04-30T18:56:46.603706+00:00"
+  },
+  {
+   "sig": "forest_25_meta|p25|e0.5500|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $430 after 199 trades (initial backfill)",
+   "name": "S895|forest_|p25|e0.55|sl-25%|tp10%|all|b",
+   "trades_at_ban": 199,
+   "equity_at_ban": 430.45,
+   "banned_at": "2026-04-30T18:56:46.603710+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0400|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $400 after 609 trades (initial backfill)",
+   "name": "S079|mean_re|p20|e0.04|sloff|tp5%|all|b",
+   "trades_at_ban": 609,
+   "equity_at_ban": 400.11,
+   "banned_at": "2026-04-30T18:56:46.603714+00:00"
+  },
+  {
+   "sig": "ensemble_strat|p5|e0.6000|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $396 after 179 trades (initial backfill)",
+   "name": "S439|ensembl|p5|e0.60|sl-25%|tp10%|all|b",
+   "trades_at_ban": 179,
+   "equity_at_ban": 395.96,
+   "banned_at": "2026-04-30T18:56:46.603717+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0400|sl-99.000|tp0.250|fee0|both",
+   "reason": "equity $396 after 487 trades (initial backfill)",
+   "name": "S027|mean_re|p5|e0.04|sloff|tp25%|all|b",
+   "trades_at_ban": 487,
+   "equity_at_ban": 395.85,
+   "banned_at": "2026-04-30T18:56:46.603720+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0400|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $352 after 507 trades (initial backfill)",
+   "name": "S026|mean_re|p5|e0.04|sloff|tp10%|all|b",
+   "trades_at_ban": 507,
+   "equity_at_ban": 352.09,
+   "banned_at": "2026-04-30T18:56:46.603724+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0200|sl-99.000|tp0.250|fee0|both",
+   "reason": "equity $345 after 536 trades (initial backfill)",
+   "name": "S099|mean_re|p40|e0.02|sloff|tp25%|all|b",
+   "trades_at_ban": 536,
+   "equity_at_ban": 344.58,
+   "banned_at": "2026-04-30T18:56:46.603727+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0400|sl-99.000|tp0.250|fee0|both",
+   "reason": "equity $342 after 355 trades (initial backfill)",
+   "name": "S108|mean_re|p40|e0.04|sloff|tp25%|all|b",
+   "trades_at_ban": 355,
+   "equity_at_ban": 341.55,
+   "banned_at": "2026-04-30T18:56:46.603731+00:00"
+  },
+  {
+   "sig": "momentum|p5|e0.0150|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $339 after 1912 trades (initial backfill)",
+   "name": "S171|momentu|p5|e0.01|sloff|tp10%|all|b",
+   "trades_at_ban": 1912,
+   "equity_at_ban": 338.58,
+   "banned_at": "2026-04-30T18:56:46.603734+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0400|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $329 after 556 trades (initial backfill)",
+   "name": "S025|mean_re|p5|e0.04|sloff|tp5%|all|b",
+   "trades_at_ban": 556,
+   "equity_at_ban": 328.76,
+   "banned_at": "2026-04-30T18:56:46.603739+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0100|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $327 after 976 trades (initial backfill)",
+   "name": "S034|mean_re|p10|e0.01|sloff|tp5%|all|b",
+   "trades_at_ban": 976,
+   "equity_at_ban": 326.7,
+   "banned_at": "2026-04-30T18:56:46.603742+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0200|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $317 after 744 trades (initial backfill)",
+   "name": "S070|mean_re|p20|e0.02|sloff|tp5%|all|b",
+   "trades_at_ban": 744,
+   "equity_at_ban": 316.51,
+   "banned_at": "2026-04-30T18:56:46.603746+00:00"
+  },
+  {
+   "sig": "momentum|p5|e0.0150|sl-0.100|tp0.080|fee0|both",
+   "reason": "equity $292 after 1956 trades (initial backfill)",
+   "name": "S167|momentu|p5|e0.01|sl-10%|tp8%|all|b",
+   "trades_at_ban": 1956,
+   "equity_at_ban": 292.44,
+   "banned_at": "2026-04-30T18:56:46.603753+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0100|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $290 after 977 trades (initial backfill)",
+   "name": "S035|mean_re|p10|e0.01|sloff|tp10%|all|b",
+   "trades_at_ban": 977,
+   "equity_at_ban": 289.71,
+   "banned_at": "2026-04-30T18:56:46.603761+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0200|sl-99.000|tp0.250|fee0|both",
+   "reason": "equity $268 after 798 trades (initial backfill)",
+   "name": "S018|mean_re|p5|e0.02|sloff|tp25%|all|b",
+   "trades_at_ban": 798,
+   "equity_at_ban": 267.89,
+   "banned_at": "2026-04-30T18:56:46.603766+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0400|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $234 after 440 trades (initial backfill)",
+   "name": "S106|mean_re|p40|e0.04|sloff|tp5%|all|b",
+   "trades_at_ban": 440,
+   "equity_at_ban": 234.5,
+   "banned_at": "2026-04-30T18:56:46.603771+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0400|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $229 after 361 trades (initial backfill)",
+   "name": "S107|mean_re|p40|e0.04|sloff|tp10%|all|b",
+   "trades_at_ban": 361,
+   "equity_at_ban": 229.39,
+   "banned_at": "2026-04-30T18:56:46.603774+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0200|sl-99.000|tp0.250|fee0|both",
+   "reason": "equity $208 after 699 trades (initial backfill)",
+   "name": "S045|mean_re|p10|e0.02|sloff|tp25%|all|b",
+   "trades_at_ban": 699,
+   "equity_at_ban": 207.86,
+   "banned_at": "2026-04-30T18:56:46.603778+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0100|sl-99.000|tp0.250|fee0|both",
+   "reason": "equity $196 after 612 trades (initial backfill)",
+   "name": "S090|mean_re|p40|e0.01|sloff|tp25%|all|b",
+   "trades_at_ban": 612,
+   "equity_at_ban": 195.58,
+   "banned_at": "2026-04-30T18:56:46.603780+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0200|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $192 after 743 trades (initial backfill)",
+   "name": "S017|mean_re|p5|e0.02|sloff|tp10%|all|b",
+   "trades_at_ban": 743,
+   "equity_at_ban": 192.25,
+   "banned_at": "2026-04-30T18:56:46.603783+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0200|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $191 after 543 trades (initial backfill)",
+   "name": "S097|mean_re|p40|e0.02|sloff|tp5%|all|b",
+   "trades_at_ban": 543,
+   "equity_at_ban": 190.85,
+   "banned_at": "2026-04-30T18:56:46.603786+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0200|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $186 after 482 trades (initial backfill)",
+   "name": "S098|mean_re|p40|e0.02|sloff|tp10%|all|b",
+   "trades_at_ban": 482,
+   "equity_at_ban": 186.24,
+   "banned_at": "2026-04-30T18:56:46.603790+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0200|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $166 after 784 trades (initial backfill)",
+   "name": "S016|mean_re|p5|e0.02|sloff|tp5%|all|b",
+   "trades_at_ban": 784,
+   "equity_at_ban": 166.31,
+   "banned_at": "2026-04-30T18:56:46.603796+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0200|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $149 after 746 trades (initial backfill)",
+   "name": "S044|mean_re|p10|e0.02|sloff|tp10%|all|b",
+   "trades_at_ban": 746,
+   "equity_at_ban": 149.49,
+   "banned_at": "2026-04-30T18:56:46.603801+00:00"
+  },
+  {
+   "sig": "hybrid_wbz_all|p3|e0.0100|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $143 after 450 trades (initial backfill)",
+   "name": "S972|hybrid_|p3|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 450,
+   "equity_at_ban": 142.95,
+   "banned_at": "2026-04-30T18:56:46.603803+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0200|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $142 after 683 trades (initial backfill)",
+   "name": "S041|mean_re|p10|e0.02|sl-25%|tp10%|all|b",
+   "trades_at_ban": 683,
+   "equity_at_ban": 142.15,
+   "banned_at": "2026-04-30T18:56:46.603806+00:00"
+  },
+  {
+   "sig": "wavelet_mr|p3|e0.0100|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $140 after 597 trades (initial backfill)",
+   "name": "S368|wavelet|p3|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 597,
+   "equity_at_ban": 139.72,
+   "banned_at": "2026-04-30T18:56:46.603809+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0100|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $140 after 517 trades (initial backfill)",
+   "name": "S089|mean_re|p40|e0.01|sloff|tp10%|all|b",
+   "trades_at_ban": 517,
+   "equity_at_ban": 139.52,
+   "banned_at": "2026-04-30T18:56:46.603812+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0200|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $138 after 779 trades (initial backfill)",
+   "name": "S043|mean_re|p10|e0.02|sloff|tp5%|all|b",
+   "trades_at_ban": 779,
+   "equity_at_ban": 138.44,
+   "banned_at": "2026-04-30T18:56:46.603815+00:00"
+  },
+  {
+   "sig": "hybrid_wbz_2of3|p3|e0.0100|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $138 after 501 trades (initial backfill)",
+   "name": "S973|hybrid_|p3|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 501,
+   "equity_at_ban": 138.21,
+   "banned_at": "2026-04-30T18:56:46.603818+00:00"
+  },
+  {
+   "sig": "hybrid_wbz_2of3|p3|e0.0150|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $138 after 501 trades (initial backfill)",
+   "name": "S975|hybrid_|p3|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 501,
+   "equity_at_ban": 138.21,
+   "banned_at": "2026-04-30T18:56:46.603821+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0200|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $130 after 687 trades (initial backfill)",
+   "name": "S039|mean_re|p10|e0.02|sl-10%|tp25%|all|b",
+   "trades_at_ban": 687,
+   "equity_at_ban": 129.58,
+   "banned_at": "2026-04-30T18:56:46.603825+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0100|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $118 after 500 trades (initial backfill)",
+   "name": "S060|mean_re|p20|e0.01|sl-25%|tp25%|all|b",
+   "trades_at_ban": 500,
+   "equity_at_ban": 118.06,
+   "banned_at": "2026-04-30T18:56:46.603829+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0100|sl-99.000|tp0.250|fee0|both",
+   "reason": "equity $118 after 714 trades (initial backfill)",
+   "name": "S036|mean_re|p10|e0.01|sloff|tp25%|all|b",
+   "trades_at_ban": 714,
+   "equity_at_ban": 117.83,
+   "banned_at": "2026-04-30T18:56:46.603832+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0100|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $110 after 560 trades (initial backfill)",
+   "name": "S031|mean_re|p10|e0.01|sl-25%|tp5%|all|b",
+   "trades_at_ban": 560,
+   "equity_at_ban": 109.7,
+   "banned_at": "2026-04-30T18:56:46.603835+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0100|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $110 after 507 trades (initial backfill)",
+   "name": "S055|mean_re|p20|e0.01|sl-10%|tp5%|all|b",
+   "trades_at_ban": 507,
+   "equity_at_ban": 109.56,
+   "banned_at": "2026-04-30T18:56:46.603838+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0100|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $101 after 513 trades (initial backfill)",
+   "name": "S056|mean_re|p20|e0.01|sl-10%|tp10%|all|b",
+   "trades_at_ban": 513,
+   "equity_at_ban": 101.49,
+   "banned_at": "2026-04-30T18:56:46.603841+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0100|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $92 after 571 trades (initial backfill)",
+   "name": "S030|mean_re|p10|e0.01|sl-10%|tp25%|all|b",
+   "trades_at_ban": 571,
+   "equity_at_ban": 92.19,
+   "banned_at": "2026-04-30T18:56:46.603845+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0100|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $91 after 524 trades (initial backfill)",
+   "name": "S033|mean_re|p10|e0.01|sl-25%|tp25%|all|b",
+   "trades_at_ban": 524,
+   "equity_at_ban": 91.14,
+   "banned_at": "2026-04-30T18:56:46.603848+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0400|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $88 after 424 trades (initial backfill)",
+   "name": "S021|mean_re|p5|e0.04|sl-10%|tp25%|all|b",
+   "trades_at_ban": 424,
+   "equity_at_ban": 87.92,
+   "banned_at": "2026-04-30T18:56:46.603851+00:00"
+  },
+  {
+   "sig": "wavelet_mr|p2|e0.0100|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $78 after 502 trades (initial backfill)",
+   "name": "S366|wavelet|p2|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 502,
+   "equity_at_ban": 77.56,
+   "banned_at": "2026-04-30T18:56:46.603854+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0100|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $75 after 672 trades (initial backfill)",
+   "name": "S029|mean_re|p10|e0.01|sl-10%|tp10%|all|b",
+   "trades_at_ban": 672,
+   "equity_at_ban": 74.97,
+   "banned_at": "2026-04-30T18:56:46.603856+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0100|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $70 after 531 trades (initial backfill)",
+   "name": "S006|mean_re|p5|e0.01|sl-25%|tp25%|all|b",
+   "trades_at_ban": 531,
+   "equity_at_ban": 69.82,
+   "banned_at": "2026-04-30T18:56:46.603859+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0200|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $58 after 356 trades (initial backfill)",
+   "name": "S095|mean_re|p40|e0.02|sl-25%|tp10%|all|b",
+   "trades_at_ban": 356,
+   "equity_at_ban": 58.32,
+   "banned_at": "2026-04-30T18:56:46.603863+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0400|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $50 after 265 trades (initial backfill)",
+   "name": "S050|mean_re|p10|e0.04|sl-25%|tp10%|all|b",
+   "trades_at_ban": 265,
+   "equity_at_ban": 49.93,
+   "banned_at": "2026-04-30T18:56:46.603866+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0100|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $50 after 481 trades (initial backfill)",
+   "name": "S057|mean_re|p20|e0.01|sl-10%|tp25%|all|b",
+   "trades_at_ban": 481,
+   "equity_at_ban": 49.76,
+   "banned_at": "2026-04-30T18:56:46.603869+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0400|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $50 after 332 trades (initial backfill)",
+   "name": "S077|mean_re|p20|e0.04|sl-25%|tp10%|all|b",
+   "trades_at_ban": 332,
+   "equity_at_ban": 49.61,
+   "banned_at": "2026-04-30T18:56:46.603872+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0400|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $49 after 208 trades (initial backfill)",
+   "name": "S051|mean_re|p10|e0.04|sl-25%|tp25%|all|b",
+   "trades_at_ban": 208,
+   "equity_at_ban": 49.37,
+   "banned_at": "2026-04-30T18:56:46.603875+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0400|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $49 after 303 trades (initial backfill)",
+   "name": "S074|mean_re|p20|e0.04|sl-10%|tp10%|all|b",
+   "trades_at_ban": 303,
+   "equity_at_ban": 49.32,
+   "banned_at": "2026-04-30T18:56:46.603903+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0400|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $49 after 458 trades (initial backfill)",
+   "name": "S022|mean_re|p5|e0.04|sl-25%|tp5%|all|b",
+   "trades_at_ban": 458,
+   "equity_at_ban": 49.28,
+   "banned_at": "2026-04-30T18:56:46.603913+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0200|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $49 after 361 trades (initial backfill)",
+   "name": "S094|mean_re|p40|e0.02|sl-25%|tp5%|all|b",
+   "trades_at_ban": 361,
+   "equity_at_ban": 49.01,
+   "banned_at": "2026-04-30T18:56:46.603917+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0200|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $49 after 324 trades (initial backfill)",
+   "name": "S012|mean_re|p5|e0.02|sl-10%|tp25%|all|b",
+   "trades_at_ban": 324,
+   "equity_at_ban": 48.52,
+   "banned_at": "2026-04-30T18:56:46.603921+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0400|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $48 after 261 trades (initial backfill)",
+   "name": "S047|mean_re|p10|e0.04|sl-10%|tp10%|all|b",
+   "trades_at_ban": 261,
+   "equity_at_ban": 48.35,
+   "banned_at": "2026-04-30T18:56:46.603924+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0200|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $48 after 357 trades (initial backfill)",
+   "name": "S011|mean_re|p5|e0.02|sl-10%|tp10%|all|b",
+   "trades_at_ban": 357,
+   "equity_at_ban": 48.19,
+   "banned_at": "2026-04-30T18:56:46.603927+00:00"
+  },
+  {
+   "sig": "wavelet_mr|p3|e0.0200|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $48 after 280 trades (initial backfill)",
+   "name": "S369|wavelet|p3|e0.02|sl-25%|tp10%|all|b",
+   "trades_at_ban": 280,
+   "equity_at_ban": 48.01,
+   "banned_at": "2026-04-30T18:56:46.603930+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0100|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $47 after 356 trades (initial backfill)",
+   "name": "S007|mean_re|p5|e0.01|sloff|tp5%|all|b",
+   "trades_at_ban": 356,
+   "equity_at_ban": 47.28,
+   "banned_at": "2026-04-30T18:56:46.603937+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0100|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $47 after 374 trades (initial backfill)",
+   "name": "S008|mean_re|p5|e0.01|sloff|tp10%|all|b",
+   "trades_at_ban": 374,
+   "equity_at_ban": 46.82,
+   "banned_at": "2026-04-30T18:56:46.603940+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0400|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $47 after 233 trades (initial backfill)",
+   "name": "S073|mean_re|p20|e0.04|sl-10%|tp5%|all|b",
+   "trades_at_ban": 233,
+   "equity_at_ban": 46.65,
+   "banned_at": "2026-04-30T18:56:46.603943+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0400|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $46 after 207 trades (initial backfill)",
+   "name": "S048|mean_re|p10|e0.04|sl-10%|tp25%|all|b",
+   "trades_at_ban": 207,
+   "equity_at_ban": 45.66,
+   "banned_at": "2026-04-30T18:56:46.603946+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0400|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $45 after 263 trades (initial backfill)",
+   "name": "S104|mean_re|p40|e0.04|sl-25%|tp10%|all|b",
+   "trades_at_ban": 263,
+   "equity_at_ban": 45.4,
+   "banned_at": "2026-04-30T18:56:46.603953+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0100|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $45 after 333 trades (initial backfill)",
+   "name": "S087|mean_re|p40|e0.01|sl-25%|tp25%|all|b",
+   "trades_at_ban": 333,
+   "equity_at_ban": 45.15,
+   "banned_at": "2026-04-30T18:56:46.603957+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0200|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $45 after 266 trades (initial backfill)",
+   "name": "S038|mean_re|p10|e0.02|sl-10%|tp10%|all|b",
+   "trades_at_ban": 266,
+   "equity_at_ban": 45.14,
+   "banned_at": "2026-04-30T18:56:46.603960+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0200|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $45 after 382 trades (initial backfill)",
+   "name": "S066|mean_re|p20|e0.02|sl-10%|tp25%|all|b",
+   "trades_at_ban": 382,
+   "equity_at_ban": 44.86,
+   "banned_at": "2026-04-30T18:56:46.603963+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0200|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $45 after 229 trades (initial backfill)",
+   "name": "S042|mean_re|p10|e0.02|sl-25%|tp25%|all|b",
+   "trades_at_ban": 229,
+   "equity_at_ban": 44.63,
+   "banned_at": "2026-04-30T18:56:46.603967+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0400|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $45 after 293 trades (initial backfill)",
+   "name": "S102|mean_re|p40|e0.04|sl-10%|tp25%|all|b",
+   "trades_at_ban": 293,
+   "equity_at_ban": 44.62,
+   "banned_at": "2026-04-30T18:56:46.603972+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0100|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $44 after 445 trades (initial backfill)",
+   "name": "S004|mean_re|p5|e0.01|sl-25%|tp5%|all|b",
+   "trades_at_ban": 445,
+   "equity_at_ban": 44.27,
+   "banned_at": "2026-04-30T18:56:46.603975+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0200|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $44 after 387 trades (initial backfill)",
+   "name": "S092|mean_re|p40|e0.02|sl-10%|tp10%|all|b",
+   "trades_at_ban": 387,
+   "equity_at_ban": 44.17,
+   "banned_at": "2026-04-30T18:56:46.603978+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0200|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $44 after 422 trades (initial backfill)",
+   "name": "S065|mean_re|p20|e0.02|sl-10%|tp10%|all|b",
+   "trades_at_ban": 422,
+   "equity_at_ban": 43.5,
+   "banned_at": "2026-04-30T18:56:46.603981+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0400|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $43 after 235 trades (initial backfill)",
+   "name": "S103|mean_re|p40|e0.04|sl-25%|tp5%|all|b",
+   "trades_at_ban": 235,
+   "equity_at_ban": 43.44,
+   "banned_at": "2026-04-30T18:56:46.603984+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0200|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $43 after 433 trades (initial backfill)",
+   "name": "S064|mean_re|p20|e0.02|sl-10%|tp5%|all|b",
+   "trades_at_ban": 433,
+   "equity_at_ban": 43.28,
+   "banned_at": "2026-04-30T18:56:46.603988+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0100|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $43 after 321 trades (initial backfill)",
+   "name": "S005|mean_re|p5|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 321,
+   "equity_at_ban": 43.25,
+   "banned_at": "2026-04-30T18:56:46.603991+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0100|sl-99.000|tp0.250|fee0|both",
+   "reason": "equity $43 after 403 trades (initial backfill)",
+   "name": "S009|mean_re|p5|e0.01|sloff|tp25%|all|b",
+   "trades_at_ban": 403,
+   "equity_at_ban": 43.23,
+   "banned_at": "2026-04-30T18:56:46.603995+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0100|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $43 after 311 trades (initial backfill)",
+   "name": "S032|mean_re|p10|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 311,
+   "equity_at_ban": 43.09,
+   "banned_at": "2026-04-30T18:56:46.603999+00:00"
+  },
+  {
+   "sig": "hybrid_wbz_all|p3|e0.0150|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $42 after 387 trades (initial backfill)",
+   "name": "S974|hybrid_|p3|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 387,
+   "equity_at_ban": 41.77,
+   "banned_at": "2026-04-30T18:56:46.604002+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0200|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $42 after 398 trades (initial backfill)",
+   "name": "S010|mean_re|p5|e0.02|sl-10%|tp5%|all|b",
+   "trades_at_ban": 398,
+   "equity_at_ban": 41.59,
+   "banned_at": "2026-04-30T18:56:46.604005+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0400|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $41 after 369 trades (initial backfill)",
+   "name": "S020|mean_re|p5|e0.04|sl-10%|tp10%|all|b",
+   "trades_at_ban": 369,
+   "equity_at_ban": 41.3,
+   "banned_at": "2026-04-30T18:56:46.604007+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0400|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $41 after 412 trades (initial backfill)",
+   "name": "S019|mean_re|p5|e0.04|sl-10%|tp5%|all|b",
+   "trades_at_ban": 412,
+   "equity_at_ban": 40.76,
+   "banned_at": "2026-04-30T18:56:46.604012+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0100|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $41 after 335 trades (initial backfill)",
+   "name": "S028|mean_re|p10|e0.01|sl-10%|tp5%|all|b",
+   "trades_at_ban": 335,
+   "equity_at_ban": 40.59,
+   "banned_at": "2026-04-30T18:56:46.604014+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0100|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $41 after 429 trades (initial backfill)",
+   "name": "S059|mean_re|p20|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 429,
+   "equity_at_ban": 40.53,
+   "banned_at": "2026-04-30T18:56:46.604017+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0200|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $40 after 358 trades (initial backfill)",
+   "name": "S015|mean_re|p5|e0.02|sl-25%|tp25%|all|b",
+   "trades_at_ban": 358,
+   "equity_at_ban": 40.4,
+   "banned_at": "2026-04-30T18:56:46.604020+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0200|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $40 after 314 trades (initial backfill)",
+   "name": "S096|mean_re|p40|e0.02|sl-25%|tp25%|all|b",
+   "trades_at_ban": 314,
+   "equity_at_ban": 39.69,
+   "banned_at": "2026-04-30T18:56:46.604023+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0400|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $40 after 307 trades (initial backfill)",
+   "name": "S049|mean_re|p10|e0.04|sl-25%|tp5%|all|b",
+   "trades_at_ban": 307,
+   "equity_at_ban": 39.56,
+   "banned_at": "2026-04-30T18:56:46.604027+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0400|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $39 after 284 trades (initial backfill)",
+   "name": "S100|mean_re|p40|e0.04|sl-10%|tp5%|all|b",
+   "trades_at_ban": 284,
+   "equity_at_ban": 39.42,
+   "banned_at": "2026-04-30T18:56:46.604030+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0400|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $39 after 314 trades (initial backfill)",
+   "name": "S076|mean_re|p20|e0.04|sl-25%|tp5%|all|b",
+   "trades_at_ban": 314,
+   "equity_at_ban": 39.23,
+   "banned_at": "2026-04-30T18:56:46.604033+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0200|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $37 after 314 trades (initial backfill)",
+   "name": "S069|mean_re|p20|e0.02|sl-25%|tp25%|all|b",
+   "trades_at_ban": 314,
+   "equity_at_ban": 37.39,
+   "banned_at": "2026-04-30T18:56:46.604035+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0400|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $37 after 408 trades (initial backfill)",
+   "name": "S024|mean_re|p5|e0.04|sl-25%|tp25%|all|b",
+   "trades_at_ban": 408,
+   "equity_at_ban": 36.79,
+   "banned_at": "2026-04-30T18:56:46.604038+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0200|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $34 after 377 trades (initial backfill)",
+   "name": "S013|mean_re|p5|e0.02|sl-25%|tp5%|all|b",
+   "trades_at_ban": 377,
+   "equity_at_ban": 34.5,
+   "banned_at": "2026-04-30T18:56:46.604041+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0400|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $34 after 310 trades (initial backfill)",
+   "name": "S075|mean_re|p20|e0.04|sl-10%|tp25%|all|b",
+   "trades_at_ban": 310,
+   "equity_at_ban": 34.07,
+   "banned_at": "2026-04-30T18:56:46.604044+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0200|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $34 after 256 trades (initial backfill)",
+   "name": "S037|mean_re|p10|e0.02|sl-10%|tp5%|all|b",
+   "trades_at_ban": 256,
+   "equity_at_ban": 33.84,
+   "banned_at": "2026-04-30T18:56:46.604047+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0100|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $34 after 336 trades (initial backfill)",
+   "name": "S086|mean_re|p40|e0.01|sl-25%|tp10%|all|b",
+   "trades_at_ban": 336,
+   "equity_at_ban": 33.77,
+   "banned_at": "2026-04-30T18:56:46.604050+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0400|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $34 after 312 trades (initial backfill)",
+   "name": "S078|mean_re|p20|e0.04|sl-25%|tp25%|all|b",
+   "trades_at_ban": 312,
+   "equity_at_ban": 33.67,
+   "banned_at": "2026-04-30T18:56:46.604053+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0200|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $34 after 346 trades (initial backfill)",
+   "name": "S014|mean_re|p5|e0.02|sl-25%|tp10%|all|b",
+   "trades_at_ban": 346,
+   "equity_at_ban": 33.51,
+   "banned_at": "2026-04-30T18:56:46.604057+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0100|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $33 after 352 trades (initial backfill)",
+   "name": "S001|mean_re|p5|e0.01|sl-10%|tp5%|all|b",
+   "trades_at_ban": 352,
+   "equity_at_ban": 32.94,
+   "banned_at": "2026-04-30T18:56:46.604060+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0400|sl-0.250|tp0.250|fee0|both",
+   "reason": "equity $33 after 253 trades (initial backfill)",
+   "name": "S105|mean_re|p40|e0.04|sl-25%|tp25%|all|b",
+   "trades_at_ban": 253,
+   "equity_at_ban": 32.75,
+   "banned_at": "2026-04-30T18:56:46.604063+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0100|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $32 after 361 trades (initial backfill)",
+   "name": "S085|mean_re|p40|e0.01|sl-25%|tp5%|all|b",
+   "trades_at_ban": 361,
+   "equity_at_ban": 31.89,
+   "banned_at": "2026-04-30T18:56:46.604067+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0200|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $32 after 302 trades (initial backfill)",
+   "name": "S040|mean_re|p10|e0.02|sl-25%|tp5%|all|b",
+   "trades_at_ban": 302,
+   "equity_at_ban": 31.86,
+   "banned_at": "2026-04-30T18:56:46.604071+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0100|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $31 after 311 trades (initial backfill)",
+   "name": "S002|mean_re|p5|e0.01|sl-10%|tp10%|all|b",
+   "trades_at_ban": 311,
+   "equity_at_ban": 30.97,
+   "banned_at": "2026-04-30T18:56:46.604074+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0400|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $31 after 424 trades (initial backfill)",
+   "name": "S023|mean_re|p5|e0.04|sl-25%|tp10%|all|b",
+   "trades_at_ban": 424,
+   "equity_at_ban": 30.8,
+   "banned_at": "2026-04-30T18:56:46.604077+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p5|e0.0100|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $30 after 317 trades (initial backfill)",
+   "name": "S003|mean_re|p5|e0.01|sl-10%|tp25%|all|b",
+   "trades_at_ban": 317,
+   "equity_at_ban": 29.55,
+   "banned_at": "2026-04-30T18:56:46.604079+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p10|e0.0400|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $29 after 326 trades (initial backfill)",
+   "name": "S046|mean_re|p10|e0.04|sl-10%|tp5%|all|b",
+   "trades_at_ban": 326,
+   "equity_at_ban": 29.33,
+   "banned_at": "2026-04-30T18:56:46.604082+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0400|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $29 after 260 trades (initial backfill)",
+   "name": "S101|mean_re|p40|e0.04|sl-10%|tp10%|all|b",
+   "trades_at_ban": 260,
+   "equity_at_ban": 28.74,
+   "banned_at": "2026-04-30T18:56:46.604085+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0100|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $18 after 466 trades (initial backfill)",
+   "name": "S058|mean_re|p20|e0.01|sl-25%|tp5%|all|b",
+   "trades_at_ban": 466,
+   "equity_at_ban": 18.49,
+   "banned_at": "2026-04-30T18:56:46.604088+00:00"
+  },
+  {
+   "sig": "wavelet_mr|p2|e0.0200|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $18 after 321 trades (initial backfill)",
+   "name": "S367|wavelet|p2|e0.02|sl-25%|tp10%|all|b",
+   "trades_at_ban": 321,
+   "equity_at_ban": 17.68,
+   "banned_at": "2026-04-30T18:56:46.604091+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0200|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $14 after 344 trades (initial backfill)",
+   "name": "S093|mean_re|p40|e0.02|sl-10%|tp25%|all|b",
+   "trades_at_ban": 344,
+   "equity_at_ban": 14.19,
+   "banned_at": "2026-04-30T18:56:46.604094+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0200|sl-0.250|tp0.050|fee0|both",
+   "reason": "equity $10 after 372 trades (initial backfill)",
+   "name": "S067|mean_re|p20|e0.02|sl-25%|tp5%|all|b",
+   "trades_at_ban": 372,
+   "equity_at_ban": 9.85,
+   "banned_at": "2026-04-30T18:56:46.604098+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0100|sl-0.100|tp0.250|fee0|both",
+   "reason": "equity $9 after 383 trades (initial backfill)",
+   "name": "S084|mean_re|p40|e0.01|sl-10%|tp25%|all|b",
+   "trades_at_ban": 383,
+   "equity_at_ban": 9.36,
+   "banned_at": "2026-04-30T18:56:46.604101+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p20|e0.0200|sl-0.250|tp0.100|fee0|both",
+   "reason": "equity $6 after 357 trades (initial backfill)",
+   "name": "S068|mean_re|p20|e0.02|sl-25%|tp10%|all|b",
+   "trades_at_ban": 357,
+   "equity_at_ban": 5.77,
+   "banned_at": "2026-04-30T18:56:46.604104+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0100|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $5 after 490 trades (initial backfill)",
+   "name": "S088|mean_re|p40|e0.01|sloff|tp5%|all|b",
+   "trades_at_ban": 490,
+   "equity_at_ban": 5.26,
+   "banned_at": "2026-04-30T18:56:46.604107+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0200|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $2 after 389 trades (initial backfill)",
+   "name": "S091|mean_re|p40|e0.02|sl-10%|tp5%|all|b",
+   "trades_at_ban": 389,
+   "equity_at_ban": 2.03,
+   "banned_at": "2026-04-30T18:56:46.604110+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0100|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $2 after 438 trades (initial backfill)",
+   "name": "S082|mean_re|p40|e0.01|sl-10%|tp5%|all|b",
+   "trades_at_ban": 438,
+   "equity_at_ban": 1.78,
+   "banned_at": "2026-04-30T18:56:46.604113+00:00"
+  },
+  {
+   "sig": "mean_rev_ema|p40|e0.0100|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $0 after 378 trades (initial backfill)",
+   "name": "S083|mean_re|p40|e0.01|sl-10%|tp10%|all|b",
+   "trades_at_ban": 378,
+   "equity_at_ban": 0.21,
+   "banned_at": "2026-04-30T18:56:46.604116+00:00"
+  }
+ ]
+}

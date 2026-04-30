@@ -30,14 +30,24 @@ MIN_MID_PRICE = 0.10
 MAX_MID_PRICE = 0.90
 MIN_SPREAD = 0.001
 MAX_SPREAD = 0.05
-PRUNE_MIN_TRADES = 500
-PRUNE_DEAD_EQUITY = 150.0
+PRUNE_MIN_TRADES = 100
+PRUNE_DEAD_EQUITY = 500.0
 PRUNE_MAX_STRATEGIES = 300
 
 DATA_DIR = "data"
 TICKS_FILE = os.path.join(DATA_DIR, "arena_ticks.jsonl")
 RESULTS_FILE = os.path.join(DATA_DIR, "arena_results.json")
 TRADES_FILE = os.path.join(DATA_DIR, "arena_trades.jsonl")
+BLACKLIST_FILE = os.path.join(DATA_DIR, "strategy_blacklist.json")
+
+
+def strategy_signature(params):
+    """Param-only signature (no id). Same params across regrid → same sig.
+    Used for persistent retire: if a sig is blacklisted, any future strategy
+    matching it starts pre-retired regardless of arena_results.json state."""
+    return (f"{params.indicator}|p{params.period}|e{params.entry_param:.4f}"
+            f"|sl{params.stop_loss:.3f}|tp{params.take_profit:.3f}"
+            f"|fee{int(params.fee_free_only)}|{params.side_bias}")
 
 FEE_RATES = {
     "sports_fees_v2": 0.03, "culture_fees": 0.05, "finance_fees": 0.04,
@@ -789,6 +799,115 @@ def generate_strategies():
             exit_param=0.45, stop_loss=-0.25, take_profit=0.10,
             fee_free_only=False)
 
+    # ── Group 22: META-GATED FORESTS (A/B test vs regular forests) ──
+    # Same forest compositions (deterministic by seed) but gated through
+    # meta_predict lookup. Expectation: lower trade volume, higher WR.
+
+    # forest_15_meta — 50 strategies (same size as forest_15)
+    for i in range(50):
+        add(indicator="forest_15_meta", period=15, entry_param=0.60,
+            exit_param=0.45, stop_loss=-0.25, take_profit=0.10,
+            fee_free_only=True)
+
+    # forest_25_meta — 60 strategies (same size as forest_25 main group)
+    for i in range(60):
+        add(indicator="forest_25_meta", period=25, entry_param=0.55,
+            exit_param=0.45, stop_loss=-0.25, take_profit=0.10,
+            fee_free_only=True)
+
+    # forest_35_meta — 50 strategies
+    for i in range(50):
+        add(indicator="forest_35_meta", period=35, entry_param=0.55,
+            exit_param=0.45, stop_loss=-0.25, take_profit=0.10,
+            fee_free_only=True)
+
+    # forest_25_meta on all markets — 20
+    for i in range(20):
+        add(indicator="forest_25_meta", period=25, entry_param=0.55,
+            exit_param=0.45, stop_loss=-0.25, take_profit=0.10,
+            fee_free_only=False)
+
+    # ── Group 23: HYBRID TRIPLE-CONFIRM (wavelet + bollinger + zscore) ──
+    # Grid search over wavelet params; BB(20,2.0) and zscore(20,2.0) fixed
+    # to validated defaults from top individual performers.
+
+    # hybrid_wbz_all — ALL 3 must agree (strict, low trade freq, high conviction)
+    for level in [2, 3, 4]:
+        for wv_thresh in [0.005, 0.01, 0.015, 0.02]:
+            for sl, tp in [(-0.10, 0.05), (-0.25, 0.10), (-99.0, 0.10)]:
+                add(indicator="hybrid_wbz_all", period=level,
+                    entry_param=wv_thresh, exit_param=wv_thresh*0.5,
+                    stop_loss=sl, take_profit=tp,
+                    fee_free_only=True)
+
+    # hybrid_wbz_2of3 — any 2 of 3 (relaxed, more trades)
+    for level in [2, 3, 4]:
+        for wv_thresh in [0.005, 0.01, 0.015, 0.02]:
+            for sl, tp in [(-0.10, 0.05), (-0.25, 0.10), (-99.0, 0.10)]:
+                add(indicator="hybrid_wbz_2of3", period=level,
+                    entry_param=wv_thresh, exit_param=wv_thresh*0.5,
+                    stop_loss=sl, take_profit=tp,
+                    fee_free_only=True)
+
+    # all-markets variants (with fees) — small subset for comparison
+    for level in [3]:
+        for wv_thresh in [0.01, 0.015]:
+            for sl, tp in [(-0.25, 0.10)]:
+                add(indicator="hybrid_wbz_all", period=level,
+                    entry_param=wv_thresh, exit_param=wv_thresh*0.5,
+                    stop_loss=sl, take_profit=tp,
+                    fee_free_only=False)
+                add(indicator="hybrid_wbz_2of3", period=level,
+                    entry_param=wv_thresh, exit_param=wv_thresh*0.5,
+                    stop_loss=sl, take_profit=tp,
+                    fee_free_only=False)
+
+    # ── Group 24: AUTOTUNED_SAFE — top autotune params + SL=-20% tail protection ──
+    # Based on 130K trade analysis: sloff wins on avg PnL but leaves tail open.
+    # SL=-0.20 (20%) is compromise: rare trigger (most trades never hit it)
+    # but caps catastrophic loss on outlier events.
+
+    # zscore winners: p50 thresh 2.0/2.5/3.0
+    for p, t in [(50, 2.0), (50, 2.5), (50, 3.0), (20, 2.5), (20, 3.0)]:
+        for tp in [0.05, 0.10]:
+            add(indicator="zscore", period=p, entry_param=t,
+                exit_param=0.5, stop_loss=-0.20, take_profit=tp,
+                fee_free_only=True)
+
+    # mean_rev_ema winners: p20/p10, dev 0.02-0.04
+    for p, dev in [(20, 0.02), (20, 0.03), (10, 0.03), (10, 0.04)]:
+        for tp in [0.05, 0.10]:
+            add(indicator="mean_rev_ema", period=p, entry_param=dev,
+                exit_param=dev*0.75, stop_loss=-0.20, take_profit=tp,
+                fee_free_only=True)
+
+    # bollinger winners: p30 std 2.0/2.5, p20 std 1.5/2.5
+    for p, std in [(30, 2.0), (30, 2.5), (20, 1.5), (20, 2.5)]:
+        for tp in [0.05, 0.10]:
+            add(indicator="bollinger", period=p, entry_param=std,
+                exit_param=0.5, stop_loss=-0.20, take_profit=tp,
+                fee_free_only=True)
+
+    # wavelet winners: level=3 / 4
+    for lv, t in [(3, 0.01), (4, 0.01), (4, 0.02)]:
+        for tp in [0.05, 0.10]:
+            add(indicator="wavelet_mr", period=lv, entry_param=t,
+                exit_param=t*0.5, stop_loss=-0.20, take_profit=tp,
+                fee_free_only=True)
+
+    # hybrid winners with SL=-0.20 (safety net variant of best hybrid configs)
+    for lv in [3, 4]:
+        for t in [0.01, 0.015]:
+            for tp in [0.05, 0.10]:
+                add(indicator="hybrid_wbz_all", period=lv,
+                    entry_param=t, exit_param=t*0.5,
+                    stop_loss=-0.20, take_profit=tp,
+                    fee_free_only=True)
+                add(indicator="hybrid_wbz_2of3", period=lv,
+                    entry_param=t, exit_param=t*0.5,
+                    stop_loss=-0.20, take_profit=tp,
+                    fee_free_only=True)
+
     return strategies
 
 
@@ -1027,6 +1146,40 @@ def sub_wavelet(prices, level=3, thresh=0.01):
     if div < -thresh:
         return "buy"
     if div > thresh:
+        return "sell"
+    return None
+
+
+def sub_hybrid_wbz_all(prices, wv_level=3, wv_thresh=0.01,
+                       bb_period=20, bb_std=2.0,
+                       z_period=20, z_thresh=2.0):
+    """Triple-confirm: wavelet + bollinger + zscore ALL agree."""
+    votes = [
+        sub_wavelet(prices, wv_level, wv_thresh),
+        sub_bollinger(prices, bb_period, bb_std),
+        sub_zscore(prices, z_period, z_thresh),
+    ]
+    if all(v == "buy" for v in votes):
+        return "buy"
+    if all(v == "sell" for v in votes):
+        return "sell"
+    return None
+
+
+def sub_hybrid_wbz_2of3(prices, wv_level=3, wv_thresh=0.01,
+                        bb_period=20, bb_std=2.0,
+                        z_period=20, z_thresh=2.0):
+    """2-of-3 confirm: wavelet, bollinger, zscore — any 2 agree same direction."""
+    votes = [
+        sub_wavelet(prices, wv_level, wv_thresh),
+        sub_bollinger(prices, bb_period, bb_std),
+        sub_zscore(prices, z_period, z_thresh),
+    ]
+    buys = sum(1 for v in votes if v == "buy")
+    sells = sum(1 for v in votes if v == "sell")
+    if buys >= 2 and buys > sells:
+        return "buy"
+    if sells >= 2 and sells > buys:
         return "sell"
     return None
 
@@ -1635,6 +1788,13 @@ def get_ensemble_for_strategy(params):
         mode, size = "stratified", 35
     elif params.indicator == "forest_45":
         mode, size = "stratified", 45
+    # ── Meta-gated variants: same forest compositions, meta filter ──
+    elif params.indicator == "forest_25_meta":
+        mode, size = "stratified", 25
+    elif params.indicator == "forest_15_meta":
+        mode, size = "stratified", 15
+    elif params.indicator == "forest_35_meta":
+        mode, size = "stratified", 35
 
     inds = build_indicator_list(mode=mode, size=size, seed=params.id)
     _ENSEMBLE_CACHE[params.id] = inds
@@ -1769,6 +1929,20 @@ def compute_signal(params: StrategyParams, prices: List[float]):
         if all(d > params.entry_param for d in divs):
             return "sell"
 
+    elif ind == "hybrid_wbz_all":
+        # period = wavelet level (1-4)
+        # entry_param = wavelet threshold (0.005-0.03)
+        # BB(20, std=2.0) and zscore(20, thresh=2.0) are fixed — these are the
+        # validated defaults from the top performers. Only wavelet tuned.
+        return sub_hybrid_wbz_all(prices,
+            wv_level=params.period, wv_thresh=params.entry_param,
+            bb_period=20, bb_std=2.0, z_period=20, z_thresh=2.0)
+
+    elif ind == "hybrid_wbz_2of3":
+        return sub_hybrid_wbz_2of3(prices,
+            wv_level=params.period, wv_thresh=params.entry_param,
+            bb_period=20, bb_std=2.0, z_period=20, z_thresh=2.0)
+
     elif ind.startswith("ensemble") or ind.startswith("forest"):
         return compute_ensemble_signal(params, prices)
 
@@ -1859,6 +2033,24 @@ def should_exit(params: StrategyParams, pos: dict, prices: List[float]):
         if side == "NO" and sig == "buy":
             return "ensemble_flip"
 
+    elif ind == "hybrid_wbz_all":
+        sig = sub_hybrid_wbz_all(prices, wv_level=params.period,
+            wv_thresh=params.entry_param, bb_period=20, bb_std=2.0,
+            z_period=20, z_thresh=2.0)
+        if side == "YES" and sig == "sell":
+            return "hybrid_flip"
+        if side == "NO" and sig == "buy":
+            return "hybrid_flip"
+
+    elif ind == "hybrid_wbz_2of3":
+        sig = sub_hybrid_wbz_2of3(prices, wv_level=params.period,
+            wv_thresh=params.entry_param, bb_period=20, bb_std=2.0,
+            z_period=20, z_thresh=2.0)
+        if side == "YES" and sig == "sell":
+            return "hybrid_flip"
+        if side == "NO" and sig == "buy":
+            return "hybrid_flip"
+
     return None
 
 
@@ -1878,9 +2070,57 @@ class Arena:
 
         self.strategies = [StrategyState(p) for p in ALL_STRATEGIES]
         self.tick_buffer: List[dict] = []
+        self.blacklist: Dict[str, dict] = {}
 
+        self._load_blacklist()
         self._load_state()
+        self._apply_blacklist()
         logger.info(f"Arena initialized with {len(self.strategies)} strategies")
+
+    def _load_blacklist(self):
+        if not os.path.exists(BLACKLIST_FILE):
+            return
+        try:
+            with open(BLACKLIST_FILE) as f:
+                d = json.load(f)
+            self.blacklist = {e["sig"]: e for e in d.get("banned", [])}
+            logger.info(f"Loaded {len(self.blacklist)} banned strategy signatures")
+        except Exception as e:
+            logger.error(f"blacklist load failed: {e}")
+
+    def _save_blacklist(self):
+        try:
+            with open(BLACKLIST_FILE, "w") as f:
+                json.dump({"updated_at": datetime.now(timezone.utc).isoformat(),
+                           "banned": list(self.blacklist.values())}, f, indent=1)
+        except Exception as e:
+            logger.error(f"blacklist save failed: {e}")
+
+    def _apply_blacklist(self):
+        n = 0
+        for strat in self.strategies:
+            if strat.retired:
+                continue
+            sig = strategy_signature(strat.params)
+            if sig in self.blacklist:
+                strat.retired = True
+                strat.retired_at = self.blacklist[sig].get("banned_at")
+                n += 1
+        if n:
+            logger.info(f"Pre-retired {n} strategies via blacklist match")
+
+    def _add_to_blacklist(self, strat, reason):
+        sig = strategy_signature(strat.params)
+        if sig in self.blacklist:
+            return
+        self.blacklist[sig] = {
+            "sig": sig,
+            "reason": reason,
+            "name": strat.params.name,
+            "trades_at_ban": strat.total_trades,
+            "equity_at_ban": round(strat.equity, 2),
+            "banned_at": datetime.now(timezone.utc).isoformat(),
+        }
 
     def _load_state(self):
         """Restore equity/trades/history from previous arena_results.json."""
@@ -2104,6 +2344,24 @@ class Arena:
                 if rt_fee > 0.03:
                     continue
 
+                # ── Meta-labeling gate (only for *_meta strategies) ──
+                if strat.params.indicator.endswith("_meta"):
+                    try:
+                        from meta_predict import should_trade as _meta_should_trade
+                        entry_price = last.mid if signal == "buy" else (1.0 - last.mid)
+                        # Use base indicator (strip _meta) for lookup
+                        base_ind = strat.params.indicator.replace("_meta", "")
+                        side_str = "YES" if signal == "buy" else "NO"
+                        allow, reason, info = _meta_should_trade(
+                            base_ind, side_str, entry_price,
+                            has_fee=mkt.fees_enabled, min_wr=0.55,
+                            require_bucket=False,
+                        )
+                        if not allow:
+                            continue  # meta blocked this trade
+                    except Exception:
+                        pass  # model not available → pass through
+
                 if signal == "buy":
                     strat.open_position(mid, mkt.question, "YES", mkt.token_yes,
                         last.mid, fee_type, f"{strat.params.indicator}_buy")
@@ -2161,10 +2419,12 @@ class Arena:
                     pos = strat.positions[mkt_id]
                     strat.balance += pos["cost_usd"]
                     del strat.positions[mkt_id]
+                self._add_to_blacklist(strat, f"equity ${strat.equity:.0f} < ${PRUNE_DEAD_EQUITY} after {strat.total_trades} trades")
                 newly_dead += 1
         if newly_dead:
+            self._save_blacklist()
             active = sum(1 for s in self.strategies if not s.retired)
-            logger.info(f"Pruned {newly_dead} dead strategies | {active} active")
+            logger.info(f"Pruned {newly_dead} dead strategies | {active} active | blacklist={len(self.blacklist)}")
 
     def print_leaderboard(self):
         now = time.time()
