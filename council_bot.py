@@ -28,7 +28,9 @@ STATE_FILE = os.path.join(DATA, "council.json")
 ARENA_BET_USD = 50.0
 EQUITY_SCALE = 5000.0  # arena-scale ($0.01 actual = $50 virtual)
 STARTING_BALANCE = 1000.0
-CONSENSUS_K_FAMILIES = 2      # min DISTINCT families agreeing (not raw bot count)
+CONSENSUS_K_FAMILIES = 2      # min DISTINCT families on winning side
+CONSENSUS_MIN_RAW_RATIO = 2.0 # winning_raw / losing_raw >= 2.0 (supermajority)
+CONSENSUS_MIN_TOTAL_RAW = 3   # at least 3 bots must have an opinion
 SCAN_INTERVAL = 600
 SETTLE_INTERVAL = 1800
 
@@ -127,33 +129,42 @@ def aggregate_open_positions():
         yfc = len(yes_fams)
         nfc = len(no_fams)
 
-        if yc > 0 and nc > 0:
-            # Family-level conflict (not just bot conflict)
-            conflict[cid] = {
-                "yes_bots": list(info["yes_bots"])[:8],
-                "no_bots": list(info["no_bots"])[:8],
-                "yes_families": list(yes_fams),
-                "no_families": list(no_fams),
-                "question": info["question"],
-            }
-        elif yfc >= CONSENSUS_K_FAMILIES:
-            consensus[cid] = {
-                "side": "YES",
-                "count": yc,
-                "n_families": yfc,
-                "families": list(yes_fams),
-                "bots": list(info["yes_bots"])[:5],
-                "question": info["question"],
-            }
-        elif nfc >= CONSENSUS_K_FAMILIES:
-            consensus[cid] = {
-                "side": "NO",
-                "count": nc,
-                "n_families": nfc,
-                "families": list(no_fams),
-                "bots": list(info["no_bots"])[:5],
-                "question": info["question"],
-            }
+        # Supermajority: choose winning side, require ratio AND family count.
+        # No more "0 opposition" rule — every multi-bot market has dissenters.
+        if total >= CONSENSUS_MIN_TOTAL_RAW:
+            if yc > nc:
+                ratio = yc / max(nc, 1)
+                if ratio >= CONSENSUS_MIN_RAW_RATIO and yfc >= CONSENSUS_K_FAMILIES:
+                    consensus[cid] = {
+                        "side": "YES", "count": yc, "n_families": yfc,
+                        "raw_ratio": round(ratio, 2),
+                        "families": list(yes_fams),
+                        "bots": list(info["yes_bots"])[:5],
+                        "dissenting": list(info["no_bots"])[:3],
+                        "question": info["question"],
+                    }
+                    continue
+            elif nc > yc:
+                ratio = nc / max(yc, 1)
+                if ratio >= CONSENSUS_MIN_RAW_RATIO and nfc >= CONSENSUS_K_FAMILIES:
+                    consensus[cid] = {
+                        "side": "NO", "count": nc, "n_families": nfc,
+                        "raw_ratio": round(ratio, 2),
+                        "families": list(no_fams),
+                        "bots": list(info["no_bots"])[:5],
+                        "dissenting": list(info["yes_bots"])[:3],
+                        "question": info["question"],
+                    }
+                    continue
+            # Failed supermajority (close ratio or insufficient families) → conflict
+            if yc > 0 and nc > 0:
+                conflict[cid] = {
+                    "yes_bots": list(info["yes_bots"])[:8],
+                    "no_bots": list(info["no_bots"])[:8],
+                    "yes_families": list(yes_fams),
+                    "no_families": list(no_fams),
+                    "question": info["question"],
+                }
         elif total == 1:
             side = "YES" if yc > 0 else "NO"
             single[cid] = {

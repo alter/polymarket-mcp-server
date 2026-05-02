@@ -40,7 +40,7 @@ TOP_N = 200  # take top 200 backtest variants for live forward validation
 STARTING_BALANCE = 1000.0
 ARENA_BET_USD = 50.0  # arena's position_usd
 EQUITY_SCALE = ARENA_BET_USD / BET_USD  # 5000x — multiplies realized_pnl
-RUIN_EQUITY = 800.0  # retire variant at -20% drawdown ($800 = $200 loss in arena terms)
+RUIN_EQUITY = 800.0  # retire variant at -20% drawdown (stricter than arena's -50% rule)
 
 # Adaptive bet sizing — promote proven winners, demote regressors
 PROMOTE_EQUITY = 1100.0   # equity threshold for promotion to bigger bet
@@ -161,6 +161,30 @@ def sig_mo(mids, period, threshold, direction):
         return -1 if m > 0 else 1
 
 
+def sig_mv(mids, ts, K, direction="follow"):
+    """MetaVote K-of-8 ensemble: 8 voters from forward-validated families.
+    Returns +1 if K+ voters say YES, -1 if K+ NO, else 0.
+    direction kept for naming compatibility but always treated as follow.
+    """
+    voters = [
+        sig_rs(mids, 7, 75, "follow"),
+        sig_rs(mids, 14, 70, "follow"),
+        sig_rs(mids, 21, 80, "follow"),
+        sig_bo(mids, 100, "follow"),
+        sig_bo(mids, 50, "follow"),
+        sig_bb(mids, 20, 2.0, "follow"),
+        sig_bb(mids, 10, 1.5, "follow"),
+        sig_zs(mids, 20, 2.0, "follow"),
+    ]
+    yes_n = sum(1 for v in voters if v == 1)
+    no_n = sum(1 for v in voters if v == -1)
+    if yes_n >= K:
+        return 1
+    if no_n >= K:
+        return -1
+    return 0
+
+
 def sig_rs(mids, period, ob_threshold, direction):
     """Wilder's RSI on last `period+1` ticks, return +1/-1/0."""
     n = len(mids)
@@ -210,6 +234,12 @@ def parse_variant(name):
 
     sig_parts = sig_part.split("_")
     fam = sig_parts[0]
+    # MV variants encode K in family name: "MV5", "MV3" → fam=MV, K=5/3
+    if fam.startswith("MV") and len(fam) > 2 and fam[2:].isdigit():
+        K_extracted = int(fam[2:])
+        fam = "MV"
+    else:
+        K_extracted = None
     direction = sig_parts[-1]  # last token is fade/follow
 
     params = {
@@ -246,6 +276,9 @@ def parse_variant(name):
         # RS_p7_t80_follow
         params["period"] = int(sig_parts[1].lstrip("p"))
         params["ob"] = int(sig_parts[2].lstrip("t"))
+    elif fam == "MV":
+        # MV5_follow → K=5; direction kept "follow" for consistency
+        params["K"] = K_extracted
     elif fam == "SR":
         # SR_t90_fade  (spread regime, threshold = sp_thr*100 int)
         params["sp_thr"] = int(sig_parts[1].lstrip("t")) / 100
@@ -307,6 +340,8 @@ def compute_signal(params, mids, ts, bids=None, asks=None):
         return sig_rs(mids, params["period"], params["ob"], params["direction"])
     if fam == "SR" and bids is not None and asks is not None:
         return sig_sr(mids, ts, bids, asks, params["sp_thr"], params["direction"])
+    if fam == "MV":
+        return sig_mv(mids, ts, params["K"], params["direction"])
     return 0
 
 
@@ -336,6 +371,9 @@ class LiveValidator:
 
         # Load top variants from backtest
         self.variants = self._load_top_variants(TOP_N)
+        # Seed MetaVote ensemble variants from mass_backtest_metavote.json
+        # (forward-validated K-of-N voting; not in baseline mass_backtest grid)
+        self._seed_metavote_variants()
         # State per variant
         for v in self.variants:
             v["open_cids"] = {}  # cid → position dict
@@ -440,6 +478,45 @@ class LiveValidator:
         print(f"  Loaded {len(a)} by-PnL + {len(b)} high-ROI + {len(c)} extra "
               f"= {len(merged)} variants ({n_tuned} tpsl-tuned)")
         return merged
+
+    def _seed_metavote_variants(self):
+        """Append top MetaVote configs (from mass_backtest_metavote.json) as
+        new variants. Each config is K∈{2..5}-of-8 voting + price/spread/fee filter.
+        """
+        path = "data/mass_backtest_metavote.json"
+        if not os.path.exists(path):
+            return
+        try:
+            d = json.load(open(path))
+        except Exception:
+            return
+        # Top eligible (n>=300 — ensure not noise) ranked by ROI
+        eligible = [r for r in d.get("results", []) if r.get("n_bets", 0) >= 300]
+        eligible.sort(key=lambda r: -r.get("roi_pct", 0))
+        # Take top 6 — keeps fleet manageable
+        existing = {v["variant"] for v in self.variants}
+        added = 0
+        for r in eligible[:6]:
+            # config like "K5|pgt30|sany|fany" → variant "MV5_follow|pgt30|sany|fany"
+            cfg = r["config"]
+            parts = cfg.split("|")
+            K_part = parts[0]              # K5
+            K_num = int(K_part.lstrip("K"))
+            filters = "|".join(parts[1:])  # pgt30|sany|fany
+            variant_name = f"MV{K_num}_follow|{filters}"
+            if variant_name in existing:
+                continue
+            self.variants.append({
+                "variant": variant_name,
+                "backtest_roi": r.get("roi_pct", 0),
+                "backtest_n": r.get("n_bets", 0),
+                "backtest_wr": r.get("wr", 0),
+                "source": "metavote",
+            })
+            existing.add(variant_name)
+            added += 1
+        if added:
+            print(f"  Seeded {added} MetaVote variants from {path}")
 
     def _load_state(self):
         if os.path.exists(RESULTS_FILE):

@@ -16,7 +16,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 
 
-DATA = "bot-data"
+DATA = "data" if os.path.exists("data") else "bot-data"
 
 
 def main():

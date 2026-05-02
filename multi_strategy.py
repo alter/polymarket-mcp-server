@@ -948,6 +948,7 @@ class StrategyState:
         self.total_trades = 0
         self.retired = False  # pruned strategies stay retired
         self.retired_at = None
+        self.peak_equity = STARTING_BALANCE  # tracks max equity for DD-based retire
 
     @property
     def equity(self):
@@ -999,6 +1000,9 @@ class StrategyState:
         self.balance += net
         self.total_fees += fee
         self.total_trades += 1
+        # Track peak equity for drawdown-based retire
+        if self.equity > self.peak_equity:
+            self.peak_equity = self.equity
         trade_record = {
             "strategy_id": self.params.id,
             "strategy_name": self.params.name,
@@ -1038,6 +1042,7 @@ class StrategyState:
             "fees": round(self.total_fees, 4),
             "retired": self.retired,
             "retired_at": self.retired_at,
+            "peak_equity": round(self.peak_equity, 2),
             "params": {
                 "indicator": self.params.indicator,
                 "period": self.params.period,
@@ -2142,6 +2147,8 @@ class Arena:
                 strat.total_trades = old.get("trades", 0)
                 strat.retired = old.get("retired", False)
                 strat.retired_at = old.get("retired_at")
+                # Restore peak_equity for DD-based retire (default to current eq if missing)
+                strat.peak_equity = old.get("peak_equity", max(strat.equity, STARTING_BALANCE))
                 # Reconstruct history stubs from W/L counts
                 w, l = old.get("wins", 0), old.get("losses", 0)
                 realized = old.get("realized", 0)
@@ -2411,15 +2418,29 @@ class Arena:
         for strat in self.strategies:
             if strat.retired:
                 continue
-            if strat.total_trades >= PRUNE_MIN_TRADES and strat.equity < PRUNE_DEAD_EQUITY:
+            # Refresh peak in case current equity is higher than tracked
+            if strat.equity > strat.peak_equity:
+                strat.peak_equity = strat.equity
+            if strat.total_trades < PRUNE_MIN_TRADES:
+                continue
+            reason = None
+            # Rule A: absolute floor — lost 50% of starting capital
+            if strat.equity < PRUNE_DEAD_EQUITY:
+                reason = f"equity ${strat.equity:.0f} < ${PRUNE_DEAD_EQUITY:.0f} (absolute floor)"
+            # Rule B: peak-relative drawdown — lost 50% of peak (catches emergent losers
+            # who briefly went profitable then crashed, e.g. S431 ensemble peaked $911 → $611)
+            elif (strat.peak_equity > STARTING_BALANCE * 1.05
+                  and strat.equity < strat.peak_equity * 0.5):
+                reason = (f"DD ${strat.peak_equity:.0f} → ${strat.equity:.0f} "
+                          f"({(1-strat.equity/strat.peak_equity)*100:.0f}% from peak)")
+            if reason:
                 strat.retired = True
                 strat.retired_at = datetime.now(timezone.utc).isoformat()
-                # Close any open positions to cash
                 for mkt_id in list(strat.positions.keys()):
                     pos = strat.positions[mkt_id]
                     strat.balance += pos["cost_usd"]
                     del strat.positions[mkt_id]
-                self._add_to_blacklist(strat, f"equity ${strat.equity:.0f} < ${PRUNE_DEAD_EQUITY} after {strat.total_trades} trades")
+                self._add_to_blacklist(strat, reason)
                 newly_dead += 1
         if newly_dead:
             self._save_blacklist()

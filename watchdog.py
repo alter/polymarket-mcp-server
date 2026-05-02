@@ -28,17 +28,32 @@ DATA_FILES = [
     "live_validator.json",
     "arena_results.json",
     "political_skeptic.json",
+    "council.json",
+    "theta_decay.json",
+    "whale_follower.json",
+    "whale_fade.json",
 ]
 
 THRESHOLD_SEC = 600         # log stale if mtime older than 10 min
 DATA_THRESHOLD_SEC = 900    # most data files should grow within 15 min
 CHECK_INTERVAL = 300        # 5 min
-# Per-file overrides for slow-save files
+# Per-file overrides — tighter for fast-writers, looser for slow scanners
 PER_FILE_THRESHOLDS = {
-    "arena_results.json": 1500,    # multi_strategy saves slow, every ~10-15min
-    "live_validator.json": 1200,   # saves every 5min but can lag
-    "political_skeptic.json": 1500,  # scans every 10min
+    "orderbook_snapshots.jsonl": 300,   # writes every ~5s; 5min hang = dead
+    "arena_ticks.jsonl": 600,           # writes ~1/min
+    "arena_results.json": 1500,         # multi_strategy saves slow, every ~10-15min
+    "live_validator.json": 1200,        # saves every 5min but can lag
+    "political_skeptic.json": 1500,     # scans every 10min
+    "council.json": 1500,               # scans every 10min
+    "theta_decay.json": 1500,           # scans every 10min
+    "whale_follower.json": 2400,        # scans every 30min
+    "whale_fade.json": 1500,            # scans every 10min
 }
+
+# Self-heal: if stalled for N consecutive checks, exit non-zero so
+# run_all_bots.sh detects child death and tears down container,
+# letting docker `restart: unless-stopped` recreate everything.
+STALL_TOLERANCE_CHECKS = 2   # 2 × 5min = 10min before we surrender
 
 PHASE3_MIN_DURATION_SEC = 24 * 3600
 PHASE3_BACKTEST = "phase3_obi_backtest.py"
@@ -230,6 +245,7 @@ def main():
     print("Watchdog started")
     last_backup = 0
     last_daily_report = 0
+    consecutive_stalls = 0
     while True:
         now = time.time()
         # Backup every 30 min
@@ -270,8 +286,23 @@ def main():
             print(f"watchdog write err: {e}")
 
         if report["stalled"]:
-            print(f"STALLED: {report['alerts']}")
+            consecutive_stalls += 1
+            print(f"STALLED [{consecutive_stalls}/{STALL_TOLERANCE_CHECKS}]: {report['alerts']}")
+            if consecutive_stalls >= STALL_TOLERANCE_CHECKS:
+                print(f"FATAL: stalled {consecutive_stalls} checks in a row, "
+                      f"exiting to trigger container restart via docker policy")
+                # Try to flush state one more time
+                try:
+                    with open(WATCHDOG_FILE, "w") as f:
+                        report["surrender"] = True
+                        json.dump(report, f, indent=1)
+                except Exception:
+                    pass
+                # Exit non-zero — run_all_bots.sh `wait -n` will detect, kill rest,
+                # docker `restart: unless-stopped` brings everything back fresh
+                os._exit(2)
         else:
+            consecutive_stalls = 0
             lv = report["live"].get("live_validator", {})
             print(
                 f"[{datetime.now():%H:%M}] OK | "
