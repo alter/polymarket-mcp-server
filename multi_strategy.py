@@ -908,6 +908,48 @@ def generate_strategies():
                     stop_loss=-0.20, take_profit=tp,
                     fee_free_only=True)
 
+    # ── Group 25b: Paid-market versions of top fee-free winners ──
+    # User asks: do the top fee-free winners survive on fee-paying markets?
+    # Take the EXACT param sets that hit $1300+ in fee-free arena and flip
+    # fee_free_only=False so we test them on the same strategies on the
+    # 70-80% of Polymarket volume that has 3-7% taker fees.
+    TOP_FEE_FREE_PARAMS = [
+        # Format: (indicator, period, entry, sl, tp)
+        ("mean_rev_ema", 5,  0.01, -0.25, 0.10),    # S311/S310 — top performers
+        ("mean_rev_ema", 5,  0.01, -99.0, 0.10),    # sloff variant — S120
+        ("mean_rev_ema", 5,  0.01, -99.0, 0.05),    # sloff tp5 — S123
+        ("mean_rev_ema", 10, 0.01, -99.0, 0.10),    # period 10 sloff
+        ("wavelet_mr",   3,  0.01, -0.25, 0.10),    # S331
+        ("wavelet_mr",   3,  0.01, -0.20, 0.10),    # S1003
+        ("wavelet_mr",   3,  0.01, -99.0, 0.10),    # S332/S335 sloff
+        ("wavelet_mr",   3,  0.01, -0.20, 0.05),    # S1002
+        ("rsi",          14, 70,   -0.25, 0.10),    # RSI follow validated
+        ("rsi",          7,  75,   -0.25, 0.10),    # RSI fast-follow
+        ("bollinger",    20, 2.0,  -0.25, 0.10),    # BB follow
+        ("breakout",     100, 1,   -0.25, 0.10),    # BO_p100_follow forward-validated winner
+    ]
+    for ind, p, e, sl, tp in TOP_FEE_FREE_PARAMS:
+        add(indicator=ind, period=p, entry_param=e,
+            exit_param=e * 0.75, stop_loss=sl, take_profit=tp,
+            fee_free_only=False)
+
+    # ── Group 26: 500 random-shuffle ensembles (size 5-50 per strategy) ──
+    # Pure exploration — every strategy gets a random subset of the indicator
+    # library. Per-strategy id seeds the choice deterministically, so identity
+    # is stable across restarts. Voting threshold and exit policy also random.
+    import random as _rand
+    rng = _rand.Random(20260503)  # fixed seed for reproducibility
+    for i in range(500):
+        size = rng.randint(5, 50)
+        thresh = round(rng.uniform(0.50, 0.70), 2)
+        sl = rng.choice([-0.10, -0.20, -0.25, -99.0])
+        tp = rng.choice([0.05, 0.10, 0.20])
+        fee_free = rng.random() < 0.7   # bias to fee-free (proven winner regime)
+        add(indicator="forest_rand", period=size,
+            entry_param=thresh, exit_param=max(thresh - 0.05, 0.45),
+            stop_loss=sl, take_profit=tp,
+            fee_free_only=fee_free)
+
     return strategies
 
 
@@ -1793,6 +1835,12 @@ def get_ensemble_for_strategy(params):
         mode, size = "stratified", 35
     elif params.indicator == "forest_45":
         mode, size = "stratified", 45
+    # Free-size random ensemble: size encoded in params.period (5-50),
+    # mode=uniform so we get fully unbiased random shuffle from indicator pool.
+    # Each strategy id seeds a unique combination, deterministic across restarts.
+    elif params.indicator == "forest_rand":
+        mode = "uniform"
+        size = max(5, min(50, params.period))
     # ── Meta-gated variants: same forest compositions, meta filter ──
     elif params.indicator == "forest_25_meta":
         mode, size = "stratified", 25

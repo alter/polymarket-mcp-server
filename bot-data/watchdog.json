@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-05-02T04:55:30.439071+00:00",
+ "checked_at": "2026-05-03T20:55:35.110966+00:00",
  "stalled": false,
  "alerts": [],
  "files": {
@@ -8,11 +8,11 @@
    "size_kb": 0
   },
   "orderbook_collector.log": {
-   "age_sec": 2,
+   "age_sec": 0,
    "size_kb": 0
   },
   "oil_iran.log": {
-   "age_sec": 2,
+   "age_sec": 0,
    "size_kb": 0
   },
   "always_no.log": {
@@ -24,54 +24,58 @@
    "size_kb": 0
   },
   "arena_ticks.jsonl": {
-   "age_sec": 48,
-   "size_kb": 61552
+   "age_sec": 165,
+   "size_kb": 75422
   },
   "orderbook_snapshots.jsonl": {
-   "age_sec": 12,
-   "size_kb": 99895
+   "age_sec": 134,
+   "size_kb": 166764
   },
   "live_validator.json": {
-   "age_sec": 10,
-   "size_kb": 726
+   "age_sec": 258,
+   "size_kb": 1477
   },
   "arena_results.json": {
-   "age_sec": 299,
-   "size_kb": 546
+   "age_sec": 235,
+   "size_kb": 854
   },
   "political_skeptic.json": {
-   "age_sec": 296,
+   "age_sec": 223,
    "size_kb": 5
   },
   "council.json": {
-   "age_sec": 311,
-   "size_kb": 20
+   "age_sec": 69,
+   "size_kb": 8
   },
   "theta_decay.json": {
-   "age_sec": 287,
-   "size_kb": 1
+   "age_sec": 319,
+   "size_kb": 2
   },
   "whale_follower.json": {
-   "age_sec": 310,
+   "age_sec": 9,
    "size_kb": 18
   },
   "whale_fade.json": {
    "missing": true
+  },
+  "maker.json": {
+   "age_sec": 9,
+   "size_kb": 0
   }
  },
  "live": {
   "live_validator": {
    "n_variants": 206,
-   "n_total_bets": 8611,
-   "n_open": 1293,
-   "n_closed": 7318,
-   "realized_pnl": -0.6062
+   "n_total_bets": 22254,
+   "n_open": 3170,
+   "n_closed": 19084,
+   "realized_pnl": 1.0792
   },
   "arena": {
-   "n_strategies": 1023,
-   "n_profitable": 420,
-   "n_active": 848,
-   "top_equity": 1398.0,
+   "n_strategies": 1523,
+   "n_profitable": 930,
+   "n_active": 1345,
+   "top_equity": 2515.0,
    "top_name": "S311|mean_re|p5|e0.01|sl-25%|tp10%|free|b"
   }
  },

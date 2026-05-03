@@ -16,7 +16,8 @@ RUN pip install --no-cache-dir build && \
     rm -rf dist/
 
 # Numpy required for phase3_obi_backtest, mass_backtest tools
-RUN pip install --no-cache-dir numpy
+# websockets for maker_bot WS book stream
+RUN pip install --no-cache-dir numpy websockets
 
 # Copy bot scripts
 COPY smart_trader.py multi_strategy.py ./

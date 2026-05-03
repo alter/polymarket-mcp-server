@@ -1,0 +1,945 @@
+{
+  "communities": [
+    {
+      "id": 0,
+      "size": 192,
+      "avg_price": 0.061,
+      "total_volume": 2821478224.24,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will Pete Hegseth win the 2028 Republican presidential nomination?",
+        "Will Judy Shelton be confirmed as Fed Chair?",
+        "Will Georgia win Eurovision 2026?",
+        "Will South Africa win the 2026 FIFA World Cup?",
+        "Will the Buffalo Sabres win the 2026 NHL Stanley Cup?"
+      ]
+    },
+    {
+      "id": 1,
+      "size": 33,
+      "avg_price": 0.196,
+      "total_volume": 160418644.9,
+      "dominant_category": "",
+      "sample_markets": [
+        "Iran agrees to surrender enriched uranium stockpile by June 30, 2026?",
+        "Iran closes its airspace by May 31?",
+        "Will another country conduct military action against Iran by April 30, 2026?",
+        "Iran leadership change by May 31?",
+        "US x Iran diplomatic meeting by May 15, 2026?"
+      ]
+    },
+    {
+      "id": 2,
+      "size": 27,
+      "avg_price": 0.382,
+      "total_volume": 19024696.62,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will Bitcoin reach $100,000 in May?",
+        "Will the price of Bitcoin be above $84,000 on May 4?",
+        "Will Bitcoin reach $80,000 on May 3?",
+        "Will Bitcoin reach $95,000 in May?",
+        "Will Bitcoin hit $150k by June 30, 2026?"
+      ]
+    },
+    {
+      "id": 3,
+      "size": 14,
+      "avg_price": 0.623,
+      "total_volume": 5523399.83,
+      "dominant_category": "",
+      "sample_markets": [
+        "LoL: LOUD vs Vivo Keyd Stars (BO3) - CBLOL Regular Season",
+        "Map Handicap: VIT (-1.5) vs Natus Vincere (+1.5)",
+        "Map Handicap: VIT (-2.5) vs Natus Vincere (+2.5)",
+        "LoL: G2 Esports vs Natus Vincere - Game 2 Winner",
+        "LoL: G2 Esports vs Natus Vincere - Game 1 Winner"
+      ]
+    },
+    {
+      "id": 4,
+      "size": 9,
+      "avg_price": 0.352,
+      "total_volume": 3504387.94,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will WTI Crude Oil (WTI) hit (LOW) $80 in May?",
+        "Will WTI Crude Oil (WTI) hit (HIGH) $115 in May?",
+        "Will WTI Crude Oil (WTI) hit (HIGH) $120 in May?",
+        "Will WTI Crude Oil (WTI) hit (HIGH) $130 in May?",
+        "Will WTI Crude Oil (WTI) hit (HIGH) $110 in May?"
+      ]
+    },
+    {
+      "id": 5,
+      "size": 6,
+      "avg_price": 0.495,
+      "total_volume": 8190498.7,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will the Bharatiya Janata Party (BJP) win the most seats in the 2026 West Bengal Legislative Assembly election?",
+        "Will the All India Anna Dravida Munnetra Kazhagam (ADMK) win the most seats in the 2026 Tamil Nadu Legislative Assembly ",
+        "Will Tamilaga Vettri Kazhagam (TVK) win the most seats in the 2026 Tamil Nadu Legislative Assembly election?",
+        "Will the Dravida Munnetra Kazhagam (DMK) win the most seats in the 2026 Tamil Nadu Legislative Assembly election?",
+        "Indian Premier League: Gujarat Titans vs Punjab Kings"
+      ]
+    },
+    {
+      "id": 6,
+      "size": 5,
+      "avg_price": 0.2,
+      "total_volume": 1090875.88,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will \"The Devil Wears Prada 2\" Opening Weekend Box Office be between 90m and 100m?",
+        "Will \"The Devil Wears Prada 2\" Opening Weekend Box Office be between 80m and 90m?",
+        "Will \"The Devil Wears Prada 2\" Opening Weekend Box Office be between 70m and 80m?",
+        "Will \"The Devil Wears Prada 2\" Opening Weekend Box Office be greater than 100m?",
+        "Will \"The Devil Wears Prada 2\" Opening Weekend Box Office be less than 70m?"
+      ]
+    },
+    {
+      "id": 7,
+      "size": 5,
+      "avg_price": 0.35,
+      "total_volume": 4133466.19,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 8, 2026?",
+        "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 15, 2026?",
+        "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 22, 2026?",
+        "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?",
+        "Will a U.S. anti-cartel operation outside of the United States occur by April 30, 2026?"
+      ]
+    },
+    {
+      "id": 8,
+      "size": 5,
+      "avg_price": 0.48,
+      "total_volume": 477746.65,
+      "dominant_category": "",
+      "sample_markets": [
+        "RCD Espanyol de Barcelona vs. Real Madrid CF: O/U 2.5",
+        "Will RCD Espanyol de Barcelona vs. Real Madrid CF end in a draw?",
+        "RCD Espanyol de Barcelona vs. Real Madrid CF: O/U 1.5",
+        "RCD Espanyol de Barcelona vs. Real Madrid CF: O/U 3.5",
+        "Spread: Real Madrid CF (-1.5)"
+      ]
+    },
+    {
+      "id": 9,
+      "size": 4,
+      "avg_price": 0.5,
+      "total_volume": 448794.71,
+      "dominant_category": "",
+      "sample_markets": [
+        "Aston Villa FC vs. Tottenham Hotspur FC: O/U 2.5",
+        "Aston Villa FC vs. Tottenham Hotspur FC: Both Teams to Score",
+        "Will Aston Villa FC vs. Tottenham Hotspur FC end in a draw?",
+        "Aston Villa FC vs. Tottenham Hotspur FC: O/U 3.5"
+      ]
+    },
+    {
+      "id": 10,
+      "size": 4,
+      "avg_price": 0.244,
+      "total_volume": 880792.29,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will Max Verstappen win the 2026 F1 Miami Grand Prix?",
+        "Will Lando Norris win the 2026 F1 Miami Grand Prix?",
+        "Will Charles Leclerc win the 2026 F1 Miami Grand Prix?",
+        "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?"
+      ]
+    },
+    {
+      "id": 11,
+      "size": 4,
+      "avg_price": 0.356,
+      "total_volume": 2707218.95,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will the St. Louis Cardinals win the 2026 World Series?",
+        "Los Angeles Dodgers vs. St. Louis Cardinals",
+        "Will the Los Angeles Angels win the 2026 World Series?",
+        "New York Mets vs. Los Angeles Angels"
+      ]
+    },
+    {
+      "id": 12,
+      "size": 4,
+      "avg_price": 0.75,
+      "total_volume": 219801.88,
+      "dominant_category": "",
+      "sample_markets": [
+        "Spread: Real Betis Balompi\u00e9 (-1.5)",
+        "Real Betis Balompi\u00e9 vs. Real Oviedo: O/U 3.5",
+        "Real Betis Balompi\u00e9 vs. Real Oviedo: O/U 2.5",
+        "Real Betis Balompi\u00e9 vs. Real Oviedo: O/U 1.5"
+      ]
+    },
+    {
+      "id": 13,
+      "size": 3,
+      "avg_price": 0.005,
+      "total_volume": 6037653.31,
+      "dominant_category": "",
+      "sample_markets": [
+        "Jerome Powell out as Fed Chair by May 14, 2026?",
+        "Will 9 Fed rate cuts happen in 2026?",
+        "Will 10 Fed rate cuts happen in 2026?"
+      ]
+    },
+    {
+      "id": 14,
+      "size": 3,
+      "avg_price": 0.691,
+      "total_volume": 258759.8,
+      "dominant_category": "",
+      "sample_markets": [
+        "FC Internazionale Milano vs. Parma Calcio 1913: O/U 2.5",
+        "FC Internazionale Milano vs. Parma Calcio 1913: O/U 1.5",
+        "Will FC Internazionale Milano win on 2026-05-03?"
+      ]
+    },
+    {
+      "id": 15,
+      "size": 3,
+      "avg_price": 0.224,
+      "total_volume": 1385425.17,
+      "dominant_category": "",
+      "sample_markets": [
+        "Chicago White Sox vs. San Diego Padres",
+        "Chicago White Sox vs. San Diego Padres: O/U 8.5",
+        "Will the Chicago White Sox win the 2026 World Series?"
+      ]
+    },
+    {
+      "id": 16,
+      "size": 3,
+      "avg_price": 0.919,
+      "total_volume": 4328208.16,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will Trump visit China by June 30?",
+        "Will Trump visit China by May 15?",
+        "Will Trump visit China by May 31?"
+      ]
+    },
+    {
+      "id": 17,
+      "size": 3,
+      "avg_price": 0.333,
+      "total_volume": 198059.28,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will Juventus FC vs. Hellas Verona FC end in a draw?",
+        "Juventus FC vs. Hellas Verona FC: O/U 3.5",
+        "Juventus FC vs. Hellas Verona FC: O/U 2.5"
+      ]
+    },
+    {
+      "id": 18,
+      "size": 3,
+      "avg_price": 0.477,
+      "total_volume": 953576.17,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will there be a run scored in the first inning?: Atlanta Braves vs. Colorado Rockies",
+        "Will the Colorado Rockies win the 2026 World Series?",
+        "Atlanta Braves vs. Colorado Rockies"
+      ]
+    },
+    {
+      "id": 19,
+      "size": 3,
+      "avg_price": 0.668,
+      "total_volume": 690187.66,
+      "dominant_category": "",
+      "sample_markets": [
+        "Philadelphia Phillies vs. Miami Marlins: O/U 8.5",
+        "Philadelphia Phillies vs. Miami Marlins",
+        "Will the Miami Marlins win the 2026 World Series?"
+      ]
+    },
+    {
+      "id": 20,
+      "size": 3,
+      "avg_price": 0.002,
+      "total_volume": 7203646.27,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will Ahn Cheol-soo win the 2026 Seoul Mayoral Election",
+        "Will Cho Kuk win the 2026 Seoul Mayoral Election",
+        "Will Park Ju-min win the 2026 Seoul Mayoral Election"
+      ]
+    },
+    {
+      "id": 21,
+      "size": 2,
+      "avg_price": 0.5,
+      "total_volume": 100249.71,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will the highest temperature in Hong Kong be 29\u00b0C on May 3?",
+        "Will the highest temperature in Hong Kong be 28\u00b0C on May 3?"
+      ]
+    },
+    {
+      "id": 22,
+      "size": 2,
+      "avg_price": 0.176,
+      "total_volume": 404245.82,
+      "dominant_category": "",
+      "sample_markets": [
+        "Arizona Diamondbacks vs. Chicago Cubs",
+        "Arizona Diamondbacks vs. Chicago Cubs: O/U 11.5"
+      ]
+    },
+    {
+      "id": 23,
+      "size": 2,
+      "avg_price": 0.002,
+      "total_volume": 1442326.55,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will the Washington Nationals win the 2026 World Series?",
+        "Milwaukee Brewers vs. Washington Nationals"
+      ]
+    },
+    {
+      "id": 24,
+      "size": 2,
+      "avg_price": 0.5,
+      "total_volume": 111963.24,
+      "dominant_category": "",
+      "sample_markets": [
+        "Dota 2: MOUZ vs Yellow Submarine - Game 2 Winner",
+        "Dota 2: MOUZ vs Yellow Submarine - Game 1 Winner"
+      ]
+    },
+    {
+      "id": 25,
+      "size": 2,
+      "avg_price": 0.501,
+      "total_volume": 532446.67,
+      "dominant_category": "",
+      "sample_markets": [
+        "Baltimore Orioles vs. New York Yankees: O/U 8.5",
+        "Baltimore Orioles vs. New York Yankees"
+      ]
+    },
+    {
+      "id": 26,
+      "size": 2,
+      "avg_price": 0.0,
+      "total_volume": 540778.55,
+      "dominant_category": "",
+      "sample_markets": [
+        "Toronto Blue Jays vs. Minnesota Twins",
+        "Toronto Blue Jays vs. Minnesota Twins: O/U 8.5"
+      ]
+    },
+    {
+      "id": 27,
+      "size": 2,
+      "avg_price": 0.035,
+      "total_volume": 4295445.24,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will Ukraine win Eurovision 2026?",
+        "Russia x Ukraine ceasefire by May 31, 2026?"
+      ]
+    },
+    {
+      "id": 28,
+      "size": 2,
+      "avg_price": 0.5,
+      "total_volume": 114483.11,
+      "dominant_category": "",
+      "sample_markets": [
+        "Counter-Strike: TDK vs INOX Division (BO3) - CCT Europe Series 1 Group Stage",
+        "Counter-Strike: Vasco Esports vs Players (BO3) - CCT South America Series #1 Group Stage"
+      ]
+    },
+    {
+      "id": 29,
+      "size": 2,
+      "avg_price": 0.275,
+      "total_volume": 1426417.04,
+      "dominant_category": "",
+      "sample_markets": [
+        "Will the Philadelphia 76ers win the NBA Eastern Conference Finals?",
+        "Will the New York Knicks win the NBA Eastern Conference Finals?"
+      ]
+    }
+  ],
+  "central_markets": [
+    {
+      "node": "m:0xa0f4c4924ea1a8b410b4ce821c2a9955fad21a1b19bdcfde90816732278b3dd5",
+      "question": "Will Bitcoin hit $150k by June 30, 2026?",
+      "betweenness": 0.05042,
+      "degree": 0.45181,
+      "volume": 15734008.014241
+    },
+    {
+      "node": "m:0x796e791e7058571e460278814fc7a3183752285338f1400087b98bef3c447908",
+      "question": "Will the Los Angeles Lakers win the 2026 NBA Finals?",
+      "betweenness": 0.00847,
+      "degree": 0.40562,
+      "volume": 20246807.52337087
+    },
+    {
+      "node": "m:0xd9fb1184af0064e5e34b129f5b79afa5a17b7e32f2953ab05efed82315fee6d4",
+      "question": "Will China invade Taiwan by end of 2026?",
+      "betweenness": 0.00638,
+      "degree": 0.40562,
+      "volume": 23356220.824864004
+    },
+    {
+      "node": "m:0x9352c559e9648ab4cab236087b64ca85c5b7123a4c7d9d7d4efde4a39c18056f",
+      "question": "Will the Iranian regime fall by June 30?",
+      "betweenness": 0.0045,
+      "degree": 0.44578,
+      "volume": 35921880.99695833
+    },
+    {
+      "node": "m:0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "question": "Will the U.S. invade Iran before 2027?",
+      "betweenness": 0.0045,
+      "degree": 0.44578,
+      "volume": 19838863.57291611
+    },
+    {
+      "node": "m:0x84edef36bded182da6a395ac6c785dba8f3e09b6c5ad041385b2042536cbef25",
+      "question": "Will Iran win the 2026 FIFA World Cup?",
+      "betweenness": 0.0045,
+      "degree": 0.44578,
+      "volume": 22305011.978790034
+    },
+    {
+      "node": "m:0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b",
+      "question": "Will the Iranian regime fall before 2027?",
+      "betweenness": 0.0045,
+      "degree": 0.44578,
+      "volume": 16426020.677095503
+    },
+    {
+      "node": "m:0x43272c02b8407ed3f8d5b04fb4cb132d7a59c5df6ecc423afcf66f1c778d1887",
+      "question": "Will Reza Pahlavi enter Iran by June 30?",
+      "betweenness": 0.00444,
+      "degree": 0.44378,
+      "volume": 3670736.020338007
+    },
+    {
+      "node": "m:0xbcacd5a055f5a9ced6f69f122216c073dd6987d08253fc07bbcc168fa5b81d55",
+      "question": "US obtains Iranian enriched uranium by May 31?",
+      "betweenness": 0.00444,
+      "degree": 0.44378,
+      "volume": 8344480.912294875
+    },
+    {
+      "node": "m:0xa1d97efb8a19de58d995edf58b882c4f99ef356c8a564af8daf888a7610edea1",
+      "question": "Kharg Island no longer under Iranian control by May 31?",
+      "betweenness": 0.00444,
+      "degree": 0.44378,
+      "volume": 4312924.920420966
+    },
+    {
+      "node": "m:0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7",
+      "question": "US x Iran permanent peace deal by June 30, 2026?",
+      "betweenness": 0.00442,
+      "degree": 0.44177,
+      "volume": 3719778.678568954
+    },
+    {
+      "node": "m:0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089",
+      "question": "US x Iran permanent peace deal by May 31, 2026?",
+      "betweenness": 0.00397,
+      "degree": 0.43976,
+      "volume": 10661717.15120909
+    },
+    {
+      "node": "m:0x789c947a9415600d30d56a4aae88d4111996679b0caed166d0c96242fdce92a2",
+      "question": "Will the Iranian regime fall by May 31?",
+      "betweenness": 0.00376,
+      "degree": 0.43775,
+      "volume": 14271577.889914693
+    },
+    {
+      "node": "m:0xaeea5f917fc5746387b5f9c0a4263dba035dbb3f0ac6ad72bf92183d21e26739",
+      "question": "Russia x Ukraine ceasefire by end of 2026?",
+      "betweenness": 0.00329,
+      "degree": 0.40361,
+      "volume": 14502613.985482976
+    },
+    {
+      "node": "m:0x3fb8a8de2ac275882d72b2c4f22d41776fcf033f9e413a77a84dd395c0d5257c",
+      "question": "Will Saudi Arabia win the 2026 FIFA World Cup?",
+      "betweenness": 0.00214,
+      "degree": 0.40161,
+      "volume": 24994671.52022752
+    },
+    {
+      "node": "m:0xe99cc59f32b10d23acf196d1a0e8264ea30fca198428acadd3464b06ff60e771",
+      "question": "Will Colombia win the 2026 FIFA World Cup?",
+      "betweenness": 0.00214,
+      "degree": 0.40161,
+      "volume": 13864401.95054859
+    },
+    {
+      "node": "m:0xc73a5f7c177396b09208500127eeba7182cdfdefb1343c5b85900f92d4e0ecd7",
+      "question": "Los Angeles Dodgers vs. St. Louis Cardinals",
+      "betweenness": 0.00214,
+      "degree": 0.00803,
+      "volume": 707015.9578110018
+    },
+    {
+      "node": "m:0x819ae990aac5ebdf8f3093ec059946d98832f67edd13901df333d39f96b3db8a",
+      "question": "Will Na Kyung-won win the 2026 Seoul Mayoral Election",
+      "betweenness": 0.00211,
+      "degree": 0.40562,
+      "volume": 3115619.681501988
+    },
+    {
+      "node": "m:0xff26d2bfdfa949ab4d9f91e460ea721fe5a61dad3621ea5c69dfb04b64957be8",
+      "question": "Will Park Yong-jin win the 2026 Seoul Mayoral Election",
+      "betweenness": 0.00211,
+      "degree": 0.40562,
+      "volume": 2849976.588751007
+    },
+    {
+      "node": "m:0xe660bc726e2e1171e8af9a1362845f9e85c16550f8918f75959a5229af280c3e",
+      "question": "Will Cho Eun-hee win the 2026 Seoul Mayoral Election",
+      "betweenness": 0.00211,
+      "degree": 0.40562,
+      "volume": 2984818.8503129794
+    }
+  ],
+  "cross_category_bridges": [],
+  "trader_concentration": [
+    {
+      "node": "m:0x6ccebbc57547f8b777aa4ef70a452bb5034055d183131a9b6db47fd8d0777921",
+      "question": "Will Michel Barnier win the 2027 French presidential election?",
+      "hhi": 0.943,
+      "num_traders": 17,
+      "volume": 2723220.439708004
+    },
+    {
+      "node": "m:0x3e6bf735fd7bcd256ac5158b2d9c16f3ed8241e686167cebdf65e082ffff615a",
+      "question": "Spread: Cavaliers (-7.5)",
+      "hhi": 0.896,
+      "num_traders": 37,
+      "volume": 165363.99588200002
+    },
+    {
+      "node": "m:0x924a2942747dd75703321a7c8d809c68f6a514c3b0f2a2e64274e02310634669",
+      "question": "Strait of Hormuz traffic returns to normal by end of April?",
+      "hhi": 0.835,
+      "num_traders": 27,
+      "volume": 35983876.19164701
+    },
+    {
+      "node": "m:0x4956f8614d7a5b0d7910729fa0c6343da29365728ff198c0c25834cb07cdcbf4",
+      "question": "Kansas City Royals vs. Seattle Mariners",
+      "hhi": 0.801,
+      "num_traders": 84,
+      "volume": 208825.28295499986
+    },
+    {
+      "node": "m:0x23481b811978194fa175143ed7cd8d0000878ca59c408fd552e33535f7aa771e",
+      "question": "Will Donald Trump Jr. win the 2028 US Presidential Election?",
+      "hhi": 0.674,
+      "num_traders": 28,
+      "volume": 11517139.300385773
+    },
+    {
+      "node": "m:0x9b6fef249040fd17e9c107955b37ac2c3e923509b6b0ff01cc463a331ddeb894",
+      "question": "Will France win the 2026 FIFA World Cup?",
+      "hhi": 0.624,
+      "num_traders": 74,
+      "volume": 23066191.48294372
+    },
+    {
+      "node": "m:0x79900a2173d077893de2f89b0b704b6c204b66d639f037dec6beda357fee9c21",
+      "question": "Will Elon Musk post 0-19 tweets from May 5 to May 12, 2026?",
+      "hhi": 0.559,
+      "num_traders": 6,
+      "volume": 226473.81899999993
+    },
+    {
+      "node": "m:0x4405c62496c4fdd275d17ec31567a01534013c518c314ce61bb633b5e7cb6426",
+      "question": "Will the Toronto Raptors win the 2026 NBA Finals?",
+      "hhi": 0.555,
+      "num_traders": 18,
+      "volume": 17345164.887671772
+    },
+    {
+      "node": "m:0x7abed80b88301210ee83b7b14ec41bc9a5161e1af07254fbb26c6e2bf7182766",
+      "question": "Will Erika Kirk win the 2028 Republican presidential nomination?",
+      "hhi": 0.553,
+      "num_traders": 12,
+      "volume": 15825850.441876808
+    },
+    {
+      "node": "m:0x7976b8dbacf9077eb1453a62bcefd6ab2df199acd28aad276ff0d920d6992892",
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "hhi": 0.553,
+      "num_traders": 72,
+      "volume": 18170831.20511145
+    },
+    {
+      "node": "m:0x0220e320852050a884e73bfe20447cbabe17ce934107cebc48a829b4a558204f",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $200 in May?",
+      "hhi": 0.544,
+      "num_traders": 25,
+      "volume": 588361.2310170004
+    },
+    {
+      "node": "m:0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+      "question": "Will Jesus Christ return before 2027?",
+      "hhi": 0.497,
+      "num_traders": 31,
+      "volume": 61246100.0482243
+    },
+    {
+      "node": "m:0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187",
+      "question": "Strait of Hormuz traffic returns to normal by end of June?",
+      "hhi": 0.489,
+      "num_traders": 55,
+      "volume": 1742987.2552169992
+    },
+    {
+      "node": "m:0xa0cc3453128c2864b0ec056805f193d3be8c5cd907c6c992dbb5ceaa52933205",
+      "question": "Wild vs. Avalanche",
+      "hhi": 0.449,
+      "num_traders": 50,
+      "volume": 178870.73890900007
+    },
+    {
+      "node": "m:0xf887472a2ac013ef61840034321aa5b46de87ac093ee77ecafca477fdbaadd45",
+      "question": "Will Marine Tondelier win the 2027 French presidential election?",
+      "hhi": 0.446,
+      "num_traders": 33,
+      "volume": 1543168.3112970034
+    },
+    {
+      "node": "m:0xa7cb4135c6d9c36da0e343874dd5b455de739c6d1b9f9f5583dd9320aacf5db2",
+      "question": "Will the Fed increase interest rates by 25 bps after the June 2026 meeting?",
+      "hhi": 0.444,
+      "num_traders": 31,
+      "volume": 2991821.198021999
+    },
+    {
+      "node": "m:0x713641f745d71f6ec61f906237ffca3c8583f251e49384429a63ceb0ccdb2d37",
+      "question": "Will the New York Knicks win the 2026 NBA Finals?",
+      "hhi": 0.413,
+      "num_traders": 34,
+      "volume": 11255927.06117586
+    },
+    {
+      "node": "m:0x796e791e7058571e460278814fc7a3183752285338f1400087b98bef3c447908",
+      "question": "Will the Los Angeles Lakers win the 2026 NBA Finals?",
+      "hhi": 0.402,
+      "num_traders": 14,
+      "volume": 20246807.52337087
+    },
+    {
+      "node": "m:0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "question": "Will the U.S. invade Iran before 2027?",
+      "hhi": 0.397,
+      "num_traders": 74,
+      "volume": 19838863.57291611
+    },
+    {
+      "node": "m:0xc0b2acd094ebce0630fa9b3e899eb90c6a77424ebf01f67baf12b843af35f719",
+      "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 8, 2026?",
+      "hhi": 0.39,
+      "num_traders": 50,
+      "volume": 368660.16964000027
+    },
+    {
+      "node": "m:0x2135ffcb43ba9103bb6acf7116d2d5aa98bef6d9eb3dc9c85ea00cb79513f3ec",
+      "question": "Iran closes its airspace by May 8?",
+      "hhi": 0.376,
+      "num_traders": 44,
+      "volume": 488988.64780699916
+    },
+    {
+      "node": "m:0x030e3bd256805c33f271e2683e4cdbf2dbad25f93a38172d876acd30fff309cd",
+      "question": "Will Real Madrid CF win on 2026-05-03?",
+      "hhi": 0.367,
+      "num_traders": 84,
+      "volume": 1341265.4582209948
+    },
+    {
+      "node": "m:0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+      "question": "Will LeBron James win the 2028 US Presidential Election?",
+      "hhi": 0.363,
+      "num_traders": 8,
+      "volume": 49178564.48523335
+    },
+    {
+      "node": "m:0xded958568c751bc4ce97086bbb5af34b0621d0c770a9ccfd14820a46a8e305fa",
+      "question": "Map Handicap: VIT (-1.5) vs Natus Vincere (+1.5)",
+      "hhi": 0.361,
+      "num_traders": 75,
+      "volume": 168267.60163399996
+    },
+    {
+      "node": "m:0x21ca0eef520c05b16c00315eeb2b8d2fcdcdd06a0a682cc3a90b5062cc129c46",
+      "question": "Will Elon Musk post <40 tweets from May 2 to May 4, 2026?",
+      "hhi": 0.359,
+      "num_traders": 29,
+      "volume": 244379.0968900002
+    },
+    {
+      "node": "m:0x14fd8ab261d14215058b77a9541a5013ccc3d3eb677276a9de54445a31acd194",
+      "question": "Will Judy Shelton be confirmed as Fed Chair?",
+      "hhi": 0.334,
+      "num_traders": 14,
+      "volume": 17909656.77450789
+    },
+    {
+      "node": "m:0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7",
+      "question": "US x Iran permanent peace deal by June 30, 2026?",
+      "hhi": 0.331,
+      "num_traders": 65,
+      "volume": 3719778.678568954
+    },
+    {
+      "node": "m:0x1788659ddf19afac6b961d89b25e47d474ff04b546c8b9d690d170bbab4e0770",
+      "question": "Magic vs. Pistons: O/U 203.5",
+      "hhi": 0.325,
+      "num_traders": 70,
+      "volume": 193867.38714299997
+    },
+    {
+      "node": "m:0x0af34e438cdb2b99630e6b0cd11df31ffe54abef753f785a4f946a9d030cbe27",
+      "question": "Cincinnati Reds vs. Pittsburgh Pirates",
+      "hhi": 0.322,
+      "num_traders": 92,
+      "volume": 240356.10770899977
+    },
+    {
+      "node": "m:0x5817fe66dad4091f3463c6338ede2bb4a8edf5409358ebc663e0bb47b8b766fe",
+      "question": "San Francisco Giants vs. Tampa Bay Rays",
+      "hhi": 0.321,
+      "num_traders": 99,
+      "volume": 393304.78426600026
+    }
+  ],
+  "price_anomalies": [
+    {
+      "node": "m:0xf220061c0e83defd413070f97fb55660485ca8540c43be13d9e71082ca2cad57",
+      "question": "QatarEnergy announces/resumes LNG production in Qatar by April 30?",
+      "price": 0.999,
+      "cluster_avg": 0.061,
+      "deviation": 0.938
+    },
+    {
+      "node": "m:0x1480b819d03d4b6388d70e848b0384adf38c38d955cb783cdbcf6d4a436dee14",
+      "question": "Will the next Prime Minister of Hungary be P\u00e9ter Magyar?",
+      "price": 0.997,
+      "cluster_avg": 0.061,
+      "deviation": 0.936
+    },
+    {
+      "node": "m:0x23dbb60ade08c2664ac29488325afbc0136735bc7beb9180d9c0cb72620b0b13",
+      "question": "Will Kevin Warsh be confirmed as Fed Chair?",
+      "price": 0.997,
+      "cluster_avg": 0.061,
+      "deviation": 0.936
+    },
+    {
+      "node": "m:0x069fef06f8b32dee6a22fab6189249dc83582f22cb737a85225b114770d7da05",
+      "question": "Will Barcelona win the 2025\u201326 La Liga?",
+      "price": 0.996,
+      "cluster_avg": 0.061,
+      "deviation": 0.935
+    },
+    {
+      "node": "m:0xde04b189b3f19eaccda02529a3ea67abfc46bff5c0c8fc42d8a2d0ed7b8f0d41",
+      "question": "Will there be no change in Fed interest rates after the June 2026 meeting?",
+      "price": 0.955,
+      "cluster_avg": 0.061,
+      "deviation": 0.894
+    },
+    {
+      "node": "m:0xa5b00fb91dd458cf79761b80e68eff24003f89ae59cb630f5ab90d809e4058b9",
+      "question": "Will \"The Devil Wears Prada 2\" Opening Weekend Box Office be between 70m and 80m?",
+      "price": 0.987,
+      "cluster_avg": 0.2,
+      "deviation": 0.786
+    },
+    {
+      "node": "m:0x8a6fddf58406386bba29f3dd11801845905801c75c59993b56221446e480c42d",
+      "question": "Real Betis Balompi\u00e9 vs. Real Oviedo: O/U 3.5",
+      "price": 0.001,
+      "cluster_avg": 0.75,
+      "deviation": 0.749
+    },
+    {
+      "node": "m:0x11afb0e52a15490da2ad7bcbea5038c6dac2e9f0fbbd89048d69b0a393c6e3c4",
+      "question": "Will Kimi Antonelli win the 2026 F1 Miami Grand Prix?",
+      "price": 0.976,
+      "cluster_avg": 0.244,
+      "deviation": 0.731
+    },
+    {
+      "node": "m:0x87d4c453e155252d84becb7b26c2c686954ee5085dffd1e7062aca1763ef14c4",
+      "question": "Will the next US x Iran diplomatic meeting occur after May 10?",
+      "price": 0.905,
+      "cluster_avg": 0.196,
+      "deviation": 0.709
+    },
+    {
+      "node": "m:0x03380e3253866210bdb5ecc6bd241ca9ec080c49d33895e25b701f0c4f8bdd29",
+      "question": "Will Juventus FC vs. Hellas Verona FC end in a draw?",
+      "price": 1.0,
+      "cluster_avg": 0.333,
+      "deviation": 0.666
+    },
+    {
+      "node": "m:0xa5f1c7110b05fde645258c7c9e58d3ddbec94631db35b22f7a02db94d4571a29",
+      "question": "Will the Miami Marlins win the 2026 World Series?",
+      "price": 0.005,
+      "cluster_avg": 0.668,
+      "deviation": 0.663
+    },
+    {
+      "node": "m:0x9ec068d68055cc7e14d82b67da6f8069423ce64d4cd3549aeb50116156a622f0",
+      "question": "Will a U.S. anti-cartel operation outside of the United States occur by April 30, 2026?",
+      "price": 0.999,
+      "cluster_avg": 0.35,
+      "deviation": 0.65
+    },
+    {
+      "node": "m:0xc73a5f7c177396b09208500127eeba7182cdfdefb1343c5b85900f92d4e0ecd7",
+      "question": "Los Angeles Dodgers vs. St. Louis Cardinals",
+      "price": 0.988,
+      "cluster_avg": 0.356,
+      "deviation": 0.632
+    },
+    {
+      "node": "m:0xf856b6366ffa21c1bdd0ab6e87311547b3de78cf66b9adbb751ddde527b0a279",
+      "question": "Counter-Strike: Natus Vincere vs Vitality - Map 1 Winner",
+      "price": 0.001,
+      "cluster_avg": 0.623,
+      "deviation": 0.623
+    },
+    {
+      "node": "m:0x351a5c6a0437b88fa7997b1232e8b52a30999eb3079a99f5a6481f502e71f1b6",
+      "question": "Counter-Strike: Natus Vincere vs Vitality (BO5) - BLAST Rivals Playoffs",
+      "price": 0.001,
+      "cluster_avg": 0.623,
+      "deviation": 0.623
+    },
+    {
+      "node": "m:0xaf477952f5003ec4fbcc82ee67897a511e11df3d5bcddbc40a1f3b23ffdda8e9",
+      "question": "Counter-Strike: Natus Vincere vs Vitality - Map 3 Winner",
+      "price": 0.001,
+      "cluster_avg": 0.623,
+      "deviation": 0.623
+    },
+    {
+      "node": "m:0xeb4b6896b259e8940de56aa9012a470f13f504f558d7b25baf764631c5c5539e",
+      "question": "Counter-Strike: Natus Vincere vs Vitality - Map 2 Winner",
+      "price": 0.001,
+      "cluster_avg": 0.623,
+      "deviation": 0.623
+    },
+    {
+      "node": "m:0x48dcccbc12297c6b5be5a30fe2c6b5e5ea2c4164bce79b42c86d0b594a4bc396",
+      "question": "LoL: Fluxo W7M vs LOS (BO3) - CBLOL Regular Season",
+      "price": 0.001,
+      "cluster_avg": 0.623,
+      "deviation": 0.623
+    },
+    {
+      "node": "m:0xc19d77aa81e4d53ca2fde9b0cfb5183a0d0c145efc250186e325d8aaa0dfb5a4",
+      "question": "Bitcoin Up or Down - May 3, 1PM ET",
+      "price": 1.0,
+      "cluster_avg": 0.382,
+      "deviation": 0.617
+    },
+    {
+      "node": "m:0x0b5f4d3b7a3a4f3a005ebafb919b0137e79bad8ea863e0e151b2b60a15ab8533",
+      "question": "Bitcoin Up or Down - May 3, 3PM ET",
+      "price": 1.0,
+      "cluster_avg": 0.382,
+      "deviation": 0.617
+    },
+    {
+      "node": "m:0x2a161f12a87d9754b7b5bdac8e67d7bf3e506a6b6ca31bdd2d181ba5da936797",
+      "question": "Will the price of Bitcoin be above $70,000 on May 4?",
+      "price": 1.0,
+      "cluster_avg": 0.382,
+      "deviation": 0.617
+    },
+    {
+      "node": "m:0x9c3631a19c2e9b25510aa2063137e73e1f8d7a3fb4ad7f7af77807ad09b957e2",
+      "question": "Will the price of Bitcoin be above $70,000 on May 5?",
+      "price": 0.999,
+      "cluster_avg": 0.382,
+      "deviation": 0.616
+    },
+    {
+      "node": "m:0x96a483045decac02f52259acb9b3b88d064d4f9ab4c72bdbea4a7ce0ef44896d",
+      "question": "Will the price of Bitcoin be above $72,000 on May 4?",
+      "price": 0.999,
+      "cluster_avg": 0.382,
+      "deviation": 0.616
+    },
+    {
+      "node": "m:0x47ad9d92e05555baef97f1fb1715685af89170a08f9277ff50d7420d9837c450",
+      "question": "FC Internazionale Milano vs. Parma Calcio 1913: O/U 2.5",
+      "price": 0.075,
+      "cluster_avg": 0.691,
+      "deviation": 0.616
+    },
+    {
+      "node": "m:0x7ca8ffe259c390e885323c6b773b2018ef3150f59a189f66f14eae815b472e9e",
+      "question": "Bitcoin Up or Down - May 3, 4:35PM-4:40PM ET",
+      "price": 0.985,
+      "cluster_avg": 0.382,
+      "deviation": 0.603
+    },
+    {
+      "node": "m:0xccac940bfc0bac024f701db16ab7b30572d32facbf80bceb26153b239d780c0d",
+      "question": "Will the price of Bitcoin be above $76,000 on May 4?",
+      "price": 0.977,
+      "cluster_avg": 0.382,
+      "deviation": 0.594
+    },
+    {
+      "node": "m:0xe5816efc6bf134c855332961d5fe47cd29495a00e3dfd56abe7c2a2ed86f4d04",
+      "question": "Will Bitcoin reach $80,000 in May?",
+      "price": 0.905,
+      "cluster_avg": 0.382,
+      "deviation": 0.523
+    },
+    {
+      "node": "m:0xb9018af17016cdb2b49f260bbdabaa28ce80d79a05b984556c093653f3a1bf8e",
+      "question": "Will there be a run scored in the first inning?: Atlanta Braves vs. Colorado Rockies",
+      "price": 1.0,
+      "cluster_avg": 0.477,
+      "deviation": 0.522
+    },
+    {
+      "node": "m:0xd23dcd5b95182f29c769367b443e45b3ac45803621db45ad4ae9c115942c7d14",
+      "question": "RCD Espanyol de Barcelona vs. Real Madrid CF: O/U 1.5",
+      "price": 1.0,
+      "cluster_avg": 0.48,
+      "deviation": 0.519
+    },
+    {
+      "node": "m:0x22e7b5e35423e76842dd3a5e1a21d13793811080d5e7b2896d0c001bd5e97d54",
+      "question": "Will the Oklahoma City Thunder win the 2026 NBA Finals?",
+      "price": 0.575,
+      "cluster_avg": 0.061,
+      "deviation": 0.514
+    }
+  ],
+  "entity_hubs": []
+}

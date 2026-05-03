@@ -32,6 +32,7 @@ DATA_FILES = [
     "theta_decay.json",
     "whale_follower.json",
     "whale_fade.json",
+    "maker.json",
 ]
 
 THRESHOLD_SEC = 600         # log stale if mtime older than 10 min
@@ -48,6 +49,7 @@ PER_FILE_THRESHOLDS = {
     "theta_decay.json": 1500,           # scans every 10min
     "whale_follower.json": 2400,        # scans every 30min
     "whale_fade.json": 1500,            # scans every 10min
+    "maker.json": 600,                  # saves every 60s if alive
 }
 
 # Self-heal: if stalled for N consecutive checks, exit non-zero so

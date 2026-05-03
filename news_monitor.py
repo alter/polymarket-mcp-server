@@ -26,14 +26,39 @@ OUT_FILE = os.path.join(DATA, "news_signals.jsonl")
 STATE_FILE = os.path.join(DATA, "news_monitor_state.json")
 
 # Public RSS feeds (no auth required)
+# Coverage matched to Polymarket topic distribution from
+# bot-data/polymarket_topic_analysis.json (2026-05-03 sample of 1000 active markets):
+#   us_politics $9M | crypto $8.5M | geopolitics $5M | soccer $4.6M | tech $4.1M
+#   celebrity $3.8M | nba $3.1M | f1 $2.4M | baseball $1.6M | macro $1.5M
 RSS_FEEDS = [
-    ("politico_congress", "https://rss.politico.com/congress.xml"),
+    # ── US politics (Polymarket #1, $9M/24h) ──
+    ("politico_congress",    "https://rss.politico.com/congress.xml"),
     ("politico_white_house", "https://rss.politico.com/politics-news.xml"),
-    ("politico_breaking", "https://rss.politico.com/breaking-news.xml"),
-    ("npr_politics", "https://feeds.npr.org/1014/rss.xml"),
-    ("reuters_politics", "https://www.reuters.com/arc/outboundfeeds/news-tags/politics/?outputType=xml"),
-    ("ap_politics", "https://rsshub.app/apnews/topics/politics"),
-    ("bbc_world", "http://feeds.bbci.co.uk/news/world/rss.xml"),
+    ("politico_breaking",    "https://rss.politico.com/breaking-news.xml"),
+    ("npr_politics",         "https://feeds.npr.org/1014/rss.xml"),
+    ("ap_politics",          "https://rsshub.app/apnews/topics/politics"),
+    # ── World/geopolitics ($5M) ──
+    ("bbc_world",            "http://feeds.bbci.co.uk/news/world/rss.xml"),
+    ("aljazeera_world",      "https://www.aljazeera.com/xml/rss/all.xml"),
+    ("reuters_world",        "https://feeds.reuters.com/Reuters/worldNews"),
+    # ── Crypto ($8.5M — was uncovered) ──
+    ("coindesk",             "https://www.coindesk.com/arc/outboundfeeds/rss/"),
+    ("cointelegraph",        "https://cointelegraph.com/rss"),
+    ("decrypt",              "https://decrypt.co/feed"),
+    # ── Sports: soccer/football ($4.6M — was uncovered) ──
+    ("bbc_sport_football",   "http://feeds.bbci.co.uk/sport/football/rss.xml"),
+    ("espn_soccer",          "https://www.espn.com/espn/rss/soccer/news"),
+    # ── NBA ($3.1M) ──
+    ("espn_nba",             "https://www.espn.com/espn/rss/nba/news"),
+    # ── F1 ($2.4M) ──
+    ("bbc_sport_f1",         "http://feeds.bbci.co.uk/sport/formula1/rss.xml"),
+    ("espn_f1",              "https://www.espn.com/espn/rss/f1/news"),
+    # ── Tech/business ($4.1M) ──
+    ("techcrunch",           "https://techcrunch.com/feed/"),
+    ("ars_technica",         "https://feeds.arstechnica.com/arstechnica/index"),
+    # ── Macro/finance ($1.5M — Fed/CPI/jobs) ──
+    ("reuters_business",     "https://feeds.reuters.com/reuters/businessNews"),
+    ("ft_markets",           "https://www.ft.com/markets?format=rss"),
 ]
 
 # Predictive keyword patterns with score weights
@@ -65,6 +90,25 @@ KEYWORD_PATTERNS = [
     ("netanyahu",        re.compile(r'\bnetanyahu\b', re.I), 0.5),
     ("xi_jinping",       re.compile(r'\bxi\s+jinping\b|\bchina.*president', re.I), 0.5),
     ("zelensky",         re.compile(r'\bzelensky\b', re.I), 0.5),
+    # ── Crypto signals (predictive of price-target markets) ──
+    ("crypto_etf",       re.compile(r'\b(?:etf|spot etf)\b.*\b(?:approve|approval|sec|filing|launch|deny)', re.I), 0.85),
+    ("crypto_listing",   re.compile(r'\b(?:listing|listed|delist)\b.*\b(?:coinbase|binance|kraken)', re.I), 0.7),
+    ("btc_price_call",   re.compile(r'\bbitcoin\b.*\b(?:hit|reach|target|crash|surge|rally)\b.*\$\d', re.I), 0.6),
+    ("eth_upgrade",      re.compile(r'\b(?:ethereum|eth)\b.*\b(?:upgrade|merge|fork|hardfork)', re.I), 0.6),
+    ("sec_action",       re.compile(r'\bsec\b.*\b(?:sue|lawsuit|charge|settle|approve|crypto)', re.I), 0.7),
+    # ── Sports signals (transfers/injuries flip win-likelihood markets) ──
+    ("transfer_signing", re.compile(r'\b(?:sign|signing|transfer|joins|moves to)\b.*\b(?:contract|deal|million|fc)\b', re.I), 0.6),
+    ("injury_out",       re.compile(r'\b(?:injur\w+|out for|sidelined|ruled out|surgery|torn|fracture)\b', re.I), 0.7),
+    ("coach_fired",      re.compile(r'\b(?:fire|sack|dismiss|step down|resign)\b.*\b(?:coach|manager|head)', re.I), 0.75),
+    ("match_result",     re.compile(r'\b(?:beat|defeat|win|lost|draw|tie)\b.*\b(?:\d+[-:]\d+|final|championship)', re.I), 0.55),
+    # ── Macro/finance ──
+    ("fed_decision",     re.compile(r'\b(?:fed|fomc|powell)\b.*\b(?:rate|cut|hike|hold|pause|raise)', re.I), 0.85),
+    ("cpi_release",      re.compile(r'\b(?:cpi|inflation)\b.*\b(?:report|release|data|reading|expect)', re.I), 0.7),
+    ("jobless_claims",   re.compile(r'\b(?:jobless|unemployment|nonfarm|payroll|jobs)\b.*\b(?:report|claim|data)', re.I), 0.65),
+    # ── Tech/business catalysts ──
+    ("earnings_beat",    re.compile(r'\b(?:earnings|q[1-4])\b.*\b(?:beat|miss|surprise|guidance)\b', re.I), 0.6),
+    ("ipo_announce",     re.compile(r'\bipo\b.*\b(?:announce|file|launch|valuation)', re.I), 0.7),
+    ("ai_milestone",     re.compile(r'\b(?:gpt-?\d|openai|anthropic|claude|gemini)\b.*\b(?:release|launch|announce)', re.I), 0.6),
 ]
 
 

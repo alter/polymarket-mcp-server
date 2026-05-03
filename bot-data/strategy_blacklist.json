@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-05-01T01:15:19.411888+00:00",
+ "updated_at": "2026-05-03T18:33:23.163508+00:00",
  "banned": [
   {
    "sig": "momentum|p20|e0.0300|sl-0.100|tp0.080|fee0|both",
@@ -1024,6 +1024,30 @@
    "trades_at_ban": 717,
    "equity_at_ban": 484.3,
    "banned_at": "2026-05-01T01:15:19.406343+00:00"
+  },
+  {
+   "sig": "momentum|p40|e0.0400|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $469 < $500 (absolute floor)",
+   "name": "S165|momentu|p40|e0.04|sloff|tp10%|all|b",
+   "trades_at_ban": 1258,
+   "equity_at_ban": 468.7,
+   "banned_at": "2026-05-03T02:04:13.079727+00:00"
+  },
+  {
+   "sig": "momentum|p40|e0.0400|sl-0.100|tp0.080|fee0|both",
+   "reason": "equity $498 < $500 (absolute floor)",
+   "name": "S161|momentu|p40|e0.04|sl-10%|tp8%|all|b",
+   "trades_at_ban": 1608,
+   "equity_at_ban": 497.71,
+   "banned_at": "2026-05-03T06:05:54.949562+00:00"
+  },
+  {
+   "sig": "momentum|p40|e0.0400|sl-0.200|tp0.150|fee0|both",
+   "reason": "equity $459 < $500 (absolute floor)",
+   "name": "S163|momentu|p40|e0.04|sl-20%|tp15%|all|b",
+   "trades_at_ban": 1534,
+   "equity_at_ban": 459.07,
+   "banned_at": "2026-05-03T18:33:23.155406+00:00"
   }
  ]
 }

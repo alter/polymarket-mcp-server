@@ -1,200 +1,63 @@
 {
  "open_positions": {
-  "0x6bd56627aa21311850825edb27e53434a0e17a4f782be0086bc07f71eee00d0d": {
-   "cid": "0x6bd56627aa21311850825edb27e53434a0e17a4f782be0086bc07f71eee00d0d",
-   "side": "NO",
-   "entry": 0.89,
-   "shares": 0.0225,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 2,
-   "consensus_family_count": 2,
-   "families": [
-    "Skeptic",
-    "Whale"
-   ],
-   "bots": [
-    "Skeptic",
-    "Whale"
-   ],
-   "question": "Putin out as President of Russia by December 31, 2026?",
-   "opened_ts": 1777513333.4134812
-  },
-  "0xb75c07f4252992808d7ca7d9828169c524b0fef44bf5adf78c327ef88469c986": {
-   "cid": "0xb75c07f4252992808d7ca7d9828169c524b0fef44bf5adf78c327ef88469c986",
-   "side": "NO",
-   "entry": 0.933,
-   "shares": 0.0322,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 62,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:RS_p21_t65_follow|plt70|sany|f",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:BB_p30_sd25_fade|plt30|sany|fa",
-    "LV:BB_p50_sd25_fade|plt30|swide|f"
-   ],
-   "question": "",
-   "opened_ts": 1777571135.5231903
-  },
-  "0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7": {
-   "cid": "0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7",
-   "side": "NO",
-   "entry": 0.7,
-   "shares": 0.0429,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 39,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:RS_p21_t80_follow|pgt30|sany|f",
-    "LV:RS_p21_t75_follow|plt50|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p21_t65_follow|plt70|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777601760.4636567
-  },
-  "0x3e0dc6c075e14c66526923f2139b1d5c54fafd43b51e0abe5075739e6ac1cf3b": {
-   "cid": "0x3e0dc6c075e14c66526923f2139b1d5c54fafd43b51e0abe5075739e6ac1cf3b",
-   "side": "NO",
-   "entry": 0.938,
-   "shares": 0.032,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 25,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:BB_p20_sd20_fade|plt30|sany|fa",
-    "LV:BB_p50_sd25_fade|plt30|swide|f",
-    "LV:BB_p50_sd25_fade|plt50|swide|f",
-    "LV:BB_p30_sd20_fade|plt30|sany|fa",
-    "LV:BB_p30_sd25_fade|plt30|sany|fa"
-   ],
-   "question": "",
-   "opened_ts": 1777616355.8585377
-  },
-  "0xb6b3d7a2037b3faa7e1306d741840d453432902d73cc9a146a035e40271eae73": {
-   "cid": "0xb6b3d7a2037b3faa7e1306d741840d453432902d73cc9a146a035e40271eae73",
-   "side": "NO",
-   "entry": 0.795,
-   "shares": 0.0377,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 13,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:BO_p100_fade|plt70|stight|fany",
-    "LV:BB_p10_sd20_follow|plt70|stigh",
-    "LV:BB_p10_sd15_follow|plt70|stigh",
-    "LV:BO_p20_fade|plt70|stight|fany",
-    "LV:BO_p20_fade|pany|stight|fany"
-   ],
-   "question": "",
-   "opened_ts": 1777630945.5666287
-  },
-  "0x70d706fe084905dbafb95dfff13b727e4073efc3ef590adc8330562bac5d26de": {
-   "cid": "0x70d706fe084905dbafb95dfff13b727e4073efc3ef590adc8330562bac5d26de",
-   "side": "NO",
-   "entry": 0.67,
-   "shares": 0.0448,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 39,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:RS_p21_t75_follow|plt50|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p21_t65_follow|plt70|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:BB_p30_sd20_fade|plt30|sany|fa"
-   ],
-   "question": "",
-   "opened_ts": 1777645527.526664
-  },
-  "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846": {
-   "cid": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+  "0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187": {
+   "cid": "0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187",
    "side": "YES",
-   "entry": 0.31,
-   "shares": 0.0968,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 45,
-   "consensus_family_count": 3,
+   "entry": 0.52,
+   "shares": 0.0962,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 65,
+   "consensus_family_count": 4,
    "families": [
+    "LV_MV4",
     "LV_RS",
-    "LV_BB",
-    "Whale"
+    "LV_MV5",
+    "LV_BB"
    ],
    "bots": [
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:RS_p7_t70_follow|pany|sany|fan",
-    "LV:RS_p14_t70_follow|pgt30|sany|f",
-    "LV:RS_p21_t70_follow|plt50|sany|f"
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p7_t80_follow|pgt50|stight|"
    ],
-   "question": "Will the U.S. invade Iran before 2027?",
-   "opened_ts": 1777697098.3864899
+   "question": "",
+   "opened_ts": 1777841736.3323812
   },
   "0x22e7b5e35423e76842dd3a5e1a21d13793811080d5e7b2896d0c001bd5e97d54": {
    "cid": "0x22e7b5e35423e76842dd3a5e1a21d13793811080d5e7b2896d0c001bd5e97d54",
    "side": "YES",
-   "entry": 0.56,
-   "shares": 0.0357,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 71,
-   "consensus_family_count": 2,
+   "entry": 0.58,
+   "shares": 0.0862,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 62,
+   "consensus_family_count": 4,
    "families": [
+    "Whale",
     "LV_RS",
-    "Whale"
+    "LV_MV5",
+    "LV_MV4"
    ],
    "bots": [
-    "LV:RS_p14_t75_follow|pany|stight|",
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:RS_p7_t75_follow|pany|stight|f",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:RS_p7_t75_follow|pgt50|sany|fa"
+    "Whale",
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|"
    ],
    "question": "Will the Oklahoma City Thunder win the 2026 NBA Finals?",
-   "opened_ts": 1777697098.5772293
+   "opened_ts": 1777841736.6463056
   },
-  "0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187": {
-   "cid": "0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187",
-   "side": "YES",
-   "entry": 0.46,
-   "shares": 0.0652,
+  "0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7": {
+   "cid": "0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7",
+   "side": "NO",
+   "entry": 0.63,
+   "shares": 0.0476,
    "cost": 0.03,
    "bet_size": 0.03,
-   "consensus_bot_count": 80,
+   "consensus_bot_count": 31,
    "consensus_family_count": 3,
    "families": [
     "LV_RS",
@@ -202,20 +65,166 @@
     "LV_BB"
    ],
    "bots": [
-    "LV:RS_p14_t75_follow|pany|stight|",
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:RS_p14_t65_follow|plt70|stight",
-    "LV:RS_p14_t70_follow|pgt30|sany|f"
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany"
    ],
    "question": "",
-   "opened_ts": 1777697098.8035517
+   "opened_ts": 1777841736.9672139
   },
-  "0x9b6fef249040fd17e9c107955b37ac2c3e923509b6b0ff01cc463a331ddeb894": {
-   "cid": "0x9b6fef249040fd17e9c107955b37ac2c3e923509b6b0ff01cc463a331ddeb894",
+  "0x416e3cbe25a60b8210f4e67c056ea2b03f4d511e7b969826d69ef90b753ff214": {
+   "cid": "0x416e3cbe25a60b8210f4e67c056ea2b03f4d511e7b969826d69ef90b753ff214",
    "side": "YES",
-   "entry": 0.164,
-   "shares": 0.1829,
+   "entry": 0.4,
+   "shares": 0.05,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 22,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p14_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841737.3172367
+  },
+  "0xc6ddb19f848ac363330d0a690cfe6818d4c51e837161a41d42675eda27767ed0": {
+   "cid": "0xc6ddb19f848ac363330d0a690cfe6818d4c51e837161a41d42675eda27767ed0",
+   "side": "YES",
+   "entry": 0.34,
+   "shares": 0.1471,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 49,
+   "consensus_family_count": 4,
+   "families": [
+    "LV_BB",
+    "LV_RS",
+    "LV_MV5",
+    "LV_MV4"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841737.5492396
+  },
+  "0xd4cb184e5dc458f3b03e6da54c87f7272e478bffe30c2d8157c6df8e2eb8c985": {
+   "cid": "0xd4cb184e5dc458f3b03e6da54c87f7272e478bffe30c2d8157c6df8e2eb8c985",
+   "side": "YES",
+   "entry": 0.784,
+   "shares": 0.0638,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 43,
+   "consensus_family_count": 4,
+   "families": [
+    "LV_MV4",
+    "LV_RS",
+    "LV_MV5",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t80_follow|pgt50|stight|",
+    "LV:RS_p7_t75_follow|pgt50|stight|",
+    "LV:MV5_follow|pgt30|stight|fany"
+   ],
+   "question": "",
+   "opened_ts": 1777841737.97255
+  },
+  "0x998d69f881036ac580f6dc0a18b6c3ec48f167fd00799db9e58bf43e07b4b27e": {
+   "cid": "0x998d69f881036ac580f6dc0a18b6c3ec48f167fd00799db9e58bf43e07b4b27e",
+   "side": "YES",
+   "entry": 0.66,
+   "shares": 0.0455,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 61,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_MV5",
+    "LV_MV4"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p7_t80_follow|pgt50|stight|"
+   ],
+   "question": "",
+   "opened_ts": 1777841738.5667207
+  },
+  "0x309e01ff8af6848e2f7e078bf969614d812673f5babde4bdb2fca1ac909d686e": {
+   "cid": "0x309e01ff8af6848e2f7e078bf969614d812673f5babde4bdb2fca1ac909d686e",
+   "side": "YES",
+   "entry": 0.4,
+   "shares": 0.05,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 22,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p14_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841738.9929569
+  },
+  "0x3b48166faf44ba7768769cb56c9559e7075d2e8fbf2204829625b226fd420f3c": {
+   "cid": "0x3b48166faf44ba7768769cb56c9559e7075d2e8fbf2204829625b226fd420f3c",
+   "side": "NO",
+   "entry": 0.597,
+   "shares": 0.1675,
+   "cost": 0.1,
+   "bet_size": 0.1,
+   "consensus_bot_count": 53,
+   "consensus_family_count": 5,
+   "families": [
+    "LV_RS",
+    "LV_MV4",
+    "LV_BO",
+    "LV_BB",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|"
+   ],
+   "question": "",
+   "opened_ts": 1777841739.3211746
+  },
+  "0x4bab360a81b57047b48c0dd7c6c1377706129e3e6b9fa3f079cc28d310ec4cec": {
+   "cid": "0x4bab360a81b57047b48c0dd7c6c1377706129e3e6b9fa3f079cc28d310ec4cec",
+   "side": "YES",
+   "entry": 0.64,
+   "shares": 0.0469,
    "cost": 0.03,
    "bet_size": 0.03,
    "consensus_bot_count": 48,
@@ -226,161 +235,118 @@
     "LV_BB"
    ],
    "bots": [
-    "LV:RS_p14_t75_follow|pany|stight|",
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:BB_p50_sd25_fade|plt30|sany|fa",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:BO_p100_follow|plt30|sany|fany"
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
    ],
    "question": "",
-   "opened_ts": 1777697098.9779758
+   "opened_ts": 1777841739.667215
+  },
+  "0xa0cc3453128c2864b0ec056805f193d3be8c5cd907c6c992dbb5ceaa52933205": {
+   "cid": "0xa0cc3453128c2864b0ec056805f193d3be8c5cd907c6c992dbb5ceaa52933205",
+   "side": "YES",
+   "entry": 0.36,
+   "shares": 0.0556,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 22,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p14_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841740.9355757
+  },
+  "0x6465374ef5267907c84d0f330af0df120a4ecb40c5da52508daa76bddacb49d0": {
+   "cid": "0x6465374ef5267907c84d0f330af0df120a4ecb40c5da52508daa76bddacb49d0",
+   "side": "YES",
+   "entry": 0.79,
+   "shares": 0.0253,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 26,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p7_t80_follow|pgt50|stight|",
+    "LV:RS_p7_t75_follow|pgt50|stight|",
+    "LV:RS_p7_t70_follow|plt70|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1777841741.583844
+  },
+  "0x9b6fef249040fd17e9c107955b37ac2c3e923509b6b0ff01cc463a331ddeb894": {
+   "cid": "0x9b6fef249040fd17e9c107955b37ac2c3e923509b6b0ff01cc463a331ddeb894",
+   "side": "YES",
+   "entry": 0.168,
+   "shares": 0.5952,
+   "cost": 0.1,
+   "bet_size": 0.1,
+   "consensus_bot_count": 35,
+   "consensus_family_count": 5,
+   "families": [
+    "LV_RS",
+    "LV_MV4",
+    "LV_BO",
+    "LV_BB",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841741.814177
   },
   "0x7976b8dbacf9077eb1453a62bcefd6ab2df199acd28aad276ff0d920d6992892": {
    "cid": "0x7976b8dbacf9077eb1453a62bcefd6ab2df199acd28aad276ff0d920d6992892",
    "side": "YES",
    "entry": 0.153,
-   "shares": 0.1961,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 43,
-   "consensus_family_count": 3,
+   "shares": 0.6536,
+   "cost": 0.1,
+   "bet_size": 0.1,
+   "consensus_bot_count": 34,
+   "consensus_family_count": 5,
    "families": [
+    "Whale",
     "LV_RS",
+    "LV_MV4",
     "LV_BO",
-    "Whale"
+    "LV_MV5"
    ],
    "bots": [
-    "LV:RS_p14_t75_follow|pany|stight|",
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:RS_p7_t75_follow|pany|stight|f",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:BO_p100_follow|plt30|sany|fany"
-   ],
-   "question": "Will Spain win the 2026 FIFA World Cup?",
-   "opened_ts": 1777697099.1622858
-  },
-  "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722": {
-   "cid": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
-   "side": "YES",
-   "entry": 0.14,
-   "shares": 0.2143,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 48,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:BB_p50_sd25_fade|plt30|sany|fa",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:BO_p100_follow|plt30|sany|fany",
-    "LV:BO_p100_follow|pany|swide|fany"
-   ],
-   "question": "Trump out as President before 2027?",
-   "opened_ts": 1777697099.39236
-  },
-  "0x8df5a4256840dee05851250c0490da7593597faff3a7f9a156ccbbda7fec76f8": {
-   "cid": "0x8df5a4256840dee05851250c0490da7593597faff3a7f9a156ccbbda7fec76f8",
-   "side": "YES",
-   "entry": 0.3,
-   "shares": 0.0667,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 25,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_BO"
-   ],
-   "bots": [
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:BO_p100_follow|plt30|sany|fany",
-    "LV:RS_p7_t70_follow|pany|sany|fan",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
+    "Whale",
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
     "LV:RS_p14_t70_follow|plt70|sany|f"
    ],
-   "question": "Will Arsenal win the 2025\u201326 Champions League?",
-   "opened_ts": 1777697099.6058683
+   "question": "Will Spain win the 2026 FIFA World Cup?",
+   "opened_ts": 1777841741.9885547
   },
-  "0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089": {
-   "cid": "0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089",
-   "side": "NO",
-   "entry": 0.78,
-   "shares": 0.0385,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 36,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:RS_p21_t80_fade|plt30|sany|fan",
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:BO_p100_follow|pany|swide|fany",
-    "LV:RS_p7_t70_follow|pany|sany|fan"
-   ],
-   "question": "",
-   "opened_ts": 1777697100.0657165
-  },
-  "0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c": {
-   "cid": "0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c",
+  "0x70d706fe084905dbafb95dfff13b727e4073efc3ef590adc8330562bac5d26de": {
+   "cid": "0x70d706fe084905dbafb95dfff13b727e4073efc3ef590adc8330562bac5d26de",
    "side": "NO",
    "entry": 0.8,
-   "shares": 0.025,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 39,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:RS_p21_t80_fade|plt30|sany|fan",
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:RS_p21_t80_fade|pany|swide|fan",
-    "LV:RS_p7_t70_follow|pany|sany|fan"
-   ],
-   "question": "",
-   "opened_ts": 1777697100.5043528
-  },
-  "0x1591b72dc504383d8fa2024e72a585c520b3c673614100d2e167507485e17e38": {
-   "cid": "0x1591b72dc504383d8fa2024e72a585c520b3c673614100d2e167507485e17e38",
-   "side": "NO",
-   "entry": 0.95,
-   "shares": 0.0211,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 37,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_BO"
-   ],
-   "bots": [
-    "LV:RS_p21_t80_fade|plt30|sany|fan",
-    "LV:RS_p7_t80_follow|plt70|sany|fa",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:BO_p100_follow|plt30|sany|fany",
-    "LV:BO_p100_follow|pany|swide|fany"
-   ],
-   "question": "",
-   "opened_ts": 1777697100.6933692
-  },
-  "0xcb06319aa9e029904c93c1df7d10b7ce7d6aab2b25b8f661e0cf57ea048a1567": {
-   "cid": "0xcb06319aa9e029904c93c1df7d10b7ce7d6aab2b25b8f661e0cf57ea048a1567",
-   "side": "NO",
-   "entry": 0.914,
-   "shares": 0.0328,
+   "shares": 0.0375,
    "cost": 0.03,
    "bet_size": 0.03,
    "consensus_bot_count": 23,
@@ -391,37 +357,517 @@
     "LV_BB"
    ],
    "bots": [
-    "LV:RS_p7_t75_follow|pany|stight|f",
-    "LV:RS_p14_t65_follow|plt70|sany|f",
-    "LV:RS_p14_t65_follow|plt70|stight",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p7_t70_follow|pany|sany|fan"
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:BB_p50_sd25_fade|pany|swide|fa",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
    ],
    "question": "",
-   "opened_ts": 1777697100.8810601
+   "opened_ts": 1777841742.1732833
   },
-  "0xa1d97efb8a19de58d995edf58b882c4f99ef356c8a564af8daf888a7610edea1": {
-   "cid": "0xa1d97efb8a19de58d995edf58b882c4f99ef356c8a564af8daf888a7610edea1",
+  "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722": {
+   "cid": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
    "side": "YES",
-   "entry": 0.08,
-   "shares": 0.25,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 14,
-   "consensus_family_count": 2,
+   "entry": 0.14,
+   "shares": 0.2143,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 32,
+   "consensus_family_count": 3,
    "families": [
+    "LV_RS",
     "LV_BO",
     "LV_BB"
    ],
    "bots": [
-    "LV:BB_p50_sd25_fade|plt30|sany|fa",
-    "LV:BB_p50_sd25_fade|plt70|swide|f",
-    "LV:BB_p10_sd20_fade|plt30|sany|fa",
-    "LV:BO_p100_follow|plt30|sany|fany",
-    "LV:BO_p100_follow|pany|swide|fany"
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "Trump out as President before 2027?",
+   "opened_ts": 1777841742.3467603
+  },
+  "0x8df5a4256840dee05851250c0490da7593597faff3a7f9a156ccbbda7fec76f8": {
+   "cid": "0x8df5a4256840dee05851250c0490da7593597faff3a7f9a156ccbbda7fec76f8",
+   "side": "YES",
+   "entry": 0.31,
+   "shares": 0.0645,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 16,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:RS_p21_t75_follow|plt70|sany|f",
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "Will Arsenal win the 2025\u201326 Champions League?",
+   "opened_ts": 1777841742.5410051
+  },
+  "0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089": {
+   "cid": "0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089",
+   "side": "NO",
+   "entry": 0.82,
+   "shares": 0.0366,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 29,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t80_fade|plt30|sany|fan"
    ],
    "question": "",
-   "opened_ts": 1777697101.2390945
+   "opened_ts": 1777841742.7269998
+  },
+  "0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c": {
+   "cid": "0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c",
+   "side": "NO",
+   "entry": 0.79,
+   "shares": 0.038,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 37,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841743.0192773
+  },
+  "0x1591b72dc504383d8fa2024e72a585c520b3c673614100d2e167507485e17e38": {
+   "cid": "0x1591b72dc504383d8fa2024e72a585c520b3c673614100d2e167507485e17e38",
+   "side": "NO",
+   "entry": 0.95,
+   "shares": 0.0211,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 27,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t80_fade|plt30|sany|fan"
+   ],
+   "question": "",
+   "opened_ts": 1777841743.6441693
+  },
+  "0x36f665053a7ca5c102f2db15cfc49b1b9f38fa820a5f2bb4bde87bf9fbd9a2ab": {
+   "cid": "0x36f665053a7ca5c102f2db15cfc49b1b9f38fa820a5f2bb4bde87bf9fbd9a2ab",
+   "side": "NO",
+   "entry": 0.86,
+   "shares": 0.0349,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 39,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841743.9006886
+  },
+  "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b": {
+   "cid": "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b",
+   "side": "YES",
+   "entry": 0.19,
+   "shares": 0.1053,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 24,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1777841744.086039
+  },
+  "0xd86177011df25e467bdfa1c25481edaf1006e88da184965173e03c8d1cc4f2d6": {
+   "cid": "0xd86177011df25e467bdfa1c25481edaf1006e88da184965173e03c8d1cc4f2d6",
+   "side": "NO",
+   "entry": 0.892,
+   "shares": 0.0561,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 44,
+   "consensus_family_count": 4,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_MV4",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany"
+   ],
+   "question": "",
+   "opened_ts": 1777841744.3358126
+  },
+  "0xb6b3d7a2037b3faa7e1306d741840d453432902d73cc9a146a035e40271eae73": {
+   "cid": "0xb6b3d7a2037b3faa7e1306d741840d453432902d73cc9a146a035e40271eae73",
+   "side": "YES",
+   "entry": 0.207,
+   "shares": 0.4831,
+   "cost": 0.1,
+   "bet_size": 0.1,
+   "consensus_bot_count": 29,
+   "consensus_family_count": 6,
+   "families": [
+    "Whale",
+    "LV_RS",
+    "LV_MV4",
+    "LV_BO",
+    "LV_BB",
+    "LV_MV5"
+   ],
+   "bots": [
+    "Whale",
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
+   ],
+   "question": "Will the San Antonio Spurs win the 2026 NBA Finals?",
+   "opened_ts": 1777841744.5715907
+  },
+  "0xde5ed16b575a0b1d100126266232653f1ba8e5709a4dd79b361491026f6cf65c": {
+   "cid": "0xde5ed16b575a0b1d100126266232653f1ba8e5709a4dd79b361491026f6cf65c",
+   "side": "YES",
+   "entry": 0.12,
+   "shares": 0.25,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 28,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1777841745.050158
+  },
+  "0x22014d44b787385b7baddb2b9d56cdcf5904fd7783b83c28403962dd71e51a51": {
+   "cid": "0x22014d44b787385b7baddb2b9d56cdcf5904fd7783b83c28403962dd71e51a51",
+   "side": "YES",
+   "entry": 0.26,
+   "shares": 0.1154,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 30,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1777841746.2687705
+  },
+  "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846": {
+   "cid": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+   "side": "NO",
+   "entry": 0.71,
+   "shares": 0.0423,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 26,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "Will the U.S. invade Iran before 2027?",
+   "opened_ts": 1777841746.6908214
+  },
+  "0x80ebf0a88a44bf737d4047b3accd7108285c69b84257e5c684bdc4c715c81139": {
+   "cid": "0x80ebf0a88a44bf737d4047b3accd7108285c69b84257e5c684bdc4c715c81139",
+   "side": "YES",
+   "entry": 0.24,
+   "shares": 0.0833,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 27,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:BB_p50_sd25_fade|pany|swide|fa",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1777841747.2463663
+  },
+  "0x7d9a8b8c29c55a7b5dce59aa1556be274bb5c6fb2ee431237c3f656603c96583": {
+   "cid": "0x7d9a8b8c29c55a7b5dce59aa1556be274bb5c6fb2ee431237c3f656603c96583",
+   "side": "YES",
+   "entry": 0.27,
+   "shares": 0.0741,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 16,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:RS_p21_t75_follow|plt70|sany|f",
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841747.5994382
+  },
+  "0xfa45085acfe935c2646cf1392a16b6153926029680bdd8e5a8c7028490ee468e": {
+   "cid": "0xfa45085acfe935c2646cf1392a16b6153926029680bdd8e5a8c7028490ee468e",
+   "side": "YES",
+   "entry": 0.14,
+   "shares": 0.1429,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 16,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:RS_p21_t75_follow|plt70|sany|f",
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841748.1064224
+  },
+  "0x434719e5e807306706d17205f2bc15e4901184084c4e8ea472127f47a365bbdf": {
+   "cid": "0x434719e5e807306706d17205f2bc15e4901184084c4e8ea472127f47a365bbdf",
+   "side": "YES",
+   "entry": 0.15,
+   "shares": 0.1333,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 24,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1777841748.5245404
+  },
+  "0x2135ffcb43ba9103bb6acf7116d2d5aa98bef6d9eb3dc9c85ea00cb79513f3ec": {
+   "cid": "0x2135ffcb43ba9103bb6acf7116d2d5aa98bef6d9eb3dc9c85ea00cb79513f3ec",
+   "side": "NO",
+   "entry": 0.82,
+   "shares": 0.0366,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 37,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841749.099052
+  },
+  "0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0": {
+   "cid": "0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0",
+   "side": "NO",
+   "entry": 0.878,
+   "shares": 0.0342,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 45,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841749.3483663
+  },
+  "0xf7c0303b0dd61a800a83276a711506dc6b056104f2141d49e9b915324ac9d454": {
+   "cid": "0xf7c0303b0dd61a800a83276a711506dc6b056104f2141d49e9b915324ac9d454",
+   "side": "NO",
+   "entry": 0.939,
+   "shares": 0.1065,
+   "cost": 0.1,
+   "bet_size": 0.1,
+   "consensus_bot_count": 47,
+   "consensus_family_count": 5,
+   "families": [
+    "LV_RS",
+    "LV_MV4",
+    "LV_BO",
+    "LV_BB",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841749.9112298
+  },
+  "0x6eec2b6b1c8d62aaacda46471e8caf7320f4ea9235f5ee87cba970a32a4e6985": {
+   "cid": "0x6eec2b6b1c8d62aaacda46471e8caf7320f4ea9235f5ee87cba970a32a4e6985",
+   "side": "NO",
+   "entry": 0.883,
+   "shares": 0.034,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 46,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841750.2261245
+  },
+  "0x742072d48e45cb4b311b3c4e28c6722d4472d2c33e746eddd84909b4158cbe95": {
+   "cid": "0x742072d48e45cb4b311b3c4e28c6722d4472d2c33e746eddd84909b4158cbe95",
+   "side": "NO",
+   "entry": 0.54,
+   "shares": 0.0556,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 10,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p21_t65_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777841750.617008
   },
   "0xe546672750517f62c45a5a00067481981e62b9c20fa8220203232c9dc8fd2093": {
    "cid": "0xe546672750517f62c45a5a00067481981e62b9c20fa8220203232c9dc8fd2093",
@@ -430,346 +876,424 @@
    "shares": 0.022,
    "cost": 0.02,
    "bet_size": 0.02,
-   "consensus_bot_count": 19,
+   "consensus_bot_count": 13,
    "consensus_family_count": 2,
    "families": [
     "LV_RS",
     "LV_BB"
    ],
    "bots": [
-    "LV:RS_p21_t80_fade|plt30|sany|fan",
-    "LV:BB_p50_sd25_fade|plt30|sany|fa",
-    "LV:RS_p21_t80_fade|pany|swide|fan",
-    "LV:BB_p30_sd20_fade|plt30|sany|fa",
-    "LV:BB_p30_sd25_fade|pany|swide|fa"
+    "LV:BB_p30_sd25_fade|pany|swide|fa",
+    "LV:BB_p50_sd25_fade|plt70|swide|f",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BB_p30_sd25_fade|plt50|swide|f",
+    "LV:RS_p21_t80_fade|pany|swide|fan"
    ],
    "question": "",
-   "opened_ts": 1777697101.440994
+   "opened_ts": 1777841752.9110413
   }
  },
- "wins": 10,
- "losses": 3,
- "total_bets": 32,
- "realized_pnl": 0.01930000000000001,
+ "wins": 0,
+ "losses": 0,
+ "total_bets": 37,
+ "realized_pnl": 0.0,
  "by_side": {
-  "YES": 16,
-  "NO": 16
+  "YES": 22,
+  "NO": 15
  },
  "consensus_observed": [
   {
-   "cid": "0x5db999fad3",
+   "cid": "0x348cd9adf4",
    "side": "YES",
-   "count": 45,
+   "count": 65,
    "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t75_follow|pgt30|sany|f",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
-    "LV:RS_p21_t75_follow|plt50|sany|f"
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p7_t80_follow|pgt50|stight|"
    ],
-   "question": "Will the U.S. invade Iran before 2027?"
+   "question": ""
   },
   {
    "cid": "0x22e7b5e354",
    "side": "YES",
-   "count": 71,
+   "count": 62,
    "bots": [
-    "LV:RS_p7_t65_follow|pany|stight|f",
-    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "Whale",
+    "LV:RS_p14_t75_follow|plt70|stight",
     "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p7_t75_follow|pgt30|stight|"
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|"
    ],
    "question": "Will the Oklahoma City Thunder win the 2026 NBA Finals?"
   },
   {
-   "cid": "0x348cd9adf4",
-   "side": "YES",
-   "count": 80,
+   "cid": "0x6114a8a3f9",
+   "side": "NO",
+   "count": 31,
    "bots": [
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p7_t70_follow|pgt30|stight|",
-    "LV:RS_p7_t65_follow|pgt30|stight|",
-    "LV:RS_p7_t65_follow|pgt30|sany|fa",
-    "LV:RS_p14_t75_follow|pany|sany|fa"
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x416e3cbe25",
+   "side": "YES",
+   "count": 22,
+   "bots": [
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p14_t80_follow|plt70|sany|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0xc6ddb19f84",
+   "side": "YES",
+   "count": 49,
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0xd4cb184e5d",
+   "side": "YES",
+   "count": 43,
+   "bots": [
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t80_follow|pgt50|stight|",
+    "LV:RS_p7_t75_follow|pgt50|stight|",
+    "LV:MV5_follow|pgt30|stight|fany"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x030e3bd256",
+   "side": "YES",
+   "count": 64,
+   "bots": [
+    "Whale",
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|"
+   ],
+   "question": "Will Real Madrid CF win on 2026-05-03?"
+  },
+  {
+   "cid": "0x998d69f881",
+   "side": "YES",
+   "count": 61,
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p7_t80_follow|pgt50|stight|"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x309e01ff8a",
+   "side": "YES",
+   "count": 22,
+   "bots": [
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p14_t80_follow|plt70|sany|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x3b48166faf",
+   "side": "NO",
+   "count": 53,
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x4bab360a81",
+   "side": "YES",
+   "count": 48,
+   "bots": [
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x33b0109d79",
+   "side": "YES",
+   "count": 23,
+   "bots": [
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0xb1f602f5b2",
+   "side": "NO",
+   "count": 22,
+   "bots": [
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p14_t80_follow|plt70|sany|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0xaa48235f1e",
+   "side": "YES",
+   "count": 22,
+   "bots": [
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p14_t80_follow|plt70|sany|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0xa0cc345312",
+   "side": "YES",
+   "count": 22,
+   "bots": [
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p14_t80_follow|plt70|sany|f"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0xded958568c",
+   "side": "YES",
+   "count": 21,
+   "bots": [
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t80_follow|pgt50|stight|",
+    "LV:RS_p7_t75_follow|pgt50|stight|",
+    "LV:RS_p7_t75_follow|pgt50|sany|fa"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x0fecff6fef",
+   "side": "YES",
+   "count": 11,
+   "bots": [
+    "LV:RS_p21_t75_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|pgt50|sany|f",
+    "LV:RS_p7_t75_follow|pgt50|sany|fa",
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p7_t80_follow|pgt30|sany|fa"
+   ],
+   "question": ""
+  },
+  {
+   "cid": "0x6465374ef5",
+   "side": "YES",
+   "count": 26,
+   "bots": [
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p7_t80_follow|pgt50|stight|",
+    "LV:RS_p7_t75_follow|pgt50|stight|",
+    "LV:RS_p7_t70_follow|plt70|sany|fa"
    ],
    "question": ""
   },
   {
    "cid": "0x9b6fef2490",
    "side": "YES",
-   "count": 48,
+   "count": 35,
    "bots": [
-    "LV:RS_p7_t65_follow|pany|stight|f",
-    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:RS_p14_t75_follow|plt70|stight",
     "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f"
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
    ],
    "question": ""
   },
   {
    "cid": "0x7976b8dbac",
    "side": "YES",
-   "count": 43,
+   "count": 34,
    "bots": [
-    "LV:RS_p7_t65_follow|pany|stight|f",
-    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "Whale",
+    "LV:RS_p14_t75_follow|plt70|stight",
     "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f"
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
    ],
    "question": "Will Spain win the 2026 FIFA World Cup?"
   },
   {
    "cid": "0x70d706fe08",
    "side": "NO",
-   "count": 39,
+   "count": 23,
    "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
-    "LV:RS_p21_t75_follow|plt50|sany|f",
-    "LV:RS_p21_t80_follow|pany|sany|fa"
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:BB_p50_sd25_fade|pany|swide|fa",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
    ],
    "question": ""
   },
   {
    "cid": "0x48b0b0bca5",
    "side": "YES",
-   "count": 48,
+   "count": 32,
    "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
     "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
-    "LV:RS_p21_t75_follow|plt50|sany|f"
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
    ],
    "question": "Trump out as President before 2027?"
   },
   {
    "cid": "0x8df5a42568",
    "side": "YES",
-   "count": 25,
+   "count": 16,
    "bots": [
     "LV:RS_p14_t75_follow|plt70|sany|f",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
-    "LV:RS_p21_t75_follow|plt50|sany|f",
-    "LV:RS_p21_t80_follow|pany|sany|fa"
+    "LV:RS_p21_t75_follow|plt70|sany|f",
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
    ],
    "question": "Will Arsenal win the 2025\u201326 Champions League?"
   },
   {
-   "cid": "0x6114a8a3f9",
-   "side": "NO",
-   "count": 39,
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t75_follow|pgt30|sany|f",
-    "LV:RS_p21_t70_follow|plt50|sany|f"
-   ],
-   "question": ""
-  },
-  {
    "cid": "0x0e4a0c937b",
    "side": "NO",
-   "count": 36,
+   "count": 29,
    "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:BO_p50_follow|pany|swide|fany",
     "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
-    "LV:BB_p20_sd25_fade|plt30|sany|fa"
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t80_fade|plt30|sany|fan"
    ],
    "question": ""
   },
   {
    "cid": "0x518a5b030b",
    "side": "NO",
-   "count": 39,
+   "count": 37,
    "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
-    "LV:RS_p21_t75_follow|plt50|sany|f",
-    "LV:RS_p21_t80_follow|pany|sany|fa"
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
    ],
    "question": ""
   },
   {
    "cid": "0xb75c07f425",
    "side": "NO",
-   "count": 63,
+   "count": 42,
    "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
     "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
-    "LV:BB_p20_sd25_fade|plt30|sany|fa"
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
    ],
    "question": ""
   },
   {
    "cid": "0x1591b72dc5",
    "side": "NO",
-   "count": 37,
+   "count": 27,
    "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:BO_p50_follow|pany|swide|fany",
     "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
-    "LV:RS_p21_t75_follow|plt50|sany|f"
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t80_fade|plt30|sany|fan"
    ],
    "question": ""
   },
   {
-   "cid": "0xb6b3d7a203",
+   "cid": "0x36f665053a",
    "side": "NO",
-   "count": 20,
+   "count": 39,
    "bots": [
-    "LV:RS_p7_t65_follow|pany|stight|f",
-    "LV:BB_p10_sd20_follow|plt70|stigh",
-    "LV:BO_p100_fade|plt70|stight|fany",
-    "LV:BB_p20_sd25_fade|plt30|sany|fa",
-    "LV:RS_p7_t70_follow|pany|stight|f"
-   ],
-   "question": "Will the San Antonio Spurs win the 2026 NBA Finals?"
-  },
-  {
-   "cid": "0xcb06319aa9",
-   "side": "NO",
-   "count": 23,
-   "bots": [
-    "LV:RS_p7_t65_follow|pany|stight|f",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f",
-    "LV:RS_p14_t70_follow|plt70|stight",
-    "LV:RS_p7_t70_follow|pany|stight|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x13c0edf4f2",
-   "side": "NO",
-   "count": 55,
-   "bots": [
-    "LV:RS_p7_t65_follow|pany|stight|f",
-    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|pany|swide|fany",
     "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p21_t65_follow|pany|sany|fa",
-    "LV:RS_p21_t70_follow|plt50|sany|f"
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
    ],
    "question": ""
   },
   {
-   "cid": "0xa1d97efb8a",
+   "cid": "0xbb4d51e636",
    "side": "YES",
-   "count": 14,
+   "count": 24,
    "bots": [
-    "LV:BO_p100_follow|pany|swide|fany",
-    "LV:BO_p100_follow|plt30|swide|fan",
-    "LV:BO_p50_follow|plt30|sany|fany",
-    "LV:BO_p100_follow|plt50|swide|fan",
-    "LV:BO_p100_follow|plt30|sany|fany"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xe546672750",
-   "side": "NO",
-   "count": 19,
-   "bots": [
-    "LV:BB_p20_sd20_fade|plt30|sany|fa",
-    "LV:RS_p21_t80_fade|plt30|sany|fan",
-    "LV:BB_p50_sd25_fade|plt30|sany|fa",
-    "LV:RS_p21_t80_fade|plt30|swide|fa",
-    "LV:BB_p30_sd25_fade|plt50|swide|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x3e0dc6c075",
-   "side": "NO",
-   "count": 25,
-   "bots": [
-    "LV:BB_p20_sd20_fade|plt30|sany|fa",
-    "LV:RS_p21_t80_fade|plt30|sany|fan",
-    "LV:BB_p50_sd25_fade|plt30|sany|fa",
-    "LV:RS_p21_t80_fade|plt30|swide|fa",
-    "LV:BB_p30_sd25_fade|plt50|swide|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x561e400fc7",
-   "side": "NO",
-   "count": 50,
-   "bots": [
-    "LV:RS_p7_t65_follow|pany|stight|f",
+    "LV:BO_p50_follow|pany|swide|fany",
     "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:BB_p20_sd25_fade|plt30|sany|fa",
-    "LV:RS_p14_t70_follow|plt70|stight",
-    "LV:BB_p20_sd20_fade|plt30|sany|fa"
-   ],
-   "question": "Over $10M committed to the Printr public sale?"
-  },
-  {
-   "cid": "0xa1bb6c583e",
-   "side": "NO",
-   "count": 25,
-   "bots": [
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:BB_p20_sd20_fade|plt30|sany|fa",
-    "LV:RS_p21_t80_fade|plt30|sany|fan",
-    "LV:BB_p50_sd25_fade|plt30|sany|fa",
-    "LV:RS_p21_t80_fade|plt30|swide|fa"
-   ],
-   "question": "Over $6M committed to the Printr public sale?"
-  },
-  {
-   "cid": "0xf03529a209",
-   "side": "NO",
-   "count": 20,
-   "bots": [
-    "LV:BB_p20_sd20_fade|plt30|sany|fa",
-    "LV:RS_p21_t80_fade|plt30|sany|fan",
-    "LV:BB_p50_sd25_fade|plt30|sany|fa",
-    "LV:RS_p21_t80_fade|plt30|swide|fa",
-    "LV:BB_p30_sd25_fade|plt50|swide|f"
-   ],
-   "question": "Over $8M committed to the Printr public sale?"
-  },
-  {
-   "cid": "0xcacdc005e7",
-   "side": "NO",
-   "count": 5,
-   "bots": [
-    "LV:BB_p30_sd20_fade|plt30|sany|fa",
-    "LV:BB_p50_sd20_fade|plt30|sany|fa",
-    "LV:BB_p20_sd20_fade|plt30|sany|fa",
-    "LV:BB_p50_sd25_fade|plt30|sany|fa",
-    "LV:RS_p14_t80_fade|plt30|sany|fan"
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
    ],
    "question": ""
   },
   {
-   "cid": "0xd9c3cba998",
+   "cid": "0xd86177011d",
    "side": "NO",
-   "count": 13,
+   "count": 44,
    "bots": [
-    "LV:BB_p30_sd20_fade|plt30|sany|fa",
-    "LV:BB_p50_sd25_fade|plt30|swide|f",
-    "LV:RS_p21_t80_fade|pany|swide|fan",
-    "LV:RS_p21_t80_fade|plt70|swide|fa",
-    "LV:BB_p50_sd25_fade|pany|swide|fa"
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany"
    ],
    "question": ""
   }
  ],
- "conflicts_observed": 4,
- "equity_arena_scale": 1096.5,
- "updated_at": "2026-05-02T04:55:35.000481+00:00"
+ "conflicts_observed": 11,
+ "equity_arena_scale": 1000.0,
+ "updated_at": "2026-05-03T20:55:58.454857+00:00"
 }

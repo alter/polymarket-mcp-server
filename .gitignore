@@ -104,6 +104,10 @@ logs/
 !bot-data/mass_backtest_metavote.json
 !bot-data/phase3_obi_results.json
 !bot-data/daily_report_*.md
+!bot-data/polymarket_topic_analysis.json
+!bot-data/market_entities.json
+!bot-data/maker.json
+!bot-data/graph_analysis.json
 
 # Bot credentials (MUST NOT be committed)
 .env.bot

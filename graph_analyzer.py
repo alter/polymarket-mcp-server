@@ -57,7 +57,12 @@ PERSON_RE = re.compile(r"\b[A-Z][a-z]{2,} [A-Z][a-z]{2,}\b")
 # HTTP helpers
 # ---------------------------------------------------------------------------
 def _client() -> httpx.Client:
-    return httpx.Client(timeout=20, follow_redirects=True)
+    # Gamma API now requires non-empty UA; default httpx UA gets 403'd.
+    return httpx.Client(
+        timeout=20,
+        follow_redirects=True,
+        headers={"User-Agent": "Mozilla/5.0 polymarket-graph-analyzer"},
+    )
 
 
 def fetch_markets(client: httpx.Client, total: int = 500) -> list[dict]:

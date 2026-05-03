@@ -1,0 +1,41 @@
+{
+ "n_markets": 1000,
+ "category_counts": {},
+ "topic_counts": {
+  "crypto": 76,
+  "soccer_european": 26,
+  "baseball": 10,
+  "us_politics": 183,
+  "geopolitics": 78,
+  "nba": 29,
+  "tech_business": 82,
+  "celebrity": 68,
+  "macro_finance": 20,
+  "f1": 42,
+  "eu_politics": 9,
+  "ufc_boxing": 1,
+  "weather_natural": 38,
+  "nfl": 5,
+  "uk_politics": 2,
+  "tennis": 1
+ },
+ "topic_volume": {
+  "crypto": 8542368.897748005,
+  "soccer_european": 4558335.616005993,
+  "baseball": 1558583.2734489976,
+  "us_politics": 9027623.457032006,
+  "geopolitics": 5032057.790827,
+  "nba": 3072217.4811019995,
+  "tech_business": 4107541.3254299997,
+  "celebrity": 3791673.2453020005,
+  "macro_finance": 1510427.9323509994,
+  "f1": 2373959.5523759997,
+  "eu_politics": 588446.1646970001,
+  "ufc_boxing": 73225.662536,
+  "weather_natural": 706847.5503940001,
+  "nfl": 120480.98779900002,
+  "uk_politics": 34827.334388,
+  "tennis": 13107.226074
+ },
+ "total_24h_volume": 99466024.885256
+}
