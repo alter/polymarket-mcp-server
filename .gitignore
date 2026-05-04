@@ -108,6 +108,9 @@ logs/
 !bot-data/market_entities.json
 !bot-data/maker.json
 !bot-data/graph_analysis.json
+!bot-data/strategy_clusters.json
+!bot-data/regime_per_market.json
+!bot-data/arena_backtest_full.json
 
 # Bot credentials (MUST NOT be committed)
 .env.bot
