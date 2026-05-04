@@ -63,13 +63,17 @@ echo "$(date) [entrypoint] Starting maker_bot..."
 python -u /app/maker_bot.py > /app/data/maker.log 2>&1 &
 MK_PID=$!
 
+echo "$(date) [entrypoint] Starting regime_router..."
+python -u /app/regime_router.py > /app/data/regime_router.log 2>&1 &
+RR_PID=$!
+
 echo "$(date) [entrypoint] Starting multi_strategy (arena)..."
 python -u /app/multi_strategy.py &
 ARENA_PID=$!
 
 # Wait for any to exit, then kill all
-wait -n $OIL_PID $NO_PID $WHALE_PID $LV_PID $OB_PID $WD_PID $TD_PID $SKP_PID $NM_PID $NT_PID $WF_PID $SP_PID $TD2_PID $CB_PID $MK_PID $ARENA_PID
+wait -n $OIL_PID $NO_PID $WHALE_PID $LV_PID $OB_PID $WD_PID $TD_PID $SKP_PID $NM_PID $NT_PID $WF_PID $SP_PID $TD2_PID $CB_PID $MK_PID $RR_PID $ARENA_PID
 EXIT_CODE=$?
 echo "$(date) [entrypoint] One process exited with $EXIT_CODE. Killing rest."
-kill -TERM $OIL_PID $NO_PID $WHALE_PID $LV_PID $OB_PID $WD_PID $TD_PID $SKP_PID $NM_PID $NT_PID $WF_PID $SP_PID $TD2_PID $CB_PID $MK_PID $ARENA_PID 2>/dev/null || true
+kill -TERM $OIL_PID $NO_PID $WHALE_PID $LV_PID $OB_PID $WD_PID $TD_PID $SKP_PID $NM_PID $NT_PID $WF_PID $SP_PID $TD2_PID $CB_PID $MK_PID $RR_PID $ARENA_PID 2>/dev/null || true
 exit $EXIT_CODE

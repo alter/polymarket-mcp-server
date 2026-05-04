@@ -111,6 +111,8 @@ logs/
 !bot-data/strategy_clusters.json
 !bot-data/regime_per_market.json
 !bot-data/arena_backtest_full.json
+!bot-data/regime_router.json
+!bot-data/cluster_double_check.json
 
 # Bot credentials (MUST NOT be committed)
 .env.bot

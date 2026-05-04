@@ -37,14 +37,14 @@ DATA = "data"
 STATE = os.path.join(DATA, "maker.json")
 HEADERS = {"User-Agent": "Mozilla/5.0 maker-bot"}
 
-MIN_SPREAD = 0.02            # only quote markets with >=2¢ spread
-MAX_MARKETS = 30             # subscribe to top-30 by volume meeting criterion
-QUOTE_OFFSET = 0.01          # post 1¢ inside the spread
-HOLD_TIMEOUT_SEC = 3600      # close any position held >1h
-STOP_TOLERANCE = 0.05        # close at -5¢ adverse move
-SCAN_INTERVAL = 1800         # refresh market subscriptions every 30 min
-SAVE_INTERVAL = 60           # save state every 60s
-PAPER_QUANTITY = 50.0        # virtual $50 per order to match arena scale
+MIN_SPREAD = 0.01            # 1¢ minimum (was 2¢ — too strict, 0 fills in 30h)
+MAX_MARKETS = 50             # subscribe to top-50 (was 30) — wider net
+QUOTE_OFFSET = 0.005         # post half-cent inside spread (was 1¢)
+HOLD_TIMEOUT_SEC = 3600
+STOP_TOLERANCE = 0.05
+SCAN_INTERVAL = 1800
+SAVE_INTERVAL = 60
+PAPER_QUANTITY = 50.0
 
 
 class MakerBot:

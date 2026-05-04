@@ -22,6 +22,7 @@ GAMMA = "https://gamma-api.polymarket.com"
 DATA = "data"
 REGIME_FILE = os.path.join(DATA, "regime_per_market.json")
 ARENA_FILE = os.path.join(DATA, "arena_results.json")
+ENTRIES_FILE = os.path.join(DATA, "arena_entries.jsonl")
 OUT = os.path.join(DATA, "regime_router.json")
 BACKTEST_FILE = os.path.join(DATA, "arena_backtest_full.json")
 
@@ -107,37 +108,75 @@ class RegimeRouter:
             return False
         return family in regime.get("recommended_families", [])
 
-    async def scan_arena_signals(self, client):
-        """Sample new arena entries: find recently-opened positions across
-        the live arena, check if any are in markets with known regime.
+    def _indicator_to_family(self, ind):
+        family_map = {
+            "mean_rev_ema": "mean_rev_ema", "mean_rev_sma": "mean_rev_ema",
+            "wavelet_mr": "wavelet_mr", "wavelet_ms": "wavelet_mr",
+            "rsi": "rsi", "bollinger": "bollinger",
+            "breakout": "breakout", "momentum": "momentum",
+            "zscore": "zscore", "macd": "macd",
+        }
+        return family_map.get(ind, ind)
+
+    async def consume_entries(self):
+        """Tail bot-data/arena_entries.jsonl, gate each entry by regime alignment.
+
+        For each entry event:
+         - Look up market regime
+         - Check if strategy family is in recommended_families
+         - Bucket the entry under "aligned" / "misaligned" / "no_regime"
+         - Track virtual P&L per bucket (using same close price as actual arena)
         """
-        if not os.path.exists(ARENA_FILE):
-            return
+        # Tail position state — survives restart
+        pos_file = os.path.join(DATA, "regime_router_pos.json")
         try:
-            d = json.load(open(ARENA_FILE))
+            pos_state = json.load(open(pos_file))
         except Exception:
+            pos_state = {"file_offset": 0}
+
+        last_offset = pos_state.get("file_offset", 0)
+        if not os.path.exists(ENTRIES_FILE):
             return
-        # We can't extract individual entry events from arena_results
-        # (only summary state). Instead: for each strategy with open positions,
-        # cross-reference with regime recommendation.
-        n_aligned = 0; n_misaligned = 0
-        for r in d.get("results", []):
-            if r.get("retired"):
+        # Read new lines
+        with open(ENTRIES_FILE) as f:
+            f.seek(last_offset)
+            new_lines = f.readlines()
+            new_offset = f.tell()
+
+        n_processed = 0
+        for line in new_lines:
+            try:
+                entry = json.loads(line)
+            except Exception:
                 continue
-            ind = r.get("params", {}).get("indicator", "")
-            # Map indicator → family
-            family = ind.split("_")[0] if "_" in ind else ind
-            family_map = {"mean": "mean_rev_ema", "wavelet": "wavelet_mr",
-                          "rsi": "rsi", "bollinger": "bollinger",
-                          "breakout": "breakout", "momentum": "momentum",
-                          "zscore": "zscore", "macd": "macd"}
-            family = family_map.get(family, family)
-            # Note: arena_results doesn't expose per-position details.
-            # So we can only count aligned strategies, not aligned trades.
-            # For real edge measurement we'd need event stream from arena.
-            # This code is the framework; integration left for later.
+            cid = entry.get("cid", "")
+            family = self._indicator_to_family(entry.get("indicator", ""))
+            regime = self.regimes.get(cid)
+            if not regime:
+                bucket = "no_regime"
+            elif family in regime.get("recommended_families", []):
+                bucket = "aligned"
+            else:
+                bucket = "misaligned"
+            self.regime_trades[bucket] += 1
+            self.recent_decisions.append({
+                "ts": entry.get("ts", 0),
+                "cid": cid[:14], "family": family,
+                "side": entry.get("side", ""),
+                "entry": entry.get("entry", 0),
+                "bucket": bucket,
+                "regime_vol": regime.get("vol") if regime else None,
+                "regime_trend": regime.get("trend") if regime else None,
+            })
+            n_processed += 1
+
+        # Persist offset
+        pos_state["file_offset"] = new_offset
+        try:
+            json.dump(pos_state, open(pos_file, "w"))
+        except Exception:
             pass
-        return n_aligned, n_misaligned
+        return n_processed
 
     async def fetch_book(self, client, cid):
         try:
@@ -170,8 +209,10 @@ class RegimeRouter:
                 now = time.time()
                 if now - self.last_regime_load > REFRESH_INTERVAL:
                     self.load_regimes()
-                if now - self.last_scan > SCAN_INTERVAL:
-                    res = await self.scan_arena_signals(client)
+                if now - self.last_scan > 30:   # consume entries every 30s
+                    n = await self.consume_entries()
+                    if n:
+                        print(f"[router] consumed {n} new entries from arena_entries.jsonl")
                     self.last_scan = now
                 if now - self.last_save > SAVE_INTERVAL:
                     self.save()

@@ -1030,6 +1030,22 @@ class StrategyState:
             "fee_type": fee_type, "reason": reason,
             "opened_at": time.time(),
         }
+        # Emit entry event for downstream consumers (regime_router, etc).
+        # Append-only JSONL — readers tail the file from EOF position.
+        try:
+            with open(os.path.join(DATA_DIR, "arena_entries.jsonl"), "a") as f:
+                f.write(json.dumps({
+                    "ts": time.time(),
+                    "strat_id": self.params.id,
+                    "strat_name": self.params.name,
+                    "indicator": self.params.indicator,
+                    "cid": market_id, "side": side,
+                    "entry": round(price, 4),
+                    "fee_free": self.params.fee_free_only,
+                    "fees_on": fee_type is not None,
+                }) + "\n")
+        except Exception:
+            pass  # never block trading on log write
 
     def close_position(self, market_id, exit_price, reason):
         if market_id not in self.positions:

@@ -1,0 +1,317 @@
+{
+ "updated_at": "2026-05-04T22:51:17.652771+00:00",
+ "n_regimes_loaded": 762,
+ "n_open_positions": 0,
+ "regime_equity": {},
+ "regime_trades": {
+  "misaligned": 171,
+  "aligned": 35,
+  "no_regime": 10
+ },
+ "regime_wins": {},
+ "regime_losses": {},
+ "regime_pnl_summary": [],
+ "open_positions": {},
+ "recent_decisions": [
+  {
+   "ts": 1777935039.1331663,
+   "cid": "663583",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.185,
+   "bucket": "aligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_down_strong"
+  },
+  {
+   "ts": 1777935039.1447937,
+   "cid": "2105248",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.885,
+   "bucket": "no_regime",
+   "regime_vol": null,
+   "regime_trend": null
+  },
+  {
+   "ts": 1777935039.1482005,
+   "cid": "2133404",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.265,
+   "bucket": "aligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_down_strong"
+  },
+  {
+   "ts": 1777935039.1499104,
+   "cid": "665374",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.305,
+   "bucket": "misaligned",
+   "regime_vol": "vol_low",
+   "regime_trend": "trend_flat"
+  },
+  {
+   "ts": 1777935039.150873,
+   "cid": "1809560",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.155,
+   "bucket": "misaligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_down_mild"
+  },
+  {
+   "ts": 1777935039.151809,
+   "cid": "1919425",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.135,
+   "bucket": "misaligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_up_mild"
+  },
+  {
+   "ts": 1777935039.152477,
+   "cid": "1171663",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.105,
+   "bucket": "misaligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_down_mild"
+  },
+  {
+   "ts": 1777935039.1533744,
+   "cid": "2133405",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.495,
+   "bucket": "aligned",
+   "regime_vol": "vol_mid",
+   "regime_trend": "trend_up_mild"
+  },
+  {
+   "ts": 1777935039.1545146,
+   "cid": "1962237",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.335,
+   "bucket": "aligned",
+   "regime_vol": "vol_mid",
+   "regime_trend": "trend_down_mild"
+  },
+  {
+   "ts": 1777935039.1563654,
+   "cid": "2047424",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.105,
+   "bucket": "misaligned",
+   "regime_vol": "vol_low",
+   "regime_trend": "trend_flat"
+  },
+  {
+   "ts": 1777935039.157261,
+   "cid": "1971905",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.395,
+   "bucket": "aligned",
+   "regime_vol": "vol_mid",
+   "regime_trend": "trend_down_mild"
+  },
+  {
+   "ts": 1777935039.1583607,
+   "cid": "2119227",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.165,
+   "bucket": "aligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_up_strong"
+  },
+  {
+   "ts": 1777935039.1594675,
+   "cid": "663583",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.185,
+   "bucket": "aligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_down_strong"
+  },
+  {
+   "ts": 1777935039.1615798,
+   "cid": "2133404",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.265,
+   "bucket": "aligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_down_strong"
+  },
+  {
+   "ts": 1777935039.1624718,
+   "cid": "665374",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.305,
+   "bucket": "misaligned",
+   "regime_vol": "vol_low",
+   "regime_trend": "trend_flat"
+  },
+  {
+   "ts": 1777935039.1638508,
+   "cid": "1809560",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.155,
+   "bucket": "misaligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_down_mild"
+  },
+  {
+   "ts": 1777935039.1650722,
+   "cid": "1919425",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.135,
+   "bucket": "misaligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_up_mild"
+  },
+  {
+   "ts": 1777935039.165949,
+   "cid": "1171663",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.105,
+   "bucket": "misaligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_down_mild"
+  },
+  {
+   "ts": 1777935039.1686625,
+   "cid": "2074237",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.82,
+   "bucket": "misaligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_flat"
+  },
+  {
+   "ts": 1777935039.1699173,
+   "cid": "2145979",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.505,
+   "bucket": "no_regime",
+   "regime_vol": null,
+   "regime_trend": null
+  },
+  {
+   "ts": 1777935039.171287,
+   "cid": "2133405",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.495,
+   "bucket": "aligned",
+   "regime_vol": "vol_mid",
+   "regime_trend": "trend_up_mild"
+  },
+  {
+   "ts": 1777935039.172214,
+   "cid": "2159096",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.525,
+   "bucket": "no_regime",
+   "regime_vol": null,
+   "regime_trend": null
+  },
+  {
+   "ts": 1777935039.1745934,
+   "cid": "1962237",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.335,
+   "bucket": "aligned",
+   "regime_vol": "vol_mid",
+   "regime_trend": "trend_down_mild"
+  },
+  {
+   "ts": 1777935039.1895666,
+   "cid": "2047424",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.105,
+   "bucket": "misaligned",
+   "regime_vol": "vol_low",
+   "regime_trend": "trend_flat"
+  },
+  {
+   "ts": 1777935039.1906247,
+   "cid": "2142000",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.665,
+   "bucket": "misaligned",
+   "regime_vol": "vol_low",
+   "regime_trend": "trend_flat"
+  },
+  {
+   "ts": 1777935039.1953828,
+   "cid": "1971905",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.395,
+   "bucket": "aligned",
+   "regime_vol": "vol_mid",
+   "regime_trend": "trend_down_mild"
+  },
+  {
+   "ts": 1777935039.196655,
+   "cid": "2119227",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.165,
+   "bucket": "aligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_up_strong"
+  },
+  {
+   "ts": 1777935039.2075229,
+   "cid": "2105255",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.555,
+   "bucket": "no_regime",
+   "regime_vol": null,
+   "regime_trend": null
+  },
+  {
+   "ts": 1777935039.212588,
+   "cid": "663583",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.185,
+   "bucket": "aligned",
+   "regime_vol": "vol_high",
+   "regime_trend": "trend_down_strong"
+  },
+  {
+   "ts": 1777935039.2139835,
+   "cid": "2105248",
+   "family": "breakout",
+   "side": "YES",
+   "entry": 0.885,
+   "bucket": "no_regime",
+   "regime_vol": null,
+   "regime_trend": null
+  }
+ ]
+}
