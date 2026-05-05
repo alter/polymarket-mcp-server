@@ -117,6 +117,7 @@ logs/
 !bot-data/deflated_significance.json
 !bot-data/final_shortlist.json
 !bot-data/elite_paper.json
+!bot-data/kelly_paper.json
 
 # Bot credentials (MUST NOT be committed)
 .env.bot
