@@ -1,0 +1,2449 @@
+{
+ "updated_at": "2026-05-05T14:26:40.598753+00:00",
+ "elite_count": 31,
+ "regimes_count": 677,
+ "opened": 216,
+ "open_now": 216,
+ "wins": 0,
+ "losses": 0,
+ "win_rate": 0.0,
+ "realized_pnl": 0.0,
+ "skipped_not_elite": 8071,
+ "skipped_no_regime": 0,
+ "skipped_wrong_regime": 336,
+ "open_positions": {
+  "197_2133404_1777934932": {
+   "strat_id": 197,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934932.9734595,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "197_1809560_1777934932": {
+   "strat_id": 197,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934932.9812734,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "197_1919425_1777934932": {
+   "strat_id": 197,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934932.9827974,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "198_2133404_1777934932": {
+   "strat_id": 198,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934932.9935207,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "198_1809560_1777934932": {
+   "strat_id": 198,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934932.995532,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "198_1919425_1777934932": {
+   "strat_id": 198,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934932.998121,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "199_2133404_1777934933": {
+   "strat_id": 199,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934933.0137177,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "199_1809560_1777934933": {
+   "strat_id": 199,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934933.0176368,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "199_1919425_1777934933": {
+   "strat_id": 199,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934933.0197601,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "201_2133404_1777934933": {
+   "strat_id": 201,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934933.0588863,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "201_1809560_1777934933": {
+   "strat_id": 201,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934933.0663347,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "201_1919425_1777934933": {
+   "strat_id": 201,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934933.068253,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "202_2133404_1777934933": {
+   "strat_id": 202,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934933.0844598,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "202_1809560_1777934933": {
+   "strat_id": 202,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934933.0871003,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "202_1919425_1777934933": {
+   "strat_id": 202,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934933.0886505,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "203_2133404_1777934933": {
+   "strat_id": 203,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934933.09984,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "203_1809560_1777934933": {
+   "strat_id": 203,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934933.1021302,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "203_1919425_1777934933": {
+   "strat_id": 203,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934933.1032975,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "204_2133404_1777934933": {
+   "strat_id": 204,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934933.1114025,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "204_1809560_1777934933": {
+   "strat_id": 204,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934933.1159613,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "204_1919425_1777934933": {
+   "strat_id": 204,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934933.1179607,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "205_2133404_1777934933": {
+   "strat_id": 205,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934933.1269736,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "205_1809560_1777934933": {
+   "strat_id": 205,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934933.128538,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "205_1919425_1777934933": {
+   "strat_id": 205,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934933.1293817,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "207_2133404_1777934933": {
+   "strat_id": 207,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934933.146932,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "207_1809560_1777934933": {
+   "strat_id": 207,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934933.1481347,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "207_1919425_1777934933": {
+   "strat_id": 207,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934933.1494167,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "208_2133404_1777934933": {
+   "strat_id": 208,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.735,
+   "ts": 1777934933.1549826,
+   "indicator": "rsi",
+   "shares": 68.02721088435375,
+   "regime": "trend"
+  },
+  "208_1809560_1777934933": {
+   "strat_id": 208,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777934933.1562948,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "208_1919425_1777934933": {
+   "strat_id": 208,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.865,
+   "ts": 1777934933.1569753,
+   "indicator": "rsi",
+   "shares": 57.80346820809249,
+   "regime": "trend"
+  },
+  "111_2133405_1777935209": {
+   "strat_id": 111,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.495,
+   "ts": 1777935209.4143813,
+   "indicator": "mean_rev_ema",
+   "shares": 101.01010101010101,
+   "regime": "chaos"
+  },
+  "113_2133405_1777935209": {
+   "strat_id": 113,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.495,
+   "ts": 1777935209.4153392,
+   "indicator": "mean_rev_ema",
+   "shares": 101.01010101010101,
+   "regime": "chaos"
+  },
+  "121_2133405_1777935209": {
+   "strat_id": 121,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.495,
+   "ts": 1777935209.417311,
+   "indicator": "mean_rev_ema",
+   "shares": 101.01010101010101,
+   "regime": "chaos"
+  },
+  "123_2133405_1777935209": {
+   "strat_id": 123,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.495,
+   "ts": 1777935209.418608,
+   "indicator": "mean_rev_ema",
+   "shares": 101.01010101010101,
+   "regime": "chaos"
+  },
+  "1002_2133405_1777935209": {
+   "strat_id": 1002,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.495,
+   "ts": 1777935209.6948676,
+   "indicator": "wavelet_mr",
+   "shares": 101.01010101010101,
+   "regime": "chaos"
+  },
+  "1004_2133405_1777935241": {
+   "strat_id": 1004,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.495,
+   "ts": 1777935241.8497524,
+   "indicator": "wavelet_mr",
+   "shares": 101.01010101010101,
+   "regime": "chaos"
+  },
+  "197_2133404_1777935508": {
+   "strat_id": 197,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.72393,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "198_2133404_1777935508": {
+   "strat_id": 198,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.7259502,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "199_2133404_1777935508": {
+   "strat_id": 199,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.7363093,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "201_2133404_1777935508": {
+   "strat_id": 201,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.7839086,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "202_2133404_1777935508": {
+   "strat_id": 202,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.798458,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "203_2133404_1777935508": {
+   "strat_id": 203,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.801854,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "204_2133404_1777935508": {
+   "strat_id": 204,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.8140082,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "205_2133404_1777935508": {
+   "strat_id": 205,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.8163345,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "207_2133404_1777935508": {
+   "strat_id": 207,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.8244677,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "208_2133404_1777935508": {
+   "strat_id": 208,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.255,
+   "ts": 1777935508.8265853,
+   "indicator": "rsi",
+   "shares": 196.078431372549,
+   "regime": "trend"
+  },
+  "111_665374_1777939227": {
+   "strat_id": 111,
+   "cid": "665374",
+   "side": "YES",
+   "entry": 0.3,
+   "ts": 1777939227.1743612,
+   "indicator": "mean_rev_ema",
+   "shares": 166.66666666666669,
+   "regime": "chaos"
+  },
+  "111_2047424_1777939227": {
+   "strat_id": 111,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939227.1880124,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "113_665374_1777939227": {
+   "strat_id": 113,
+   "cid": "665374",
+   "side": "YES",
+   "entry": 0.3,
+   "ts": 1777939227.214416,
+   "indicator": "mean_rev_ema",
+   "shares": 166.66666666666669,
+   "regime": "chaos"
+  },
+  "113_2047424_1777939227": {
+   "strat_id": 113,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939227.215473,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "121_665374_1777939227": {
+   "strat_id": 121,
+   "cid": "665374",
+   "side": "YES",
+   "entry": 0.3,
+   "ts": 1777939227.3368006,
+   "indicator": "mean_rev_ema",
+   "shares": 166.66666666666669,
+   "regime": "chaos"
+  },
+  "121_2047424_1777939227": {
+   "strat_id": 121,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939227.345203,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "123_665374_1777939227": {
+   "strat_id": 123,
+   "cid": "665374",
+   "side": "YES",
+   "entry": 0.3,
+   "ts": 1777939227.4645498,
+   "indicator": "mean_rev_ema",
+   "shares": 166.66666666666669,
+   "regime": "chaos"
+  },
+  "123_2047424_1777939227": {
+   "strat_id": 123,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939227.4872432,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "137_2047424_1777939228": {
+   "strat_id": 137,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939228.4637682,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "142_2047424_1777939228": {
+   "strat_id": 142,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939228.5058777,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "144_2047424_1777939228": {
+   "strat_id": 144,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939228.5188396,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "986_2047424_1777939233": {
+   "strat_id": 986,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939233.4926195,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "989_2047424_1777939233": {
+   "strat_id": 989,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939233.5005186,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "990_2047424_1777939233": {
+   "strat_id": 990,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939233.502586,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "992_2047424_1777939233": {
+   "strat_id": 992,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939233.5062091,
+   "indicator": "mean_rev_ema",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "1002_665374_1777939233": {
+   "strat_id": 1002,
+   "cid": "665374",
+   "side": "YES",
+   "entry": 0.3,
+   "ts": 1777939233.5564914,
+   "indicator": "wavelet_mr",
+   "shares": 166.66666666666669,
+   "regime": "chaos"
+  },
+  "1002_2047424_1777939233": {
+   "strat_id": 1002,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939233.5593255,
+   "indicator": "wavelet_mr",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "1004_665374_1777939233": {
+   "strat_id": 1004,
+   "cid": "665374",
+   "side": "YES",
+   "entry": 0.3,
+   "ts": 1777939233.568315,
+   "indicator": "wavelet_mr",
+   "shares": 166.66666666666669,
+   "regime": "chaos"
+  },
+  "1004_2047424_1777939233": {
+   "strat_id": 1004,
+   "cid": "2047424",
+   "side": "NO",
+   "entry": 0.885,
+   "ts": 1777939233.5691507,
+   "indicator": "wavelet_mr",
+   "shares": 56.497175141242934,
+   "regime": "calm_revert"
+  },
+  "142_2133405_1777942874": {
+   "strat_id": 142,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.485,
+   "ts": 1777942874.416459,
+   "indicator": "mean_rev_ema",
+   "shares": 103.09278350515464,
+   "regime": "chaos"
+  },
+  "986_2133405_1777942875": {
+   "strat_id": 986,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.485,
+   "ts": 1777942875.0204453,
+   "indicator": "mean_rev_ema",
+   "shares": 103.09278350515464,
+   "regime": "chaos"
+  },
+  "111_1962237_1777950162": {
+   "strat_id": 111,
+   "cid": "1962237",
+   "side": "YES",
+   "entry": 0.325,
+   "ts": 1777950162.4354033,
+   "indicator": "mean_rev_ema",
+   "shares": 153.84615384615384,
+   "regime": "chaos"
+  },
+  "113_1962237_1777950162": {
+   "strat_id": 113,
+   "cid": "1962237",
+   "side": "YES",
+   "entry": 0.325,
+   "ts": 1777950162.436135,
+   "indicator": "mean_rev_ema",
+   "shares": 153.84615384615384,
+   "regime": "chaos"
+  },
+  "121_1962237_1777950162": {
+   "strat_id": 121,
+   "cid": "1962237",
+   "side": "YES",
+   "entry": 0.325,
+   "ts": 1777950162.441509,
+   "indicator": "mean_rev_ema",
+   "shares": 153.84615384615384,
+   "regime": "chaos"
+  },
+  "123_1962237_1777950162": {
+   "strat_id": 123,
+   "cid": "1962237",
+   "side": "YES",
+   "entry": 0.325,
+   "ts": 1777950162.4419823,
+   "indicator": "mean_rev_ema",
+   "shares": 153.84615384615384,
+   "regime": "chaos"
+  },
+  "142_1962237_1777950162": {
+   "strat_id": 142,
+   "cid": "1962237",
+   "side": "YES",
+   "entry": 0.325,
+   "ts": 1777950162.454687,
+   "indicator": "mean_rev_ema",
+   "shares": 153.84615384615384,
+   "regime": "chaos"
+  },
+  "986_1962237_1777950165": {
+   "strat_id": 986,
+   "cid": "1962237",
+   "side": "YES",
+   "entry": 0.325,
+   "ts": 1777950165.5561597,
+   "indicator": "mean_rev_ema",
+   "shares": 153.84615384615384,
+   "regime": "chaos"
+  },
+  "1002_1962237_1777950165": {
+   "strat_id": 1002,
+   "cid": "1962237",
+   "side": "YES",
+   "entry": 0.325,
+   "ts": 1777950165.5780423,
+   "indicator": "wavelet_mr",
+   "shares": 153.84615384615384,
+   "regime": "chaos"
+  },
+  "1004_1962237_1777950165": {
+   "strat_id": 1004,
+   "cid": "1962237",
+   "side": "YES",
+   "entry": 0.325,
+   "ts": 1777950165.5794911,
+   "indicator": "wavelet_mr",
+   "shares": 153.84615384615384,
+   "regime": "chaos"
+  },
+  "144_2133405_1777950539": {
+   "strat_id": 144,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.475,
+   "ts": 1777950539.8019304,
+   "indicator": "mean_rev_ema",
+   "shares": 105.26315789473685,
+   "regime": "chaos"
+  },
+  "989_2133405_1777950541": {
+   "strat_id": 989,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.475,
+   "ts": 1777950541.084576,
+   "indicator": "mean_rev_ema",
+   "shares": 105.26315789473685,
+   "regime": "chaos"
+  },
+  "111_2119227_1777957492": {
+   "strat_id": 111,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957492.4300532,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "113_2119227_1777957492": {
+   "strat_id": 113,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957492.4687548,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "121_2119227_1777957492": {
+   "strat_id": 121,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957492.824645,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "123_2119227_1777957492": {
+   "strat_id": 123,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957492.930961,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "137_2119227_1777957493": {
+   "strat_id": 137,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957493.2109323,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "142_2119227_1777957493": {
+   "strat_id": 142,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957493.3328836,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "144_2119227_1777957493": {
+   "strat_id": 144,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957493.4368494,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "197_1919425_1777957494": {
+   "strat_id": 197,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.3411903,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "198_1919425_1777957494": {
+   "strat_id": 198,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.3510807,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "199_1919425_1777957494": {
+   "strat_id": 199,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.3585968,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "201_1919425_1777957494": {
+   "strat_id": 201,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.3704557,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "202_1919425_1777957494": {
+   "strat_id": 202,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.375115,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "203_1919425_1777957494": {
+   "strat_id": 203,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.3807375,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "204_1919425_1777957494": {
+   "strat_id": 204,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.3861005,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "205_1919425_1777957494": {
+   "strat_id": 205,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.3906422,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "207_1919425_1777957494": {
+   "strat_id": 207,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.3978066,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "208_1919425_1777957494": {
+   "strat_id": 208,
+   "cid": "1919425",
+   "side": "YES",
+   "entry": 0.125,
+   "ts": 1777957494.402539,
+   "indicator": "rsi",
+   "shares": 400.0,
+   "regime": "trend"
+  },
+  "986_2119227_1777957499": {
+   "strat_id": 986,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957499.5633116,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "989_2119227_1777957499": {
+   "strat_id": 989,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957499.573642,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "990_2119227_1777957499": {
+   "strat_id": 990,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957499.5757713,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "992_2119227_1777957499": {
+   "strat_id": 992,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957499.587129,
+   "indicator": "mean_rev_ema",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "1002_2119227_1777957499": {
+   "strat_id": 1002,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957499.598396,
+   "indicator": "wavelet_mr",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "1004_2119227_1777957499": {
+   "strat_id": 1004,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777957499.6001332,
+   "indicator": "wavelet_mr",
+   "shares": 344.82758620689657,
+   "regime": "chaos"
+  },
+  "197_2133404_1777986224": {
+   "strat_id": 197,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9425764,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "197_1919425_1777986224": {
+   "strat_id": 197,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986224.94495,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "197_1809560_1777986224": {
+   "strat_id": 197,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9454963,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "198_2133404_1777986224": {
+   "strat_id": 198,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9478197,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "198_1919425_1777986224": {
+   "strat_id": 198,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986224.9491596,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "198_1809560_1777986224": {
+   "strat_id": 198,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9494505,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "199_2133404_1777986224": {
+   "strat_id": 199,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9517357,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "199_1919425_1777986224": {
+   "strat_id": 199,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986224.9528987,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "199_1809560_1777986224": {
+   "strat_id": 199,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.953356,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "201_2133404_1777986224": {
+   "strat_id": 201,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9625168,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "201_1919425_1777986224": {
+   "strat_id": 201,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986224.9634464,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "201_1809560_1777986224": {
+   "strat_id": 201,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9638631,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "202_2133404_1777986224": {
+   "strat_id": 202,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9681647,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "202_1919425_1777986224": {
+   "strat_id": 202,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986224.9693127,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "202_1809560_1777986224": {
+   "strat_id": 202,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9698033,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "203_2133404_1777986224": {
+   "strat_id": 203,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.972404,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "203_1919425_1777986224": {
+   "strat_id": 203,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986224.9738917,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "203_1809560_1777986224": {
+   "strat_id": 203,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9743073,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "204_2133404_1777986224": {
+   "strat_id": 204,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9776907,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "204_1919425_1777986224": {
+   "strat_id": 204,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986224.978824,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "204_1809560_1777986224": {
+   "strat_id": 204,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.979364,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "205_2133404_1777986224": {
+   "strat_id": 205,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9819825,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "205_1919425_1777986224": {
+   "strat_id": 205,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986224.9835749,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "205_1809560_1777986224": {
+   "strat_id": 205,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9839616,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "207_2133404_1777986224": {
+   "strat_id": 207,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.993611,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "207_1919425_1777986224": {
+   "strat_id": 207,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986224.9948528,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "207_1809560_1777986224": {
+   "strat_id": 207,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.9955401,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "208_2133404_1777986224": {
+   "strat_id": 208,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986224.997947,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "208_1919425_1777986225": {
+   "strat_id": 208,
+   "cid": "1919425",
+   "side": "NO",
+   "entry": 0.875,
+   "ts": 1777986225.000558,
+   "indicator": "rsi",
+   "shares": 57.142857142857146,
+   "regime": "trend"
+  },
+  "208_1809560_1777986225": {
+   "strat_id": 208,
+   "cid": "1809560",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986225.0017304,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "111_2119227_1777986290": {
+   "strat_id": 111,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.14,
+   "ts": 1777986290.2221894,
+   "indicator": "mean_rev_ema",
+   "shares": 357.1428571428571,
+   "regime": "chaos"
+  },
+  "113_2119227_1777986290": {
+   "strat_id": 113,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.14,
+   "ts": 1777986290.224282,
+   "indicator": "mean_rev_ema",
+   "shares": 357.1428571428571,
+   "regime": "chaos"
+  },
+  "121_2119227_1777986290": {
+   "strat_id": 121,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.14,
+   "ts": 1777986290.230847,
+   "indicator": "mean_rev_ema",
+   "shares": 357.1428571428571,
+   "regime": "chaos"
+  },
+  "123_2119227_1777986290": {
+   "strat_id": 123,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.14,
+   "ts": 1777986290.232617,
+   "indicator": "mean_rev_ema",
+   "shares": 357.1428571428571,
+   "regime": "chaos"
+  },
+  "1002_2119227_1777986290": {
+   "strat_id": 1002,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.14,
+   "ts": 1777986290.3422334,
+   "indicator": "wavelet_mr",
+   "shares": 357.1428571428571,
+   "regime": "chaos"
+  },
+  "137_2119227_1777986324": {
+   "strat_id": 137,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.135,
+   "ts": 1777986324.3351197,
+   "indicator": "mean_rev_ema",
+   "shares": 370.3703703703703,
+   "regime": "chaos"
+  },
+  "990_2119227_1777986325": {
+   "strat_id": 990,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.135,
+   "ts": 1777986325.1574082,
+   "indicator": "mean_rev_ema",
+   "shares": 370.3703703703703,
+   "regime": "chaos"
+  },
+  "992_2119227_1777986325": {
+   "strat_id": 992,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.135,
+   "ts": 1777986325.1601496,
+   "indicator": "mean_rev_ema",
+   "shares": 370.3703703703703,
+   "regime": "chaos"
+  },
+  "1004_2119227_1777986538": {
+   "strat_id": 1004,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.135,
+   "ts": 1777986538.216878,
+   "indicator": "wavelet_mr",
+   "shares": 370.3703703703703,
+   "regime": "chaos"
+  },
+  "121_2133405_1777986579": {
+   "strat_id": 121,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.43,
+   "ts": 1777986579.4974654,
+   "indicator": "mean_rev_ema",
+   "shares": 116.27906976744187,
+   "regime": "chaos"
+  },
+  "123_2133405_1777986579": {
+   "strat_id": 123,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.43,
+   "ts": 1777986579.5483725,
+   "indicator": "mean_rev_ema",
+   "shares": 116.27906976744187,
+   "regime": "chaos"
+  },
+  "197_2133404_1777986579": {
+   "strat_id": 197,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986579.7382042,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "198_2133404_1777986579": {
+   "strat_id": 198,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986579.7429686,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "199_2133404_1777986579": {
+   "strat_id": 199,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986579.7918808,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "201_2133404_1777986579": {
+   "strat_id": 201,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986579.839989,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "202_2133404_1777986579": {
+   "strat_id": 202,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986579.8838687,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "203_2133404_1777986579": {
+   "strat_id": 203,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986579.9428525,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "204_2133404_1777986579": {
+   "strat_id": 204,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986579.9473515,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "205_2133404_1777986579": {
+   "strat_id": 205,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986579.9835768,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "207_2133404_1777986580": {
+   "strat_id": 207,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986580.0126665,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "208_2133404_1777986580": {
+   "strat_id": 208,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777986580.1310759,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "1002_2133405_1777986580": {
+   "strat_id": 1002,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.43,
+   "ts": 1777986580.522596,
+   "indicator": "wavelet_mr",
+   "shares": 116.27906976744187,
+   "regime": "chaos"
+  },
+  "1004_2133405_1777986580": {
+   "strat_id": 1004,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.43,
+   "ts": 1777986580.5248275,
+   "indicator": "wavelet_mr",
+   "shares": 116.27906976744187,
+   "regime": "chaos"
+  },
+  "142_2119227_1777986691": {
+   "strat_id": 142,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.135,
+   "ts": 1777986691.9531345,
+   "indicator": "mean_rev_ema",
+   "shares": 370.3703703703703,
+   "regime": "chaos"
+  },
+  "986_2119227_1777986693": {
+   "strat_id": 986,
+   "cid": "2119227",
+   "side": "YES",
+   "entry": 0.135,
+   "ts": 1777986693.4855933,
+   "indicator": "mean_rev_ema",
+   "shares": 370.3703703703703,
+   "regime": "chaos"
+  },
+  "203_2133404_1777986844": {
+   "strat_id": 203,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986844.522667,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "204_2133404_1777986886": {
+   "strat_id": 204,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986886.302909,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "205_2133404_1777986886": {
+   "strat_id": 205,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986886.3113694,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "197_2133404_1777986991": {
+   "strat_id": 197,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777986991.6299083,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "198_2133404_1777987025": {
+   "strat_id": 198,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777987025.150492,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "199_2133404_1777987025": {
+   "strat_id": 199,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777987025.1538923,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "201_2133404_1777987025": {
+   "strat_id": 201,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777987025.1557317,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "202_2133404_1777987025": {
+   "strat_id": 202,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777987025.1584873,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "207_2133404_1777987025": {
+   "strat_id": 207,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777987025.16758,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "208_2133404_1777987025": {
+   "strat_id": 208,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.845,
+   "ts": 1777987025.170553,
+   "indicator": "rsi",
+   "shares": 59.171597633136095,
+   "regime": "trend"
+  },
+  "197_2133404_1777987265": {
+   "strat_id": 197,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.2076397,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "198_2133404_1777987265": {
+   "strat_id": 198,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.2338333,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "199_2133404_1777987265": {
+   "strat_id": 199,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.2539942,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "201_2133404_1777987265": {
+   "strat_id": 201,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.2604914,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "202_2133404_1777987265": {
+   "strat_id": 202,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.2696545,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "203_2133404_1777987265": {
+   "strat_id": 203,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.2790403,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "204_2133404_1777987265": {
+   "strat_id": 204,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.3274655,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "205_2133404_1777987265": {
+   "strat_id": 205,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.4256225,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "207_2133404_1777987265": {
+   "strat_id": 207,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.4992988,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "208_2133404_1777987265": {
+   "strat_id": 208,
+   "cid": "2133404",
+   "side": "YES",
+   "entry": 0.145,
+   "ts": 1777987265.5003312,
+   "indicator": "rsi",
+   "shares": 344.82758620689657,
+   "regime": "trend"
+  },
+  "197_2133404_1777988544": {
+   "strat_id": 197,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.855,
+   "ts": 1777988544.5130591,
+   "indicator": "rsi",
+   "shares": 58.47953216374269,
+   "regime": "trend"
+  },
+  "198_2133404_1777988544": {
+   "strat_id": 198,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.855,
+   "ts": 1777988544.548177,
+   "indicator": "rsi",
+   "shares": 58.47953216374269,
+   "regime": "trend"
+  },
+  "199_2133404_1777988544": {
+   "strat_id": 199,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.855,
+   "ts": 1777988544.635899,
+   "indicator": "rsi",
+   "shares": 58.47953216374269,
+   "regime": "trend"
+  },
+  "203_2133404_1777988544": {
+   "strat_id": 203,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.855,
+   "ts": 1777988544.7464306,
+   "indicator": "rsi",
+   "shares": 58.47953216374269,
+   "regime": "trend"
+  },
+  "204_2133404_1777988544": {
+   "strat_id": 204,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.855,
+   "ts": 1777988544.8064177,
+   "indicator": "rsi",
+   "shares": 58.47953216374269,
+   "regime": "trend"
+  },
+  "205_2133404_1777988544": {
+   "strat_id": 205,
+   "cid": "2133404",
+   "side": "NO",
+   "entry": 0.855,
+   "ts": 1777988544.85576,
+   "indicator": "rsi",
+   "shares": 58.47953216374269,
+   "regime": "trend"
+  },
+  "111_2133405_1777988766": {
+   "strat_id": 111,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.415,
+   "ts": 1777988766.3631139,
+   "indicator": "mean_rev_ema",
+   "shares": 120.48192771084338,
+   "regime": "chaos"
+  },
+  "113_2133405_1777988766": {
+   "strat_id": 113,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.415,
+   "ts": 1777988766.5488887,
+   "indicator": "mean_rev_ema",
+   "shares": 120.48192771084338,
+   "regime": "chaos"
+  },
+  "142_2133405_1777988769": {
+   "strat_id": 142,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.415,
+   "ts": 1777988769.1726298,
+   "indicator": "mean_rev_ema",
+   "shares": 120.48192771084338,
+   "regime": "chaos"
+  },
+  "986_2133405_1777988803": {
+   "strat_id": 986,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.415,
+   "ts": 1777988803.286754,
+   "indicator": "mean_rev_ema",
+   "shares": 120.48192771084338,
+   "regime": "chaos"
+  },
+  "137_2133405_1777988975": {
+   "strat_id": 137,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.395,
+   "ts": 1777988975.6560307,
+   "indicator": "mean_rev_ema",
+   "shares": 126.58227848101265,
+   "regime": "chaos"
+  },
+  "144_2133405_1777988975": {
+   "strat_id": 144,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.395,
+   "ts": 1777988975.8453212,
+   "indicator": "mean_rev_ema",
+   "shares": 126.58227848101265,
+   "regime": "chaos"
+  },
+  "989_2133405_1777989010": {
+   "strat_id": 989,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.395,
+   "ts": 1777989010.0218444,
+   "indicator": "mean_rev_ema",
+   "shares": 126.58227848101265,
+   "regime": "chaos"
+  },
+  "990_2133405_1777989010": {
+   "strat_id": 990,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.395,
+   "ts": 1777989010.071628,
+   "indicator": "mean_rev_ema",
+   "shares": 126.58227848101265,
+   "regime": "chaos"
+  },
+  "992_2133405_1777989010": {
+   "strat_id": 992,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.395,
+   "ts": 1777989010.0821404,
+   "indicator": "mean_rev_ema",
+   "shares": 126.58227848101265,
+   "regime": "chaos"
+  },
+  "121_2133405_1777989375": {
+   "strat_id": 121,
+   "cid": "2133405",
+   "side": "YES",
+   "entry": 0.38,
+   "ts": 1777989375.750115,
+   "indicator": "mean_rev_ema",
+   "shares": 131.57894736842104,
+   "regime": "chaos"
+  },
+  "111_2047424_1777990462": {
+   "strat_id": 111,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990462.5331886,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "113_2047424_1777990462": {
+   "strat_id": 113,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990462.6334682,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "121_2047424_1777990463": {
+   "strat_id": 121,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990463.383373,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "123_2047424_1777990463": {
+   "strat_id": 123,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990463.4235835,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "137_2047424_1777990464": {
+   "strat_id": 137,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990464.3441274,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "142_2047424_1777990464": {
+   "strat_id": 142,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990464.4228725,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "144_2047424_1777990464": {
+   "strat_id": 144,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990464.5142875,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "252_2047424_1777990473": {
+   "strat_id": 252,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990473.9020565,
+   "indicator": "zscore",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "253_2047424_1777990474": {
+   "strat_id": 253,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990474.2038531,
+   "indicator": "zscore",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "254_2047424_1777990474": {
+   "strat_id": 254,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990474.4073646,
+   "indicator": "zscore",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "255_2047424_1777990474": {
+   "strat_id": 255,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990474.411912,
+   "indicator": "zscore",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "256_2047424_1777990474": {
+   "strat_id": 256,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990474.4196823,
+   "indicator": "zscore",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "257_2047424_1777990474": {
+   "strat_id": 257,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990474.4367917,
+   "indicator": "zscore",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "258_2047424_1777990474": {
+   "strat_id": 258,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990474.4698682,
+   "indicator": "zscore",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "259_2047424_1777990474": {
+   "strat_id": 259,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990474.4817927,
+   "indicator": "zscore",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "986_2047424_1777990526": {
+   "strat_id": 986,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990526.620185,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "989_2047424_1777990527": {
+   "strat_id": 989,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990527.0125973,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "990_2047424_1777990527": {
+   "strat_id": 990,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990527.0193229,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "992_2047424_1777990527": {
+   "strat_id": 992,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990527.0302675,
+   "indicator": "mean_rev_ema",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "1002_2047424_1777990527": {
+   "strat_id": 1002,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990527.2879813,
+   "indicator": "wavelet_mr",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "1004_2047424_1777990527": {
+   "strat_id": 1004,
+   "cid": "2047424",
+   "side": "YES",
+   "entry": 0.105,
+   "ts": 1777990527.2968333,
+   "indicator": "wavelet_mr",
+   "shares": 476.1904761904762,
+   "regime": "calm_revert"
+  },
+  "111_2133405_1777990718": {
+   "strat_id": 111,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.565,
+   "ts": 1777990718.4381337,
+   "indicator": "mean_rev_ema",
+   "shares": 88.49557522123895,
+   "regime": "chaos"
+  },
+  "113_2133405_1777990718": {
+   "strat_id": 113,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.565,
+   "ts": 1777990718.6108315,
+   "indicator": "mean_rev_ema",
+   "shares": 88.49557522123895,
+   "regime": "chaos"
+  },
+  "121_2133405_1777990719": {
+   "strat_id": 121,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.565,
+   "ts": 1777990719.2513058,
+   "indicator": "mean_rev_ema",
+   "shares": 88.49557522123895,
+   "regime": "chaos"
+  },
+  "123_2133405_1777990719": {
+   "strat_id": 123,
+   "cid": "2133405",
+   "side": "NO",
+   "entry": 0.565,
+   "ts": 1777990719.2623887,
+   "indicator": "mean_rev_ema",
+   "shares": 88.49557522123895,
+   "regime": "chaos"
+  }
+ },
+ "recent_closed": [],
+ "recent_decisions": [
+  {
+   "ts": 1777991022.2455554,
+   "sid": 1467,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991022.6038718,
+   "sid": 1467,
+   "cid": "2073829",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.193,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991022.6792343,
+   "sid": 1469,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991022.772868,
+   "sid": 1470,
+   "cid": "2073829",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.193,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991022.8491628,
+   "sid": 1472,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991022.8800843,
+   "sid": 1473,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991023.0808508,
+   "sid": 1474,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991023.3136256,
+   "sid": 1481,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991023.4168975,
+   "sid": 1482,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991023.6001086,
+   "sid": 1488,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991023.6990058,
+   "sid": 1490,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991023.9349456,
+   "sid": 1491,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991023.9820895,
+   "sid": 1493,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991024.2975767,
+   "sid": 1495,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991024.8008087,
+   "sid": 1498,
+   "cid": "2073829",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.193,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991024.8329847,
+   "sid": 1499,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991024.9501557,
+   "sid": 1502,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991025.0747201,
+   "sid": 1504,
+   "cid": "2047424",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.895,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991025.098867,
+   "sid": 1506,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991025.1288376,
+   "sid": 1506,
+   "cid": "2073829",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.193,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991026.3523276,
+   "sid": 1513,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991026.520583,
+   "sid": 1514,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991026.7939534,
+   "sid": 1517,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991027.1126642,
+   "sid": 1517,
+   "cid": "2047424",
+   "ind": "forest_rand",
+   "side": "YES",
+   "entry": 0.105,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991028.2726064,
+   "sid": 1528,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991029.5536945,
+   "sid": 1529,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991030.0966692,
+   "sid": 1530,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991030.2257247,
+   "sid": 1531,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991030.4587855,
+   "sid": 1531,
+   "cid": "2073829",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.193,
+   "bucket": "skip_not_elite"
+  },
+  {
+   "ts": 1777991032.5765653,
+   "sid": 1534,
+   "cid": "2133404",
+   "ind": "forest_rand",
+   "side": "NO",
+   "entry": 0.825,
+   "bucket": "skip_not_elite"
+  }
+ ]
+}
