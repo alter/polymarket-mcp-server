@@ -113,6 +113,9 @@ logs/
 !bot-data/arena_backtest_full.json
 !bot-data/regime_router.json
 !bot-data/cluster_double_check.json
+!bot-data/regime_hmm.json
+!bot-data/deflated_significance.json
+!bot-data/final_shortlist.json
 
 # Bot credentials (MUST NOT be committed)
 .env.bot
