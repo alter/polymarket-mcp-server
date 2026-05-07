@@ -2494,7 +2494,7 @@ class Arena:
             # Rule B: peak-relative drawdown — lost 50% of peak (catches emergent losers
             # who briefly went profitable then crashed, e.g. S431 ensemble peaked $911 → $611)
             elif (strat.peak_equity > STARTING_BALANCE * 1.05
-                  and strat.equity < strat.peak_equity * 0.7):  # was 0.5 (50% DD), now 30%
+                  and strat.equity < strat.peak_equity * 0.8):  # 20% DD from peak — strict
                 reason = (f"DD ${strat.peak_equity:.0f} → ${strat.equity:.0f} "
                           f"({(1-strat.equity/strat.peak_equity)*100:.0f}% from peak)")
             if reason:

@@ -39,6 +39,7 @@ from datetime import datetime, timezone
 DATA = "data"
 ENTRIES = os.path.join(DATA, "arena_entries.jsonl")
 SHORTLIST = os.path.join(DATA, "final_shortlist.json")
+STRICT_DD = os.path.join(DATA, "strict_dd_shortlist.json")
 REGIME = os.path.join(DATA, "regime_hmm.json")
 ARENA = os.path.join(DATA, "arena_results.json")
 OUT = os.path.join(DATA, "kelly_paper.json")
@@ -117,8 +118,15 @@ class KellyEliteBot:
                 pass
 
     def load_lookups(self):
-        # ELITE IDs
-        if os.path.exists(SHORTLIST):
+        # ELITE IDs — prefer strict_dd (max_dd<20%) over original 3-gate shortlist
+        if os.path.exists(STRICT_DD):
+            try:
+                d = json.load(open(STRICT_DD))
+                self.elite_ids = {s["id"] for s in d.get("strategies", [])}
+                print(f"[kelly] using STRICT_DD shortlist (n={len(self.elite_ids)})")
+            except Exception as e:
+                print(f"[kelly] strict_dd err: {e}")
+        if not self.elite_ids and os.path.exists(SHORTLIST):
             try:
                 d = json.load(open(SHORTLIST))
                 self.elite_ids = {s["id"] for s in d.get("elite", [])}

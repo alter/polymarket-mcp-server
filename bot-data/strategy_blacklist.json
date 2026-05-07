@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-05-03T18:33:23.163508+00:00",
+ "updated_at": "2026-05-07T09:58:16.575715+00:00",
  "banned": [
   {
    "sig": "momentum|p20|e0.0300|sl-0.100|tp0.080|fee0|both",
@@ -1048,6 +1048,1110 @@
    "trades_at_ban": 1534,
    "equity_at_ban": 459.07,
    "banned_at": "2026-05-03T18:33:23.155406+00:00"
+  },
+  {
+   "sig": "rsi|p14|e70.0000|sl-0.250|tp0.100|fee0|both",
+   "reason": "DD $1308 \u2192 $514 (61% from peak)",
+   "name": "S1032|rsi|p14|e70.00|sl-25%|tp10%|all|b",
+   "trades_at_ban": 655,
+   "equity_at_ban": 514.12,
+   "banned_at": "2026-05-04T01:58:10.683815+00:00"
+  },
+  {
+   "sig": "rsi|p7|e75.0000|sl-0.250|tp0.100|fee0|both",
+   "reason": "DD $1356 \u2192 $592 (56% from peak)",
+   "name": "S1033|rsi|p7|e75.00|sl-25%|tp10%|all|b",
+   "trades_at_ban": 636,
+   "equity_at_ban": 592.4,
+   "banned_at": "2026-05-04T01:58:10.683973+00:00"
+  },
+  {
+   "sig": "wavelet_mr|p3|e0.0100|sl-0.200|tp0.100|fee0|both",
+   "reason": "DD $1084 \u2192 $537 (50% from peak)",
+   "name": "S1029|wavelet|p3|e0.01|sl-20%|tp10%|all|b",
+   "trades_at_ban": 395,
+   "equity_at_ban": 537.32,
+   "banned_at": "2026-05-04T03:59:39.631197+00:00"
+  },
+  {
+   "sig": "wavelet_mr|p3|e0.0100|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1104 \u2192 $543 (51% from peak)",
+   "name": "S1031|wavelet|p3|e0.01|sl-20%|tp5%|all|b",
+   "trades_at_ban": 421,
+   "equity_at_ban": 543.11,
+   "banned_at": "2026-05-04T05:00:26.130132+00:00"
+  },
+  {
+   "sig": "momentum|p5|e0.0150|sl-0.100|tp0.080|fee1|both",
+   "reason": "equity $498 < $500 (absolute floor)",
+   "name": "S168|momentu|p5|e0.01|sl-10%|tp8%|free|b",
+   "trades_at_ban": 1738,
+   "equity_at_ban": 497.67,
+   "banned_at": "2026-05-04T07:00:34.680882+00:00"
+  },
+  {
+   "sig": "momentum|p5|e0.0150|sl-0.200|tp0.150|fee1|both",
+   "reason": "equity $497 < $500 (absolute floor)",
+   "name": "S170|momentu|p5|e0.01|sl-20%|tp15%|free|b",
+   "trades_at_ban": 1688,
+   "equity_at_ban": 496.92,
+   "banned_at": "2026-05-04T07:00:34.681107+00:00"
+  },
+  {
+   "sig": "momentum|p5|e0.0150|sl-99.000|tp0.100|fee1|both",
+   "reason": "equity $489 < $500 (absolute floor)",
+   "name": "S172|momentu|p5|e0.01|sloff|tp10%|free|b",
+   "trades_at_ban": 1742,
+   "equity_at_ban": 488.57,
+   "banned_at": "2026-05-04T08:01:38.734999+00:00"
+  },
+  {
+   "sig": "momentum|p10|e0.0200|sl-0.100|tp0.080|fee1|both",
+   "reason": "equity $535 < $700 (absolute floor)",
+   "name": "S150|momentu|p10|e0.02|sl-10%|tp8%|free|b",
+   "trades_at_ban": 1512,
+   "equity_at_ban": 534.68,
+   "banned_at": "2026-05-04T09:42:46.871589+00:00"
+  },
+  {
+   "sig": "momentum|p10|e0.0200|sl-0.200|tp0.150|fee1|both",
+   "reason": "equity $523 < $700 (absolute floor)",
+   "name": "S152|momentu|p10|e0.02|sl-20%|tp15%|free|b",
+   "trades_at_ban": 1444,
+   "equity_at_ban": 522.92,
+   "banned_at": "2026-05-04T09:42:46.871629+00:00"
+  },
+  {
+   "sig": "momentum|p10|e0.0200|sl-99.000|tp0.100|fee1|both",
+   "reason": "equity $541 < $700 (absolute floor)",
+   "name": "S154|momentu|p10|e0.02|sloff|tp10%|free|b",
+   "trades_at_ban": 1468,
+   "equity_at_ban": 540.66,
+   "banned_at": "2026-05-04T09:42:46.871642+00:00"
+  },
+  {
+   "sig": "macd|p26|e0.0050|sl-0.100|tp0.080|fee1|both",
+   "reason": "equity $594 < $700 (absolute floor)",
+   "name": "S260|macd|p26|e0.01|sl-10%|tp8%|free|b",
+   "trades_at_ban": 114,
+   "equity_at_ban": 594.24,
+   "banned_at": "2026-05-04T09:42:46.871824+00:00"
+  },
+  {
+   "sig": "macd|p26|e0.0050|sl-99.000|tp0.100|fee1|both",
+   "reason": "equity $575 < $700 (absolute floor)",
+   "name": "S261|macd|p26|e0.01|sloff|tp10%|free|b",
+   "trades_at_ban": 108,
+   "equity_at_ban": 574.68,
+   "banned_at": "2026-05-04T09:42:46.871840+00:00"
+  },
+  {
+   "sig": "forest_rand|p5|e0.7000|sl-0.100|tp0.200|fee0|both",
+   "reason": "equity $596 < $700 (absolute floor)",
+   "name": "S1330|forest_|p5|e0.70|sl-10%|tp20%|all|b",
+   "trades_at_ban": 274,
+   "equity_at_ban": 595.59,
+   "banned_at": "2026-05-04T09:42:46.872791+00:00"
+  },
+  {
+   "sig": "forest_rand|p13|e0.5300|sl-0.200|tp0.050|fee0|both",
+   "reason": "equity $642 < $700 (absolute floor)",
+   "name": "S1429|forest_|p13|e0.53|sl-20%|tp5%|all|b",
+   "trades_at_ban": 298,
+   "equity_at_ban": 641.5,
+   "banned_at": "2026-05-04T09:42:46.872935+00:00"
+  },
+  {
+   "sig": "forest_rand|p15|e0.5000|sl-0.250|tp0.100|fee0|both",
+   "reason": "DD $1146 \u2192 $710 (38% from peak)",
+   "name": "S1455|forest_|p15|e0.50|sl-25%|tp10%|all|b",
+   "trades_at_ban": 310,
+   "equity_at_ban": 710.48,
+   "banned_at": "2026-05-04T09:42:46.873001+00:00"
+  },
+  {
+   "sig": "wavelet_mr|p3|e0.0100|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $679 < $700 (absolute floor)",
+   "name": "S1030|wavelet|p3|e0.01|sloff|tp10%|all|b",
+   "trades_at_ban": 674,
+   "equity_at_ban": 678.91,
+   "banned_at": "2026-05-04T10:42:58.983769+00:00"
+  },
+  {
+   "sig": "forest_rand|p33|e0.5700|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1144 \u2192 $785 (31% from peak)",
+   "name": "S1073|forest_|p33|e0.57|sl-10%|tp10%|all|b",
+   "trades_at_ban": 405,
+   "equity_at_ban": 784.94,
+   "banned_at": "2026-05-04T10:42:58.984022+00:00"
+  },
+  {
+   "sig": "forest_rand|p16|e0.5200|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1567 \u2192 $1096 (30% from peak)",
+   "name": "S1204|forest_|p16|e0.52|sl-10%|tp10%|all|b",
+   "trades_at_ban": 490,
+   "equity_at_ban": 1096.42,
+   "banned_at": "2026-05-04T10:42:58.984471+00:00"
+  },
+  {
+   "sig": "breakout|p20|e1.0000|sl-0.050|tp0.100|fee0|both",
+   "reason": "equity $681 < $700 (absolute floor)",
+   "name": "S285|breakou|p20|e1.00|sl-5%|tp10%|all|b",
+   "trades_at_ban": 3089,
+   "equity_at_ban": 680.74,
+   "banned_at": "2026-05-04T11:43:30.713940+00:00"
+  },
+  {
+   "sig": "macd|p40|e0.0050|sl-0.100|tp0.080|fee1|both",
+   "reason": "equity $699 < $700 (absolute floor)",
+   "name": "S272|macd|p40|e0.01|sl-10%|tp8%|free|b",
+   "trades_at_ban": 194,
+   "equity_at_ban": 698.96,
+   "banned_at": "2026-05-04T13:53:38.158441+00:00"
+  },
+  {
+   "sig": "forest_rand|p13|e0.5800|sl-0.250|tp0.100|fee0|both",
+   "reason": "DD $1119 \u2192 $773 (31% from peak)",
+   "name": "S1155|forest_|p13|e0.58|sl-25%|tp10%|all|b",
+   "trades_at_ban": 418,
+   "equity_at_ban": 772.99,
+   "banned_at": "2026-05-04T14:56:19.134827+00:00"
+  },
+  {
+   "sig": "forest_rand|p19|e0.5000|sl-0.100|tp0.200|fee0|both",
+   "reason": "DD $1372 \u2192 $959 (30% from peak)",
+   "name": "S1036|forest_|p19|e0.50|sl-10%|tp20%|all|b",
+   "trades_at_ban": 593,
+   "equity_at_ban": 958.94,
+   "banned_at": "2026-05-04T15:57:03.177538+00:00"
+  },
+  {
+   "sig": "forest_rand|p34|e0.5800|sl-0.100|tp0.200|fee0|both",
+   "reason": "DD $1078 \u2192 $712 (34% from peak)",
+   "name": "S1260|forest_|p34|e0.58|sl-10%|tp20%|all|b",
+   "trades_at_ban": 370,
+   "equity_at_ban": 711.75,
+   "banned_at": "2026-05-04T17:59:28.535127+00:00"
+  },
+  {
+   "sig": "forest_rand|p26|e0.5300|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1238 \u2192 $841 (32% from peak)",
+   "name": "S1345|forest_|p26|e0.53|sl-20%|tp5%|all|b",
+   "trades_at_ban": 481,
+   "equity_at_ban": 840.97,
+   "banned_at": "2026-05-04T17:59:28.537863+00:00"
+  },
+  {
+   "sig": "forest_rand|p43|e0.5700|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1193 \u2192 $831 (30% from peak)",
+   "name": "S1355|forest_|p43|e0.57|sl-10%|tp10%|all|b",
+   "trades_at_ban": 423,
+   "equity_at_ban": 831.46,
+   "banned_at": "2026-05-04T17:59:28.538462+00:00"
+  },
+  {
+   "sig": "forest_rand|p10|e0.5500|sl-0.250|tp0.050|fee0|both",
+   "reason": "DD $1091 \u2192 $724 (34% from peak)",
+   "name": "S1417|forest_|p10|e0.55|sl-25%|tp5%|all|b",
+   "trades_at_ban": 496,
+   "equity_at_ban": 724.24,
+   "banned_at": "2026-05-04T19:00:48.634178+00:00"
+  },
+  {
+   "sig": "bollinger|p20|e2.0000|sl-0.250|tp0.100|fee0|both",
+   "reason": "DD $1238 \u2192 $819 (34% from peak)",
+   "name": "S1034|bolling|p20|e2.00|sl-25%|tp10%|all|b",
+   "trades_at_ban": 728,
+   "equity_at_ban": 819.1,
+   "banned_at": "2026-05-04T20:01:40.276544+00:00"
+  },
+  {
+   "sig": "forest_rand|p45|e0.5100|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1357 \u2192 $874 (36% from peak)",
+   "name": "S1038|forest_|p45|e0.51|sl-10%|tp10%|all|b",
+   "trades_at_ban": 606,
+   "equity_at_ban": 874.14,
+   "banned_at": "2026-05-04T20:01:40.276986+00:00"
+  },
+  {
+   "sig": "forest_rand|p38|e0.5400|sl-0.100|tp0.200|fee0|both",
+   "reason": "DD $1274 \u2192 $867 (32% from peak)",
+   "name": "S1132|forest_|p38|e0.54|sl-10%|tp20%|all|b",
+   "trades_at_ban": 446,
+   "equity_at_ban": 867.43,
+   "banned_at": "2026-05-04T20:01:40.286918+00:00"
+  },
+  {
+   "sig": "forest_rand|p11|e0.5300|sl-0.100|tp0.050|fee0|both",
+   "reason": "DD $1387 \u2192 $874 (37% from peak)",
+   "name": "S1188|forest_|p11|e0.53|sl-10%|tp5%|all|b",
+   "trades_at_ban": 627,
+   "equity_at_ban": 874.27,
+   "banned_at": "2026-05-04T20:01:40.290996+00:00"
+  },
+  {
+   "sig": "forest_rand|p29|e0.5300|sl-0.250|tp0.200|fee0|both",
+   "reason": "equity $672 < $700 (absolute floor)",
+   "name": "S1195|forest_|p29|e0.53|sl-25%|tp20%|all|b",
+   "trades_at_ban": 284,
+   "equity_at_ban": 671.63,
+   "banned_at": "2026-05-04T20:01:40.291605+00:00"
+  },
+  {
+   "sig": "forest_rand|p47|e0.5600|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1172 \u2192 $791 (32% from peak)",
+   "name": "S1216|forest_|p47|e0.56|sl-10%|tp10%|all|b",
+   "trades_at_ban": 447,
+   "equity_at_ban": 791.32,
+   "banned_at": "2026-05-04T20:01:40.292481+00:00"
+  },
+  {
+   "sig": "forest_rand|p28|e0.5200|sl-0.100|tp0.200|fee0|both",
+   "reason": "DD $1074 \u2192 $725 (33% from peak)",
+   "name": "S1217|forest_|p28|e0.52|sl-10%|tp20%|all|b",
+   "trades_at_ban": 319,
+   "equity_at_ban": 724.64,
+   "banned_at": "2026-05-04T20:01:40.294239+00:00"
+  },
+  {
+   "sig": "forest_rand|p16|e0.5000|sl-0.200|tp0.100|fee0|both",
+   "reason": "DD $1259 \u2192 $862 (32% from peak)",
+   "name": "S1271|forest_|p16|e0.50|sl-20%|tp10%|all|b",
+   "trades_at_ban": 420,
+   "equity_at_ban": 862.42,
+   "banned_at": "2026-05-04T20:01:40.299290+00:00"
+  },
+  {
+   "sig": "forest_rand|p6|e0.6900|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1205 \u2192 $739 (39% from peak)",
+   "name": "S1279|forest_|p6|e0.69|sl-10%|tp10%|all|b",
+   "trades_at_ban": 496,
+   "equity_at_ban": 738.72,
+   "banned_at": "2026-05-04T20:01:40.300177+00:00"
+  },
+  {
+   "sig": "forest_rand|p15|e0.5100|sl-0.200|tp0.100|fee0|both",
+   "reason": "DD $1285 \u2192 $802 (38% from peak)",
+   "name": "S1284|forest_|p15|e0.51|sl-20%|tp10%|all|b",
+   "trades_at_ban": 555,
+   "equity_at_ban": 801.61,
+   "banned_at": "2026-05-04T20:01:40.300573+00:00"
+  },
+  {
+   "sig": "forest_rand|p41|e0.5500|sl-0.200|tp0.200|fee0|both",
+   "reason": "DD $1085 \u2192 $754 (31% from peak)",
+   "name": "S1298|forest_|p41|e0.55|sl-20%|tp20%|all|b",
+   "trades_at_ban": 336,
+   "equity_at_ban": 754.18,
+   "banned_at": "2026-05-04T20:01:40.301099+00:00"
+  },
+  {
+   "sig": "forest_rand|p16|e0.5000|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1100 \u2192 $753 (32% from peak)",
+   "name": "S1301|forest_|p16|e0.50|sl-20%|tp5%|all|b",
+   "trades_at_ban": 445,
+   "equity_at_ban": 752.97,
+   "banned_at": "2026-05-04T20:01:40.301316+00:00"
+  },
+  {
+   "sig": "forest_rand|p7|e0.5700|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1226 \u2192 $844 (31% from peak)",
+   "name": "S1309|forest_|p7|e0.57|sloff|tp10%|all|b",
+   "trades_at_ban": 448,
+   "equity_at_ban": 843.91,
+   "banned_at": "2026-05-04T20:01:40.301639+00:00"
+  },
+  {
+   "sig": "forest_rand|p31|e0.5400|sl-0.200|tp0.200|fee0|both",
+   "reason": "DD $1174 \u2192 $764 (35% from peak)",
+   "name": "S1376|forest_|p31|e0.54|sl-20%|tp20%|all|b",
+   "trades_at_ban": 468,
+   "equity_at_ban": 764.07,
+   "banned_at": "2026-05-04T20:01:40.303364+00:00"
+  },
+  {
+   "sig": "forest_rand|p23|e0.6100|sl-0.200|tp0.200|fee0|both",
+   "reason": "DD $1124 \u2192 $779 (31% from peak)",
+   "name": "S1381|forest_|p23|e0.61|sl-20%|tp20%|all|b",
+   "trades_at_ban": 346,
+   "equity_at_ban": 778.84,
+   "banned_at": "2026-05-04T20:01:40.303639+00:00"
+  },
+  {
+   "sig": "forest_rand|p42|e0.5700|sl-0.250|tp0.050|fee0|both",
+   "reason": "DD $1249 \u2192 $806 (35% from peak)",
+   "name": "S1397|forest_|p42|e0.57|sl-25%|tp5%|all|b",
+   "trades_at_ban": 464,
+   "equity_at_ban": 806.15,
+   "banned_at": "2026-05-04T20:01:40.304113+00:00"
+  },
+  {
+   "sig": "forest_rand|p31|e0.5100|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1254 \u2192 $801 (36% from peak)",
+   "name": "S1451|forest_|p31|e0.51|sl-20%|tp5%|all|b",
+   "trades_at_ban": 437,
+   "equity_at_ban": 801.32,
+   "banned_at": "2026-05-04T20:01:40.306169+00:00"
+  },
+  {
+   "sig": "forest_rand|p45|e0.5900|sl-0.100|tp0.100|fee0|both",
+   "reason": "equity $664 < $700 (absolute floor)",
+   "name": "S1457|forest_|p45|e0.59|sl-10%|tp10%|all|b",
+   "trades_at_ban": 385,
+   "equity_at_ban": 663.67,
+   "banned_at": "2026-05-04T20:01:40.306470+00:00"
+  },
+  {
+   "sig": "forest_rand|p47|e0.5100|sl-0.250|tp0.200|fee0|both",
+   "reason": "DD $1200 \u2192 $835 (30% from peak)",
+   "name": "S1475|forest_|p47|e0.51|sl-25%|tp20%|all|b",
+   "trades_at_ban": 387,
+   "equity_at_ban": 834.87,
+   "banned_at": "2026-05-04T20:01:40.307225+00:00"
+  },
+  {
+   "sig": "forest_rand|p38|e0.5900|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1074 \u2192 $751 (30% from peak)",
+   "name": "S1479|forest_|p38|e0.59|sl-20%|tp5%|all|b",
+   "trades_at_ban": 326,
+   "equity_at_ban": 751.37,
+   "banned_at": "2026-05-04T20:01:40.307395+00:00"
+  },
+  {
+   "sig": "forest_rand|p39|e0.5600|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $696 < $700 (absolute floor)",
+   "name": "S1484|forest_|p39|e0.56|sl-10%|tp5%|all|b",
+   "trades_at_ban": 378,
+   "equity_at_ban": 696.27,
+   "banned_at": "2026-05-04T20:01:40.307591+00:00"
+  },
+  {
+   "sig": "forest_rand|p10|e0.7000|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1167 \u2192 $797 (32% from peak)",
+   "name": "S1146|forest_|p10|e0.70|sloff|tp10%|all|b",
+   "trades_at_ban": 256,
+   "equity_at_ban": 796.84,
+   "banned_at": "2026-05-04T22:02:29.168695+00:00"
+  },
+  {
+   "sig": "forest_rand|p16|e0.6600|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1280 \u2192 $889 (31% from peak)",
+   "name": "S1261|forest_|p16|e0.66|sloff|tp20%|all|b",
+   "trades_at_ban": 281,
+   "equity_at_ban": 888.79,
+   "banned_at": "2026-05-04T22:02:29.177891+00:00"
+  },
+  {
+   "sig": "forest_rand|p38|e0.5900|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1154 \u2192 $807 (30% from peak)",
+   "name": "S1291|forest_|p38|e0.59|sloff|tp10%|all|b",
+   "trades_at_ban": 241,
+   "equity_at_ban": 806.98,
+   "banned_at": "2026-05-04T22:02:29.179628+00:00"
+  },
+  {
+   "sig": "forest_rand|p39|e0.5500|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1183 \u2192 $825 (30% from peak)",
+   "name": "S1352|forest_|p39|e0.55|sloff|tp10%|all|b",
+   "trades_at_ban": 315,
+   "equity_at_ban": 824.86,
+   "banned_at": "2026-05-04T22:02:29.182920+00:00"
+  },
+  {
+   "sig": "forest_rand|p35|e0.5300|sl-0.250|tp0.200|fee0|both",
+   "reason": "DD $1285 \u2192 $847 (34% from peak)",
+   "name": "S1366|forest_|p35|e0.53|sl-25%|tp20%|all|b",
+   "trades_at_ban": 490,
+   "equity_at_ban": 847.46,
+   "banned_at": "2026-05-04T22:02:29.183915+00:00"
+  },
+  {
+   "sig": "forest_rand|p5|e0.6000|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1288 \u2192 $801 (38% from peak)",
+   "name": "S1524|forest_|p5|e0.60|sloff|tp20%|all|b",
+   "trades_at_ban": 614,
+   "equity_at_ban": 801.15,
+   "banned_at": "2026-05-04T22:02:29.190121+00:00"
+  },
+  {
+   "sig": "forest_rand|p22|e0.5500|sl-0.250|tp0.050|fee0|both",
+   "reason": "DD $1264 \u2192 $756 (40% from peak)",
+   "name": "S1070|forest_|p22|e0.55|sl-25%|tp5%|all|b",
+   "trades_at_ban": 435,
+   "equity_at_ban": 756.04,
+   "banned_at": "2026-05-05T02:02:03.288013+00:00"
+  },
+  {
+   "sig": "forest_rand|p21|e0.6200|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1241 \u2192 $805 (35% from peak)",
+   "name": "S1086|forest_|p21|e0.62|sloff|tp20%|all|b",
+   "trades_at_ban": 254,
+   "equity_at_ban": 805.48,
+   "banned_at": "2026-05-05T03:02:49.647071+00:00"
+  },
+  {
+   "sig": "forest_rand|p15|e0.6200|sl-0.200|tp0.200|fee0|both",
+   "reason": "DD $1389 \u2192 $938 (32% from peak)",
+   "name": "S1124|forest_|p15|e0.62|sl-20%|tp20%|all|b",
+   "trades_at_ban": 605,
+   "equity_at_ban": 937.98,
+   "banned_at": "2026-05-05T03:02:49.647150+00:00"
+  },
+  {
+   "sig": "forest_rand|p16|e0.5700|sl-0.200|tp0.050|fee0|both",
+   "reason": "equity $694 < $700 (absolute floor)",
+   "name": "S1126|forest_|p16|e0.57|sl-20%|tp5%|all|b",
+   "trades_at_ban": 302,
+   "equity_at_ban": 693.93,
+   "banned_at": "2026-05-05T03:02:49.647167+00:00"
+  },
+  {
+   "sig": "forest_rand|p23|e0.5100|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1255 \u2192 $859 (32% from peak)",
+   "name": "S1334|forest_|p23|e0.51|sloff|tp20%|all|b",
+   "trades_at_ban": 212,
+   "equity_at_ban": 859.03,
+   "banned_at": "2026-05-05T03:02:49.648170+00:00"
+  },
+  {
+   "sig": "forest_rand|p29|e0.5800|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1076 \u2192 $729 (32% from peak)",
+   "name": "S1365|forest_|p29|e0.58|sl-10%|tp10%|all|b",
+   "trades_at_ban": 338,
+   "equity_at_ban": 728.91,
+   "banned_at": "2026-05-05T03:02:49.648359+00:00"
+  },
+  {
+   "sig": "forest_rand|p6|e0.5900|sl-0.100|tp0.050|fee0|both",
+   "reason": "DD $1092 \u2192 $733 (33% from peak)",
+   "name": "S1428|forest_|p6|e0.59|sl-10%|tp5%|all|b",
+   "trades_at_ban": 480,
+   "equity_at_ban": 732.63,
+   "banned_at": "2026-05-05T03:02:49.648749+00:00"
+  },
+  {
+   "sig": "forest_rand|p6|e0.6800|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1235 \u2192 $795 (36% from peak)",
+   "name": "S1500|forest_|p6|e0.68|sloff|tp10%|all|b",
+   "trades_at_ban": 315,
+   "equity_at_ban": 795.11,
+   "banned_at": "2026-05-05T03:02:49.649049+00:00"
+  },
+  {
+   "sig": "forest_rand|p30|e0.5400|sl-99.000|tp0.050|fee0|both",
+   "reason": "DD $1225 \u2192 $774 (37% from peak)",
+   "name": "S1043|forest_|p30|e0.54|sloff|tp5%|all|b",
+   "trades_at_ban": 354,
+   "equity_at_ban": 773.51,
+   "banned_at": "2026-05-05T04:03:44.814556+00:00"
+  },
+  {
+   "sig": "forest_rand|p26|e0.5100|sl-99.000|tp0.200|fee0|both",
+   "reason": "equity $694 < $700 (absolute floor)",
+   "name": "S1130|forest_|p26|e0.51|sloff|tp20%|all|b",
+   "trades_at_ban": 421,
+   "equity_at_ban": 694.27,
+   "banned_at": "2026-05-05T04:03:44.814711+00:00"
+  },
+  {
+   "sig": "forest_rand|p29|e0.6100|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $654 < $700 (absolute floor)",
+   "name": "S1149|forest_|p29|e0.61|sl-10%|tp5%|all|b",
+   "trades_at_ban": 266,
+   "equity_at_ban": 654.34,
+   "banned_at": "2026-05-05T04:03:44.814758+00:00"
+  },
+  {
+   "sig": "forest_rand|p5|e0.6400|sl-99.000|tp0.200|fee0|both",
+   "reason": "equity $680 < $700 (absolute floor)",
+   "name": "S1173|forest_|p5|e0.64|sloff|tp20%|all|b",
+   "trades_at_ban": 246,
+   "equity_at_ban": 680.41,
+   "banned_at": "2026-05-05T04:03:44.814952+00:00"
+  },
+  {
+   "sig": "forest_rand|p29|e0.5200|sl-99.000|tp0.100|fee0|both",
+   "reason": "equity $659 < $700 (absolute floor)",
+   "name": "S1315|forest_|p29|e0.52|sloff|tp10%|all|b",
+   "trades_at_ban": 483,
+   "equity_at_ban": 659.49,
+   "banned_at": "2026-05-05T04:03:44.815098+00:00"
+  },
+  {
+   "sig": "forest_rand|p5|e0.6200|sl-0.100|tp0.050|fee0|both",
+   "reason": "equity $659 < $700 (absolute floor)",
+   "name": "S1394|forest_|p5|e0.62|sl-10%|tp5%|all|b",
+   "trades_at_ban": 341,
+   "equity_at_ban": 658.9,
+   "banned_at": "2026-05-05T04:03:44.815192+00:00"
+  },
+  {
+   "sig": "forest_rand|p29|e0.6600|sl-0.250|tp0.200|fee0|both",
+   "reason": "DD $1121 \u2192 $743 (34% from peak)",
+   "name": "S1471|forest_|p29|e0.66|sl-25%|tp20%|all|b",
+   "trades_at_ban": 160,
+   "equity_at_ban": 743.21,
+   "banned_at": "2026-05-05T04:03:44.815310+00:00"
+  },
+  {
+   "sig": "breakout|p10|e1.0000|sl-0.150|tp0.200|fee1|both",
+   "reason": "equity $687 < $700 (absolute floor)",
+   "name": "S282|breakou|p10|e1.00|sl-15%|tp20%|free|b",
+   "trades_at_ban": 432,
+   "equity_at_ban": 687.15,
+   "banned_at": "2026-05-05T07:05:52.454044+00:00"
+  },
+  {
+   "sig": "forest_rand|p41|e0.5100|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1088 \u2192 $745 (32% from peak)",
+   "name": "S1199|forest_|p41|e0.51|sl-20%|tp5%|all|b",
+   "trades_at_ban": 348,
+   "equity_at_ban": 745.17,
+   "banned_at": "2026-05-05T15:58:21.218805+00:00"
+  },
+  {
+   "sig": "forest_rand|p41|e0.5700|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1081 \u2192 $718 (34% from peak)",
+   "name": "S1157|forest_|p41|e0.57|sl-20%|tp5%|all|b",
+   "trades_at_ban": 335,
+   "equity_at_ban": 718.33,
+   "banned_at": "2026-05-05T16:59:46.494247+00:00"
+  },
+  {
+   "sig": "forest_rand|p43|e0.5600|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1281 \u2192 $817 (36% from peak)",
+   "name": "S1228|forest_|p43|e0.56|sl-20%|tp5%|all|b",
+   "trades_at_ban": 592,
+   "equity_at_ban": 816.76,
+   "banned_at": "2026-05-05T16:59:46.494866+00:00"
+  },
+  {
+   "sig": "forest_rand|p43|e0.5500|sl-0.100|tp0.050|fee0|both",
+   "reason": "DD $1118 \u2192 $781 (30% from peak)",
+   "name": "S1286|forest_|p43|e0.55|sl-10%|tp5%|all|b",
+   "trades_at_ban": 474,
+   "equity_at_ban": 781.28,
+   "banned_at": "2026-05-05T16:59:46.500472+00:00"
+  },
+  {
+   "sig": "forest_rand|p16|e0.5600|sl-0.100|tp0.200|fee0|both",
+   "reason": "DD $1072 \u2192 $749 (30% from peak)",
+   "name": "S1430|forest_|p16|e0.56|sl-10%|tp20%|all|b",
+   "trades_at_ban": 193,
+   "equity_at_ban": 748.92,
+   "banned_at": "2026-05-05T16:59:46.501509+00:00"
+  },
+  {
+   "sig": "forest_rand|p6|e0.6000|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1173 \u2192 $819 (30% from peak)",
+   "name": "S1071|forest_|p6|e0.60|sloff|tp20%|all|b",
+   "trades_at_ban": 203,
+   "equity_at_ban": 819.24,
+   "banned_at": "2026-05-05T19:01:11.576918+00:00"
+  },
+  {
+   "sig": "forest_rand|p11|e0.6600|sl-0.100|tp0.050|fee0|both",
+   "reason": "DD $1106 \u2192 $750 (32% from peak)",
+   "name": "S1251|forest_|p11|e0.66|sl-10%|tp5%|all|b",
+   "trades_at_ban": 336,
+   "equity_at_ban": 749.78,
+   "banned_at": "2026-05-05T19:01:11.625946+00:00"
+  },
+  {
+   "sig": "forest_rand|p39|e0.6600|sl-0.100|tp0.200|fee0|both",
+   "reason": "DD $1088 \u2192 $750 (31% from peak)",
+   "name": "S1405|forest_|p39|e0.66|sl-10%|tp20%|all|b",
+   "trades_at_ban": 279,
+   "equity_at_ban": 749.6,
+   "banned_at": "2026-05-05T19:01:11.631243+00:00"
+  },
+  {
+   "sig": "forest_rand|p18|e0.6800|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1425 \u2192 $949 (33% from peak)",
+   "name": "S1058|forest_|p18|e0.68|sloff|tp10%|all|b",
+   "trades_at_ban": 349,
+   "equity_at_ban": 949.08,
+   "banned_at": "2026-05-05T20:03:06.641067+00:00"
+  },
+  {
+   "sig": "forest_rand|p45|e0.6400|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1148 \u2192 $757 (34% from peak)",
+   "name": "S1131|forest_|p45|e0.64|sloff|tp10%|all|b",
+   "trades_at_ban": 243,
+   "equity_at_ban": 757.16,
+   "banned_at": "2026-05-05T20:03:06.641625+00:00"
+  },
+  {
+   "sig": "forest_rand|p48|e0.6000|sl-99.000|tp0.050|fee0|both",
+   "reason": "DD $1153 \u2192 $804 (30% from peak)",
+   "name": "S1467|forest_|p48|e0.60|sloff|tp5%|all|b",
+   "trades_at_ban": 322,
+   "equity_at_ban": 804.17,
+   "banned_at": "2026-05-05T20:03:06.648934+00:00"
+  },
+  {
+   "sig": "forest_rand|p37|e0.5900|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1213 \u2192 $816 (33% from peak)",
+   "name": "S1498|forest_|p37|e0.59|sloff|tp10%|all|b",
+   "trades_at_ban": 347,
+   "equity_at_ban": 816.33,
+   "banned_at": "2026-05-05T20:03:06.652901+00:00"
+  },
+  {
+   "sig": "forest_rand|p25|e0.5700|sl-0.200|tp0.200|fee0|both",
+   "reason": "DD $1128 \u2192 $778 (31% from peak)",
+   "name": "S1083|forest_|p25|e0.57|sl-20%|tp20%|all|b",
+   "trades_at_ban": 342,
+   "equity_at_ban": 778.33,
+   "banned_at": "2026-05-05T21:07:18.179570+00:00"
+  },
+  {
+   "sig": "forest_rand|p39|e0.6100|sl-0.250|tp0.100|fee0|both",
+   "reason": "DD $1314 \u2192 $848 (35% from peak)",
+   "name": "S1350|forest_|p39|e0.61|sl-25%|tp10%|all|b",
+   "trades_at_ban": 371,
+   "equity_at_ban": 848.22,
+   "banned_at": "2026-05-05T21:07:18.196637+00:00"
+  },
+  {
+   "sig": "forest_rand|p43|e0.5200|sl-0.200|tp0.200|fee0|both",
+   "reason": "DD $1110 \u2192 $760 (32% from peak)",
+   "name": "S1506|forest_|p43|e0.52|sl-20%|tp20%|all|b",
+   "trades_at_ban": 308,
+   "equity_at_ban": 759.92,
+   "banned_at": "2026-05-05T21:07:18.203994+00:00"
+  },
+  {
+   "sig": "forest_rand|p17|e0.5500|sl-0.200|tp0.200|fee0|both",
+   "reason": "DD $1090 \u2192 $750 (31% from peak)",
+   "name": "S1065|forest_|p17|e0.55|sl-20%|tp20%|all|b",
+   "trades_at_ban": 267,
+   "equity_at_ban": 750.33,
+   "banned_at": "2026-05-05T23:09:42.699617+00:00"
+  },
+  {
+   "sig": "forest_rand|p42|e0.5800|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1077 \u2192 $753 (30% from peak)",
+   "name": "S1317|forest_|p42|e0.58|sl-10%|tp10%|all|b",
+   "trades_at_ban": 393,
+   "equity_at_ban": 753.03,
+   "banned_at": "2026-05-05T23:09:42.991073+00:00"
+  },
+  {
+   "sig": "forest_rand|p32|e0.6700|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1304 \u2192 $899 (31% from peak)",
+   "name": "S1425|forest_|p32|e0.67|sl-10%|tp10%|all|b",
+   "trades_at_ban": 440,
+   "equity_at_ban": 898.75,
+   "banned_at": "2026-05-05T23:09:43.064919+00:00"
+  },
+  {
+   "sig": "forest_rand|p32|e0.6300|sl-0.250|tp0.050|fee0|both",
+   "reason": "DD $1125 \u2192 $779 (31% from peak)",
+   "name": "S1531|forest_|p32|e0.63|sl-25%|tp5%|all|b",
+   "trades_at_ban": 308,
+   "equity_at_ban": 779.29,
+   "banned_at": "2026-05-05T23:09:43.095752+00:00"
+  },
+  {
+   "sig": "forest_rand|p16|e0.5700|sl-0.200|tp0.100|fee0|both",
+   "reason": "DD $1165 \u2192 $796 (32% from peak)",
+   "name": "S1093|forest_|p16|e0.57|sl-20%|tp10%|all|b",
+   "trades_at_ban": 210,
+   "equity_at_ban": 795.76,
+   "banned_at": "2026-05-06T00:54:46.321287+00:00"
+  },
+  {
+   "sig": "forest_rand|p41|e0.5700|sl-0.250|tp0.100|fee0|both",
+   "reason": "DD $1273 \u2192 $836 (34% from peak)",
+   "name": "S1264|forest_|p41|e0.57|sl-25%|tp10%|all|b",
+   "trades_at_ban": 373,
+   "equity_at_ban": 835.57,
+   "banned_at": "2026-05-06T00:54:46.322209+00:00"
+  },
+  {
+   "sig": "forest_rand|p33|e0.5700|sl-0.250|tp0.050|fee0|both",
+   "reason": "DD $1157 \u2192 $800 (31% from peak)",
+   "name": "S1297|forest_|p33|e0.57|sl-25%|tp5%|all|b",
+   "trades_at_ban": 317,
+   "equity_at_ban": 800.01,
+   "banned_at": "2026-05-06T00:54:46.322425+00:00"
+  },
+  {
+   "sig": "forest_rand|p17|e0.6700|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1229 \u2192 $839 (32% from peak)",
+   "name": "S1327|forest_|p17|e0.67|sloff|tp20%|all|b",
+   "trades_at_ban": 171,
+   "equity_at_ban": 839.37,
+   "banned_at": "2026-05-06T00:54:46.322615+00:00"
+  },
+  {
+   "sig": "forest_rand|p50|e0.5100|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1187 \u2192 $787 (34% from peak)",
+   "name": "S1364|forest_|p50|e0.51|sloff|tp10%|all|b",
+   "trades_at_ban": 264,
+   "equity_at_ban": 787.1,
+   "banned_at": "2026-05-06T00:54:46.322848+00:00"
+  },
+  {
+   "sig": "forest_rand|p35|e0.5400|sl-0.200|tp0.200|fee0|both",
+   "reason": "DD $1101 \u2192 $759 (31% from peak)",
+   "name": "S1407|forest_|p35|e0.54|sl-20%|tp20%|all|b",
+   "trades_at_ban": 302,
+   "equity_at_ban": 759.37,
+   "banned_at": "2026-05-06T00:54:46.323034+00:00"
+  },
+  {
+   "sig": "forest_rand|p50|e0.5700|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1247 \u2192 $838 (33% from peak)",
+   "name": "S1414|forest_|p50|e0.57|sloff|tp10%|all|b",
+   "trades_at_ban": 310,
+   "equity_at_ban": 838.26,
+   "banned_at": "2026-05-06T00:54:46.323136+00:00"
+  },
+  {
+   "sig": "forest_rand|p23|e0.5900|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1108 \u2192 $756 (32% from peak)",
+   "name": "S1490|forest_|p23|e0.59|sl-10%|tp10%|all|b",
+   "trades_at_ban": 383,
+   "equity_at_ban": 756.1,
+   "banned_at": "2026-05-06T00:54:46.323421+00:00"
+  },
+  {
+   "sig": "macd|p40|e0.0050|sl-99.000|tp0.100|fee1|both",
+   "reason": "equity $700 < $700 (absolute floor)",
+   "name": "S273|macd|p40|e0.01|sloff|tp10%|free|b",
+   "trades_at_ban": 234,
+   "equity_at_ban": 699.58,
+   "banned_at": "2026-05-06T02:56:21.038519+00:00"
+  },
+  {
+   "sig": "forest_rand|p44|e0.5700|sl-0.250|tp0.100|fee0|both",
+   "reason": "DD $1147 \u2192 $751 (35% from peak)",
+   "name": "S1357|forest_|p44|e0.57|sl-25%|tp10%|all|b",
+   "trades_at_ban": 332,
+   "equity_at_ban": 750.7,
+   "banned_at": "2026-05-06T02:56:21.167912+00:00"
+  },
+  {
+   "sig": "forest_rand|p32|e0.5900|sl-0.200|tp0.100|fee0|both",
+   "reason": "DD $1238 \u2192 $850 (31% from peak)",
+   "name": "S1486|forest_|p32|e0.59|sl-20%|tp10%|all|b",
+   "trades_at_ban": 268,
+   "equity_at_ban": 850.31,
+   "banned_at": "2026-05-06T02:56:21.169043+00:00"
+  },
+  {
+   "sig": "forest_rand|p41|e0.5400|sl-0.250|tp0.050|fee0|both",
+   "reason": "DD $1073 \u2192 $746 (30% from peak)",
+   "name": "S1254|forest_|p41|e0.54|sl-25%|tp5%|all|b",
+   "trades_at_ban": 230,
+   "equity_at_ban": 746.25,
+   "banned_at": "2026-05-06T03:57:28.679549+00:00"
+  },
+  {
+   "sig": "forest_rand|p19|e0.5100|sl-0.200|tp0.200|fee0|both",
+   "reason": "DD $1123 \u2192 $785 (30% from peak)",
+   "name": "S1263|forest_|p19|e0.51|sl-20%|tp20%|all|b",
+   "trades_at_ban": 406,
+   "equity_at_ban": 785.45,
+   "banned_at": "2026-05-06T03:57:28.680011+00:00"
+  },
+  {
+   "sig": "forest_rand|p25|e0.5600|sl-0.100|tp0.050|fee0|both",
+   "reason": "DD $1064 \u2192 $739 (31% from peak)",
+   "name": "S1514|forest_|p25|e0.56|sl-10%|tp5%|all|b",
+   "trades_at_ban": 301,
+   "equity_at_ban": 738.56,
+   "banned_at": "2026-05-06T03:57:28.688011+00:00"
+  },
+  {
+   "sig": "forest_rand|p37|e0.5800|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1098 \u2192 $744 (32% from peak)",
+   "name": "S1142|forest_|p37|e0.58|sl-20%|tp5%|all|b",
+   "trades_at_ban": 363,
+   "equity_at_ban": 743.99,
+   "banned_at": "2026-05-06T04:58:49.414652+00:00"
+  },
+  {
+   "sig": "forest_rand|p34|e0.6000|sl-0.100|tp0.200|fee0|both",
+   "reason": "DD $1085 \u2192 $753 (31% from peak)",
+   "name": "S1287|forest_|p34|e0.60|sl-10%|tp20%|all|b",
+   "trades_at_ban": 347,
+   "equity_at_ban": 752.68,
+   "banned_at": "2026-05-06T04:58:49.421792+00:00"
+  },
+  {
+   "sig": "forest_rand|p44|e0.6900|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1138 \u2192 $792 (30% from peak)",
+   "name": "S1078|forest_|p44|e0.69|sloff|tp20%|all|b",
+   "trades_at_ban": 203,
+   "equity_at_ban": 791.67,
+   "banned_at": "2026-05-06T05:59:31.270350+00:00"
+  },
+  {
+   "sig": "forest_rand|p41|e0.5200|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1210 \u2192 $789 (35% from peak)",
+   "name": "S1258|forest_|p41|e0.52|sloff|tp20%|all|b",
+   "trades_at_ban": 306,
+   "equity_at_ban": 789.23,
+   "banned_at": "2026-05-06T05:59:31.278781+00:00"
+  },
+  {
+   "sig": "forest_rand|p49|e0.5600|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1123 \u2192 $756 (33% from peak)",
+   "name": "S1302|forest_|p49|e0.56|sloff|tp20%|all|b",
+   "trades_at_ban": 196,
+   "equity_at_ban": 755.76,
+   "banned_at": "2026-05-06T05:59:31.280991+00:00"
+  },
+  {
+   "sig": "forest_rand|p30|e0.6600|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1280 \u2192 $842 (34% from peak)",
+   "name": "S1308|forest_|p30|e0.66|sloff|tp20%|all|b",
+   "trades_at_ban": 186,
+   "equity_at_ban": 841.85,
+   "banned_at": "2026-05-06T05:59:31.281833+00:00"
+  },
+  {
+   "sig": "forest_rand|p45|e0.6700|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1140 \u2192 $781 (32% from peak)",
+   "name": "S1517|forest_|p45|e0.67|sloff|tp20%|all|b",
+   "trades_at_ban": 198,
+   "equity_at_ban": 781.19,
+   "banned_at": "2026-05-06T05:59:31.288432+00:00"
+  },
+  {
+   "sig": "forest_rand|p31|e0.5600|sl-0.100|tp0.200|fee0|both",
+   "reason": "DD $1212 \u2192 $843 (30% from peak)",
+   "name": "S1067|forest_|p31|e0.56|sl-10%|tp20%|all|b",
+   "trades_at_ban": 420,
+   "equity_at_ban": 843.27,
+   "banned_at": "2026-05-06T09:12:41.573130+00:00"
+  },
+  {
+   "sig": "forest_rand|p19|e0.5800|sl-0.250|tp0.050|fee0|both",
+   "reason": "DD $1070 \u2192 $748 (30% from peak)",
+   "name": "S1056|forest_|p19|e0.58|sl-25%|tp5%|all|b",
+   "trades_at_ban": 262,
+   "equity_at_ban": 747.69,
+   "banned_at": "2026-05-06T10:13:36.587451+00:00"
+  },
+  {
+   "sig": "forest_rand|p20|e0.6000|sl-0.250|tp0.200|fee0|both",
+   "reason": "DD $1099 \u2192 $735 (33% from peak)",
+   "name": "S1324|forest_|p20|e0.60|sl-25%|tp20%|all|b",
+   "trades_at_ban": 340,
+   "equity_at_ban": 735.31,
+   "banned_at": "2026-05-06T10:13:36.591626+00:00"
+  },
+  {
+   "sig": "forest_rand|p50|e0.6000|sl-0.250|tp0.050|fee0|both",
+   "reason": "DD $1163 \u2192 $809 (30% from peak)",
+   "name": "S1384|forest_|p50|e0.60|sl-25%|tp5%|all|b",
+   "trades_at_ban": 326,
+   "equity_at_ban": 809.06,
+   "banned_at": "2026-05-06T10:13:36.592557+00:00"
+  },
+  {
+   "sig": "forest_rand|p27|e0.5200|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1092 \u2192 $746 (32% from peak)",
+   "name": "S1499|forest_|p27|e0.52|sl-20%|tp5%|all|b",
+   "trades_at_ban": 367,
+   "equity_at_ban": 746.0,
+   "banned_at": "2026-05-06T10:13:36.595346+00:00"
+  },
+  {
+   "sig": "forest_rand|p23|e0.6900|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1066 \u2192 $730 (32% from peak)",
+   "name": "S1518|forest_|p23|e0.69|sl-20%|tp5%|all|b",
+   "trades_at_ban": 192,
+   "equity_at_ban": 729.81,
+   "banned_at": "2026-05-06T10:13:36.595797+00:00"
+  },
+  {
+   "sig": "forest_rand|p37|e0.5700|sl-99.000|tp0.050|fee0|both",
+   "reason": "DD $1159 \u2192 $791 (32% from peak)",
+   "name": "S1165|forest_|p37|e0.57|sloff|tp5%|all|b",
+   "trades_at_ban": 291,
+   "equity_at_ban": 791.47,
+   "banned_at": "2026-05-06T12:19:11.475631+00:00"
+  },
+  {
+   "sig": "forest_rand|p13|e0.5200|sl-99.000|tp0.200|fee0|both",
+   "reason": "DD $1176 \u2192 $808 (31% from peak)",
+   "name": "S1503|forest_|p13|e0.52|sloff|tp20%|all|b",
+   "trades_at_ban": 249,
+   "equity_at_ban": 807.94,
+   "banned_at": "2026-05-06T12:19:11.490739+00:00"
+  },
+  {
+   "sig": "breakout|p10|e1.0000|sl-0.050|tp0.100|fee1|both",
+   "reason": "equity $697 < $700 (absolute floor)",
+   "name": "S278|breakou|p10|e1.00|sl-5%|tp10%|free|b",
+   "trades_at_ban": 862,
+   "equity_at_ban": 696.72,
+   "banned_at": "2026-05-06T14:59:51.036924+00:00"
+  },
+  {
+   "sig": "forest_rand|p48|e0.6100|sl-0.100|tp0.050|fee0|both",
+   "reason": "DD $1075 \u2192 $741 (31% from peak)",
+   "name": "S1421|forest_|p48|e0.61|sl-10%|tp5%|all|b",
+   "trades_at_ban": 506,
+   "equity_at_ban": 740.71,
+   "banned_at": "2026-05-06T16:00:11.126278+00:00"
+  },
+  {
+   "sig": "forest_rand|p35|e0.6100|sl-0.250|tp0.200|fee0|both",
+   "reason": "DD $1066 \u2192 $743 (30% from peak)",
+   "name": "S1296|forest_|p35|e0.61|sl-25%|tp20%|all|b",
+   "trades_at_ban": 111,
+   "equity_at_ban": 742.85,
+   "banned_at": "2026-05-06T22:11:31.398716+00:00"
+  },
+  {
+   "sig": "forest_rand|p47|e0.6100|sl-0.100|tp0.200|fee0|both",
+   "reason": "DD $1158 \u2192 $789 (32% from peak)",
+   "name": "S1434|forest_|p47|e0.61|sl-10%|tp20%|all|b",
+   "trades_at_ban": 412,
+   "equity_at_ban": 788.95,
+   "banned_at": "2026-05-06T22:11:31.402928+00:00"
+  },
+  {
+   "sig": "forest_rand|p49|e0.5200|sl-99.000|tp0.050|fee0|both",
+   "reason": "DD $1173 \u2192 $723 (38% from peak)",
+   "name": "S1079|forest_|p49|e0.52|sloff|tp5%|all|b",
+   "trades_at_ban": 327,
+   "equity_at_ban": 723.48,
+   "banned_at": "2026-05-07T00:38:07.923276+00:00"
+  },
+  {
+   "sig": "forest_rand|p15|e0.5500|sl-99.000|tp0.050|fee0|both",
+   "reason": "equity $659 < $700 (absolute floor)",
+   "name": "S1180|forest_|p15|e0.55|sloff|tp5%|all|b",
+   "trades_at_ban": 345,
+   "equity_at_ban": 658.83,
+   "banned_at": "2026-05-07T00:38:07.924872+00:00"
+  },
+  {
+   "sig": "breakout|p20|e1.0000|sl-0.050|tp0.100|fee1|both",
+   "reason": "equity $694 < $700 (absolute floor)",
+   "name": "S284|breakou|p20|e1.00|sl-5%|tp10%|free|b",
+   "trades_at_ban": 835,
+   "equity_at_ban": 693.58,
+   "banned_at": "2026-05-07T08:44:43.143654+00:00"
+  },
+  {
+   "sig": "forest_rand|p47|e0.6600|sl-0.200|tp0.100|fee0|both",
+   "reason": "DD $1148 \u2192 $858 (25% from peak)",
+   "name": "S1037|forest_|p47|e0.66|sl-20%|tp10%|all|b",
+   "trades_at_ban": 295,
+   "equity_at_ban": 858.25,
+   "banned_at": "2026-05-07T09:58:16.568550+00:00"
+  },
+  {
+   "sig": "forest_rand|p39|e0.6900|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1201 \u2192 $882 (27% from peak)",
+   "name": "S1052|forest_|p39|e0.69|sl-10%|tp10%|all|b",
+   "trades_at_ban": 361,
+   "equity_at_ban": 881.75,
+   "banned_at": "2026-05-07T09:58:16.568664+00:00"
+  },
+  {
+   "sig": "forest_rand|p12|e0.5200|sl-0.200|tp0.100|fee0|both",
+   "reason": "DD $1223 \u2192 $935 (24% from peak)",
+   "name": "S1057|forest_|p12|e0.52|sl-20%|tp10%|all|b",
+   "trades_at_ban": 353,
+   "equity_at_ban": 934.6,
+   "banned_at": "2026-05-07T09:58:16.568717+00:00"
+  },
+  {
+   "sig": "forest_rand|p50|e0.6600|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1117 \u2192 $835 (25% from peak)",
+   "name": "S1076|forest_|p50|e0.66|sloff|tp10%|all|b",
+   "trades_at_ban": 230,
+   "equity_at_ban": 834.64,
+   "banned_at": "2026-05-07T09:58:16.568800+00:00"
+  },
+  {
+   "sig": "forest_rand|p48|e0.6000|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1148 \u2192 $857 (25% from peak)",
+   "name": "S1091|forest_|p48|e0.60|sl-10%|tp10%|all|b",
+   "trades_at_ban": 297,
+   "equity_at_ban": 856.53,
+   "banned_at": "2026-05-07T09:58:16.568928+00:00"
+  },
+  {
+   "sig": "forest_rand|p18|e0.6800|sl-0.100|tp0.050|fee0|both",
+   "reason": "DD $1115 \u2192 $818 (27% from peak)",
+   "name": "S1123|forest_|p18|e0.68|sl-10%|tp5%|all|b",
+   "trades_at_ban": 227,
+   "equity_at_ban": 818.3,
+   "banned_at": "2026-05-07T09:58:16.569116+00:00"
+  },
+  {
+   "sig": "forest_rand|p49|e0.6100|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1115 \u2192 $827 (26% from peak)",
+   "name": "S1218|forest_|p49|e0.61|sl-20%|tp5%|all|b",
+   "trades_at_ban": 251,
+   "equity_at_ban": 827.07,
+   "banned_at": "2026-05-07T09:58:16.569397+00:00"
+  },
+  {
+   "sig": "forest_rand|p32|e0.5800|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1131 \u2192 $862 (24% from peak)",
+   "name": "S1225|forest_|p32|e0.58|sl-20%|tp5%|all|b",
+   "trades_at_ban": 271,
+   "equity_at_ban": 862.25,
+   "banned_at": "2026-05-07T09:58:16.569567+00:00"
+  },
+  {
+   "sig": "forest_rand|p14|e0.5800|sl-99.000|tp0.100|fee0|both",
+   "reason": "DD $1238 \u2192 $977 (21% from peak)",
+   "name": "S1242|forest_|p14|e0.58|sloff|tp10%|all|b",
+   "trades_at_ban": 235,
+   "equity_at_ban": 977.4,
+   "banned_at": "2026-05-07T09:58:16.569727+00:00"
+  },
+  {
+   "sig": "forest_rand|p45|e0.6400|sl-0.100|tp0.050|fee0|both",
+   "reason": "DD $1083 \u2192 $794 (27% from peak)",
+   "name": "S1320|forest_|p45|e0.64|sl-10%|tp5%|all|b",
+   "trades_at_ban": 490,
+   "equity_at_ban": 794.01,
+   "banned_at": "2026-05-07T09:58:16.570399+00:00"
+  },
+  {
+   "sig": "forest_rand|p45|e0.6300|sl-99.000|tp0.050|fee0|both",
+   "reason": "DD $1217 \u2192 $966 (21% from peak)",
+   "name": "S1431|forest_|p45|e0.63|sloff|tp5%|all|b",
+   "trades_at_ban": 309,
+   "equity_at_ban": 965.89,
+   "banned_at": "2026-05-07T09:58:16.570972+00:00"
+  },
+  {
+   "sig": "forest_rand|p5|e0.5400|sl-0.100|tp0.100|fee0|both",
+   "reason": "DD $1077 \u2192 $861 (20% from peak)",
+   "name": "S1437|forest_|p5|e0.54|sl-10%|tp10%|all|b",
+   "trades_at_ban": 652,
+   "equity_at_ban": 860.99,
+   "banned_at": "2026-05-07T09:58:16.571071+00:00"
+  },
+  {
+   "sig": "forest_rand|p39|e0.6600|sl-0.200|tp0.100|fee0|both",
+   "reason": "DD $1070 \u2192 $807 (25% from peak)",
+   "name": "S1441|forest_|p39|e0.66|sl-20%|tp10%|all|b",
+   "trades_at_ban": 250,
+   "equity_at_ban": 806.86,
+   "banned_at": "2026-05-07T09:58:16.571171+00:00"
+  },
+  {
+   "sig": "forest_rand|p10|e0.6600|sl-0.200|tp0.050|fee0|both",
+   "reason": "DD $1104 \u2192 $865 (22% from peak)",
+   "name": "S1480|forest_|p10|e0.66|sl-20%|tp5%|all|b",
+   "trades_at_ban": 139,
+   "equity_at_ban": 864.77,
+   "banned_at": "2026-05-07T09:58:16.571593+00:00"
   }
  ]
 }

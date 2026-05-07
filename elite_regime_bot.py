@@ -33,6 +33,7 @@ DATA = "data"
 ENTRIES = os.path.join(DATA, "arena_entries.jsonl")
 TRADES = os.path.join(DATA, "arena_trades.jsonl")
 SHORTLIST = os.path.join(DATA, "final_shortlist.json")
+STRICT_DD = os.path.join(DATA, "strict_dd_shortlist.json")  # bt_max_dd<20% gate
 REGIME = os.path.join(DATA, "regime_hmm.json")
 OUT = os.path.join(DATA, "elite_paper.json")
 POS_FILE = os.path.join(DATA, "elite_paper_pos.json")
@@ -87,12 +88,22 @@ class EliteRegimeBot:
                 pass
 
     def load_lookups(self):
-        if os.path.exists(SHORTLIST):
+        # Prefer the STRICT DD shortlist (bt_max_dd_pct < 20% AND bt_roi > 0)
+        # which is the user's explicit risk constraint. Fall back to original
+        # 3-gate shortlist if strict file is absent.
+        if os.path.exists(STRICT_DD):
+            try:
+                d = json.load(open(STRICT_DD))
+                self.elite_ids = {s["id"] for s in d.get("strategies", [])}
+                self.shortlist_ids = self.elite_ids
+                print(f"[elite] using STRICT_DD shortlist (n={len(self.elite_ids)})")
+            except Exception as e:
+                print(f"[elite] strict_dd load err: {e}")
+        if not self.elite_ids and os.path.exists(SHORTLIST):
             try:
                 d = json.load(open(SHORTLIST))
                 self.elite_ids = {s["id"] for s in d.get("elite", [])}
                 self.shortlist_ids = {s["id"] for s in d.get("shortlist", [])}
-                # If elite empty, fall back to shortlist
                 if not self.elite_ids:
                     self.elite_ids = self.shortlist_ids
             except Exception as e:

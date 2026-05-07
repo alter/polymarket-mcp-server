@@ -118,6 +118,7 @@ logs/
 !bot-data/final_shortlist.json
 !bot-data/elite_paper.json
 !bot-data/kelly_paper.json
+!bot-data/strict_dd_shortlist.json
 
 # Bot credentials (MUST NOT be committed)
 .env.bot
