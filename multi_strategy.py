@@ -2143,6 +2143,7 @@ class Arena:
 
         self._load_blacklist()
         self._load_state()
+        self._recover_peaks_from_backups()
         self._apply_blacklist()
         logger.info(f"Arena initialized with {len(self.strategies)} strategies")
 
@@ -2164,6 +2165,40 @@ class Arena:
                            "banned": list(self.blacklist.values())}, f, indent=1)
         except Exception as e:
             logger.error(f"blacklist save failed: {e}")
+
+    def _recover_peaks_from_backups(self):
+        """Scan bot-data/backups/arena_results.json.* and ensure each strategy's
+        peak_equity reflects the historical max observed equity. This is a
+        defensive guard against cascade-restart cycles where peak_equity gets
+        clobbered by current equity before the DD-rule has a chance to fire.
+        """
+        import glob
+        backup_dir = os.path.join(DATA_DIR, "backups")
+        if not os.path.isdir(backup_dir):
+            return
+        max_eq = {}
+        for bp in glob.glob(os.path.join(backup_dir, "arena_results.json.*")):
+            try:
+                with open(bp) as f:
+                    d = json.load(f)
+            except Exception:
+                continue
+            for r in d.get("results", []):
+                sid = r.get("id")
+                e = r.get("equity", 0)
+                if sid is not None and (sid not in max_eq or e > max_eq[sid]):
+                    max_eq[sid] = e
+        if not max_eq:
+            return
+        n_fixed = 0
+        for strat in self.strategies:
+            sid = strat.params.id
+            historical_max = max_eq.get(sid, 0)
+            if historical_max > strat.peak_equity:
+                strat.peak_equity = historical_max
+                n_fixed += 1
+        if n_fixed:
+            logger.info(f"Recovered peak_equity from backups for {n_fixed} strategies")
 
     def _apply_blacklist(self):
         n = 0
