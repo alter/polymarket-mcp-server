@@ -25,31 +25,6 @@
    "question": "",
    "opened_ts": 1777841736.3323812
   },
-  "0x22e7b5e35423e76842dd3a5e1a21d13793811080d5e7b2896d0c001bd5e97d54": {
-   "cid": "0x22e7b5e35423e76842dd3a5e1a21d13793811080d5e7b2896d0c001bd5e97d54",
-   "side": "YES",
-   "entry": 0.58,
-   "shares": 0.0862,
-   "cost": 0.05,
-   "bet_size": 0.05,
-   "consensus_bot_count": 62,
-   "consensus_family_count": 4,
-   "families": [
-    "Whale",
-    "LV_RS",
-    "LV_MV5",
-    "LV_MV4"
-   ],
-   "bots": [
-    "Whale",
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|"
-   ],
-   "question": "Will the Oklahoma City Thunder win the 2026 NBA Finals?",
-   "opened_ts": 1777841736.6463056
-  },
   "0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7": {
    "cid": "0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7",
    "side": "NO",
@@ -73,54 +48,6 @@
    ],
    "question": "",
    "opened_ts": 1777841736.9672139
-  },
-  "0x416e3cbe25a60b8210f4e67c056ea2b03f4d511e7b969826d69ef90b753ff214": {
-   "cid": "0x416e3cbe25a60b8210f4e67c056ea2b03f4d511e7b969826d69ef90b753ff214",
-   "side": "YES",
-   "entry": 0.4,
-   "shares": 0.05,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 22,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_MV5"
-   ],
-   "bots": [
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p14_t80_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841737.3172367
-  },
-  "0xc6ddb19f848ac363330d0a690cfe6818d4c51e837161a41d42675eda27767ed0": {
-   "cid": "0xc6ddb19f848ac363330d0a690cfe6818d4c51e837161a41d42675eda27767ed0",
-   "side": "YES",
-   "entry": 0.34,
-   "shares": 0.1471,
-   "cost": 0.05,
-   "bet_size": 0.05,
-   "consensus_bot_count": 49,
-   "consensus_family_count": 4,
-   "families": [
-    "LV_BB",
-    "LV_RS",
-    "LV_MV5",
-    "LV_MV4"
-   ],
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p14_t70_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841737.5492396
   },
   "0xd4cb184e5dc458f3b03e6da54c87f7272e478bffe30c2d8157c6df8e2eb8c985": {
    "cid": "0xd4cb184e5dc458f3b03e6da54c87f7272e478bffe30c2d8157c6df8e2eb8c985",
@@ -146,149 +73,6 @@
    ],
    "question": "",
    "opened_ts": 1777841737.97255
-  },
-  "0x998d69f881036ac580f6dc0a18b6c3ec48f167fd00799db9e58bf43e07b4b27e": {
-   "cid": "0x998d69f881036ac580f6dc0a18b6c3ec48f167fd00799db9e58bf43e07b4b27e",
-   "side": "YES",
-   "entry": 0.66,
-   "shares": 0.0455,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 61,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_MV5",
-    "LV_MV4"
-   ],
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p7_t80_follow|pgt50|stight|"
-   ],
-   "question": "",
-   "opened_ts": 1777841738.5667207
-  },
-  "0x309e01ff8af6848e2f7e078bf969614d812673f5babde4bdb2fca1ac909d686e": {
-   "cid": "0x309e01ff8af6848e2f7e078bf969614d812673f5babde4bdb2fca1ac909d686e",
-   "side": "YES",
-   "entry": 0.4,
-   "shares": 0.05,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 22,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_MV5"
-   ],
-   "bots": [
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p14_t80_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841738.9929569
-  },
-  "0x3b48166faf44ba7768769cb56c9559e7075d2e8fbf2204829625b226fd420f3c": {
-   "cid": "0x3b48166faf44ba7768769cb56c9559e7075d2e8fbf2204829625b226fd420f3c",
-   "side": "NO",
-   "entry": 0.597,
-   "shares": 0.1675,
-   "cost": 0.1,
-   "bet_size": 0.1,
-   "consensus_bot_count": 53,
-   "consensus_family_count": 5,
-   "families": [
-    "LV_RS",
-    "LV_MV4",
-    "LV_BO",
-    "LV_BB",
-    "LV_MV5"
-   ],
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|"
-   ],
-   "question": "",
-   "opened_ts": 1777841739.3211746
-  },
-  "0x4bab360a81b57047b48c0dd7c6c1377706129e3e6b9fa3f079cc28d310ec4cec": {
-   "cid": "0x4bab360a81b57047b48c0dd7c6c1377706129e3e6b9fa3f079cc28d310ec4cec",
-   "side": "YES",
-   "entry": 0.64,
-   "shares": 0.0469,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 48,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p14_t70_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841739.667215
-  },
-  "0xa0cc3453128c2864b0ec056805f193d3be8c5cd907c6c992dbb5ceaa52933205": {
-   "cid": "0xa0cc3453128c2864b0ec056805f193d3be8c5cd907c6c992dbb5ceaa52933205",
-   "side": "YES",
-   "entry": 0.36,
-   "shares": 0.0556,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 22,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_MV5"
-   ],
-   "bots": [
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p14_t80_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841740.9355757
-  },
-  "0x6465374ef5267907c84d0f330af0df120a4ecb40c5da52508daa76bddacb49d0": {
-   "cid": "0x6465374ef5267907c84d0f330af0df120a4ecb40c5da52508daa76bddacb49d0",
-   "side": "YES",
-   "entry": 0.79,
-   "shares": 0.0253,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 26,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p7_t80_follow|pgt50|stight|",
-    "LV:RS_p7_t75_follow|pgt50|stight|",
-    "LV:RS_p7_t70_follow|plt70|sany|fa"
-   ],
-   "question": "",
-   "opened_ts": 1777841741.583844
   },
   "0x9b6fef249040fd17e9c107955b37ac2c3e923509b6b0ff01cc463a331ddeb894": {
    "cid": "0x9b6fef249040fd17e9c107955b37ac2c3e923509b6b0ff01cc463a331ddeb894",
@@ -342,30 +126,6 @@
    "question": "Will Spain win the 2026 FIFA World Cup?",
    "opened_ts": 1777841741.9885547
   },
-  "0x70d706fe084905dbafb95dfff13b727e4073efc3ef590adc8330562bac5d26de": {
-   "cid": "0x70d706fe084905dbafb95dfff13b727e4073efc3ef590adc8330562bac5d26de",
-   "side": "NO",
-   "entry": 0.8,
-   "shares": 0.0375,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 23,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:BB_p50_sd25_fade|pany|swide|fa",
-    "LV:RS_p21_t70_follow|pany|sany|fa"
-   ],
-   "question": "",
-   "opened_ts": 1777841742.1732833
-  },
   "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722": {
    "cid": "0x48b0b0bca515f68fccf95af4793dbd0edbfec1f8ec6e8df2c0f69ba74f8c4722",
    "side": "YES",
@@ -389,29 +149,6 @@
    ],
    "question": "Trump out as President before 2027?",
    "opened_ts": 1777841742.3467603
-  },
-  "0x8df5a4256840dee05851250c0490da7593597faff3a7f9a156ccbbda7fec76f8": {
-   "cid": "0x8df5a4256840dee05851250c0490da7593597faff3a7f9a156ccbbda7fec76f8",
-   "side": "YES",
-   "entry": 0.31,
-   "shares": 0.0645,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 16,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_BO"
-   ],
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
-    "LV:RS_p21_t75_follow|plt70|sany|f",
-    "LV:RS_p7_t70_follow|pany|sany|fan",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": "Will Arsenal win the 2025\u201326 Champions League?",
-   "opened_ts": 1777841742.5410051
   },
   "0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089": {
    "cid": "0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089",
@@ -461,53 +198,6 @@
    "question": "",
    "opened_ts": 1777841743.0192773
   },
-  "0x1591b72dc504383d8fa2024e72a585c520b3c673614100d2e167507485e17e38": {
-   "cid": "0x1591b72dc504383d8fa2024e72a585c520b3c673614100d2e167507485e17e38",
-   "side": "NO",
-   "entry": 0.95,
-   "shares": 0.0211,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 27,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_BO"
-   ],
-   "bots": [
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t80_fade|plt30|sany|fan"
-   ],
-   "question": "",
-   "opened_ts": 1777841743.6441693
-  },
-  "0x36f665053a7ca5c102f2db15cfc49b1b9f38fa820a5f2bb4bde87bf9fbd9a2ab": {
-   "cid": "0x36f665053a7ca5c102f2db15cfc49b1b9f38fa820a5f2bb4bde87bf9fbd9a2ab",
-   "side": "NO",
-   "entry": 0.86,
-   "shares": 0.0349,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 39,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841743.9006886
-  },
   "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b": {
    "cid": "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b",
    "side": "YES",
@@ -530,31 +220,6 @@
    ],
    "question": "",
    "opened_ts": 1777841744.086039
-  },
-  "0xd86177011df25e467bdfa1c25481edaf1006e88da184965173e03c8d1cc4f2d6": {
-   "cid": "0xd86177011df25e467bdfa1c25481edaf1006e88da184965173e03c8d1cc4f2d6",
-   "side": "NO",
-   "entry": 0.892,
-   "shares": 0.0561,
-   "cost": 0.05,
-   "bet_size": 0.05,
-   "consensus_bot_count": 44,
-   "consensus_family_count": 4,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_MV4",
-    "LV_MV5"
-   ],
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany"
-   ],
-   "question": "",
-   "opened_ts": 1777841744.3358126
   },
   "0xb6b3d7a2037b3faa7e1306d741840d453432902d73cc9a146a035e40271eae73": {
    "cid": "0xb6b3d7a2037b3faa7e1306d741840d453432902d73cc9a146a035e40271eae73",
@@ -607,30 +272,6 @@
    "question": "",
    "opened_ts": 1777841745.050158
   },
-  "0x22014d44b787385b7baddb2b9d56cdcf5904fd7783b83c28403962dd71e51a51": {
-   "cid": "0x22014d44b787385b7baddb2b9d56cdcf5904fd7783b83c28403962dd71e51a51",
-   "side": "YES",
-   "entry": 0.26,
-   "shares": 0.1154,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 30,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa"
-   ],
-   "question": "",
-   "opened_ts": 1777841746.2687705
-  },
   "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846": {
    "cid": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
    "side": "NO",
@@ -678,99 +319,6 @@
    "question": "",
    "opened_ts": 1777841747.2463663
   },
-  "0x7d9a8b8c29c55a7b5dce59aa1556be274bb5c6fb2ee431237c3f656603c96583": {
-   "cid": "0x7d9a8b8c29c55a7b5dce59aa1556be274bb5c6fb2ee431237c3f656603c96583",
-   "side": "YES",
-   "entry": 0.27,
-   "shares": 0.0741,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 16,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_BO"
-   ],
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
-    "LV:RS_p21_t75_follow|plt70|sany|f",
-    "LV:RS_p7_t70_follow|pany|sany|fan",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841747.5994382
-  },
-  "0xfa45085acfe935c2646cf1392a16b6153926029680bdd8e5a8c7028490ee468e": {
-   "cid": "0xfa45085acfe935c2646cf1392a16b6153926029680bdd8e5a8c7028490ee468e",
-   "side": "YES",
-   "entry": 0.14,
-   "shares": 0.1429,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 16,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_BO"
-   ],
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
-    "LV:RS_p21_t75_follow|plt70|sany|f",
-    "LV:RS_p7_t70_follow|pany|sany|fan",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841748.1064224
-  },
-  "0x434719e5e807306706d17205f2bc15e4901184084c4e8ea472127f47a365bbdf": {
-   "cid": "0x434719e5e807306706d17205f2bc15e4901184084c4e8ea472127f47a365bbdf",
-   "side": "YES",
-   "entry": 0.15,
-   "shares": 0.1333,
-   "cost": 0.02,
-   "bet_size": 0.02,
-   "consensus_bot_count": 24,
-   "consensus_family_count": 2,
-   "families": [
-    "LV_RS",
-    "LV_BO"
-   ],
-   "bots": [
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa"
-   ],
-   "question": "",
-   "opened_ts": 1777841748.5245404
-  },
-  "0x2135ffcb43ba9103bb6acf7116d2d5aa98bef6d9eb3dc9c85ea00cb79513f3ec": {
-   "cid": "0x2135ffcb43ba9103bb6acf7116d2d5aa98bef6d9eb3dc9c85ea00cb79513f3ec",
-   "side": "NO",
-   "entry": 0.82,
-   "shares": 0.0366,
-   "cost": 0.03,
-   "bet_size": 0.03,
-   "consensus_bot_count": 37,
-   "consensus_family_count": 3,
-   "families": [
-    "LV_RS",
-    "LV_BO",
-    "LV_BB"
-   ],
-   "bots": [
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841749.099052
-  },
   "0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0": {
    "cid": "0xac594b2385387474e8ad819047a94549ac6fbd1c6ccdb8a2515a36a3427faac0",
    "side": "NO",
@@ -794,32 +342,6 @@
    ],
    "question": "",
    "opened_ts": 1777841749.3483663
-  },
-  "0xf7c0303b0dd61a800a83276a711506dc6b056104f2141d49e9b915324ac9d454": {
-   "cid": "0xf7c0303b0dd61a800a83276a711506dc6b056104f2141d49e9b915324ac9d454",
-   "side": "NO",
-   "entry": 0.939,
-   "shares": 0.1065,
-   "cost": 0.1,
-   "bet_size": 0.1,
-   "consensus_bot_count": 47,
-   "consensus_family_count": 5,
-   "families": [
-    "LV_RS",
-    "LV_MV4",
-    "LV_BO",
-    "LV_BB",
-    "LV_MV5"
-   ],
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p14_t70_follow|plt70|sany|f"
-   ],
-   "question": "",
-   "opened_ts": 1777841749.9112298
   },
   "0x6eec2b6b1c8d62aaacda46471e8caf7320f4ea9235f5ee87cba970a32a4e6985": {
    "cid": "0x6eec2b6b1c8d62aaacda46471e8caf7320f4ea9235f5ee87cba970a32a4e6985",
@@ -845,14 +367,553 @@
    "question": "",
    "opened_ts": 1777841750.2261245
   },
-  "0x742072d48e45cb4b311b3c4e28c6722d4472d2c33e746eddd84909b4158cbe95": {
-   "cid": "0x742072d48e45cb4b311b3c4e28c6722d4472d2c33e746eddd84909b4158cbe95",
+  "0x8b369e10358094a99ffe7f85a81a8e8ca68c611eee0fe63a2efa790ad045bcd6": {
+   "cid": "0x8b369e10358094a99ffe7f85a81a8e8ca68c611eee0fe63a2efa790ad045bcd6",
    "side": "NO",
+   "entry": 0.63,
+   "shares": 0.0794,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 15,
+   "consensus_family_count": 4,
+   "families": [
+    "LV_MV5",
+    "LV_BO",
+    "LV_BB",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BB_p50_sd25_follow|pgt30|sany|",
+    "LV:MV5_follow|pgt30|sany|fany",
+    "LV:BB_p20_sd25_fade|plt30|sany|fa",
+    "LV:BO_p100_follow|plt70|swide|fan",
+    "LV:BO_p50_follow|pany|swide|fany"
+   ],
+   "question": "",
+   "opened_ts": 1777849626.6318262
+  },
+  "0x375409bc5eeeff961e82b479caeccc20f33d15738e5bce1186d628aa3d9dfb1f": {
+   "cid": "0x375409bc5eeeff961e82b479caeccc20f33d15738e5bce1186d628aa3d9dfb1f",
+   "side": "YES",
+   "entry": 0.111,
+   "shares": 0.9009,
+   "cost": 0.1,
+   "bet_size": 0.1,
+   "consensus_bot_count": 32,
+   "consensus_family_count": 5,
+   "families": [
+    "Whale",
+    "LV_RS",
+    "LV_MV4",
+    "LV_BO",
+    "LV_MV5"
+   ],
+   "bots": [
+    "Whale",
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
+   ],
+   "question": "Will England win the 2026 FIFA World Cup?",
+   "opened_ts": 1777882217.6809502
+  },
+  "0x12587fe0cd6aa29260510a658db7d3e03de052bbc9d77ec29fbc4579a0999db1": {
+   "cid": "0x12587fe0cd6aa29260510a658db7d3e03de052bbc9d77ec29fbc4579a0999db1",
+   "side": "NO",
+   "entry": 0.76,
+   "shares": 0.0263,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 14,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:RS_p21_t75_follow|plt70|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p7_t80_follow|plt70|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1777882218.0017374
+  },
+  "0x0f49db97f71c68b1e42a6d16e3de93d85dbf7d4148e3f018eb79e88554be9f75": {
+   "cid": "0x0f49db97f71c68b1e42a6d16e3de93d85dbf7d4148e3f018eb79e88554be9f75",
+   "side": "YES",
+   "entry": 0.265,
+   "shares": 0.1887,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 31,
+   "consensus_family_count": 4,
+   "families": [
+    "LV_BO",
+    "LV_RS",
+    "LV_MV5",
+    "LV_MV4"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "Will Gavin Newsom win the 2028 Democratic presidential nomination?",
+   "opened_ts": 1777882218.32648
+  },
+  "0xb7dd41c16cd5b59e543ffcdab6a0d876f5ccef5329ea42ef1798d80c9a2b8499": {
+   "cid": "0xb7dd41c16cd5b59e543ffcdab6a0d876f5ccef5329ea42ef1798d80c9a2b8499",
+   "side": "YES",
+   "entry": 0.35,
+   "shares": 0.0571,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 6,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t80_follow|pgt30|sany|fa",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p7_t80_follow|plt70|sany|fa",
+    "LV:BO_p50_follow|plt70|swide|fany"
+   ],
+   "question": "",
+   "opened_ts": 1777885241.5207427
+  },
+  "0x7ad403c3508f8e3912940fd1a913f227591145ca0614074208e0b962d5fcc422": {
+   "cid": "0x7ad403c3508f8e3912940fd1a913f227591145ca0614074208e0b962d5fcc422",
+   "side": "YES",
+   "entry": 0.211,
+   "shares": 0.1422,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 30,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_MV5",
+    "LV_MV4"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p14_t80_follow|pany|stight|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777885848.3610246
+  },
+  "0x2bef40a1f62d045527228e699990d1bd1f97906b2458a6f3e4a0daf11124060c": {
+   "cid": "0x2bef40a1f62d045527228e699990d1bd1f97906b2458a6f3e4a0daf11124060c",
+   "side": "NO",
+   "entry": 0.62,
+   "shares": 0.0323,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 17,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BB",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:RS_p7_t80_follow|plt70|sany|fa",
+    "LV:RS_p21_t80_follow|plt70|sany|f",
+    "LV:RS_p7_t80_follow|pgt30|sany|fa",
+    "LV:RS_p21_t80_follow|pgt30|sany|f",
+    "LV:RS_p21_t70_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1777893193.4999378
+  },
+  "0x3e0dc6c075e14c66526923f2139b1d5c54fafd43b51e0abe5075739e6ac1cf3b": {
+   "cid": "0x3e0dc6c075e14c66526923f2139b1d5c54fafd43b51e0abe5075739e6ac1cf3b",
+   "side": "NO",
+   "entry": 0.949,
+   "shares": 0.0316,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 17,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_BB",
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p21_t80_fade|plt70|swide|fa",
+    "LV:BO_p100_follow|plt30|swide|fan",
+    "LV:BB_p30_sd25_fade|plt30|sany|fa",
+    "LV:BB_p30_sd25_fade|plt30|swide|f",
+    "LV:BB_p30_sd25_fade|plt50|swide|f"
+   ],
+   "question": "",
+   "opened_ts": 1777895024.5325332
+  },
+  "0x58078283e2356f9b9537b42e7479d7785b83bcd6f18002de8a2526c499eda837": {
+   "cid": "0x58078283e2356f9b9537b42e7479d7785b83bcd6f18002de8a2526c499eda837",
+   "side": "YES",
    "entry": 0.54,
    "shares": 0.0556,
    "cost": 0.03,
    "bet_size": 0.03,
-   "consensus_bot_count": 10,
+   "consensus_bot_count": 53,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_MV5",
+    "LV_MV4",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:RS_p7_t80_follow|plt70|sany|fa",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p7_t70_follow|pgt50|sany|fa",
+    "LV:RS_p7_t70_follow|pany|stight|f",
+    "LV:RS_p14_t70_follow|pgt30|stight"
+   ],
+   "question": "",
+   "opened_ts": 1777910719.9292457
+  },
+  "0xa1d97efb8a19de58d995edf58b882c4f99ef356c8a564af8daf888a7610edea1": {
+   "cid": "0xa1d97efb8a19de58d995edf58b882c4f99ef356c8a564af8daf888a7610edea1",
+   "side": "YES",
+   "entry": 0.08,
+   "shares": 0.25,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 8,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BB",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:BO_p100_follow|pany|swide|fany",
+    "LV:BB_p30_sd25_fade|plt30|sany|fa",
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:BO_p100_follow|plt30|swide|fan",
+    "LV:BB_p10_sd20_fade|plt30|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1777996595.066123
+  },
+  "0x9769f78cbc95a5ed11895e6064bac471d8fd8f930b260cf581b68d3f58630d27": {
+   "cid": "0x9769f78cbc95a5ed11895e6064bac471d8fd8f930b260cf581b68d3f58630d27",
+   "side": "YES",
+   "entry": 0.71,
+   "shares": 0.0282,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 33,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_MV4"
+   ],
+   "bots": [
+    "LV:RS_p7_t65_follow|pgt50|stight|",
+    "LV:RS_p7_t65_follow|pgt50|sany|fa",
+    "LV:RS_p7_t70_follow|pany|stight|f",
+    "LV:RS_p14_t75_follow|pany|stight|",
+    "LV:RS_p7_t75_follow|pgt50|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1778055902.9077368
+  },
+  "0x8e7a03cb1970e2ad6533b01892403516b6b3f5b5fa90ed7d104c28b27e40ba00": {
+   "cid": "0x8e7a03cb1970e2ad6533b01892403516b6b3f5b5fa90ed7d104c28b27e40ba00",
+   "side": "YES",
+   "entry": 0.287,
+   "shares": 0.0697,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 18,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p7_t65_follow|plt70|stight|",
+    "LV:RS_p14_t70_follow|pany|sany|fa",
+    "LV:RS_p7_t75_follow|pany|stight|f",
+    "LV:RS_p14_t75_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1778062188.8854358
+  },
+  "0x6cb3ec9e0fb1c258898f648f8b33422f59ba3e8a71aee551449d7cb147bb8ead": {
+   "cid": "0x6cb3ec9e0fb1c258898f648f8b33422f59ba3e8a71aee551449d7cb147bb8ead",
+   "side": "YES",
+   "entry": 0.22,
+   "shares": 0.0909,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 3,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BB",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BB_p10_sd20_fade|plt30|sany|fa",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p14_t70_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1778073415.5360196
+  },
+  "0x747dc809fb79e1b05be09c42d6179459a58de2ef3e40f02484a4e1260f741f75": {
+   "cid": "0x747dc809fb79e1b05be09c42d6179459a58de2ef3e40f02484a4e1260f741f75",
+   "side": "NO",
+   "entry": 0.81,
+   "shares": 0.037,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 15,
+   "consensus_family_count": 3,
+   "families": [
+    "Whale",
+    "LV_BB",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:RS_p21_t65_follow|plt70|sany|f",
+    "LV:BB_p50_sd25_fade|plt30|swide|f",
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:RS_p21_t75_follow|pany|sany|fa",
+    "LV:BB_p50_sd25_fade|pany|swide|fa"
+   ],
+   "question": "Will the US confirm that aliens exist before 2027?",
+   "opened_ts": 1778086500.7816684
+  },
+  "0x2cd24d17f5680dc6e7b7d67c712a223ae85550745597e81bd2d2b8d073443951": {
+   "cid": "0x2cd24d17f5680dc6e7b7d67c712a223ae85550745597e81bd2d2b8d073443951",
+   "side": "NO",
+   "entry": 0.629,
+   "shares": 0.0318,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 30,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BO_p10_fade|plt70|sany|fany",
+    "LV:RS_p7_t80_follow|pany|sany|fan",
+    "LV:RS_p7_t65_follow|plt70|stight|",
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p7_t80_follow|pany|stight|f"
+   ],
+   "question": "",
+   "opened_ts": 1778165447.2712746
+  },
+  "0xc4c3dbcc37a957a817599b0bf9fb5bd6b62b19210b0f527fec57cb75c7ed150a": {
+   "cid": "0xc4c3dbcc37a957a817599b0bf9fb5bd6b62b19210b0f527fec57cb75c7ed150a",
+   "side": "YES",
+   "entry": 0.61,
+   "shares": 0.0328,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 74,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_MV4"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p7_t65_follow|pany|sany|fan",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p7_t65_follow|plt70|sany|fa",
+    "LV:RS_p14_t70_follow|pgt30|stight"
+   ],
+   "question": "",
+   "opened_ts": 1778190092.5793223
+  },
+  "0x3733a1b647e7364095736ab0966465d896a84cf3b6bc1695ca1f26c3239b3868": {
+   "cid": "0x3733a1b647e7364095736ab0966465d896a84cf3b6bc1695ca1f26c3239b3868",
+   "side": "YES",
+   "entry": 0.17,
+   "shares": 0.1176,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 32,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t65_follow|pany|sany|fan",
+    "LV:RS_p7_t65_follow|plt70|sany|fa",
+    "LV:RS_p21_t75_follow|plt70|sany|f",
+    "LV:RS_p7_t70_follow|plt70|sany|fa",
+    "LV:RS_p14_t75_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1778190093.354885
+  },
+  "0xd39905267d79b715f078279ef41f311b791c6e2c7361fea38011492b632212ef": {
+   "cid": "0xd39905267d79b715f078279ef41f311b791c6e2c7361fea38011492b632212ef",
+   "side": "YES",
+   "entry": 0.16,
+   "shares": 0.125,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 37,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t65_follow|pany|sany|fan",
+    "LV:RS_p7_t65_follow|plt70|sany|fa",
+    "LV:RS_p21_t75_follow|plt70|sany|f",
+    "LV:RS_p7_t70_follow|plt70|sany|fa",
+    "LV:RS_p14_t75_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1778227524.0518172
+  },
+  "0x27ad7baca4066891d8e8e5a4df38b164e95b56757041a5c198d24f9cd984b877": {
+   "cid": "0x27ad7baca4066891d8e8e5a4df38b164e95b56757041a5c198d24f9cd984b877",
+   "side": "YES",
+   "entry": 0.2,
+   "shares": 0.1,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 37,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t65_follow|pany|sany|fan",
+    "LV:RS_p7_t65_follow|plt70|sany|fa",
+    "LV:RS_p21_t75_follow|plt70|sany|f",
+    "LV:RS_p7_t70_follow|plt70|sany|fa",
+    "LV:RS_p14_t75_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1778227524.4922042
+  },
+  "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4": {
+   "cid": "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4",
+   "side": "YES",
+   "entry": 0.78,
+   "shares": 0.0385,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 55,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_MV4",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p14_t70_follow|pgt50|sany|f",
+    "LV:RS_p7_t70_follow|pgt30|stight|",
+    "LV:RS_p7_t65_follow|pgt30|stight|",
+    "LV:RS_p7_t70_follow|pany|stight|f",
+    "LV:MV4_follow|pgt30|stight|fany"
+   ],
+   "question": "",
+   "opened_ts": 1778314378.5285823
+  },
+  "0x713641f745d71f6ec61f906237ffca3c8583f251e49384429a63ceb0ccdb2d37": {
+   "cid": "0x713641f745d71f6ec61f906237ffca3c8583f251e49384429a63ceb0ccdb2d37",
+   "side": "NO",
+   "entry": 0.901,
+   "shares": 0.0222,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 31,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p7_t70_follow|pany|stight|f",
+    "LV:RS_p14_t65_follow|plt70|stight",
+    "LV:RS_p14_t75_follow|plt70|stight",
+    "LV:RS_p7_t80_follow|plt70|stight|",
+    "LV:RS_p14_t80_follow|plt70|stight"
+   ],
+   "question": "",
+   "opened_ts": 1778314980.1260102
+  },
+  "0x6004d2c3eed914c555d1e37a79e8cce28445bc0564af72bc0be4d18b3ad07923": {
+   "cid": "0x6004d2c3eed914c555d1e37a79e8cce28445bc0564af72bc0be4d18b3ad07923",
+   "side": "NO",
+   "entry": 0.56,
+   "shares": 0.0357,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 7,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p14_t70_follow|pgt30|sany|f",
+    "LV:BO_p50_follow|plt70|swide|fany",
+    "LV:RS_p21_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1778400270.6297853
+  },
+  "0xeda0e0633f131b761cbe6c6e5e16ae347c48d9448a08c5826bfc2c794b63758e": {
+   "cid": "0xeda0e0633f131b761cbe6c6e5e16ae347c48d9448a08c5826bfc2c794b63758e",
+   "side": "YES",
+   "entry": 0.14,
+   "shares": 0.1429,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 16,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BO_p100_follow|pany|swide|fany",
+    "LV:RS_p21_t75_follow|pany|sany|fa",
+    "LV:RS_p21_t75_follow|plt70|sany|f",
+    "LV:RS_p21_t80_follow|pany|sany|fa",
+    "LV:BO_p100_follow|plt70|swide|fan"
+   ],
+   "question": "",
+   "opened_ts": 1778400872.0180905
+  },
+  "0x4167e22670f31e5f93d132f78108f3fae809bd15cadf78983eff096845ed1415": {
+   "cid": "0x4167e22670f31e5f93d132f78108f3fae809bd15cadf78983eff096845ed1415",
+   "side": "NO",
+   "entry": 0.64,
+   "shares": 0.0469,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 12,
    "consensus_family_count": 3,
    "families": [
     "LV_RS",
@@ -860,440 +921,972 @@
     "LV_BB"
    ],
    "bots": [
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p100_follow|pany|swide|fany",
     "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p21_t65_follow|plt70|sany|f"
+    "LV:BO_p100_follow|plt70|swide|fan",
+    "LV:BB_p30_sd20_follow|pgt30|sany|",
+    "LV:BB_p30_sd25_follow|pgt30|sany|"
    ],
    "question": "",
-   "opened_ts": 1777841750.617008
+   "opened_ts": 1778400872.4077747
   },
-  "0xe546672750517f62c45a5a00067481981e62b9c20fa8220203232c9dc8fd2093": {
-   "cid": "0xe546672750517f62c45a5a00067481981e62b9c20fa8220203232c9dc8fd2093",
+  "0x17c9dead8bed402d330e2aa5bcfb4d6f7764d3cc60d6508a03be003f4e88e64b": {
+   "cid": "0x17c9dead8bed402d330e2aa5bcfb4d6f7764d3cc60d6508a03be003f4e88e64b",
    "side": "NO",
-   "entry": 0.91,
-   "shares": 0.022,
+   "entry": 0.9,
+   "shares": 0.0222,
    "cost": 0.02,
    "bet_size": 0.02,
-   "consensus_bot_count": 13,
+   "consensus_bot_count": 12,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BB",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:BB_p30_sd25_fade|plt70|swide|f",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:BO_p50_follow|plt30|sany|fany",
+    "LV:BB_p30_sd25_fade|pany|swide|fa",
+    "LV:BB_p20_sd20_fade|plt30|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1778499732.2752466
+  },
+  "0x6fa13f31cceaf10ed3190df6e2aca0a93ab0d6fb46fd279003f17d4cdccee164": {
+   "cid": "0x6fa13f31cceaf10ed3190df6e2aca0a93ab0d6fb46fd279003f17d4cdccee164",
+   "side": "NO",
+   "entry": 0.37,
+   "shares": 0.0541,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 10,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p14_t80_follow|pgt50|stight",
+    "LV:RS_p14_t80_follow|plt70|stight",
+    "LV:RS_p7_t75_follow|pgt30|stight|",
+    "LV:RS_p7_t80_follow|pgt30|stight|",
+    "LV:RS_p7_t65_follow|pgt30|stight|"
+   ],
+   "question": "",
+   "opened_ts": 1778510591.4819658
+  },
+  "0xbee2cd40473495f713c69b9dfbce9fc2837fa4011568222c83c83bb773e35053": {
+   "cid": "0xbee2cd40473495f713c69b9dfbce9fc2837fa4011568222c83c83bb773e35053",
+   "side": "NO",
+   "entry": 0.53,
+   "shares": 0.0377,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 4,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|plt70|swide|fany",
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:RS_p7_t75_follow|pgt30|stight|"
+   ],
+   "question": "",
+   "opened_ts": 1778579450.187152
+  },
+  "0x9d3f02264a94bafc676afd7add8b11442e6ec72dabaa69cefef835f0672275c7": {
+   "cid": "0x9d3f02264a94bafc676afd7add8b11442e6ec72dabaa69cefef835f0672275c7",
+   "side": "NO",
+   "entry": 0.77,
+   "shares": 0.039,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 15,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_BO",
+    "LV_BB",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BO_p100_follow|pany|swide|fany",
+    "LV:RS_p21_t80_fade|plt50|swide|fa",
+    "LV:BO_p100_follow|plt50|swide|fan",
+    "LV:RS_p21_t80_fade|pany|swide|fan",
+    "LV:BB_p50_sd25_fade|plt30|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1778580051.5504453
+  },
+  "0xe0b6f4d40f33f456caba50434db5ea8c5ca93e84eb912054a80ca0c58ad70dd7": {
+   "cid": "0xe0b6f4d40f33f456caba50434db5ea8c5ca93e84eb912054a80ca0c58ad70dd7",
+   "side": "YES",
+   "entry": 0.28,
+   "shares": 0.0714,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 9,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|plt70|swide|fany",
+    "LV:BO_p100_follow|pany|swide|fany",
+    "LV:BB_p30_sd25_fade|pany|swide|fa",
+    "LV:BO_p100_follow|plt50|swide|fan",
+    "LV:BB_p30_sd25_fade|plt50|swide|f"
+   ],
+   "question": "",
+   "opened_ts": 1778584277.1810005
+  },
+  "0x32e869cb0f7316273417ec79aa94c8a139f8c390ebff8a24150a18753d257f8e": {
+   "cid": "0x32e869cb0f7316273417ec79aa94c8a139f8c390ebff8a24150a18753d257f8e",
+   "side": "NO",
+   "entry": 0.88,
+   "shares": 0.0227,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 10,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|plt70|swide|fany",
+    "LV:RS_p21_t80_fade|plt50|swide|fa",
+    "LV:RS_p21_t80_fade|pany|swide|fan",
+    "LV:BO_p50_follow|plt30|sany|fany",
+    "LV:BO_p50_follow|plt50|swide|fany"
+   ],
+   "question": "",
+   "opened_ts": 1778586728.291211
+  },
+  "0xd7540d64e03b1894ececcbb54c02b88d9c5c0e854ba66ec4e1ece20477994ac5": {
+   "cid": "0xd7540d64e03b1894ececcbb54c02b88d9c5c0e854ba66ec4e1ece20477994ac5",
+   "side": "YES",
+   "entry": 0.78,
+   "shares": 0.0256,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 18,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_WF",
+    "LV_MO"
+   ],
+   "bots": [
+    "LV:MO_p5_t10_fade|pgt70|sany|ffre",
+    "LV:WF_s20_l5_fade|pgt70|sany|ffre",
+    "LV:WF_s20_l30_fade|pgt70|sany|ffr",
+    "LV:WF_s10_l5_fade|pgt70|sany|ffre",
+    "LV:WF_s20_l2_fade|pgt70|sany|ffre"
+   ],
+   "question": "",
+   "opened_ts": 1779365297.433415
+  },
+  "0xd86a816093fcd0a0e1ca440bc5ce199bd3c5a8d6139e044b076958164f8c5423": {
+   "cid": "0xd86a816093fcd0a0e1ca440bc5ce199bd3c5a8d6139e044b076958164f8c5423",
+   "side": "YES",
+   "entry": 0.27,
+   "shares": 0.0741,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 27,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:BO_p10_fade|plt70|sany|fany",
+    "LV:BO_p10_fade|pany|sany|fany",
+    "LV:RS_p14_t70_follow|pany|sany|fa",
+    "LV:RS_p21_t70_follow|plt50|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1779527366.868406
+  },
+  "0x6897736d782ce70f47126dfcec6669073f563d6e757e60bc61c0367370d6f73e": {
+   "cid": "0x6897736d782ce70f47126dfcec6669073f563d6e757e60bc61c0367370d6f73e",
+   "side": "NO",
+   "entry": 0.9,
+   "shares": 0.0222,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 40,
    "consensus_family_count": 2,
    "families": [
     "LV_RS",
     "LV_BB"
    ],
    "bots": [
-    "LV:BB_p30_sd25_fade|pany|swide|fa",
-    "LV:BB_p50_sd25_fade|plt70|swide|f",
     "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:BB_p30_sd25_fade|plt50|swide|f",
+    "LV:BB_p30_sd25_fade|plt30|swide|f",
+    "LV:BB_p50_sd25_fade|plt30|swide|f",
+    "LV:RS_p14_t70_follow|pany|sany|fa",
+    "LV:RS_p21_t70_follow|plt50|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1779527972.0463426
+  },
+  "0x51a7c8afb7a0e09b8b47643171d90f400de23a176c4ea06f6552d6e53213839c": {
+   "cid": "0x51a7c8afb7a0e09b8b47643171d90f400de23a176c4ea06f6552d6e53213839c",
+   "side": "YES",
+   "entry": 0.73,
+   "shares": 0.137,
+   "cost": 0.1,
+   "bet_size": 0.1,
+   "consensus_bot_count": 59,
+   "consensus_family_count": 7,
+   "families": [
+    "LV_BB",
+    "LV_BO",
+    "LV_WF",
+    "LV_ME",
+    "LV_MO",
+    "LV_RS",
+    "LV_SR"
+   ],
+   "bots": [
+    "LV:RS_p7_t65_follow|pgt30|sany|fa",
+    "LV:RS_p7_t65_follow|pgt50|stight|",
+    "LV:ME_p20_t20_fade|pgt70|sany|ffr",
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:WF_s30_l5_fade|pgt70|sany|ffre"
+   ],
+   "question": "",
+   "opened_ts": 1779532802.9025154
+  },
+  "0xd9933a54c518e773050255ea9dba01a71e1a41f49311ed078ae4a6f7e76b1625": {
+   "cid": "0xd9933a54c518e773050255ea9dba01a71e1a41f49311ed078ae4a6f7e76b1625",
+   "side": "NO",
+   "entry": 0.519,
+   "shares": 0.0963,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 52,
+   "consensus_family_count": 4,
+   "families": [
+    "LV_MV4",
+    "LV_RS",
+    "LV_BB",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p7_t65_follow|pgt30|sany|fa",
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:BB_p30_sd20_follow|pgt30|sany|",
+    "LV:RS_p7_t75_follow|plt70|stight|",
+    "LV:RS_p7_t80_follow|plt70|stight|"
+   ],
+   "question": "",
+   "opened_ts": 1779559356.730422
+  },
+  "0xbeab83146920be8f52b52fdbcb3464b24dc553f7b47eb4249243385b0faad271": {
+   "cid": "0xbeab83146920be8f52b52fdbcb3464b24dc553f7b47eb4249243385b0faad271",
+   "side": "YES",
+   "entry": 0.237,
+   "shares": 0.0844,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 4,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t75_follow|pany|sany|fan",
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p7_t80_follow|pany|sany|fan",
+    "LV:BO_p10_fade|plt70|sany|fany"
+   ],
+   "question": "",
+   "opened_ts": 1779561169.0634527
+  },
+  "0x20af55ab35186377b81219db6cb8615240cba42cea41731091be9484a5f5b122": {
+   "cid": "0x20af55ab35186377b81219db6cb8615240cba42cea41731091be9484a5f5b122",
+   "side": "NO",
+   "entry": 0.31,
+   "shares": 0.1613,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 13,
+   "consensus_family_count": 4,
+   "families": [
+    "LV_RS",
+    "LV_BB",
+    "LV_BO",
+    "LV_WF"
+   ],
+   "bots": [
+    "LV:WF_s20_l30_fade|pgt70|sany|ffr",
+    "LV:RS_p7_t70_follow|pgt50|sany|fa",
+    "LV:RS_p7_t65_follow|pgt50|sany|fa",
+    "LV:BB_p30_sd20_follow|pgt30|sany|",
+    "LV:BB_p20_sd20_follow|pgt30|sany|"
+   ],
+   "question": "",
+   "opened_ts": 1779610170.5666528
+  },
+  "0xb8e6d129a06d0ccb21d7b32eb529ea455eddba3cf29bfa097112202cbdf5bf21": {
+   "cid": "0xb8e6d129a06d0ccb21d7b32eb529ea455eddba3cf29bfa097112202cbdf5bf21",
+   "side": "NO",
+   "entry": 0.3,
+   "shares": 0.1,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 17,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_ME",
+    "LV_BO",
+    "LV_WF"
+   ],
+   "bots": [
+    "LV:BO_p50_fade|pgt50|sany|fany",
+    "LV:BO_p50_fade|pgt50|stight|fany",
+    "LV:BO_p10_fade|pgt30|stight|fany",
+    "LV:BO_p10_fade|pany|stight|fany",
+    "LV:BO_p20_fade|pgt50|stight|fany"
+   ],
+   "question": "",
+   "opened_ts": 1779610170.7417877
+  },
+  "0x3f0743b88ef23a678e1d07fd2fb92badcbbb17aeca7110f188533b081afbd6af": {
+   "cid": "0x3f0743b88ef23a678e1d07fd2fb92badcbbb17aeca7110f188533b081afbd6af",
+   "side": "NO",
+   "entry": 0.9,
+   "shares": 0.0222,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 8,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BO"
+   ],
+   "bots": [
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p21_t65_follow|pany|sany|fa",
+    "LV:RS_p7_t75_follow|pany|sany|fan",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p14_t65_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1779610171.4669292
+  },
+  "0xc792f8824ef9bb549a4f5d89eec898caefdd3df5a507783f80202d289e9130ea": {
+   "cid": "0xc792f8824ef9bb549a4f5d89eec898caefdd3df5a507783f80202d289e9130ea",
+   "side": "NO",
+   "entry": 0.851,
+   "shares": 0.0235,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 5,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p50_sd25_fade|plt30|sany|fa",
+    "LV:RS_p7_t75_follow|pany|sany|fan",
+    "LV:RS_p7_t80_follow|pany|sany|fan",
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:RS_p14_t80_fade|plt30|sany|fan"
+   ],
+   "question": "",
+   "opened_ts": 1779617061.198136
+  },
+  "0xbf1d0865f793f94d78413696946f89327bda5ae44d82bf54f9ebb3edfb57bf56": {
+   "cid": "0xbf1d0865f793f94d78413696946f89327bda5ae44d82bf54f9ebb3edfb57bf56",
+   "side": "YES",
+   "entry": 0.11,
+   "shares": 0.1818,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 22,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:RS_p21_t75_follow|plt50|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t65_follow|pany|sany|fa",
+    "LV:BO_p20_fade|plt70|sany|fany"
+   ],
+   "question": "",
+   "opened_ts": 1779617662.556961
+  },
+  "0xb4067f81957ef1458e9712000807a4525c595f3c25a0c933ec2f69c0efb2e878": {
+   "cid": "0xb4067f81957ef1458e9712000807a4525c595f3c25a0c933ec2f69c0efb2e878",
+   "side": "YES",
+   "entry": 0.086,
+   "shares": 0.2326,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 3,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BO_p10_fade|plt70|sany|fany",
+    "LV:RS_p14_t65_follow|plt70|sany|f",
+    "LV:RS_p14_t65_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1779623091.825579
+  },
+  "0xa70fc3695a65833b91b45df6db6015096f3e1471b70352ca411b4209010e7633": {
+   "cid": "0xa70fc3695a65833b91b45df6db6015096f3e1471b70352ca411b4209010e7633",
+   "side": "NO",
+   "entry": 0.65,
+   "shares": 0.0462,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 30,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_BO",
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:RS_p21_t75_follow|pgt30|sany|f",
+    "LV:RS_p21_t70_follow|pgt30|sany|f",
+    "LV:BB_p50_sd20_follow|pgt30|sany|",
+    "LV:BB_p10_sd20_follow|pgt30|sany|"
+   ],
+   "question": "",
+   "opened_ts": 1779623692.9771442
+  },
+  "0x09148e8a5260a4c40aceb29badc45845fe08330497756bfcc1017c478c28bb65": {
+   "cid": "0x09148e8a5260a4c40aceb29badc45845fe08330497756bfcc1017c478c28bb65",
+   "side": "NO",
+   "entry": 0.89,
+   "shares": 0.0225,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 10,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BO_p50_follow|pany|swide|fany",
+    "LV:BO_p50_follow|plt70|swide|fany",
+    "LV:BO_p50_follow|plt30|sany|fany",
+    "LV:BO_p50_follow|plt30|swide|fany",
+    "LV:RS_p7_t75_follow|pany|sany|fan"
+   ],
+   "question": "",
+   "opened_ts": 1779628523.6225543
+  },
+  "0x366f89649caea042c96ee741b185461ec7faa408a2664ec44469a0061924b537": {
+   "cid": "0x366f89649caea042c96ee741b185461ec7faa408a2664ec44469a0061924b537",
+   "side": "YES",
+   "entry": 0.45,
+   "shares": 0.0444,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 5,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p7_t75_follow|pany|sany|fan",
+    "LV:RS_p7_t80_follow|pany|sany|fan",
+    "LV:RS_p7_t80_follow|pgt30|sany|fa",
+    "LV:RS_p7_t70_follow|pany|sany|fan",
+    "LV:BB_p10_sd15_follow|pgt30|sany|"
+   ],
+   "question": "",
+   "opened_ts": 1779633957.4116402
+  },
+  "0x6a8cfe84d17693425f27831db5949d7511f3393d4624b182ac6956164cd32b10": {
+   "cid": "0x6a8cfe84d17693425f27831db5949d7511f3393d4624b182ac6956164cd32b10",
+   "side": "NO",
+   "entry": 0.63,
+   "shares": 0.0317,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 20,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pgt30|sany|f",
+    "LV:RS_p14_t75_follow|pgt30|sany|f",
+    "LV:RS_p14_t65_follow|pgt30|sany|f",
+    "LV:RS_p14_t70_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1779654071.1206641
+  },
+  "0x8d8e0630bd63491f2a77d1e0fb0f2750ec4ff118151bade96b00700813d7c467": {
+   "cid": "0x8d8e0630bd63491f2a77d1e0fb0f2750ec4ff118151bade96b00700813d7c467",
+   "side": "NO",
+   "entry": 0.6,
+   "shares": 0.0333,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 31,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pgt30|sany|f",
+    "LV:RS_p14_t75_follow|pgt30|sany|f",
+    "LV:RS_p21_t75_follow|plt50|sany|f",
+    "LV:RS_p14_t65_follow|pgt30|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1779696350.4540193
+  },
+  "0x4d1ee0c046938319f654f99c6aca2380c1f6d88a65887dd360fda3d0509eddb4": {
+   "cid": "0x4d1ee0c046938319f654f99c6aca2380c1f6d88a65887dd360fda3d0509eddb4",
+   "side": "NO",
+   "entry": 0.903,
+   "shares": 0.0221,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 24,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BB",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:RS_p7_t80_follow|pany|sany|fan",
+    "LV:RS_p14_t65_follow|pany|sany|fa",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p21_t70_follow|pany|sany|fa",
+    "LV:RS_p21_t70_follow|plt70|sany|f"
+   ],
+   "question": "",
+   "opened_ts": 1779707680.7732675
+  },
+  "0x4f3421fb2daf5cca7430ed8d8132463963081572d75434393a1808fdb8829fe8": {
+   "cid": "0x4f3421fb2daf5cca7430ed8d8132463963081572d75434393a1808fdb8829fe8",
+   "side": "NO",
+   "entry": 0.899,
+   "shares": 0.0222,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 16,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p10_sd15_follow|plt70|stigh",
+    "LV:RS_p14_t65_follow|pany|sany|fa",
+    "LV:RS_p14_t80_follow|pany|sany|fa",
+    "LV:RS_p14_t70_follow|plt70|sany|f",
+    "LV:RS_p14_t80_follow|plt70|stight"
+   ],
+   "question": "",
+   "opened_ts": 1779719158.624456
+  },
+  "0x9a87a0011494682e4d17a9073059cbbd32ebea4bbc7284219afb5e9a6b4ca8f6": {
+   "cid": "0x9a87a0011494682e4d17a9073059cbbd32ebea4bbc7284219afb5e9a6b4ca8f6",
+   "side": "NO",
+   "entry": 0.897,
+   "shares": 0.0223,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 15,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p50_sd25_fade|pany|swide|fa",
+    "LV:RS_p7_t80_follow|pany|sany|fan",
+    "LV:BB_p20_sd25_fade|pany|swide|fa",
+    "LV:BB_p50_sd25_fade|plt30|swide|f",
+    "LV:BB_p50_sd25_fade|plt70|swide|f"
+   ],
+   "question": "",
+   "opened_ts": 1779816176.9190583
+  },
+  "0x5efa976ebe94080bbda7e45605333ff8f30156cc91604d66c41eb52fd3e25f3e": {
+   "cid": "0x5efa976ebe94080bbda7e45605333ff8f30156cc91604d66c41eb52fd3e25f3e",
+   "side": "YES",
+   "entry": 0.206,
+   "shares": 0.2427,
+   "cost": 0.05,
+   "bet_size": 0.05,
+   "consensus_bot_count": 10,
+   "consensus_family_count": 4,
+   "families": [
+    "LV_MV5",
+    "LV_BO",
+    "LV_BB",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:RS_p7_t80_follow|pany|sany|fan",
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:BB_p10_sd15_follow|plt70|stigh",
+    "LV:MV5_follow|plt70|stight|fany",
+    "LV:RS_p14_t75_follow|pany|stight|"
+   ],
+   "question": "",
+   "opened_ts": 1779869458.5309882
+  },
+  "0x46666ceb4c63814f38a8c83784ae10e1c2e1ef52e2db648372bd86dea521cf64": {
+   "cid": "0x46666ceb4c63814f38a8c83784ae10e1c2e1ef52e2db648372bd86dea521cf64",
+   "side": "YES",
+   "entry": 0.14,
+   "shares": 0.1429,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 11,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:RS_p7_t80_follow|pany|sany|fan",
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:BO_p50_follow|plt50|swide|fany",
+    "LV:BO_p100_follow|plt30|swide|fan",
+    "LV:RS_p14_t80_follow|pany|sany|fa"
+   ],
+   "question": "",
+   "opened_ts": 1779910756.4057586
+  },
+  "0x739e756119534672538d8df821a5b3321e2c802d80afff0c5790126be9b41281": {
+   "cid": "0x739e756119534672538d8df821a5b3321e2c802d80afff0c5790126be9b41281",
+   "side": "YES",
+   "entry": 0.327,
+   "shares": 0.0917,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 12,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_MV5",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p14_t75_follow|pgt30|stight",
+    "LV:MV5_follow|plt70|stight|fany",
+    "LV:RS_p7_t80_follow|pany|sany|fan",
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p14_t70_follow|pgt30|stight"
+   ],
+   "question": "",
+   "opened_ts": 1779994000.0302665
+  },
+  "0x5ebe0528036b14973845d647d448b3b3720794e954aa7bdc775fc11495892d89": {
+   "cid": "0x5ebe0528036b14973845d647d448b3b3720794e954aa7bdc775fc11495892d89",
+   "side": "YES",
+   "entry": 0.28,
+   "shares": 0.0714,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 11,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p50_sd25_fade|plt50|swide|f",
+    "LV:BB_p50_sd25_fade|plt70|swide|f",
+    "LV:RS_p21_t80_fade|plt70|swide|fa",
+    "LV:RS_p21_t80_fade|plt50|swide|fa",
+    "LV:BB_p30_sd25_fade|pany|swide|fa"
+   ],
+   "question": "",
+   "opened_ts": 1779995820.3498154
+  },
+  "0x5a965e943de13a4bdef4fb568d94341a751f02a2f652fa4fb8377d8b02f84606": {
+   "cid": "0x5a965e943de13a4bdef4fb568d94341a751f02a2f652fa4fb8377d8b02f84606",
+   "side": "YES",
+   "entry": 0.21,
+   "shares": 0.0952,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 2,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_BO",
+    "LV_RS"
+   ],
+   "bots": [
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:RS_p21_t80_fade|plt30|sany|fan"
+   ],
+   "question": "",
+   "opened_ts": 1780003069.7860682
+  },
+  "0x27182c8b13f2a6284754660cbb3c6350a04f7aa4afe04d24dad481947014d90d": {
+   "cid": "0x27182c8b13f2a6284754660cbb3c6350a04f7aa4afe04d24dad481947014d90d",
+   "side": "YES",
+   "entry": 0.6,
+   "shares": 0.05,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 9,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_BB",
+    "LV_RS",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:RS_p14_t80_follow|pgt50|stight",
+    "LV:RS_p14_t75_follow|pgt30|stight",
+    "LV:RS_p14_t80_follow|pgt30|stight",
+    "LV:MV5_follow|plt70|stight|fany",
+    "LV:BB_p10_sd15_follow|plt70|stigh"
+   ],
+   "question": "",
+   "opened_ts": 1780043150.0577857
+  },
+  "0x59a37ea3830d532957b04d3c437a329e14a5dc840096d48c7ee4b55ba3d9cca8": {
+   "cid": "0x59a37ea3830d532957b04d3c437a329e14a5dc840096d48c7ee4b55ba3d9cca8",
+   "side": "YES",
+   "entry": 0.27,
+   "shares": 0.0741,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 10,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:BB_p20_sd25_fade|plt30|swide|f",
+    "LV:BB_p20_sd25_fade|pany|swide|fa",
+    "LV:BB_p20_sd25_fade|plt50|swide|f",
+    "LV:BB_p20_sd25_fade|plt70|swide|f",
     "LV:RS_p21_t80_fade|pany|swide|fan"
    ],
    "question": "",
-   "opened_ts": 1777841752.9110413
+   "opened_ts": 1780064495.4677894
+  },
+  "0x4d0c4865bdecc5f7971dbab47bb6c069d93909dec75bdff52fb766ae6094a6d6": {
+   "cid": "0x4d0c4865bdecc5f7971dbab47bb6c069d93909dec75bdff52fb766ae6094a6d6",
+   "side": "YES",
+   "entry": 0.85,
+   "shares": 0.0353,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 10,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_WF",
+    "LV_ME",
+    "LV_MO"
+   ],
+   "bots": [
+    "LV:WF_s10_l5_fade|pgt70|sany|ffre",
+    "LV:WF_s15_l5_fade|pgt70|sany|ffre",
+    "LV:WF_s15_l2_fade|pgt70|sany|ffre",
+    "LV:MO_p10_t10_fade|pgt70|sany|ffr",
+    "LV:WF_s20_l5_fade|pgt70|sany|ffre"
+   ],
+   "question": "",
+   "opened_ts": 1780079475.5428765
+  },
+  "0xba748fe5b263077b102337ad026180a998a230996a8b108e6d0418b869e7529d": {
+   "cid": "0xba748fe5b263077b102337ad026180a998a230996a8b108e6d0418b869e7529d",
+   "side": "YES",
+   "entry": 0.57,
+   "shares": 0.0526,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 6,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_RS",
+    "LV_BB",
+    "LV_MV5"
+   ],
+   "bots": [
+    "LV:BB_p10_sd15_follow|plt70|stigh",
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:MV5_follow|plt70|stight|fany",
+    "LV:RS_p14_t75_follow|pgt30|stight",
+    "LV:RS_p14_t70_follow|pgt30|stight"
+   ],
+   "question": "",
+   "opened_ts": 1780081298.9310856
+  },
+  "0x24e67fb509df7efecc1840008153634d4852c0d2725d0a6c13f2e60beb2f2e2f": {
+   "cid": "0x24e67fb509df7efecc1840008153634d4852c0d2725d0a6c13f2e60beb2f2e2f",
+   "side": "YES",
+   "entry": 0.088,
+   "shares": 0.2273,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 9,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p21_t80_fade|plt30|swide|fa",
+    "LV:RS_p21_t80_fade|plt50|swide|fa",
+    "LV:BB_p30_sd25_fade|plt50|swide|f",
+    "LV:BB_p30_sd25_fade|plt30|swide|f",
+    "LV:RS_p21_t80_fade|plt30|sany|fan"
+   ],
+   "question": "",
+   "opened_ts": 1780086153.2356615
+  },
+  "0x65f5c4e3c6853a68fb50b59054dfe4c9e5ca5b705e04ed008185648334d1931d": {
+   "cid": "0x65f5c4e3c6853a68fb50b59054dfe4c9e5ca5b705e04ed008185648334d1931d",
+   "side": "YES",
+   "entry": 0.45,
+   "shares": 0.0444,
+   "cost": 0.02,
+   "bet_size": 0.02,
+   "consensus_bot_count": 7,
+   "consensus_family_count": 2,
+   "families": [
+    "LV_RS",
+    "LV_BB"
+   ],
+   "bots": [
+    "LV:RS_p21_t80_fade|plt50|swide|fa",
+    "LV:BB_p30_sd25_fade|plt50|swide|f",
+    "LV:BB_p10_sd15_follow|pgt30|sany|",
+    "LV:RS_p21_t80_fade|plt70|swide|fa",
+    "LV:BB_p30_sd25_fade|plt70|swide|f"
+   ],
+   "question": "",
+   "opened_ts": 1780087364.923499
+  },
+  "0x4cf389adc069a4d713e1ddb6348c96afd6df78e6bf676c7dce1780135186d90e": {
+   "cid": "0x4cf389adc069a4d713e1ddb6348c96afd6df78e6bf676c7dce1780135186d90e",
+   "side": "YES",
+   "entry": 0.58,
+   "shares": 0.0517,
+   "cost": 0.03,
+   "bet_size": 0.03,
+   "consensus_bot_count": 5,
+   "consensus_family_count": 3,
+   "families": [
+    "LV_BB",
+    "Theta",
+    "LV_MV5"
+   ],
+   "bots": [
+    "Theta",
+    "LV:BB_p10_sd15_follow|plt70|stigh",
+    "LV:BB_p20_sd20_follow|pgt30|sany|",
+    "LV:MV5_follow|plt70|stight|fany",
+    "LV:BB_p10_sd15_follow|pgt30|sany|"
+   ],
+   "question": "Will the Oklahoma City Thunder win the NBA Western Conference Finals?",
+   "opened_ts": 1780097324.438593
   }
  },
- "wins": 0,
- "losses": 0,
- "total_bets": 37,
- "realized_pnl": 0.0,
+ "wins": 229,
+ "losses": 154,
+ "total_bets": 460,
+ "realized_pnl": 0.348799999999997,
  "by_side": {
-  "YES": 22,
-  "NO": 15
+  "YES": 303,
+  "NO": 157
  },
  "consensus_observed": [
   {
-   "cid": "0x348cd9adf4",
+   "cid": "0x375409bc5e",
    "side": "YES",
-   "count": 65,
+   "count": 3,
    "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p7_t80_follow|pgt50|stight|"
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:MV5_follow|plt70|stight|fany",
+    "Whale"
    ],
-   "question": ""
-  },
-  {
-   "cid": "0x22e7b5e354",
-   "side": "YES",
-   "count": 62,
-   "bots": [
-    "Whale",
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|"
-   ],
-   "question": "Will the Oklahoma City Thunder win the 2026 NBA Finals?"
-  },
-  {
-   "cid": "0x6114a8a3f9",
-   "side": "NO",
-   "count": 31,
-   "bots": [
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x416e3cbe25",
-   "side": "YES",
-   "count": 22,
-   "bots": [
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p14_t80_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xc6ddb19f84",
-   "side": "YES",
-   "count": 49,
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p14_t70_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xd4cb184e5d",
-   "side": "YES",
-   "count": 43,
-   "bots": [
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t80_follow|pgt50|stight|",
-    "LV:RS_p7_t75_follow|pgt50|stight|",
-    "LV:MV5_follow|pgt30|stight|fany"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x030e3bd256",
-   "side": "YES",
-   "count": 64,
-   "bots": [
-    "Whale",
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|"
-   ],
-   "question": "Will Real Madrid CF win on 2026-05-03?"
-  },
-  {
-   "cid": "0x998d69f881",
-   "side": "YES",
-   "count": 61,
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p7_t80_follow|pgt50|stight|"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x309e01ff8a",
-   "side": "YES",
-   "count": 22,
-   "bots": [
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p14_t80_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x3b48166faf",
-   "side": "NO",
-   "count": 53,
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x4bab360a81",
-   "side": "YES",
-   "count": 48,
-   "bots": [
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p14_t70_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x33b0109d79",
-   "side": "YES",
-   "count": 23,
-   "bots": [
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xb1f602f5b2",
-   "side": "NO",
-   "count": 22,
-   "bots": [
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p14_t80_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xaa48235f1e",
-   "side": "YES",
-   "count": 22,
-   "bots": [
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p14_t80_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xa0cc345312",
-   "side": "YES",
-   "count": 22,
-   "bots": [
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa",
-    "LV:RS_p14_t80_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xded958568c",
-   "side": "YES",
-   "count": 21,
-   "bots": [
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:RS_p14_t65_follow|pgt30|sany|f",
-    "LV:RS_p7_t80_follow|pgt50|stight|",
-    "LV:RS_p7_t75_follow|pgt50|stight|",
-    "LV:RS_p7_t75_follow|pgt50|sany|fa"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x0fecff6fef",
-   "side": "YES",
-   "count": 11,
-   "bots": [
-    "LV:RS_p21_t75_follow|pgt30|sany|f",
-    "LV:RS_p14_t70_follow|pgt50|sany|f",
-    "LV:RS_p7_t75_follow|pgt50|sany|fa",
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:RS_p7_t80_follow|pgt30|sany|fa"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x6465374ef5",
-   "side": "YES",
-   "count": 26,
-   "bots": [
-    "LV:BB_p10_sd15_follow|pgt30|sany|",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p7_t80_follow|pgt50|stight|",
-    "LV:RS_p7_t75_follow|pgt50|stight|",
-    "LV:RS_p7_t70_follow|plt70|sany|fa"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x9b6fef2490",
-   "side": "YES",
-   "count": 35,
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": ""
+   "question": "Will England win the 2026 FIFA World Cup?"
   },
   {
    "cid": "0x7976b8dbac",
    "side": "YES",
-   "count": 34,
+   "count": 3,
    "bots": [
-    "Whale",
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:RS_p14_t70_follow|plt70|sany|f"
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:MV5_follow|plt70|stight|fany",
+    "Whale"
    ],
    "question": "Will Spain win the 2026 FIFA World Cup?"
   },
   {
-   "cid": "0x70d706fe08",
+   "cid": "0x7ad403c350",
+   "side": "YES",
+   "count": 3,
+   "bots": [
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:MV5_follow|plt70|stight|fany",
+    "Whale"
+   ],
+   "question": "Will JD Vance win the 2028 US Presidential Election?"
+  },
+  {
+   "cid": "0x713641f745",
    "side": "NO",
-   "count": 23,
+   "count": 5,
    "bots": [
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:BB_p50_sd25_fade|pany|swide|fa",
-    "LV:RS_p21_t70_follow|pany|sany|fa"
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:BB_p10_sd20_follow|plt70|stigh",
+    "LV:MV5_follow|plt70|stight|fany",
+    "Whale",
+    "LV:BB_p20_sd25_fade|plt30|sany|fa"
    ],
-   "question": ""
-  },
-  {
-   "cid": "0x48b0b0bca5",
-   "side": "YES",
-   "count": 32,
-   "bots": [
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": "Trump out as President before 2027?"
-  },
-  {
-   "cid": "0x8df5a42568",
-   "side": "YES",
-   "count": 16,
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|sany|f",
-    "LV:RS_p21_t75_follow|plt70|sany|f",
-    "LV:RS_p7_t70_follow|pany|sany|fan",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": "Will Arsenal win the 2025\u201326 Champions League?"
+   "question": "Will the New York Knicks win the 2026 NBA Finals?"
   },
   {
    "cid": "0x0e4a0c937b",
    "side": "NO",
-   "count": 29,
+   "count": 11,
    "bots": [
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t80_fade|plt30|sany|fan"
+    "LV:BO_p100_follow|plt30|sany|fany",
+    "LV:BB_p30_sd25_fade|plt30|swide|f",
+    "LV:BB_p20_sd25_fade|plt30|swide|f",
+    "LV:BB_p20_sd25_fade|plt50|swide|f",
+    "LV:BB_p30_sd25_fade|plt50|swide|f"
    ],
-   "question": ""
-  },
-  {
-   "cid": "0x518a5b030b",
-   "side": "NO",
-   "count": 37,
-   "bots": [
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xb75c07f425",
-   "side": "NO",
-   "count": 42,
-   "bots": [
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x1591b72dc5",
-   "side": "NO",
-   "count": 27,
-   "bots": [
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t80_fade|plt30|sany|fan"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0x36f665053a",
-   "side": "NO",
-   "count": 39,
-   "bots": [
-    "LV:BB_p30_sd25_fade|plt70|swide|f",
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xbb4d51e636",
-   "side": "YES",
-   "count": 24,
-   "bots": [
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany",
-    "LV:RS_p14_t70_follow|plt70|sany|f",
-    "LV:RS_p21_t80_follow|plt70|sany|f",
-    "LV:RS_p21_t70_follow|pany|sany|fa"
-   ],
-   "question": ""
-  },
-  {
-   "cid": "0xd86177011d",
-   "side": "NO",
-   "count": 44,
-   "bots": [
-    "LV:RS_p14_t75_follow|plt70|stight",
-    "LV:RS_p14_t80_follow|pany|stight|",
-    "LV:RS_p7_t75_follow|plt70|stight|",
-    "LV:BO_p50_follow|pany|swide|fany",
-    "LV:BO_p50_follow|plt50|swide|fany"
-   ],
-   "question": ""
+   "question": "US x Iran permanent peace deal by May 31, 2026?"
   }
  ],
- "conflicts_observed": 11,
- "equity_arena_scale": 1000.0,
- "updated_at": "2026-05-03T20:55:58.454857+00:00"
+ "conflicts_observed": 20,
+ "equity_arena_scale": 2744.0,
+ "updated_at": "2026-05-31T08:56:39.832922+00:00"
 }

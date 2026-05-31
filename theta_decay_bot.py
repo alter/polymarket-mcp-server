@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 """
-Theta-decay bot: buy YES at limit 0.98 on markets at price >= 0.95 with
-< 24h to close. Backtest showed 100% WR on n=34, +3.4% ROI per fill.
+Theta-decay bot: buy YES at limit 0.92 on markets priced >= 0.80 with a FUTURE
+deadline, hold to resolution.
+
+NOTE: the original "100% WR n=34, +3.4% ROI" validation was at tighter params
+(price>=0.95, limit 0.98, <24h) — it does NOT apply to the deployed 0.80/0.92/90d
+regime. Treat live results as the only source of truth until re-backtested at these
+params. MIN_HOURS_TO_CLOSE is now 0 (was -90d, which entered already-past-deadline
+markets — settled-outcome look-ahead that is not a replicable theta edge).
 
 Polls active markets every 5 min. Maintains its own paper portfolio.
 State: bot-data/theta_decay.json
@@ -24,7 +30,8 @@ BET_USD = 0.01
 LIMIT_PRICE = 0.92          # buy YES at this limit (give some headroom for fills)
 PRICE_TRIGGER = 0.80        # consider markets at this price or above
 MAX_HOURS_TO_CLOSE = 90 * 24    # 90d — captures most sport season finishes + political decisions
-MIN_HOURS_TO_CLOSE = -90 * 24   # negative = post-deadline UMA delay arb (outcome known)
+MIN_HOURS_TO_CLOSE = 0          # future-dated only; negative would enter past-deadline
+                                # markets (settled-outcome look-ahead, not a real edge)
 
 SCAN_INTERVAL = 300         # 5 min
 SETTLE_INTERVAL = 600
@@ -171,6 +178,11 @@ class ThetaDecayBot:
                     continue
                 tokens = d.get("tokens", [])
                 if not tokens:
+                    continue
+                # Settle only on unambiguous resolution: exactly one token wins.
+                # closed=True can precede UMA resolution (all winner=False) → would
+                # mis-settle YES as loss / NO as win. Wait until truly resolved.
+                if sum(1 for t in tokens if t.get("winner")) != 1:
                     continue
                 yes_won = tokens[0].get("winner", False)
                 pos = self.state["open_positions"][cid]

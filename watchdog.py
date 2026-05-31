@@ -22,17 +22,14 @@ LOG_FILES = [
     "always_no.log",
     "whale_fade.log",
 ]
+# DATA-COLLECTION-ONLY mode (2026-05-31): all paper-trading bots are paused, so their
+# state files (live_validator/political_skeptic/council/theta_decay/whale_follower/
+# whale_fade_grid/arena_results/maker) no longer update — monitoring them would trigger
+# a stall→container-restart loop. We watch ONLY the two live data-collection feeds.
+# To resume trading: restore the full list below.
 DATA_FILES = [
     "arena_ticks.jsonl",
     "orderbook_snapshots.jsonl",
-    "live_validator.json",
-    "arena_results.json",
-    "political_skeptic.json",
-    "council.json",
-    "theta_decay.json",
-    "whale_follower.json",
-    "whale_fade.json",
-    "maker.json",
 ]
 
 THRESHOLD_SEC = 600         # log stale if mtime older than 10 min
@@ -41,16 +38,20 @@ CHECK_INTERVAL = 300        # 5 min
 # Per-file overrides — tighter for fast-writers, looser for slow scanners
 PER_FILE_THRESHOLDS = {
     "orderbook_snapshots.jsonl": 300,   # writes every ~5s; 5min hang = dead
-    "arena_ticks.jsonl": 600,           # writes ~1/min
+    "arena_ticks.jsonl": 1800,          # heal at 30min; container-kill fallback at 60min
     "arena_results.json": 1500,         # multi_strategy saves slow, every ~10-15min
     "live_validator.json": 1200,        # saves every 5min but can lag
     "political_skeptic.json": 1500,     # scans every 10min
     "council.json": 1500,               # scans every 10min
     "theta_decay.json": 1500,           # scans every 10min
     "whale_follower.json": 2400,        # scans every 30min
-    "whale_fade.json": 1500,            # scans every 10min
-    "maker.json": 600,                  # saves every 60s if alive
+    "whale_fade_grid.json": 1500,       # scans every 10min
 }
+
+# Selective arena heal: restart only multi_strategy.py instead of the whole container.
+# Only fires when arena_ticks is stuck but orderbook is still fresh (network OK).
+ARENA_HEAL_AFTER_SEC = 1800   # 30 min of arena_ticks silence → heal
+ARENA_HEAL_COOLDOWN  = 3600   # don't heal more than once per hour
 
 # Self-heal: if stalled for N consecutive checks, exit non-zero so
 # run_all_bots.sh detects child death and tears down container,
@@ -69,6 +70,44 @@ def file_status(path):
         "age_sec": int(time.time() - os.path.getmtime(path)),
         "size_kb": int(os.path.getsize(path) / 1024),
     }
+
+
+def maybe_heal_arena(report, now, last_heal_time):
+    """Kill multi_strategy.py so the restart loop in run_all_bots.sh revives it.
+
+    Conditions:
+    - arena_ticks.jsonl stale >= ARENA_HEAL_AFTER_SEC
+    - orderbook_snapshots.jsonl fresh (< 300s) — confirms network/CLOB is alive
+    - cooldown since last heal
+    """
+    if now - last_heal_time < ARENA_HEAL_COOLDOWN:
+        return None, last_heal_time
+
+    ticks_st  = report["files"].get("arena_ticks.jsonl", {})
+    ob_st     = report["files"].get("orderbook_snapshots.jsonl", {})
+
+    ticks_age = ticks_st.get("age_sec", 0)
+    ob_age    = ob_st.get("age_sec", 9999)
+
+    if ticks_age < ARENA_HEAL_AFTER_SEC:
+        return None, last_heal_time
+    if ob_age > 300:
+        return None, last_heal_time  # network issue, pkill won't help
+
+    try:
+        result = subprocess.run(
+            ["pkill", "-TERM", "-f", "/app/multi_strategy.py"],
+            capture_output=True,
+        )
+        msg = (f"HEAL: killed multi_strategy.py "
+               f"(arena_ticks stale {ticks_age}s, ob fresh {ob_age}s) "
+               f"— restart loop will revive in ~10s. pkill rc={result.returncode}")
+        print(msg)
+        return msg, now
+    except Exception as e:
+        msg = f"HEAL attempt failed: {e}"
+        print(msg)
+        return msg, last_heal_time
 
 
 def maybe_run_phase3():
@@ -112,6 +151,55 @@ def maybe_run_phase3():
         return "phase3 backtest LAUNCHED"
     except Exception as e:
         return f"phase3 launch err: {e}"
+
+
+def rotate_jsonl(filename, keep_days):
+    """Trim a JSONL file to keep only lines with ts >= now - keep_days.
+
+    Reads the file, rewrites in-place keeping only recent lines.
+    Skips if file is small (<10MB) or was recently rotated (<6h).
+    Uses a temp file + atomic rename to avoid data loss.
+    """
+    path = os.path.join(DATA, filename)
+    if not os.path.exists(path):
+        return
+    size_mb = os.path.getsize(path) / 1024**2
+    if size_mb < 10:
+        return
+    # Check rotation marker
+    marker = path + ".rotated_at"
+    if os.path.exists(marker):
+        if time.time() - os.path.getmtime(marker) < 6 * 3600:
+            return
+    cutoff = time.time() - keep_days * 86400
+    tmp = path + ".tmp"
+    kept = dropped = 0
+    try:
+        with open(path, "rb") as fin, open(tmp, "wb") as fout:
+            for line in fin:
+                try:
+                    ts_str = line[6:32].decode("ascii", errors="ignore")  # fast: slice "ts" field
+                    # Parse only if it looks like an ISO timestamp
+                    from datetime import datetime, timezone
+                    ts = datetime.fromisoformat(
+                        line[line.index(b'"ts":"') + 6: line.index(b'"ts":"') + 32]
+                        .decode().split('"')[0].replace("Z", "+00:00")
+                    ).timestamp()
+                    if ts >= cutoff:
+                        fout.write(line)
+                        kept += 1
+                    else:
+                        dropped += 1
+                except Exception:
+                    fout.write(line)  # keep unparseable lines
+                    kept += 1
+        os.replace(tmp, path)
+        open(marker, "w").close()
+        print(f"[rotate] {filename}: dropped {dropped} lines ({size_mb:.0f}MB→), kept {kept}")
+    except Exception as e:
+        print(f"[rotate] {filename} err: {e}")
+        if os.path.exists(tmp):
+            os.remove(tmp)
 
 
 def rotate_backups():
@@ -247,6 +335,8 @@ def main():
     print("Watchdog started")
     last_backup = 0
     last_daily_report = 0
+    last_arena_heal = 0
+    last_rotate = 0
     consecutive_stalls = 0
     while True:
         now = time.time()
@@ -254,6 +344,11 @@ def main():
         if now - last_backup > 1800:
             rotate_backups()
             last_backup = now
+        # Rotate large JSONL files every 6h to cap disk usage
+        if now - last_rotate > 6 * 3600:
+            rotate_jsonl("orderbook_snapshots.jsonl", keep_days=7)
+            rotate_jsonl("arena_ticks.jsonl", keep_days=30)
+            last_rotate = now
         # Try generate daily report once per day (at first cycle after midnight UTC)
         if now - last_daily_report > 3600:  # check hourly
             r = maybe_run_daily_report()
@@ -280,6 +375,10 @@ def main():
 
         report["live"] = collect_live_metrics()
         report["phase3"] = maybe_run_phase3()
+
+        heal_msg, last_arena_heal = maybe_heal_arena(report, now, last_arena_heal)
+        if heal_msg:
+            report["arena_heal"] = heal_msg
 
         try:
             with open(WATCHDOG_FILE, "w") as f:

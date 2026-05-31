@@ -261,6 +261,11 @@ class MultiNoBot:
                 tokens = d.get("tokens", [])
                 if not tokens:
                     continue
+                # Settle only on unambiguous resolution: exactly one token wins.
+                # closed=True can precede UMA resolution (all winner=False) → would
+                # mis-settle YES as loss / NO as win. Wait until truly resolved.
+                if sum(1 for t in tokens if t.get("winner")) != 1:
+                    continue
                 yes_won = tokens[0].get("winner", False)
 
                 for v in self.variants:

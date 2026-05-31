@@ -17,6 +17,11 @@ logger = logging.getLogger("Arena")
 GAMMA_URL = "https://gamma-api.polymarket.com"
 CLOB_URL = "https://clob.polymarket.com"
 
+# COLLECT_ONLY: keep producing arena_ticks.jsonl (data collection) but run NO paper
+# trading — skips strategy ticking, settlements, pruning, leaderboard, results save.
+# Set when the system is in data-collection-only mode (trading paused).
+COLLECT_ONLY = os.environ.get("ARENA_COLLECT_ONLY", "").lower() in ("1", "true", "yes")
+
 STARTING_BALANCE = 1000.0
 MAX_POSITIONS = 20
 PRICE_POLL_INTERVAL = 30
@@ -1094,6 +1099,9 @@ class StrategyState:
             "equity": round(self.equity, 2),
             "balance": round(self.balance, 2),
             "positions": len(self.positions),
+            # Full open-position dict so unrealized losers survive a restart and
+            # settle on resolution, instead of vanishing at break-even (survivorship).
+            "open_positions": self.positions,
             "trades": self.total_trades,
             "wins": self.wins, "losses": self.losses,
             "realized": round(self.realized, 2),
@@ -2239,9 +2247,19 @@ class Arena:
                 old = prev.get(strat.params.id)
                 if not old:
                     continue
-                # FIX: on restart, positions are lost. Use equity (not balance)
-                # so cash locked in positions returns to balance.
-                strat.balance = old.get("equity", old.get("balance", STARTING_BALANCE))
+                # Restore open positions so unrealized losers actually settle on
+                # resolution instead of silently closing at break-even on every restart
+                # (that survivorship bug forgave open losses → inflated equity/leaderboard).
+                if "open_positions" in old:
+                    # New-format state: balance is cash-only; the equity property re-adds
+                    # each restored position's locked cost_usd, reproducing pre-restart equity.
+                    strat.balance = old.get("balance", STARTING_BALANCE)
+                    strat.positions = dict(old.get("open_positions") or {})
+                else:
+                    # Legacy state (no serialized positions): preserve equity as before so
+                    # the locked cost isn't dropped. Positions can't be restored this once;
+                    # the next save writes the new format and subsequent restarts are exact.
+                    strat.balance = old.get("equity", old.get("balance", STARTING_BALANCE))
                 strat.total_fees = old.get("fees", 0.0)
                 strat.total_trades = old.get("trades", 0)
                 strat.retired = old.get("retired", False)
@@ -2416,7 +2434,9 @@ class Arena:
                 if mid in strat.positions:
                     pos = strat.positions[mid]
                     entry = pos["entry_price"]
-                    current = last.mid if pos["side"] == "YES" else (1.0 - last.mid)
+                    # Exit at the price you'd actually receive: sell YES into the bid,
+                    # sell NO into the NO-bid (1 - YES ask). mid stays for indicators only.
+                    current = last.bid if pos["side"] == "YES" else (1.0 - last.ask)
                     if entry > 0:
                         pnl_pct = (current - entry) / entry
                         if strat.params.stop_loss > -0.90 and pnl_pct <= strat.params.stop_loss:
@@ -2469,11 +2489,14 @@ class Arena:
                         pass  # model not available → pass through
 
                 if signal == "buy":
+                    # Buy YES at the ask (what you actually pay), not mid — removes the
+                    # phantom half-spread edge that inflated every round trip.
                     strat.open_position(mid, mkt.question, "YES", mkt.token_yes,
-                        last.mid, fee_type, f"{strat.params.indicator}_buy")
+                        last.ask, fee_type, f"{strat.params.indicator}_buy")
                 else:
+                    # Buy NO at the NO-ask (1 - YES bid) — what you actually pay.
                     strat.open_position(mid, mkt.question, "NO", mkt.token_no,
-                        1.0 - last.mid, fee_type, f"{strat.params.indicator}_sell")
+                        1.0 - last.bid, fee_type, f"{strat.params.indicator}_sell")
 
     async def check_settlements(self):
         now = time.time()
@@ -2489,7 +2512,10 @@ class Arena:
                 if r.status_code != 200:
                     continue
                 m = r.json()
-                if not m.get("closed", False) and m.get("active", True):
+                # Only settle on close. A paused market (active=False) is NOT resolved,
+                # and resolved markets keep active=True — so the old `or not active`
+                # path settled paused markets prematurely at last-traded prices.
+                if not m.get("closed", False):
                     continue
                 prices = m.get("outcomePrices", [])
                 if isinstance(prices, str):
@@ -2501,6 +2527,12 @@ class Arena:
                     continue
                 p_yes = float(prices[0])
                 p_no = float(prices[1])
+                # Require TRUE binary resolution before booking payoff. closed=True can
+                # precede UMA resolution: outcomePrices then hold last-traded values
+                # (e.g. 0.94/0.06) or voided 0/0 — settling there books a wrong, often
+                # partial, payoff and corrupts the leaderboard. Wait until one side ≈1.
+                if not (abs(p_yes + p_no - 1.0) < 0.01 and max(p_yes, p_no) > 0.99):
+                    continue
                 for strat in self.strategies:
                     if mid in strat.positions:
                         side = strat.positions[mid]["side"]
@@ -2596,17 +2628,21 @@ class Arena:
             logger.error(f"Save failed: {e}")
 
     async def run(self):
-        logger.info("Arena v2 starting...")
+        if COLLECT_ONLY:
+            logger.info("Arena v2 starting in COLLECT_ONLY mode — ticks only, NO trading.")
+        else:
+            logger.info("Arena v2 starting...")
         while True:
             try:
                 await self.scan_markets()
                 await self.poll_prices()
                 self.flush_ticks()
-                self.tick_all_strategies()
-                await self.check_settlements()
-                self.prune_dead()
-                self.print_leaderboard()
-                self.save_results()
+                if not COLLECT_ONLY:
+                    self.tick_all_strategies()
+                    await self.check_settlements()
+                    self.prune_dead()
+                    self.print_leaderboard()
+                    self.save_results()
             except Exception as e:
                 logger.error(f"Loop error: {e}", exc_info=True)
             await asyncio.sleep(PRICE_POLL_INTERVAL)

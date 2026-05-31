@@ -490,6 +490,15 @@ def evaluate_market(args):
                 sigs = sigs[entry_ok]
                 entries = entries[entry_ok]
 
+                # One bet per market per variant: repeated intra-market entries all
+                # settle against the SAME resolution, so counting them as independent
+                # overstates n/WR/ROI (per-tick aggregation trap). Keep the first valid
+                # entry only — each market contributes exactly one win or one loss.
+                if len(kept) > 0:
+                    kept = kept[:1]
+                    sigs = sigs[:1]
+                    entries = entries[:1]
+
                 # Settle: each bet wins if (side YES and yes_won) or (side NO and not yes_won)
                 wins_arr = ((sigs == 1) & yes_won) | ((sigs == -1) & (not yes_won))
                 shares = BET_USD / entries

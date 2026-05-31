@@ -32,16 +32,19 @@ import httpx
 import websockets
 
 GAMMA = "https://gamma-api.polymarket.com"
+CLOB  = "https://clob.polymarket.com"
 WS_URL = "wss://ws-subscriptions-clob.polymarket.com/ws/market"
 DATA = "data"
 STATE = os.path.join(DATA, "maker.json")
 HEADERS = {"User-Agent": "Mozilla/5.0 maker-bot"}
 
-MIN_SPREAD = 0.01            # 1¢ minimum (was 2¢ — too strict, 0 fills in 30h)
-MAX_MARKETS = 50             # subscribe to top-50 (was 30) — wider net
-QUOTE_OFFSET = 0.005         # post half-cent inside spread (was 1¢)
-HOLD_TIMEOUT_SEC = 3600
-STOP_TOLERANCE = 0.05
+MIN_SPREAD = 0.01            # 1¢ minimum to post quotes
+MAX_SPREAD_FILTER = 0.08     # exclude markets with spread > 8¢ at scan time
+MAX_MARKETS = 50             # subscribe to top-50 tradeable markets
+QUOTE_OFFSET = 0.005         # post half-cent inside spread
+HOLD_TIMEOUT_SEC = 1200      # 20 min (was 60 min — held too long in adverse moves)
+STOP_TOLERANCE = 0.015       # 1.5¢ (was 5¢ — was 5× spread, catastrophic R/R)
+MOMENTUM_FILTER = 0.005      # skip posting if price moved ≥0.5¢ since last event
 SCAN_INTERVAL = 1800
 SAVE_INTERVAL = 60
 PAPER_QUANTITY = 50.0
@@ -62,6 +65,7 @@ class MakerBot:
         self.realized_pnl = 0.0
         self.wins = 0
         self.losses = 0
+        self._events_received = 0  # diagnostic counter
         self.total_fills = 0
         self.last_save = 0
         self.last_scan = 0
@@ -101,8 +105,29 @@ class MakerBot:
         with open(STATE, "w") as f:
             json.dump(out, f, indent=1)
 
+    async def _fetch_spread(self, client, sem, token):
+        """Fetch CLOB book for token; return (best_bid, best_ask) or None."""
+        async with sem:
+            try:
+                r = await client.get(
+                    f"{CLOB}/book", params={"token_id": token}, timeout=8.0,
+                )
+                if r.status_code != 200:
+                    return None
+                d = r.json()
+                bids = d.get("bids", [])
+                asks = d.get("asks", [])
+                if not bids or not asks:
+                    return None
+                def _p(x): return float(x["price"]) if isinstance(x, dict) else float(x[0])
+                best_bid = max(_p(b) for b in bids)
+                best_ask = min(_p(a) for a in asks)
+                return best_bid, best_ask
+            except Exception:
+                return None
+
     async def fetch_top_markets(self, client):
-        """Fetch top-volume markets with sufficient spread."""
+        """Fetch top-volume markets; filter to those with tight, mid-range spreads."""
         markets = []
         try:
             r = await client.get(
@@ -117,7 +142,7 @@ class MakerBot:
         except Exception as e:
             print(f"[maker] fetch err: {e}")
             return []
-        out = []
+        candidates = []
         for m in markets:
             tokens = m.get("clobTokenIds")
             if not tokens:
@@ -125,19 +150,39 @@ class MakerBot:
             try:
                 if isinstance(tokens, str):
                     tokens = json.loads(tokens)
-                yes_tok = tokens[0]
+                yes_tok = str(tokens[0])
             except Exception:
                 continue
             cid = m.get("conditionId") or m.get("id", "")
-            out.append({
+            candidates.append({
                 "token": yes_tok, "cid": cid,
                 "question": (m.get("question") or "")[:100],
                 "vol24h": float(m.get("volume24hr", 0) or 0),
                 "fees_on": bool(m.get("enableOrderBook", True) and m.get("makerFeeBps")),
                 "end_date": m.get("endDate", ""),
             })
-        out.sort(key=lambda m: -m["vol24h"])
-        return out[:MAX_MARKETS]
+        candidates.sort(key=lambda m: -m["vol24h"])
+        # Fetch actual spreads concurrently and filter to tradeable markets
+        sem = asyncio.Semaphore(10)
+        tasks = [self._fetch_spread(client, sem, c["token"]) for c in candidates]
+        spreads = await asyncio.gather(*tasks)
+        out = []
+        for c, sp in zip(candidates, spreads):
+            if sp is None:
+                continue
+            best_bid, best_ask = sp
+            # Require: price in tradeable mid-range AND tight spread
+            if not (0.05 <= best_bid and best_ask <= 0.95):
+                continue
+            if best_ask - best_bid > MAX_SPREAD_FILTER:
+                continue
+            c["best_bid"] = round(best_bid, 4)
+            c["best_ask"] = round(best_ask, 4)
+            out.append(c)
+            if len(out) >= MAX_MARKETS:
+                break
+        print(f"[maker] scan: {len(candidates)} candidates → {len(out)} tradeable (spread<=MAX)")
+        return out
 
     async def refresh_subscriptions(self, client):
         """Re-fetch top markets and update subscriptions."""
@@ -178,20 +223,27 @@ class MakerBot:
         if not bids or not asks:
             return
         try:
-            best_bid = float(bids[0]["price"]) if isinstance(bids[0], dict) else float(bids[0][0])
-            best_ask = float(asks[0]["price"]) if isinstance(asks[0], dict) else float(asks[0][0])
+            def _p(x): return float(x["price"]) if isinstance(x, dict) else float(x[0])
+            best_bid = max(_p(b) for b in bids)
+            best_ask = min(_p(a) for a in asks)
         except (KeyError, ValueError, IndexError):
             return
         if not (0.01 <= best_bid < best_ask <= 0.99):
             return
+        self._events_received += 1
         prev = self.books.get(token)
         self.books[token] = {"bid": best_bid, "ask": best_ask, "ts": time.time()}
         spread = best_ask - best_bid
 
         # Try to simulate fills based on book moves
         self._simulate_fills(token, prev)
-        # Try to "post" new quotes if no open position and spread is good
-        if token not in self.positions and spread >= MIN_SPREAD:
+        # Momentum filter: skip posting if book just moved (adverse selection avoidance)
+        moving = (prev is not None and (
+            abs(best_bid - prev["bid"]) >= MOMENTUM_FILTER or
+            abs(best_ask - prev["ask"]) >= MOMENTUM_FILTER
+        ))
+        # Try to "post" new quotes if no open position, spread is good, and market is stable
+        if token not in self.positions and spread >= MIN_SPREAD and not moving:
             self._post_quotes(token, best_bid, best_ask)
         # Manage existing position
         if token in self.positions:
@@ -358,7 +410,7 @@ class MakerBot:
             print(f"[maker] {datetime.now():%H:%M} tracking={len(self.tracked_tokens)} "
                   f"open={len(self.positions)} fills={self.total_fills} "
                   f"W/L={self.wins}/{self.losses} ({wr:.0f}%) "
-                  f"pnl=${self.realized_pnl:+.4f}")
+                  f"pnl=${self.realized_pnl:+.4f} events={self._events_received} books={len(self.books)}")
 
     async def run(self):
         print(f"[maker] starting, MIN_SPREAD={MIN_SPREAD}¢, "

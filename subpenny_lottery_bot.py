@@ -137,6 +137,9 @@ class SubpennyBot:
                 if not d.get("closed"): continue
                 tokens = d.get("tokens", [])
                 if not tokens: continue
+                # Settle only on unambiguous resolution (exactly one winner token);
+                # closed=True can precede UMA resolution → don't mis-settle.
+                if sum(1 for t in tokens if t.get("winner")) != 1: continue
                 yes_won = tokens[0].get("winner", False)
                 pos = self.state["open_positions"][cid]
                 won = pos["side"] == "YES" and yes_won

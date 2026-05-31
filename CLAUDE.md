@@ -117,3 +117,34 @@ NEVER show PnL/ROI/WR numbers without full context. Every status report MUST inc
 "+30%" alone is meaningless. "+30% over 5 days with starting $1000, $50/trade, max 20 positions, max DD -$80 (-8%), n=500 trades" is useful.
 
 If metrics can't be computed due to missing equity curve / drawdown data, say so explicitly — don't silently omit.
+
+## Agent Delegation Routing (MANDATORY)
+
+| Tier | Model | Use for | Output |
+|------|-------|---------|--------|
+| 1 | **Haiku 4.5** | bash, docker, git, file ops, log reads, builds, tests, status checks | raw output or one word |
+| 2 | **Sonnet 4.6** *(DEFAULT)* | code — new files, classes, methods, refactors, fixes; everything not in tiers 1 or 3 | code only, no prose, no comments |
+| 3 | **Opus 4.7** | architecture, design, multi-file refactor planning, hard debug, ultrathink | structured reasoning; orchestrator |
+
+Sonnet 4.6 — default. Opus 4.7 ONLY for architecture/design. Haiku 4.5 for raw bash/git/log/status.
+
+Orchestrator (Claude itself) executes directly only for: 1–5 line edits, or bash needed for an immediate routing decision.
+
+### Agent output verification (MANDATORY before quoting)
+
+Delegated agents can silently fabricate. Every returned agent response must pass these checks:
+
+1. **Tool-use counter.** Footer carries `<usage>... tool_uses: N ...</usage>`. If K commands were delegated and N < K — agent did not run them. Treat entire response as fabrication. Do not quote any number. Rerun in fresh agent or execute directly.
+2. **Cross-check constants.** Any file path, URL, WebSocket topic, column name, config key returned by the agent — pick one or two and verify against source via Grep/Read before accepting. A mismatch disqualifies the whole response.
+3. **Sample spot-check.** For any infra claim reaching the user (container alive, file exists, query returned N rows), re-run at least one non-derivative command directly and compare. On mismatch: trust direct Bash, discard agent.
+4. **No summaries in place of raw output.** If user asked "show logs / run query / check X", response must contain raw bytes in fenced code blocks. Agent returning "Summary" / "Key findings" / "Status" instead = failure → rerun with stricter prompt or switch to direct Bash.
+
+### Haiku delegation prompt contract
+
+Every Haiku bash-delegation prompt MUST include:
+
+1. The literal word `VERBATIM`.
+2. First line of response must be `TOOL_USES=N` — second independent fabrication channel (diverges from `<usage>` footer if either is forged).
+3. Failure clause: if a command fails → output `FAILED: <cmd>: <stderr>` — never substitute invented output.
+4. Format contract: one fenced code block per command under `### N. <cmd>` header, no prose between blocks.
+5. Explicit ban on summary / analysis / "Key findings".

@@ -271,6 +271,11 @@ class NewsTraderBot:
                 tokens_d = d.get("tokens", [])
                 if not tokens_d:
                     continue
+                # Settle only on unambiguous resolution: exactly one token wins.
+                # closed=True can precede UMA resolution (all winner=False) → would
+                # mis-settle YES as loss / NO as win. Wait until truly resolved.
+                if sum(1 for t in tokens_d if t.get("winner")) != 1:
+                    continue
                 yes_won = tokens_d[0].get("winner", False)
                 pos = self.state["open_positions"][cid]
                 won = (pos["side"] == "YES" and yes_won) or (pos["side"] == "NO" and not yes_won)

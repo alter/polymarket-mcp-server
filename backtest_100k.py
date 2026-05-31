@@ -384,7 +384,7 @@ def main():
     print(f"  EMA precompute: {time.time()-t0:.1f}s, {len(ema_cache)} arrays")
 
     # Check if we should use subprocesses
-    ncpu = os.cpu_count() or 4
+    ncpu = min(os.cpu_count() or 4, 4)  # cap at 4 cores
 
     if "--worker" in sys.argv:
         # Subprocess mode

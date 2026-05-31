@@ -48,10 +48,12 @@ BET_USD = 0.02  # baseline (used for tracking; actual size varies)
 
 # Bot family extraction — collapses LV's 200 variants into 1 family per primitive
 def extract_family(bot_label):
-    """RSI/BO/BB/ME/etc are families. LV:RS_p7... → RSI_LV. Skeptic → SKEP. etc."""
+    """All 200 LV variants collapse to ONE family. They share arena_ticks.jsonl and
+    MV* re-aggregate RS/BO/BB, so distinct LV primitives are NOT independent — counting
+    LV_RS + LV_BB as 2 families let LV manufacture 'consensus' by agreeing with itself.
+    Real consensus now needs LV + ≥1 non-LV source (Skeptic/Whale/Theta/NewsTrader/…)."""
     if bot_label.startswith("LV:"):
-        prim = bot_label[3:].split("_")[0]
-        return f"LV_{prim}"          # LV_RS, LV_BO, LV_BB, LV_ME, etc.
+        return "LV"
     return bot_label                   # Skeptic, Theta, Whale, NewsTrader, ANv1..5, etc.
 
 # Source state files to read
@@ -312,6 +314,11 @@ class CouncilBot:
                     continue
                 tokens = d.get("tokens", [])
                 if not tokens:
+                    continue
+                # Settle only on unambiguous resolution: exactly one token wins.
+                # closed=True can precede UMA resolution (all winner=False) → would
+                # mis-settle YES as loss / NO as win. Wait until truly resolved.
+                if sum(1 for t in tokens if t.get("winner")) != 1:
                     continue
                 yes_won = tokens[0].get("winner", False)
                 pos = self.state["open_positions"][cid]

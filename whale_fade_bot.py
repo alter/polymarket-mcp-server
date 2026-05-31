@@ -34,7 +34,7 @@ BET_USD = 0.01
 HISTORY_WINDOW = 60  # last N ticks per market
 SETTLE_INTERVAL = 600
 LEADERBOARD_INTERVAL = 600
-SAVE_INTERVAL = 300
+SAVE_INTERVAL = 1800  # 30 min (was 5 min — 63MB × 288/day = 17GB I/O for paper trading)
 
 
 # ─── Variant generator ─────────────────────────────────────────────────────
@@ -180,6 +180,15 @@ class WhaleFadeGridBot:
     async def consume_ticks(self):
         if not os.path.exists(TICKS_PATH):
             return []
+        # Guard against watchdog JSONL rotation: when arena_ticks.jsonl is rewritten
+        # smaller, our byte offset points past EOF → seek+read returns nothing forever
+        # (silent halt). Reset to current EOF: skip retained backlog (already consumed),
+        # never replay it (replay would double-count every bet across the grid).
+        sz = os.path.getsize(TICKS_PATH)
+        if self.tick_position > sz:
+            print(f"[whale_fade] ticks file rotated/truncated "
+                  f"({self.tick_position}>{sz}); resuming from EOF")
+            self.tick_position = sz
         with open(TICKS_PATH, "rb") as f:
             f.seek(self.tick_position)
             data = f.read()
@@ -315,6 +324,11 @@ class WhaleFadeGridBot:
                     continue
                 tokens = d.get("tokens", [])
                 if not tokens:
+                    continue
+                # Settle only on unambiguous resolution: exactly one token wins.
+                # closed=True can precede UMA resolution (all winner=False) → would
+                # mis-settle YES as loss / NO as win. Wait until truly resolved.
+                if sum(1 for t in tokens if t.get("winner")) != 1:
                     continue
                 yes_won = tokens[0].get("winner", False)
 

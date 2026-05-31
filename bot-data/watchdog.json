@@ -1,82 +1,51 @@
 {
- "checked_at": "2026-05-03T20:55:35.110966+00:00",
+ "checked_at": "2026-05-31T10:36:05.461491+00:00",
  "stalled": false,
  "alerts": [],
  "files": {
   "live_validator.log": {
-   "age_sec": 2,
-   "size_kb": 0
+   "age_sec": 6087,
+   "size_kb": 9
   },
   "orderbook_collector.log": {
-   "age_sec": 0,
-   "size_kb": 0
+   "age_sec": 8,
+   "size_kb": 7
   },
   "oil_iran.log": {
-   "age_sec": 0,
-   "size_kb": 0
+   "age_sec": 5725,
+   "size_kb": 13
   },
   "always_no.log": {
-   "age_sec": 2,
-   "size_kb": 0
+   "age_sec": 5992,
+   "size_kb": 4
   },
   "whale_fade.log": {
-   "age_sec": 2,
-   "size_kb": 0
+   "age_sec": 5996,
+   "size_kb": 14
   },
   "arena_ticks.jsonl": {
-   "age_sec": 165,
-   "size_kb": 75422
+   "age_sec": 38,
+   "size_kb": 174684
   },
   "orderbook_snapshots.jsonl": {
-   "age_sec": 134,
-   "size_kb": 166764
-  },
-  "live_validator.json": {
-   "age_sec": 258,
-   "size_kb": 1477
-  },
-  "arena_results.json": {
-   "age_sec": 235,
-   "size_kb": 854
-  },
-  "political_skeptic.json": {
-   "age_sec": 223,
-   "size_kb": 5
-  },
-  "council.json": {
-   "age_sec": 69,
-   "size_kb": 8
-  },
-  "theta_decay.json": {
-   "age_sec": 319,
-   "size_kb": 2
-  },
-  "whale_follower.json": {
-   "age_sec": 9,
-   "size_kb": 18
-  },
-  "whale_fade.json": {
-   "missing": true
-  },
-  "maker.json": {
-   "age_sec": 9,
-   "size_kb": 0
+   "age_sec": 8,
+   "size_kb": 234377
   }
  },
  "live": {
   "live_validator": {
    "n_variants": 206,
-   "n_total_bets": 22254,
-   "n_open": 3170,
-   "n_closed": 19084,
-   "realized_pnl": 1.0792
+   "n_total_bets": 32651,
+   "n_open": 1555,
+   "n_closed": 31096,
+   "realized_pnl": -5.2991
   },
   "arena": {
-   "n_strategies": 1523,
-   "n_profitable": 930,
-   "n_active": 1345,
-   "top_equity": 2515.0,
-   "top_name": "S311|mean_re|p5|e0.01|sl-25%|tp10%|free|b"
+   "n_strategies": 1535,
+   "n_profitable": 687,
+   "n_active": 141,
+   "top_equity": 3768.0,
+   "top_name": "S306|mean_re|p10|e0.02|sl-25%|tp10%|free|s"
   }
  },
  "phase3": "phase3 result fresh"

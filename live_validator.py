@@ -62,6 +62,11 @@ TOD_TRADE_HOURS = (8, 22)  # UTC hour range; signals outside are skipped
 DEFAULT_TP_PCT = 0.10    # exit at +10% of entry (rotated from 0.20 after 2h regression)
 DEFAULT_SL_PCT = 0.20    # exit at -20% of entry (rotated from 0.50)
 
+# Fill realism: cross the spread on entry/exit so live ROI is comparable to the
+# backtest (mass_backtest uses the same model). Buy YES at ask / NO at 1-bid; mark
+# exits to bid / 1-ask. SLIPPAGE matches mass_backtest.py.
+SLIPPAGE = 0.001
+
 
 # ─── Primitive signals (same logic as backtest) ────────────────────────────
 
@@ -613,6 +618,15 @@ class LiveValidator:
     async def consume_ticks(self):
         if not os.path.exists(TICKS_PATH):
             return []
+        # Guard against watchdog JSONL rotation: when arena_ticks.jsonl is rewritten
+        # smaller, our byte offset points past EOF → seek+read returns nothing forever
+        # (silent trading halt). Reset to current EOF: skip the retained backlog (we
+        # already consumed it), never replay it (replay would double-count every bet).
+        sz = os.path.getsize(TICKS_PATH)
+        if self.tick_position > sz:
+            print(f"[lv] ticks file rotated/truncated ({self.tick_position}>{sz}); "
+                  f"resuming from EOF")
+            self.tick_position = sz
         with open(TICKS_PATH, "rb") as f:
             f.seek(self.tick_position)
             data = f.read()
@@ -659,9 +673,11 @@ class LiveValidator:
         if len(last3) == 3 and sum(last3) < 0:
             v["win3_skip_next"] = True
 
-    def check_tpsl_exits(self, mid, ts, price):
+    def check_tpsl_exits(self, mid, ts, price, bid, ask):
         """For each variant with open position on this market, check TP/SL hit.
         Uses pos['bet_size'] for actual cost (supports adaptive sizing).
+        Marks exits to the EXECUTABLE price (sell YES into the bid, sell NO into
+        1-ask), not mid — mid would overstate TP hits and understate SL hits.
         """
         for v in self.variants:
             tp_pct = v.get("tp_pct", DEFAULT_TP_PCT)
@@ -671,7 +687,7 @@ class LiveValidator:
                 if pos.get("market_id") != mid:
                     continue
                 e = pos["entry"]
-                p_adj = price if pos["side"] == "YES" else (1 - price)
+                p_adj = bid if pos["side"] == "YES" else (1 - ask)
                 bet_size = pos.get("bet_size", BET_USD)
                 if p_adj >= e * (1 + tp_pct):
                     cids_to_close.append((cid, "tp", bet_size * tp_pct))
@@ -692,7 +708,7 @@ class LiveValidator:
         history.append((ts, price, bid, ask))
 
         # Check TP/SL on existing open positions for this market BEFORE signals
-        self.check_tpsl_exits(mid, ts, price)
+        self.check_tpsl_exits(mid, ts, price, bid, ask)
 
         if len(history) < 5:
             return
@@ -768,7 +784,9 @@ class LiveValidator:
                 continue
 
             side = "YES" if sig == 1 else "NO"
-            entry = (1 - price) if side == "NO" else price
+            # Cross the spread on entry (buy YES at ask, NO at 1-bid) + slippage, so
+            # live ROI is comparable to the backtest instead of optimistic mid fills.
+            entry = ask * (1 + SLIPPAGE) if side == "YES" else (1 - bid) * (1 + SLIPPAGE)
             if entry < 0.05 or entry > 0.95:
                 continue
 
@@ -824,6 +842,11 @@ class LiveValidator:
                     continue
                 tokens = d.get("tokens", [])
                 if not tokens:
+                    continue
+                # Settle only on unambiguous resolution: exactly one token wins.
+                # closed=True can precede UMA resolution (all winner=False) → would
+                # mis-settle YES as loss / NO as win. Wait until truly resolved.
+                if sum(1 for t in tokens if t.get("winner")) != 1:
                     continue
                 yes_won = tokens[0].get("winner", False)
                 for v in self.variants:
